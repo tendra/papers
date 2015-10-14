@@ -1,0 +1,2881 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 12 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 1 /Symbol FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-BoldItalic FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+5 0 /Helvetica FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 441 63 R
+7 X
+V
+0 10 Q
+0 X
+(2/5/93 04:23 pm) 108 56.33 T
+(peeling%hermes.mod.uk@r) 178.24 56.33 T
+(elay) 298.4 56.33 T
+(.mod.uk) 315.07 56.33 T
+468 46.88 540 63 R
+7 X
+V
+0 X
+(1 of 23) 511.69 56.33 T
+108 81 567 711 R
+7 X
+V
+0 24 Q
+0 X
+(Commonly Asked Questions \050andAnswers\051) 117.95 611 T
+(about ANDF) 271.87 583 T
+0 12 Q
+(Dr) 283.42 443 T
+(. R. R. Rowlingson) 296.3 443 T
+(Dr) 295.08 429 T
+(. N. E. Peeling) 307.96 429 T
+(DRA Malvern UK) 290.53 415 T
+( British Cr) 250.25 359 T
+(own Copyright) 305.33 359 T
+1 F
+(\323) 388.29 359 T
+0 F
+( 1992) 397.77 359 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+432 45 540 61.12 R
+V
+0 X
+(2 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+0 24 Q
+0 X
+-1.2 (Index of Questions) 238.84 614 S
+0 14 Q
+(1. Backgr) 216 546.67 T
+(ound to ANDF) 273.27 546.67 T
+(, TDF and DRA) 359.83 546.67 T
+(2. Commer) 216 516.67 T
+(cial Aspects) 282.58 516.67 T
+(3. ANDF and ISVs) 216 486.67 T
+(4. ANDF and System V) 216 456.67 T
+(endors) 353.46 456.67 T
+(5. ANDF and end-users) 216 426.67 T
+(6. T) 216 396.67 T
+(echnical Questions) 238.04 396.67 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+432 45 540 61.12 R
+V
+0 X
+(3 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+0 24 Q
+0 X
+-1.2 (Questions) 278.75 704 S
+0 14 Q
+(1 Backgr) 108 666.67 T
+(ound to ANDF) 161.77 666.67 T
+(, TDF and DRA) 248.33 666.67 T
+2 F
+(1.1 What is ANDF?) 108 638.67 T
+(1.2 What is TDF?) 108 610.67 T
+(1.3 Who are DRA?) 108 582.67 T
+(1.4 Which or) 108 554.67 T
+(ganizations support ANDF?) 181.19 554.67 T
+(1.5 Why are DRA developing TDF?) 108 526.67 T
+(1.6 What is the history of TDF?) 108 498.67 T
+(1.7 How much is being invested in TDF?) 108 470.67 T
+(1.8 Is TDF an open speci\336cation?) 108 442.67 T
+(1.9 Who controls TDF?) 108 414.67 T
+(1.10 Has ANDF been oversold?) 108 386.67 T
+0 F
+(2 Commer) 108 356.67 T
+(cial Aspects) 171.08 356.67 T
+2 F
+(2.1 How can I get hold of TDF?) 108 328.67 T
+(2.2 What software is available?) 108 300.67 T
+(2.3 What real-life experience is there in using ANDF?) 108 272.67 T
+0 F
+(3 ANDF and ISVs) 108 242.67 T
+2 F
+(3.1 Does ANDF protect proprietary information as well as a binary does?) 108 214.67 T
+(3.2 Does ANDF make it much easier to pirate software?) 108 186.67 T
+(3.3 How will ANDF af) 108 158.67 T
+(fect an ISV\325) 237.16 158.67 T
+(s ability to do dif) 304.77 158.67 T
+(ferential pricing?) 400.14 158.67 T
+(3.4 How does an ISV ensure quality if a customer can run a ANDF program) 108 130.67 T
+(on a machine on which the ISV has not tested it?) 108 114.67 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+432 45 540 61.12 R
+V
+0 X
+(4 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(3.5 W) 108 710.67 T
+(ill ANDF reduce testing costs?) 141.64 710.67 T
+(3.6 If a shrink-wrapped application fails who does the customer blame?) 108 682.67 T
+(3.7 How long does installation take?) 108 654.67 T
+(3.8 How lar) 108 626.67 T
+(ge is the distributed TDF compared to binary?) 174.2 626.67 T
+(3.9 What are the performance costs of using TDF?) 108 598.67 T
+(3.10 How long does it take to shrink-wrap an existing application?) 108 570.67 T
+0 F
+(4 ANDF and System V) 108 540.67 T
+(endors) 241.96 540.67 T
+2 F
+(4.1 How much ef) 108 512.67 T
+(fort does it take to implement a new installer?) 204.9 512.67 T
+(4.2 How have DRA matched the performance of compilers which have) 108 484.67 T
+-0.08 (taken many tens of staf) 108 468.67 P
+-0.08 (f-years to develop with installers that have only taken) 237.22 468.67 P
+(one or two staf) 108 452.67 T
+(f-years to develop?) 191.3 452.67 T
+(4.3 Do you have to use DRA technology to create a new TDF installer?) 108 424.67 T
+0 F
+(5 ANDF and End Users) 108 394.67 T
+2 F
+(5.1 How much will it cost?) 108 366.67 T
+(5.2 Does ANDF help me with the problem of legacy systems?) 108 338.67 T
+0 F
+(6 T) 108 308.67 T
+(echnical Questions) 126.54 308.67 T
+2 F
+(6.1 is ANDF is tied to UNIX?) 108 280.67 T
+(6.2 How does ANDF relate to APIs?) 108 252.67 T
+(6.3 How does ANDF relate to ABIs?) 108 224.67 T
+-0.31 (6.4 How does ANDF relate to distribution of multiple binaries on CD-ROM?) 108 196.67 P
+(6.5 How does ANDF relate to using shrouded C for distribution?) 108 168.67 T
+(6.6 Is TDF a C oriented technology?) 108 140.67 T
+(6.7 W) 108 112.67 T
+(ill ANDF collapse as more languages and tar) 141.64 112.67 T
+(gets are considered) 392.81 112.67 T
+(\050remember UNCOL\051?) 108 96.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+432 45 540 61.12 R
+V
+0 X
+(5 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(6.8 W) 108 710.67 T
+(ill operating systems be compiled using ANDF?) 141.64 710.67 T
+(6.9 Is TDF suitable for parallel computers?) 108 682.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Backgr) 108 736.84 T
+(ound to ANDF) 132.73 736.84 T
+(, TDF and DRA) 182.19 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+0 24 Q
+0 X
+-1.2 (Questions \050and Answers\051) 209.86 704 S
+108 636.98 540 640 C
+90 638.49 558 638.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 16 Q
+0 X
+0 K
+(1. Background to ANDF) 108 645.33 T
+(, TDF and DRA) 268.54 645.33 T
+0 14 Q
+(1.1 What is ANDF?) 108 589.64 T
+2 F
+(ANDF stands for Architecture Neutral Distribution Format. The concept of) 108 560.64 T
+(an ANDF was pioneered by the Open Software Foundation \050OSF\051. The OSF) 108 544.64 T
+(issued a Request For T) 108 528.64 T
+(echnology \050RFT\051 in May 1989 to solicit proposals for) 235.27 528.64 T
+(technologies that might form the basis of their ANDF; OSF received 23) 108 512.64 T
+(such proposals.) 108 496.64 T
+(The objective of ANDF is to encourage the development of a lar) 108 468.64 T
+(ge body of) 468.75 468.64 T
+(\324shrink-wrapped\325 applications capable of running on any Open Systems) 108 452.64 T
+(platform which implements the necessary libraries \050APIs\051.) 108 436.64 T
+0 F
+( 1.2 What is TDF?) 108 384.64 T
+2 F
+(TDF is an ANDF technology) 108 355.64 T
+(, designed and implemented at DRA Malvern.) 270.33 355.64 T
+(In June 1991 DRA) 108 339.64 T
+(\325) 211.77 339.64 T
+(s TDF technology was selected to be the basis of the) 215.66 339.64 T
+(OSF\325) 108 323.64 T
+(s ANDF) 137.55 323.64 T
+(.) 183.46 323.64 T
+(TDF represents an evolution of multi-language, multi-tar) 108 295.64 T
+(get compiler) 426.82 295.64 T
+(intermediate languages. If there are) 108 279.64 T
+4 F
+(n) 309.27 279.64 T
+2 F
+( programming languages and) 316.26 279.64 T
+4 F
+(m) 482.59 279.64 T
+2 F
+(machines then instead of needing the product of) 108 263.64 T
+4 F
+(n) 380.02 263.64 T
+2 F
+( and) 387.02 263.64 T
+4 F
+(m) 414.22 263.64 T
+2 F
+( compilers one only) 424.32 263.64 T
+(needs the sum \050) 108 247.64 T
+4 F
+(n+m) 195.44 247.64 T
+2 F
+(\051 \322half compilers\323. OSF refer to the) 221.98 247.64 T
+4 F
+(n) 424.04 247.64 T
+2 F
+( front-ends which) 431.04 247.64 T
+(compile the programming languages into ANDF as) 108 231.64 T
+4 F
+(pr) 398.31 231.64 T
+(oducers) 410.23 231.64 T
+2 F
+(, and the) 454.53 231.64 T
+4 F
+(m) 505.83 231.64 T
+2 F
+(back-ends, which translate ANDF into the machine code of the dif) 108 215.64 T
+(ferent) 479.64 215.64 T
+(machines, as) 108 199.64 T
+4 F
+(installers) 183 199.64 T
+2 F
+(.) 235.09 199.64 T
+(The TDF technology provides software developers with an environment to) 108 171.64 T
+(create portable applications. It provides mechanisms for de\336ning the) 108 155.64 T
+(portability interface which an application will use so that the application can) 108 139.64 T
+(run unchanged on any computer that implements that interface. This) 108 123.64 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Backgr) 108 736.84 T
+(ound to ANDF) 132.73 736.84 T
+(, TDF and DRA) 182.19 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(mechanism can also be used to de\336ne architecture neutral header \336les for) 108 710.67 T
+(common APIs such as POSIX, XPG3, SVID and the AES) 108 694.67 T
+(The document \322ANDF Features and Bene\336ts\323 gives a more detailed answer) 108 666.67 T
+(to this question.) 108 650.67 T
+0 F
+( 1.3 Who ar) 108 598.67 T
+(e DRA?) 177.71 598.67 T
+2 F
+(The UK Defence Research Agency \050DRA\051 was established as an Executive) 108 569.67 T
+(Agency of the UK Ministry of Defence on 1st April 1991. It is wholly) 108 553.67 T
+(owned by the UK government but is a distinct or) 108 537.67 T
+(ganization headed by a) 380.96 537.67 T
+(Chief Executive who derives his authority from, and is directly accountable) 108 521.67 T
+(to, the Secretary of State for Defence.) 108 505.67 T
+(The aim of the DRA is to provide the expert scienti\336c and technical services) 108 477.67 T
+(required of it, primarily by the Ministry of Defence and Other Government) 108 461.67 T
+(Departments in a way which is cost-ef) 108 445.67 T
+(fective and impartial; in support of) 322.25 445.67 T
+(this, the DRA is also encouraged to provide services to non-government) 108 429.67 T
+(customers. The DRA is expected to continue to be the MoD\325) 108 413.67 T
+(s principal) 447.27 413.67 T
+(source of scienti\336c advice, technical support and research.) 108 397.67 T
+(DRA) 108 369.67 T
+(\325) 135.99 369.67 T
+(s \322turnover\323 is approximately a billion dollars per annum.) 139.87 369.67 T
+(DRA Malvern, formerly known as RSRE, is the Agency\325) 108 341.67 T
+(s main centre for) 427.46 341.67 T
+(work on information technology and electronic systems and devices and on) 108 325.67 T
+(their defence applications. It is staf) 108 309.67 T
+(fed by approximately 800 high calibre) 303.6 309.67 T
+(scientists and engineers from many disciplines working at the frontiers of) 108 293.67 T
+(scienti\336c knowledge.) 108 277.67 T
+0 F
+( 1.4 Which organizations support ANDF?) 108 225.67 T
+2 F
+(The OSF has an advanced technology program in their Research Institute) 108 196.67 T
+(covering ANDF) 108 180.67 T
+(. UNIX System Labs \050USL\051 have signed a letter of) 197.43 180.67 T
+(understanding with DRA to license the TDF technology) 108 164.67 T
+(. The European) 420.73 164.67 T
+(Commission is supporting the Esprit GLUE project. Many other) 108 148.67 T
+(or) 108 132.67 T
+(ganizations from market leaders to standards bodies and industry) 119.4 132.67 T
+(groupings have shown interest and have of) 108 116.67 T
+(fered support to the ANDF) 347.13 116.67 T
+(project.) 108 100.67 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Backgr) 108 736.84 T
+(ound to ANDF) 132.73 736.84 T
+(, TDF and DRA) 182.19 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+( 1.5 Why ar) 108 710.67 T
+(e DRA developing TDF?) 177.71 710.67 T
+2 F
+(The Ministry of Defence is a lar) 108 681.67 T
+(ge end-user of computer systems. Through) 287.27 681.67 T
+(the widespread uptake of ANDF DRA aims to reduce the costs for software) 108 665.67 T
+(development and software and hardware procurement for the MoD. Related) 108 649.67 T
+(goals include the potential for early availability of compilers \050e.g. for Ada\051) 108 633.67 T
+(on new architectures, separating software and hardware purchasing, easier) 108 617.67 T
+-0.3 (mid-life hardware updates, and improving software longevity and scalability) 108 601.67 P
+-0.3 (.) 533.31 601.67 P
+(By providing TDF as the de-facto standard ANDF technology DRA ensures) 108 573.67 T
+(that MoD has access to a civil standard which can also handle defence) 108 557.67 T
+(requirements such as support for Ada.) 108 541.67 T
+0 F
+( 1.6 What is the history of TDF?) 108 489.67 T
+2 F
+(TDF is derived from the T) 108 460.67 T
+(en15 project at DRA Malvern. The T) 255.09 460.67 T
+(en15 project) 462.01 460.67 T
+(was a 50 staf) 108 444.67 T
+(f year project which involved the de\336nition and) 180.41 444.67 T
+(implementation of a high-level abstract machine. Like TDF it was an) 108 428.67 T
+(architecture neutral representation of programming languages but it was) 108 412.67 T
+(strongly typed and also had the capability to describe operating system) 108 396.67 T
+(features, such as the network and \336lestore, explicitly) 108 380.67 T
+(. TDF was conceived as) 401.27 380.67 T
+(a portable code-generator for T) 108 364.67 T
+(en15 and was purpose-built to the) 281.85 364.67 T
+(requirements for creating and distributing shrink-wrapped software.) 108 348.67 T
+0 F
+( 1.7 How much is being invested in TDF?) 108 296.67 T
+2 F
+(DRA has a team of 15 people plus 7 contractors currently working on TDF) 108 267.67 T
+(.) 526.97 267.67 T
+(OSF and USL also have technical staf) 108 251.67 T
+(f working to develop the technology) 320.71 251.67 T
+(.) 523.05 251.67 T
+(DRA are one of seven participants in a 3 year) 108 235.67 T
+(, $15 million, ESPRIT project) 362.73 235.67 T
+(known as OMI/GLUE which also includes work on developing producers) 108 219.67 T
+(\050compilers to ANDF\051 for Ada, Fortran, C++ and a functional language as) 108 203.67 T
+(well as work on validation, TDF tools and extending TDF for parallelism.) 108 187.67 T
+(OSF and USL are working with ISVs to demonstrate the viability of the) 108 159.67 T
+(ANDF approach to shrink wrapping existing applications.) 108 143.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Backgr) 108 736.84 T
+(ound to ANDF) 132.73 736.84 T
+(, TDF and DRA) 182.19 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 23) 511.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+( 1.8 Is TDF an open speci\336cation?) 108 710.67 T
+2 F
+(The speci\336cation of TDF is freely available from DRA. All the Intellectual) 108 681.67 T
+(Property contained in the TDF speci\336cation is in the Public Domain. DRA) 108 665.67 T
+(takes no royalties for any use of the speci\336cation. The TDF encoding as a) 108 649.67 T
+(bitstream is also in the public domain as is software for encoding and) 108 633.67 T
+(decoding TDF) 108 617.67 T
+(. The other TDF tools \050which are proprietary\051 work from a) 188.11 617.67 T
+(central database that speci\336es TDF - this database is also in the public) 108 601.67 T
+(domain.) 108 585.67 T
+0 F
+( 1.9 Who contr) 108 533.67 T
+(ols TDF?) 196.36 533.67 T
+2 F
+(TDF is a technology owned and controlled by the DRA. It forms the basis) 108 504.67 T
+(of the OSF\325) 108 488.67 T
+(s ANDF technology) 173.3 488.67 T
+(. USL and OSF have publicly announced) 285.1 488.67 T
+(that they will support the same speci\336cation. The latest versions of TDF and) 108 472.67 T
+(ANDF are identical.) 108 456.67 T
+(DRA intends to submit TDF\325) 108 428.67 T
+(s de\336nition to an internationally recognized) 271.26 428.67 T
+(standards process once TDF has proven its viability in the market place. At) 108 412.67 T
+(such time DRA will cede control of the TDF speci\336cation to the appropriate) 108 396.67 T
+(standards body/bodies.) 108 380.67 T
+0 F
+( 1.10 Has ANDF been oversold?) 108 328.67 T
+2 F
+(Many of the properties of ANDF \050the concept\051 are now inextricably linked) 108 299.67 T
+(to the properties of TDF \050an ANDF technology\051. Until OSF had selected) 108 283.67 T
+(TDF it was dif) 108 267.67 T
+(\336cult to say exactly what were the expected properties of) 189.76 267.67 T
+(ANDF and this did lead to some confusion. It is now clear that ANDF as) 108 251.67 T
+(implemented by TDF is much more than just a distribution format - it is also) 108 235.67 T
+(an aid in recasting applications in shrink-wrapped form, and it is also an) 108 219.67 T
+(architecture-neutral medium for creating header \336les for APIs.) 108 203.67 T
+(Some complex issues may have been oversimpli\336ed, such as the issue of) 108 175.67 T
+(reverse-engineering ANDF) 108 159.67 T
+(. The latest documentation from DRA and OSF) 259.58 159.67 T
+(avoids such oversimpli\336cations.) 108 143.67 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Commer) 108 736.84 T
+(cial Aspects) 138.05 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 16 Q
+0 X
+0 K
+(2. Commercial Aspects) 108 709.33 T
+0 14 Q
+(2.1 How can I get hold of TDF?) 108 653.64 T
+2 F
+(Software availability is currently through the OSF snapshot program, for) 108 624.64 T
+(further details contact Andy Johnson at the OSF Research Institute at 1) 108 608.64 T
+(Cambridge Center) 108 592.64 T
+(, Cambridge MA, USA. email: andyj@osf.or) 210.42 592.64 T
+(g) 462.08 592.64 T
+(DRA are also looking into possible mechanisms for distributing a) 108 564.64 T
+(developers kit.) 108 548.64 T
+0 F
+( 2.2 What TDF softwar) 108 496.64 T
+(e is available?) 245.71 496.64 T
+2 F
+(DRA are maintaining installers for MIPS, 680X0, 80X86 and SP) 108 467.64 T
+(ARC. OSF) 470.11 467.64 T
+(has had an RS 6000 installer developed under contract. A TDF producer) 108 451.64 T
+(from ANSI C and other dialects has also been written. A TDF linker) 108 435.64 T
+(program, TDF pretty-printer) 108 419.64 T
+(, TDF installation manager and a compiler) 266.38 419.64 T
+(interface to UNIX, known as tcc, are also implemented. There are) 108 403.64 T
+(architecture neutral C header \336les for POSIX, XPG3 and SVID3. This) 108 387.64 T
+(software has been suf) 108 371.64 T
+(\336cient to allow the shrink-wrapping of \322real-life\323) 228.59 371.64 T
+(applications such as Informix\325) 108 355.64 T
+(s W) 277.05 355.64 T
+(ingz product.) 298.64 355.64 T
+0 F
+( 2.3 What r) 108 303.64 T
+(eal-life experience is ther) 175.37 303.64 T
+(e in using ANDF?) 323.94 303.64 T
+2 F
+(DRA has successfully transferred the installer technology out of the lab -) 108 274.64 T
+(the Sun SP) 108 258.64 T
+(ARC installer was written under contract to DRA and achieved) 168.14 258.64 T
+(better performance tar) 108 242.64 T
+(gets than the installers written in-house. OSF have) 232.07 242.64 T
+(ported and demonstrated Informix\325) 108 226.64 T
+(s\325 W) 303.47 226.64 T
+(ingz \050TM\051 on ANDF) 329.72 226.64 T
+(. USL and OSF) 445.58 226.64 T
+(are collaborating on an ISV program to encourage ports of major) 108 210.64 T
+(commercial applications to ANDF on SVR4.2, starting with Oracle, and) 108 194.64 T
+(DRA supports and assists in this important area. In addition DRA and OSF) 108 178.64 T
+(are working to shrink wrap a number of public domain applications such as) 108 162.64 T
+(the Postgres database.) 108 146.64 T
+(The TDF software has been successfully tested on a lar) 108 118.64 T
+(ge body of software,) 416.67 118.64 T
+(which includes:) 108 102.64 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and ISVs) 108 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+5 12 Q
+0 X
+(\245) 108 712 T
+(bootstrapping the TDF software) 121.54 712 T
+(\245) 108 686 T
+(the Plum-Hall test suite) 121.54 686 T
+(\245) 108 660 T
+(the Perennial test suite) 121.54 660 T
+(\245) 108 634 T
+(SPEC C Benchmarks) 121.54 634 T
+(\245) 108 608 T
+(Motif Window Manager) 121.54 608 T
+(\245) 108 582 T
+(Gnu Emacs) 121.54 582 T
+(\245) 108 556 T
+(Wingz) 121.54 556 T
+(\245) 108 530 T
+(Perl) 121.54 530 T
+(\245) 108 504 T
+(gcc 2.2.2) 121.54 504 T
+(\245) 108 478 T
+(T) 121.54 478 T
+(eX and Metafont) 127.53 478 T
+(\245) 108 452 T
+(X\336g) 121.54 452 T
+(\245) 108 426 T
+(X1) 121.54 426 T
+(1R5) 135.32 426 T
+(\245) 108 400 T
+(Modula 3 to C compiler) 121.54 400 T
+(\245) 108 374 T
+(Postgres) 121.54 374 T
+(\245) 108 348 T
+(GhostScript) 121.54 348 T
+(\245) 108 322 T
+(Bison) 121.54 322 T
+108 262.98 540 266 C
+90 264.49 558 264.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 16 Q
+0 X
+0 K
+(3. ANDF and ISVs) 108 271.33 T
+0 14 Q
+(3.1 Does ANDF pr) 108 215.64 T
+(otect pr) 217.34 215.64 T
+(oprietary information as well as binary does?) 263.32 215.64 T
+2 F
+(There are two separate issues that should be distinguished when discussing) 108 186.64 T
+(the reverse engineering of ANDF:) 108 170.64 T
+(\0501\051 how easy is the process of reverse engineering?) 108 142.64 T
+(\0502\051 how understandable an output can be produced from a reverse) 108 114.64 T
+(engineering process or tool?) 108 98.64 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and ISVs) 108 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(ANDF is such an attractive tar) 108 710.67 T
+(get to reverse engineer that we would expect) 278.34 710.67 T
+(reverse engineering tools to become available, regardless of how dif) 108 694.67 T
+(\336cult it) 489.33 694.67 T
+(is to produce such tools. This makes point \0501\051 above irrelevant \050in fact TDF) 108 678.67 T
+(is somewhat easier to reverse engineer than a binary\051. The important fact is) 108 662.67 T
+(that the quality of information recoverable from TDF is very similar to that) 108 646.67 T
+(recoverable from binary - rearranged source text without identi\336ers \050what) 108 630.67 T
+(others have sometimes referred to as \322ugli\336ed\323 or \322shrouded\323 source\051. It) 108 614.67 T
+(would certainly be possible to scramble the ANDF to make it even uglier) 108 598.67 T
+(. If) 516.84 598.67 T
+(an ISV does not regard this as adequate protection we would suggest that) 108 582.67 T
+(the shrink-wrapped ANDF be converted to binaries for \336nal distribution.) 108 566.67 T
+0 F
+( 3.2 Does ANDF make it much easier to pirate softwar) 108 514.67 T
+(e?) 429.89 514.67 T
+2 F
+(A shrink-wrapped application in ANDF can obviously be pirated to many) 108 485.67 T
+(platforms. W) 108 469.67 T
+(e would expect that many ISVs will use licensing control) 180.72 469.67 T
+(software to protect against such theft. This is an issue that the industry is) 108 453.67 T
+(already grappling with - ANDF just makes it more ur) 108 437.67 T
+(gent that workable) 405.83 437.67 T
+(solutions be widely implemented.) 108 421.67 T
+0 F
+( 3.3 How will ANDF affect an ISV\325) 108 369.67 T
+(s ability to do differ) 314.23 369.67 T
+(ential pricing?) 431.36 369.67 T
+2 F
+(This is already an issue that the industry faces. In machine ranges which are) 108 340.67 T
+(binary compatible it is already common for licenses fees to vary for the) 108 324.67 T
+(same binary distribution \050license fees being tied to processor power) 108 308.67 T
+(,) 485.55 308.67 T
+(numbers of concurrent users etc.\051.) 108 292.67 T
+0 F
+( 3.4 How does an ISV ensur) 108 184.67 T
+(e quality if a customer can run an ANDF) 272.17 184.67 T
+(pr) 108 167.67 T
+(ogram on a machine on which the ISV has not tested it?) 121.74 167.67 T
+2 F
+(It is likely that as applications start to be shipped in ANDF that they will) 108 138.67 T
+(have been tested by the ISV on many tar) 108 122.67 T
+(gets. The machines that the) 334.69 122.67 T
+(application has been tested on can be listed on the packaging and the) 108 106.67 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and ISVs) 108 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(product need not be warranted for use on any others. As new architectures) 108 710.67 T
+(come onto the market, the system vendor will wish to provide an installer) 108 694.67 T
+(,) 519.01 694.67 T
+(so that ANDF applications are available to customers. The onus will then be) 108 678.67 T
+(on the installer writer to ensure that it is a robust and validated product. The) 108 662.67 T
+(situation is analogous to the PC world where software developers cannot) 108 646.67 T
+(test on every PC clone that exists but are con\336dent, through testing on the) 108 630.67 T
+(most important in the market, that the product is likely to work on most) 108 614.67 T
+(clones.) 108 598.67 T
+0 F
+( 3.5 W) 108 546.67 T
+(ill ANDF r) 146.23 546.67 T
+(educe testing costs?) 209.71 546.67 T
+2 F
+(Even if speci\336c platform testing by ISVs continues the ISVs\325 testing costs) 108 517.67 T
+(could still be signi\336cantly reduced. T) 108 501.67 T
+(esting costs are related to the number) 315.34 501.67 T
+(of problems encountered during testing and are often due to compiler bugs) 108 485.67 T
+(or dif) 108 469.67 T
+(ferent interpretations of the high-level programming language being) 138.45 469.67 T
+(compiled. ANDF can reduce these costs through the use of a single) 108 453.67 T
+(compiler front-end - the producer - for a particular language. The installer) 108 437.67 T
+(,) 520.87 437.67 T
+(which translates ANDF to code, has much simpler syntax and semantics to) 108 421.67 T
+(contend with than for C, so the validation of installer semantics should be) 108 405.67 T
+(easier and more reliable than relying on the consistency and robustness of) 108 389.67 T
+(dif) 108 373.67 T
+(ferent C compilers. Also a lar) 123.29 373.67 T
+(ge body of shrink-wrapped applications will) 288.58 373.67 T
+(make it easy to test new installers.) 108 357.67 T
+0 F
+( 3.6 If a shrink-wrapped application fails who does the customer blame?) 108 305.67 T
+2 F
+(This question was addressed by question 3.4. The issue with ANDF is) 108 276.67 T
+(exactly analogous to that faced by suppliers of PC software, and that has not) 108 260.67 T
+(stopped ISVs from marketing PC software - indeed the possibility of) 108 244.67 T
+(shipping shrink-wrapped applications is often quoted as the reason for the) 108 228.67 T
+(strength of the PC market.) 108 212.67 T
+0 F
+( 3.7 How long does installation take?) 108 160.67 T
+2 F
+(Installation time, for an application, is generally somewhat less than the) 108 131.67 T
+(compile time for a native compiler) 108 115.67 T
+(. On gcc, from the SPEC tests,) 301.15 115.67 T
+(installation time varies between 32% and 83% of native compile time on) 108 99.67 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and ISVs) 108 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(14 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(DRA) 108 710.67 T
+(\325) 135.99 710.67 T
+(s installers for 386, HP-P) 139.87 710.67 T
+(A, MIPS, SP) 279.67 710.67 T
+(ARC and V) 350.7 710.67 T
+(AX architectures. An) 414.96 710.67 T
+(example from the W) 108 694.67 T
+(ingz application is that a complete build from source on) 222.85 694.67 T
+(a DecStation 3100 using the native compiler took about one hour and thirty) 108 678.67 T
+(minutes. An ANDF install on the same platform took approximately twenty) 108 662.67 T
+(one minutes.) 108 646.67 T
+(For many users / applications the install time will not be a problem. If it is) 108 618.67 T
+(there are a number of possible solutions:) 108 602.67 T
+5 12 Q
+(\245) 108 576 T
+(installation may be run as a background task \050on an operating system that) 121.54 576 T
+(permits multi-tasking\051.) 121.54 562 T
+(\245) 108 536 T
+(installation may be done overnight.) 121.54 536 T
+(\245) 108 510 T
+(binary distribution may be available \050possibly at extra cost from a software) 121.54 510 T
+(distributor\051. CD-ROMs may provide a convenient mechanism for marketing) 121.54 496 T
+(binary versions of applications, as might ISDNs.) 121.54 482 T
+(\245) 108 456 T
+(if a user is part of a network, there may be a node that has responsibility for) 121.54 456 T
+(turning ANDF applications into binaries for other users on the network.) 121.54 442 T
+0 14 Q
+( 3.8 How large is the distributed TDF compar) 108 390.67 T
+(ed to binary?) 379.42 390.67 T
+2 F
+(This depends on the nature of the machine. On CISC machines the) 108 361.67 T
+(distributed TDF is around twice the size of the binary) 108 345.67 T
+(. On RISC machines) 406.72 345.67 T
+(the distributed TDF \050same size as on CISC machines!\051 is around 1.4 times) 108 329.67 T
+(the size of the corresponding binary produced by the native compiler) 108 313.67 T
+(. This) 492.72 313.67 T
+(\336gure assumes that architecture neutral headers are being used - if existing) 108 297.67 T
+(header \336les are used the size of distributed ANDF can increase by up to) 108 281.67 T
+(50% for some applications.) 108 265.67 T
+0 F
+( 3.9 What ar) 108 213.67 T
+(e the performance costs of using TDF?) 182.37 213.67 T
+2 F
+(DRA has demonstrated that the run-time performance of applications) 108 184.67 T
+(compiled from C through TDF can be made comparable and in some cases) 108 168.67 T
+(faster than for applications compiled through native compilers. The) 108 152.67 T
+(information in the source language required to do code optimization is) 108 136.67 T
+(preserved in TDF allowing the fullest range of code optimization algorithms) 108 120.67 T
+(to be used. The performance of existing implementations is given in the) 108 104.67 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and System V) 108 736.84 T
+(endors) 178.55 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(15 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(document \324TDF Facts and Figures\325. All installer implementations are) 108 710.67 T
+(currently within 5% of the performance of native compilers as measured on) 108 694.67 T
+(the SPEC tests.) 108 678.67 T
+(ANDF has signi\336cant economic advantages which may lead to performance) 108 650.67 T
+(improvements - the cost of tuning an installer potentially bene\336ts all the) 108 634.67 T
+(programming languages that compile to ANDF; also the ef) 108 618.67 T
+(fort in tuning an) 437.31 618.67 T
+(installer for one machine may bene\336t other installers \050many optimizations) 108 602.67 T
+(can be expressed portably as TDF-to-TDF transformations\051.) 108 586.67 T
+0 F
+( 3.10 How long does it take to shrink-wrap an existing application?) 108 534.67 T
+2 F
+(There is as yet limited experience as to how much ef) 108 505.67 T
+(fort a software) 402.3 505.67 T
+(developer should expect to have to expend in such a recasting. OSF\325) 108 489.67 T
+(s) 490.4 489.67 T
+(experience shrink wrapping Informix\325) 108 473.67 T
+(s W) 320.56 473.67 T
+(ingz \050TM\051 product and DRA) 342.15 473.67 T
+(\325) 501.48 473.67 T
+(s) 505.37 473.67 T
+(experience shrink wrapping public domain applications suggests that the) 108 457.67 T
+(creation of a shrink wrapped version of an application takes roughly the) 108 441.67 T
+(same amount of time as doing a port to a new platform. Once an application) 108 425.67 T
+(has been shrink-wrapped, its ability to run on a given platform is) 108 409.67 T
+(constrained only by the availability on that platform of implementations of) 108 393.67 T
+(all the portability interfaces which the application requires.) 108 377.67 T
+108 317.98 540 321 C
+90 319.49 558 319.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 16 Q
+0 X
+0 K
+(4. ANDF and System V) 108 326.33 T
+(endors) 260.38 326.33 T
+0 14 Q
+(4.1 How much effort does it take to implement a new installer?) 108 270.64 T
+2 F
+(The TDF technology is designed to allow new high-performance installers) 108 241.64 T
+(to be implemented economically) 108 225.64 T
+(. T) 290.14 225.64 T
+(o achieve this as many optimizations as) 304.7 225.64 T
+(possible - both universally applicable optimizations and machine speci\336c) 108 209.64 T
+(ones - are carried out as TDF-to-TDF transformations. As a measure of the) 108 193.64 T
+(ef) 108 177.64 T
+(fort to produce a new installer: the existing SP) 118.62 177.64 T
+(ARC installer was) 376.95 177.64 T
+(implemented by a DRA contractor to a level where it equals the) 108 161.64 T
+(performance of the best C compilers on a SUN SparcStation in one staf) 108 145.64 T
+(f-) 507.24 145.64 T
+(year) 108 129.64 T
+(. The implementation was performed by an experienced compiler writer) 131.31 129.64 T
+(who was familiar with SP) 108 113.64 T
+(ARC but who had not worked with TDF before.) 251.29 113.64 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and System V) 108 736.84 T
+(endors) 178.55 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(16 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The implementation was produced at a site remote from DRA with less than) 108 710.67 T
+(a week\325) 108 694.67 T
+(s consultancy from DRA.) 151.12 694.67 T
+0 F
+(4.2 How has DRA matched the performance of compilers which have) 108 642.67 T
+(taken many tens of staff-years to develop \050for example the MIPS) 108 625.67 T
+(compiler on the DecStation and the native compiler on the 80x86) 108 608.67 T
+(running SVR4.2\051 with installers that have only taken one or two staff-) 108 591.67 T
+(years to develop?) 108 574.67 T
+2 F
+(W) 108 545.67 T
+(e cannot know for sure but the following factors may be relevant:) 120.09 545.67 T
+5 12 Q
+(\245) 108 519 T
+(the approach adopted by DRA is a conventional engineering approach \050it is) 121.54 519 T
+(not an automated code generator technology\051 which reuses large amounts of) 121.54 505 T
+(code between installers. This means that:) 121.54 491 T
+2 10 Q
+(\245) 126 468 T
+2 12 Q
+( as much of 70% of a new installer is re-used code) 144 468 T
+2 10 Q
+(\245) 126 444 T
+2 12 Q
+( the installer being hand-crafted is easy to tune) 144 444 T
+2 10 Q
+(\245) 126 420 T
+2 12 Q
+( the installer implementation is small enough be done by one person \050a very) 144 420 T
+(ef) 144 405 T
+(\336cient method of working\051.) 153.1 405 T
+5 F
+(\245) 108 378 T
+(the staf) 121.54 378 T
+(f used to implement the installers were very experienced and shared) 160.66 378 T
+(experiences within a close-knit community) 121.54 364 T
+(.) 344.59 364 T
+(\245) 108 338 T
+(DRA implementors had access to existing high-performance compilers which) 121.54 338 T
+(showed a large number of the optimizations which had to be implemented.) 121.54 324 T
+0 14 Q
+( 4.3 Do you have to use DRA technology to cr) 108 272.67 T
+(eate a new TDF installer?) 377.07 272.67 T
+2 F
+(No. As far as existing code-generator technologies are concerned TDF is) 108 243.67 T
+(just another language - hence existing techniques can be used to implement) 108 227.67 T
+(a TDF installer) 108 211.67 T
+(. The only reason to use DRA) 191.95 211.67 T
+(\325) 357.12 211.67 T
+(s technology is economic - is it) 361.01 211.67 T
+(cheaper to use our technology than some other?) 108 195.67 T
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDF and End Users) 108 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(17 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 16 Q
+0 X
+0 K
+(5. ANDF and End Users) 108 709.33 T
+0 14 Q
+(5.1 How much will it cost?) 108 653.64 T
+2 F
+(The pricing of TDF is a matter for the commercial or) 108 624.64 T
+(ganizations which) 404.64 624.64 T
+(license the technology from DRA.) 108 608.64 T
+0 F
+( 5.2 Does ANDF help me with the pr) 108 556.64 T
+(oblem of legacy systems?) 323.44 556.64 T
+2 F
+(ANDF is not a \322magic bullet\323. It does not mandate portability) 108 527.64 T
+(. This means) 453.37 527.64 T
+(that ANDF is not a magical solution to the problems of legacy software.) 108 511.64 T
+(Y) 108 495.64 T
+(ou cannot just run a non-portable application through the ANDF) 116.7 495.64 T
+-0.01 (technology and expect to produce a portable ANDF version. The advantages) 108 479.64 P
+(of using ANDF are obtained by re-casting the software into shrink-wrapped) 108 463.64 T
+(form.) 108 447.64 T
+(Much legacy software is written in legacy programming languages) 108 419.64 T
+(\050languages that are no longer popular and hence dif) 108 403.64 T
+(\336cult to obtain compilers) 395.29 403.64 T
+(for\051. ANDF provides a means of implementing a portable compiler for a) 108 387.64 T
+(legacy language which will generate code to run on all the computers that) 108 371.64 T
+(have ANDF installers \050within the limits of the portability of the application) 108 355.64 T
+(being compiled\051. For some legacy languages it may be an economic) 108 339.64 T
+(proposition to produce an ANDF producer) 108 323.64 T
+(. This may lead to increased) 345.45 323.64 T
+(longevity for some legacy languages.) 108 307.64 T
+108 247.95 540 250.98 C
+90 249.47 558 249.47 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 16 Q
+0 X
+0 K
+(6. T) 108 256.31 T
+(echnical questions) 132.29 256.31 T
+0 14 Q
+(6.1 Is ANDF tied to UNIX?) 108 200.62 T
+2 F
+(ANDF itself is independent of operating system and will help create and) 108 171.62 T
+(distribute shrink-wrapped software for any well de\336ned API. OSF\325) 108 155.62 T
+(s) 482.24 155.62 T
+(motivation in creating the ANDF concept was to turn the UNIX software) 108 139.62 T
+(market which is currently heterogeneous with respect to processor) 108 123.62 T
+(architecture into a homogeneous ANDF market. USL) 108 107.62 T
+(\325) 406.33 107.62 T
+(s interest is to create a) 410.22 107.62 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(T) 108 736.84 T
+(echnical questions) 112.6 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(18 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(homogeneous software market for UNIX SVR4.2. As a result the majority) 108 710.67 T
+(of DRA) 108 694.67 T
+(\325) 151.14 694.67 T
+(s implementations of TDF software are for UNIX based machines.) 155.03 694.67 T
+(The TDF software has also been ported to MSDOS \050with DOS extender\051) 108 678.67 T
+(which supports the ANSI C library) 108 662.67 T
+(, and a port to OpenVMS has also been) 302.58 662.67 T
+(started.) 108 646.67 T
+0 F
+( 6.2 How does ANDF r) 108 594.67 T
+(elate to APIs?) 242.21 594.67 T
+2 F
+(APIs are extremely relevant to the ANDF scenario for application) 108 565.67 T
+(development, porting and distribution. T) 108 549.67 T
+(o distribute an application to many) 334 549.67 T
+(machines using ANDF requires the use of suitable portability guidelines.) 108 533.67 T
+(ANDF has features designed to allow the representation of the interfaces) 108 517.67 T
+(required for portability) 108 501.67 T
+(. These might be established APIs such as Posix,) 235.33 501.67 T
+(XPG3, SVID3, the AES etc. or they might be interfaces created by an ISV) 108 485.67 T
+(.) 522.77 485.67 T
+(TDF contains a notion called \322tokenisation\323. This is the ability of TDF to) 108 457.67 T
+(represent program as a TDF tree any part of which can be represented by a) 108 441.67 T
+(symbol called a \322token\323. The token can represent any part of the program) 108 425.67 T
+(detail \050e.g. a type, a part of a type, a procedure, a macro, an expression or) 108 409.67 T
+(part of an expression, etc.\051 which is architecture speci\336c. After distribution) 108 393.67 T
+(the token can have an appropriate architecture speci\336c piece of TDF tree) 108 377.67 T
+(supplied as its de\336nition. This provides a natural mechanism whereby the) 108 361.67 T
+(architecture neutral information inherent in the API is abstracted and forms) 108 345.67 T
+(the portability interface to the application.) 108 329.67 T
+(Once an application has been shrink wrapped in ANDF it can run) 108 301.67 T
+(unchanged on any computer that correctly implements the portability) 108 285.67 T
+(interface that the application is designed to use. This means that API) 108 269.67 T
+(conformance is of critical importance. Shrink wrapped applications will) 108 253.67 T
+(provide practical tests of API conformance. The applications that have been) 108 237.67 T
+(shrink-wrapped have already shown up a number of subtle errors in some) 108 221.67 T
+(existing implementations of APIs.) 108 205.67 T
+0 F
+( 6.3 How does ANDF r) 108 153.67 T
+(elate to ABIs?) 242.21 153.67 T
+2 F
+(ABIs de\336ne a machine level tar) 108 124.67 T
+(get for compilers to ensure software) 284.55 124.67 T
+(compatibility for a single processor family) 108 108.67 T
+(. ANDF de\336nes a machine-) 345.32 108.67 T
+FMENDPAGE
+%%EndPage: "18" 19
+%%Page: "19" 19
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(T) 108 736.84 T
+(echnical questions) 112.6 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(19 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(independent tar) 108 710.67 T
+(get for compilers to ensure software portability across all) 194.4 710.67 T
+(systems that implement ANDF and have the interfaces \050e.g. GUI\051 assumed) 108 694.67 T
+(by the program. An ABI is a binary compatibility interface, whereas ANDF) 108 678.67 T
+(provides compatibility at the functional API level - this means that an ABI) 108 662.67 T
+(speci\336cation must remain unchanged if existing ABI applications are still to) 108 646.67 T
+(work, whereas in ANDF if the API functionality is maintained then ANDF) 108 630.67 T
+(applications will still install properly) 108 614.67 T
+(.) 313.1 614.67 T
+(ANDF installers can use ABIs so that only one installer is needed for all) 108 586.67 T
+(processors that implement that ABI - hence ef) 108 570.67 T
+(forts to develop ABIs will) 365.39 570.67 T
+(continue even after the use of ANDF becomes widespread. In the future) 108 554.67 T
+(ANDF could remove the need for ISVs to be aware of the details dif) 108 538.67 T
+(ferent) 490.51 538.67 T
+(ABIs. This would allow much easier introduction of new processor features,) 108 522.67 T
+(such as superscaling, because the need to preserve upwards compatibility in) 108 506.67 T
+(the ABI would no longer exist.) 108 490.67 T
+0 F
+( 6.4 How does ANDF r) 108 438.67 T
+(elate to distribution of multiple binaries on CD-) 242.21 438.67 T
+(ROM?) 108 421.67 T
+2 F
+(ANDF is an advanced porting tool as well as a distribution format. The use) 108 392.67 T
+(of multiple binaries on a CD-ROM may reduce the packaging and) 108 376.67 T
+(distribution costs for ISVs but has no impact on portability or testing) 108 360.67 T
+-0.01 (problems. For each new architecture supported, a new CD-ROM needs to be) 108 344.67 P
+(issued - an application distributed in ANDF can be installed on any machine) 108 328.67 T
+(with an installer) 108 312.67 T
+(.) 197.4 312.67 T
+(W) 108 284.67 T
+(e expect that ANDF will co-exist with binary distribution and that CD-) 120.09 284.67 T
+(ROMs may be used to distribute binaries of the most popular shrink-) 108 268.67 T
+(wrapped applications to avoid the overhead of longer installation times.) 108 252.67 T
+0 F
+( 6.5 How does ANDF r) 108 200.67 T
+(elate to using shr) 242.21 200.67 T
+(ouded C for distribution?) 343.41 200.67 T
+2 F
+(Shrouded C is just a distribution mechanism - it has none of the other) 108 171.67 T
+(properties of ANDF to aid in the creation of shrink-wrapped software, or) 108 155.67 T
+(the description of portability interfaces.) 108 139.67 T
+(Comparing Shrouded C and ANDF purely on the basis of distribution) 108 111.67 T
+(formats:) 108 95.67 T
+FMENDPAGE
+%%EndPage: "19" 20
+%%Page: "20" 20
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(T) 108 736.84 T
+(echnical questions) 112.6 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(20 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+5 12 Q
+0 X
+(\245) 108 712 T
+(Shrouded C gives only limited support to users of other programming) 121.54 712 T
+(languages \050compilers to C from other languages are often far from optimal\051.) 121.54 698 T
+(TDF was designed as a multi-lingual ANDF so should be much better) 121.54 684 T
+(.) 488.14 684 T
+(\245) 108 658 T
+(Shrouded C requires a user site to have a full Software Developers Kit, whilst) 121.54 658 T
+(the ANDF installation environment is likely to be bundled at no extra charge.) 121.54 644 T
+(\245) 108 618 T
+(installer availability for Shrouded C is no problem) 121.54 618 T
+(\245) 108 592 T
+(protection of proprietary information is similar) 121.54 592 T
+(\245) 108 566 T
+(size of distributed applications is similar) 121.54 566 T
+(\245) 108 540 T
+(installation times favor ANDF) 121.54 540 T
+(\245) 108 514 T
+(run-time performance is similar) 121.54 514 T
+(\245) 108 488 T
+(tools to support the installation process tend to be primitive in conventional C) 121.54 488 T
+(compilers) 121.54 474 T
+(\245) 108 448 T
+(ANDF users get the bene\336t of using the same producer for all targets) 121.54 448 T
+(\050reduced exposure to compiler incompatibilities and bugs\051) 121.54 434 T
+0 14 Q
+( 6.6 Is ANDF a C oriented technology?) 108 382.67 T
+2 F
+(At the present, the only compiler front-end for TDF is for C \050ANSI and) 108 353.67 T
+(other dialects\051. A great deal of ef) 108 337.67 T
+(fort has gone into ensuring that ANDF can) 292.31 337.67 T
+(be used as an intermediate language in \322conventional\323 compilers for) 108 321.67 T
+(languages other than C. Implementing the C front-end for TDF exposed a) 108 305.67 T
+(number of issues that related to the production of architecture-neutral) 108 289.67 T
+(ANDF) 108 273.67 T
+(. There are parts of the semantic de\336nition of C, such as the precise) 144.97 273.67 T
+(de\336nition of some integer promotions, which depend on the tar) 108 257.67 T
+(get. In) 460.63 257.67 T
+(addition, ANSI C was extended with a new pragma \050called \322#pragma) 108 241.67 T
+(token\323\051 which allows software developers access to ANDF\325) 108 225.67 T
+(s features for) 442.57 225.67 T
+(describing portability interfaces. These issues have been satisfactorily) 108 209.67 T
+(resolved for C, but a similar exercise would have to undertaken for other) 108 193.67 T
+(languages if they are intended for use in producing shrink-wrapped) 108 177.67 T
+(applications. W) 108 161.67 T
+(ork is underway to write producers from several important) 194.71 161.67 T
+(high-level languages.) 108 145.67 T
+(See also the answer to question 6.7.) 108 117.67 T
+FMENDPAGE
+%%EndPage: "20" 21
+%%Page: "21" 21
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(T) 108 736.84 T
+(echnical questions) 112.6 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(21 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+( 6.7 W) 108 710.67 T
+(ill ANDF collapse as mor) 146.23 710.67 T
+(e languages and targets ar) 295.22 710.67 T
+(e consider) 451.2 710.67 T
+(ed) 511.19 710.67 T
+(\050r) 108 693.67 T
+(emember UNCOL\051?) 118.62 693.67 T
+2 F
+(The problem with earlier attempts at a \324universal\325 compiler intermediate) 108 664.67 T
+(languages \050IL\051 were they were de\336ned at the level of the tar) 108 648.67 T
+(get machine) 442.29 648.67 T
+(architectures. If a new architecture needed to be supported that was) 108 632.67 T
+(radically dif) 108 616.67 T
+(ferent from the baseline for the IL, lar) 175.75 616.67 T
+(ge penalties in) 387.65 616.67 T
+(performance were paid in ef) 108 600.67 T
+(fectively doing the binary to binary conversion.) 265.48 600.67 T
+(TDF is not a pseudo-code which represents machine instructions for some) 108 572.67 T
+(abstract stack or register computer) 108 556.67 T
+(. Its de\336nition is an abstraction of) 299.96 556.67 T
+(programming languages not computer architectures. It is a tree-structured) 108 540.67 T
+(intermediate language containing abstractions for common programming) 108 524.67 T
+(language concepts such a data structures, procedures, numbers,) 108 508.67 T
+(conditionals, loops, labels, jumps etc. The intention in TDF is to retain all) 108 492.67 T
+(the information in the programming language being compiled to TDF which) 108 476.67 T
+(can then be used by code optimizers in the installers. In this way it is) 108 460.67 T
+(equally applicable to any new architecture as to any existing ones. If you) 108 444.67 T
+(can ef) 108 428.67 T
+(\336ciently compile C to an architecture then you can implement a TDF) 141.54 428.67 T
+(installer with equal ef) 108 412.67 T
+(\336ciency) 229.38 412.67 T
+(.) 272.77 412.67 T
+(TDF constructs have been carefully designed so as to be able to) 108 384.67 T
+(accommodate the particular variants found in dif) 108 368.67 T
+(ferent programming) 380.54 368.67 T
+(languages. However) 108 352.67 T
+(, TDF cannot guarantee coverage of new programming) 221.67 352.67 T
+(languages as it can for new architectures. New languages might contain) 108 336.67 T
+(novel features that are not ef) 108 320.67 T
+(\336ciently implementable using existing features) 267.44 320.67 T
+(of TDF) 108 304.67 T
+(.) 148.47 304.67 T
+(DRA have undertaken extensive research to try to ensure that TDF is an) 108 276.67 T
+(ef) 108 260.67 T
+(\336cient tar) 118.62 260.67 T
+(get for the conventional compilation of many of today\325) 171.61 260.67 T
+(s most) 478.63 260.67 T
+(common languages - C++, Cobol, Fortran, Ada, Lisp, Pascal etc. and) 108 244.67 T
+(several new producers are now being written. It is likely that the) 108 228.67 T
+(implementation of producers for programming languages other than C will) 108 212.67 T
+(expose new features that would enhance the ef) 108 196.67 T
+(\336ciency of the run-time code) 368.47 196.67 T
+(for these new languages - it is likely that such extensions can be added in an) 108 180.67 T
+(upwards compatible manner) 108 164.67 T
+(, but this cannot be guaranteed.) 265.99 164.67 T
+(At the current time the only compiler front-end for TDF is for C \050ANSI and) 108 136.67 T
+(other dialects\051. Implementing the C front-end for TDF exposed a number of) 108 120.67 T
+(issues that related to the production of architecture-neutral ANDF) 108 104.67 T
+(. There are) 475.27 104.67 T
+FMENDPAGE
+%%EndPage: "21" 22
+%%Page: "22" 22
+612 792 0 FMBEGINPAGE
+108 45 414 61.12 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Questions and Answers) 108 54.45 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(T) 108 736.84 T
+(echnical questions) 112.6 736.84 T
+432 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(22 of 23) 506.69 54.45 T
+108 756 540 756 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+108 81 540 81 2 L
+7 X
+V
+0 X
+N
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(parts of the semantic de\336nition of C, such as the precise de\336nition of some) 108 710.67 T
+(integer promotions, which depend on the tar) 108 694.67 T
+(get. In addition, ANSI C was) 355.3 694.67 T
+(extended with the \322#pragma token\323 facility to allow software developers) 108 678.67 T
+(access to TDF\325) 108 662.67 T
+(s features for describing portability interfaces. These issues) 191.94 662.67 T
+(have been satisfactorily resolved for C, but a similar exercise would have to) 108 646.67 T
+(undertaken for other languages if they are intended for use in producing) 108 630.67 T
+(shrink-wrapped applications.) 108 614.67 T
+0 F
+( 6.8 W) 108 562.67 T
+(ill operating systems be compiled using ANDF?) 146.23 562.67 T
+2 F
+(TDF is a highly portable, highly optimized compiler technology and is) 108 533.67 T
+(therefore very well suited to compiling or bootstrapping operating systems.) 108 517.67 T
+(As TDF need not represent purely architecture neutral information, it is) 108 501.67 T
+(possible for the operating system vendor to use TDF as a \324normal\325 compiler) 108 485.67 T
+(and therefore avoid the need to shrink-wrap the operating system. It may) 108 469.67 T
+(take a while before operating system suppliers have enough con\336dence in) 108 453.67 T
+(the TDF technology to throw out their existing bootstrap compilers - until) 108 437.67 T
+(then TDF will exist alongside existing native compilers.) 108 421.67 T
+0 F
+( 6.9 Is TDF suitable for parallel computers?) 108 369.67 T
+2 F
+(It depends what programming language is being used to program the) 108 340.67 T
+(parallel computer) 108 324.67 T
+(. If a conventional programming language is being used) 205.54 324.67 T
+(\050such a C or Fortran\051 then TDF preserves enough information to allow a) 108 308.67 T
+(paralysing installer to generate as ef) 108 292.67 T
+(\336cient code as that produced by a) 309.42 292.67 T
+(compiler direct from the language to the parallel computer) 108 276.67 T
+(. TDF does not) 434.43 276.67 T
+(contain any explicit parallel constructs so a parallel language \050such as high-) 108 260.67 T
+(performance Fortran\051 would need to compile to TDF that has been extended) 108 244.67 T
+(with tokens that represent the parallel constructs in the parallel language. If) 108 228.67 T
+(a de-facto standard emer) 108 212.67 T
+(ges in parallel programming languages then it) 245.67 212.67 T
+(should be possible to de\336ne a standard extension to TDF to represent a) 108 196.67 T
+(standard model of parallel processing.) 108 180.67 T
+(There is an active research program at DRA, OSF and within Esprit that is) 108 152.67 T
+(studying this topic.) 108 136.67 T
+FMENDPAGE
+%%EndPage: "22" 23
+%%Page: "23" 23
+612 792 0 FMBEGINPAGE
+108 753.98 540 756 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 72 540 74.02 2 L
+7 X
+V
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Questions \050and Answers\051) 108 56.33 T
+(page) 486.7 56.33 T
+3 ( 23) 506.69 56.33 S
+(of) 528.18 56.33 T
+3 ( 23) 536.51 56.33 S
+351 46.88 540 63 R
+7 X
+V
+0 X
+(23 of 23) 506.69 56.33 T
+108 90 540 720 R
+7 X
+V
+0 12 Q
+0 X
+(For further information please contact:) 216 648 T
+(Dr) 216 616 T
+(. Nic Peeling) 228.88 616 T
+(internet: peeling%hermes.mod.uk@r) 216 602 T
+(elay) 407.82 602 T
+(.mod.uk) 427.82 602 T
+(janet: peeling@uk.mod.hermes) 216 588 T
+(fax: +44 684 894303) 216 574 T
+FMENDPAGE
+%%EndPage: "23" 24
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 23 1
+%%DocumentFonts: Times-Bold
+%%+ Symbol
+%%+ Times-Roman
+%%+ Times-BoldItalic
+%%+ Times-Italic
+%%+ Helvetica

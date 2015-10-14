@@ -1,0 +1,2329 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 15 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+5 0 /Courier-Oblique FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(29 Jun 93 - 22:52 ferriere@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(\251 1993 OSF) 360 56.33 T
+(1 of 10) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (ANC: ANDF Notation Compiler) 179.93 695 S
+0 12 Q
+(Fran\215ois de Ferri\217r) 271.49 601 T
+(e) 371.19 601 T
+(Open Softwar) 254.47 569 T
+(e Foundation) 325.88 569 T
+(Resear) 277.31 553 T
+(ch Institute) 312.39 553 T
+(June 1993) 298.18 521 T
+0 14 Q
+(This paper pr) 180 431.67 T
+(esents a tool which allows the) 262.16 431.67 T
+(pr) 180 415.67 T
+(oduction of any ANDF capsule according to) 193.74 415.67 T
+(the ANDF speci\336cation and encoding.) 180 399.67 T
+108 339.98 540 343 C
+90 341.49 558 341.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 348.33 T
+2 14 Q
+(The ANDF Notation Compiler \050ANC\051 is a tool which translates an ASCII) 108 316.64 T
+(source \336le of ANDF language into an ANDF capsule) 108 300.64 T
+2 11 Q
+(1) 405.67 306.24 T
+2 14 Q
+(. ANC was written in) 411.17 300.64 T
+(support of the the ANDF V) 108 284.64 T
+(alidation Suite \050A) 259.96 284.64 T
+(VS\051 [OSF-A) 357.65 284.64 T
+(VS-93] being) 426.97 284.64 T
+(developed at the OSF Research Institute in Grenoble. A) 108 268.64 T
+(VS is a collection of) 418.25 268.64 T
+(handcrafted test-cases, written in ANDF) 108 252.64 T
+(. Their purpose is to check installer) 332.65 252.64 T
+(conformance to ANDF speci\336cations.) 108 236.64 T
+(DRA already provides and maintains a tool similar to ANC, named TNC.) 108 208.64 T
+-0.06 (This tool is delivered with DRA) 108 192.64 P
+-0.06 (\325) 286.08 192.64 P
+-0.06 (s code drop. TNC could be used to write the) 289.98 192.64 P
+(A) 108 176.64 T
+(VS test cases, but there are some drawbacks:) 116.3 176.64 T
+108 129 540 149.09 C
+108 136.99 239.98 136.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.6 (1.  ANDF is an architecture- and language- neutral distribution format being developed by OSF and) 108 121.67 P
+-0.51 (other collaborators around the world. It is based on the TDF technology provided by the Defence) 118.8 109.67 P
+(Research Agency \050DRA\051 of the UK Ministry of Defense.) 118.8 97.67 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Objectives) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(\245) 118.8 701.67 T
+(W) 129.6 701.67 T
+(e do not have any control on the ANDF capsules produced. If TNC) 141.69 701.67 T
+-1.05 (produces capsules according to unspeci\336ed rules or particular pro\336les, this) 129.6 685.67 P
+(will not be detected.) 129.6 669.67 T
+(\245) 118.8 645.67 T
+(TNC performs many checks to ensure both) 129.6 645.67 T
+3 F
+(sort) 374.03 645.67 T
+2 F
+( and) 395.8 645.67 T
+3 F
+(shape) 423.01 645.67 T
+2 F
+( correctness.) 455.65 645.67 T
+(This prevents generation of most of the error test cases.) 129.6 629.67 T
+(\245) 118.8 605.67 T
+-0.3 (TNC provides all the constructs which de\336ne) 129.6 605.67 P
+3 F
+-0.3 (data) 384.39 605.67 P
+2 F
+-0.3 ( and) 409.27 605.67 P
+3 F
+-0.3 (code) 435.88 605.67 P
+2 F
+-0.3 (, but does not) 462.29 605.67 P
+-0.45 (give access to the building of a capsule. The A) 129.6 589.67 P
+-0.45 (VS test cases need to check) 384.92 589.67 P
+(the whole ANDF speci\336cation.) 129.6 573.67 T
+(For these reasons, an additional tool is needed to produce the ANDF) 108 545.67 T
+(capsules.) 108 529.67 T
+108 469.98 540 473 C
+90 471.49 558 471.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. Objectives) 108 478.33 T
+2 14 Q
+(ANC needs to meet several objectives to allow the production of the A) 108 446.64 T
+(VS) 502.58 446.64 T
+(tests cases.) 108 430.64 T
+0 F
+(Accept the whole ANDF speci\336cation) 108 378.64 T
+2 F
+(It must be possible to write any ANDF code which is allowed by the ANDF) 108 349.64 T
+(speci\336cation [ANDF-SPEC-92]. The generation of ANDF constructs and) 108 333.64 T
+-0.3 (encoding must be unrestricted. The ANDF speci\336cation allows some parts of) 108 317.64 P
+-0.28 (the ANDF to be extended, for future extensions or for private standards. This) 108 301.64 P
+(must be allowed.) 108 285.64 T
+0 F
+(Allow incorr) 108 233.64 T
+(ect ANDF code) 183.53 233.64 T
+2 F
+-0.08 (The A) 108 204.64 P
+-0.08 (VS will contain error test cases for many constructs. They will be used) 141.48 204.64 P
+(to check that incorrect ANDF is detected and handled as described in the) 108 188.64 T
+-0.01 (ANDF speci\336cation. So it must be possible to write incorrect ANDF code as) 108 172.64 P
+(well as malformed ANDF capsules. However) 108 156.64 T
+(,) 362.35 156.64 T
+3 F
+(sort) 369.35 156.64 T
+2 F
+( correctness cannot be) 391.12 156.64 T
+(checked since there is no information in the encoding to verify it. So it is of) 108 140.64 T
+-0.56 (no use to generate ANDF with incorrect) 108 124.64 P
+3 F
+-0.56 (sort) 332.22 124.64 P
+2 F
+-0.56 (, and this is not allowed by ANC.) 353.99 124.64 P
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Using ANC.) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+-0.08 (T) 108 701.67 P
+-0.08 (okens are de\336ned with the) 115.57 701.67 P
+3 F
+-0.08 (sort) 265.58 701.67 P
+2 F
+-0.08 ( of their parameters and result. As errors due) 287.35 701.67 P
+(to misused of tokens can be detected, this is allowed.) 108 685.67 T
+0 F
+(Pr) 108 633.67 T
+(ovide facilities to write large amounts of ANDF code.) 122.51 633.67 T
+2 F
+-0.37 (When there is no need to control the building of the ANDF capsule, this must) 108 604.67 P
+(be done automatically as this is a very repetitive and lengthy task. Another) 108 588.67 T
+(facility is to allow some ANDF constructs to be left out. There are many) 108 572.67 T
+(places in ANDF where the same construct for a) 108 556.67 T
+3 F
+(sort) 377.28 556.67 T
+2 F
+( is almost always used.) 399.05 556.67 T
+-0.19 (For these cases, a construct can be de\336ned as a default one for a) 108 540.67 P
+3 F
+-0.19 (sort) 466.32 540.67 P
+2 F
+-0.19 ( and will) 488.1 540.67 P
+(be used implicitly each time it is expected but not present.) 108 524.67 T
+108 464.98 540 468 C
+90 466.49 558 466.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. Using ANC.) 108 473.33 T
+0 14 Q
+(Syntax) 108 417.64 T
+2 F
+(The syntax to call anc is:) 108 388.64 T
+4 12 Q
+(anc [options ...] [input_file [output_file]]) 122.4 367.98 T
+2 14 Q
+(Options are the following:) 126 341.64 T
+4 12 Q
+(-f) 135 313.64 T
+5 F
+(f) 156.59 313.64 T
+(ile) 163.78 313.64 T
+2 14 Q
+(Names the \336le which contains the ANDF syntax and encoding. If) 158.4 297.64 T
+(this option is not present, a default \336le is used.) 158.4 281.64 T
+4 12 Q
+(-I) 135 253.64 T
+5 F
+(directory) 149.39 253.64 T
+2 14 Q
+(Searches) 158.4 237.64 T
+5 12 Q
+(directory) 211.63 237.64 T
+2 14 Q
+(for include \336les. This option can be repeated) 283.59 237.64 T
+(to add more directories.) 158.4 221.64 T
+4 12 Q
+(-tld2) 135 193.64 T
+2 14 Q
+(Produces a TLD2 unit. This unit is used by the ANDF Linker to) 158.4 177.64 T
+(resolve unde\336ned) 158.4 161.64 T
+3 F
+(tags) 260.99 161.64 T
+2 F
+( and) 284.32 161.64 T
+3 F
+(tokens) 311.52 161.64 T
+2 F
+(.) 347.27 161.64 T
+4 12 Q
+(-no_tokdec) 135 133.64 T
+2 14 Q
+(Suppresses the production of the T) 158.4 117.64 T
+(OKDEC unit when) 352.85 117.64 T
+3 F
+(tokens) 463.61 117.64 T
+2 F
+( are) 499.36 117.64 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Using ANC.) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(declared. This unit is not required by any tool, but T) 158.4 701.67 T
+(OKDECs are) 450.41 701.67 T
+(useful for ANDF source code writing facilities.) 158.4 685.67 T
+4 12 Q
+(-no_check) 135 657.67 T
+2 14 Q
+(Disables writing facilities.) 158.4 641.67 T
+(Input and output \336les:) 126 613.67 T
+4 12 Q
+(input_f) 135 585.67 T
+(ile) 185.37 585.67 T
+2 14 Q
+-0.22 (This is the ANDF source \336le. STDIN will be used if) 158.4 569.67 P
+4 12 Q
+-0.45 (input_f) 452.15 569.67 P
+-0.45 (ile) 502.52 569.67 P
+2 14 Q
+-0.22 ( is) 524.11 569.67 P
+(omitted or if \324-\325 is used,) 158.4 553.67 T
+4 12 Q
+(output_f) 135 525.67 T
+(ile) 192.57 525.67 T
+2 14 Q
+(This is the ANDF capsule \336le. If this \336le is omitted, STDOUT will) 158.4 509.67 T
+(be used.) 158.4 493.67 T
+0 F
+(ANDF language syntax) 108 441.67 T
+2 F
+(The ANDF language is speci\336ed as a set of) 108 412.67 T
+3 F
+(sorts) 353.98 412.67 T
+2 F
+(, for which a list of) 381.2 412.67 T
+-0.17 (constructs is de\336ned. Constructs may take) 108 396.67 P
+3 F
+-0.17 (sorts) 345.97 396.67 P
+2 F
+-0.17 ( as their parameters. Thus, an) 373.18 396.67 P
+(ANDF source \336le consists of constructs, named as in the ANDF) 108 380.67 T
+(speci\336cation, followed by their ar) 108 364.67 T
+(guments, exactly as the constructs are) 296.23 364.67 T
+(de\336ned.) 108 348.67 T
+(Brackets must be used to enclose the elements of a list.) 108 320.67 T
+(A \324-\325 character is used to indicate the absence of an optional ar) 108 292.67 T
+(gument.) 458.23 292.67 T
+3 F
+0 (T) 108 264.67 P
+0 (ags) 114.49 264.67 P
+2 F
+0 (,) 133.93 264.67 P
+3 F
+0 (tokens) 140.92 264.67 P
+2 F
+0 (,) 176.67 264.67 P
+3 F
+0 (al_tags) 183.66 264.67 P
+2 F
+0 ( and) 224.87 264.67 P
+3 F
+0 (labels) 252.06 264.67 P
+2 F
+0 ( are positive integers in the ANDF encoding.) 285.49 264.67 P
+(ANC allows the use of either integers or identi\336ers to identify them. When) 108 248.67 T
+(identi\336ers are used, the internal value is computed automatically) 108 232.67 T
+(, unless the) 468.12 232.67 T
+4 12 Q
+(-) 108 216.67 T
+(no_check) 115.2 216.67 T
+2 14 Q
+( option is used. In this case, the value must be given explicitly) 172.76 216.67 T
+(.) 519.31 216.67 T
+(A number consists of any sequence of digits, which can be preceded by a \324-\325) 108 188.67 T
+-0.44 (sign. An octal number will be pre\336xed by a \324) 108 172.67 P
+4 F
+-1.05 (0) 355.1 172.67 P
+2 F
+-0.44 (\325, while a hexadecimal one will) 363.49 172.67 P
+(be pre\336xed by \324) 108 156.67 T
+4 F
+(0x) 196.21 156.67 T
+2 F
+(\325 or \324) 213 156.67 T
+4 F
+(0X) 240.97 156.67 T
+2 F
+(\325.) 257.76 156.67 T
+(An identi\336er consists of any sequence of letters, digits, \324_\325 and \324~\325, not) 108 128.67 T
+(beginning with a digit and containing at least one letter) 108 112.67 T
+(.) 415.42 112.67 T
+(The following syntax is used to explicitly assign an internal value to an) 108 96.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Using ANC.) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(identi\336er:) 108 701.67 T
+4 12 Q
+(identif) 153 685.67 T
+(ier:value) 203.37 685.67 T
+2 14 Q
+(ANDF strings consist of a sequence of characters enclosed in \323, and the) 108 657.67 T
+(following escape sequences can be used:) 108 641.67 T
+4 12 Q
+(\134n) 153 625.67 T
+2 14 Q
+( represents a newline) 167.39 625.67 T
+4 12 Q
+(\134t) 153 609.67 T
+2 14 Q
+( represents a tabulation) 167.39 609.67 T
+4 12 Q
+-0.08 (\134xxx) 153 593.67 P
+2 14 Q
+-0.04 ( represents the character with the ASCII code xxx given in octal) 181.78 593.67 P
+4 12 Q
+(\134\323) 153 577.67 T
+2 14 Q
+( represents the) 167.39 577.67 T
+4 12 Q
+(\323) 251.71 577.67 T
+2 14 Q
+( character) 258.91 577.67 T
+(.) 312.9 577.67 T
+(Comments may be inserted anywhere in the source \336le. A comment begins) 108 549.67 T
+(with a \324) 108 533.67 T
+4 F
+(#) 150.75 533.67 T
+2 F
+(\325 character and runs to the end of the line.) 159.14 533.67 T
+-0.15 (Include \336les can be used. Each include command must be written on a single) 108 505.67 P
+(line with the following syntax:) 108 489.67 T
+4 12 Q
+(include \323f) 153 473.67 T
+(ile\323) 224.96 473.67 T
+2 14 Q
+(This can be enclosed in parentheses.) 108 457.67 T
+0 F
+(ANC facilities for writing ANDF) 108 405.67 T
+2 F
+(In many case, we need not write the complete ANDF code to express the) 108 376.67 T
+(right encoding. ANC provides many facilities to reduce the amount of) 108 360.67 T
+(writing.) 108 344.67 T
+(\245) 118.8 320.67 T
+-0.22 (Many constructs can be omitted. This is allowed for constructs which are) 129.6 320.67 P
+(unique for a) 129.6 304.67 T
+3 F
+(sort) 200.71 304.67 T
+2 F
+(, or for constructs which are usually used for a) 222.48 304.67 T
+3 F
+(sort) 485.55 304.67 T
+2 F
+(.) 507.32 304.67 T
+4 12 Q
+-2.3 (make_link) 129.6 288.67 P
+2 14 Q
+-1.12 (,) 194.36 288.67 P
+4 12 Q
+-2.3 (make_linkextern) 200.24 288.67 P
+2 14 Q
+-1.12 ( and) 308.18 288.67 P
+4 12 Q
+-2.3 (make_unique) 333.15 288.67 P
+2 14 Q
+-1.12 ( are the only constructs) 412.3 288.67 P
+(of their) 129.6 272.67 T
+3 F
+(sort) 173.9 272.67 T
+2 F
+(, so they can be omitted.) 195.67 272.67 T
+4 12 Q
+(make_al_tag) 129.6 256.67 T
+2 14 Q
+(,) 208.76 256.67 T
+4 12 Q
+(make_label) 215.75 256.67 T
+2 14 Q
+(,) 287.71 256.67 T
+4 12 Q
+(make_tag) 294.71 256.67 T
+2 14 Q
+(,) 352.28 256.67 T
+4 12 Q
+(make_tok) 359.27 256.67 T
+2 14 Q
+(,) 416.84 256.67 T
+4 12 Q
+(make_nat) 423.84 256.67 T
+2 14 Q
+(,) 481.41 256.67 T
+4 12 Q
+(make_signed_nat) 129.6 240.67 T
+2 14 Q
+( are usually used for their) 237.54 240.67 T
+3 F
+(sort) 383.65 240.67 T
+2 F
+(, so they are marked as) 405.42 240.67 T
+(default construct for their) 129.6 224.67 T
+3 F
+(sort) 275.71 224.67 T
+2 F
+(.) 297.48 224.67 T
+(When a) 129.6 208.67 T
+3 F
+(token) 176.22 208.67 T
+2 F
+( has been declared or de\336ned, and is referenced with an) 206.53 208.67 T
+(identi\336er) 129.6 192.67 T
+(, the) 179.57 192.67 T
+4 12 Q
+(..._apply_token) 207.16 192.67 T
+2 14 Q
+( constructs can be omitted as there is) 315.1 192.67 T
+(enough information to decide which construct must be used.) 129.6 176.67 T
+(\245) 118.8 152.67 T
+-1.05 (The building of a capsule can be automatically done if needed. In that case,) 129.6 152.67 P
+4 12 Q
+(make_capsule) 129.6 136.67 T
+2 14 Q
+( is not used, but replaced by constructs for the) 215.95 136.67 T
+3 F
+(sorts) 476.71 136.67 T
+2 F
+-0.94 (AL_T) 129.6 120.67 P
+-0.94 (AGDEF) 162.68 120.67 P
+-0.94 (, T) 208.2 120.67 P
+-0.94 (AGDEC, T) 221.68 120.67 P
+-0.94 (AGDEF) 283.35 120.67 P
+-0.94 (, T) 328.87 120.67 P
+-0.94 (OKDEC and T) 343.22 120.67 P
+-0.94 (OKDEF) 425.02 120.67 P
+-0.94 (. The syntax) 470.54 120.67 P
+(is exactly the same as that described in the ANDF speci\336cation, except) 129.6 104.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Using ANC.) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+-0.36 (that a construct for the EXTERNAL) 129.6 701.67 P
+3 F
+-0.36 (sort) 334.18 701.67 P
+2 F
+-0.36 ( may be added. The syntax is the) 355.95 701.67 P
+(following:) 129.6 685.67 T
+4 12 Q
+(\050 make_tokdec my_tok ... \051) 129.6 669.67 T
+(\050 make_tokdec \050 string_extern \323ext_name\323 \051 my_tok ...\051) 129.6 653.67 T
+2 14 Q
+-0.97 (If an EXTERNAL construct is used, an external link will be created so that) 129.6 637.67 P
+(the) 129.6 621.67 T
+3 F
+(tag) 150.2 621.67 T
+2 F
+(,) 168.08 621.67 T
+3 F
+(token) 175.07 621.67 T
+2 F
+( or) 205.38 621.67 T
+3 F
+(al_tag) 224.03 621.67 T
+2 F
+( will be visible outside of the capsule.) 259.8 621.67 T
+(\245) 118.8 597.67 T
+(Building a capsule requires the speci\336cation of the number of linkable) 129.6 597.67 T
+-0.88 (entities of each kind for the capsule and the units, and the number of) 129.6 581.67 P
+3 F
+-0.88 (labels) 503.95 581.67 P
+2 F
+(used in PROPS. ANC will automatically compute this number if a \324*\325 is) 129.6 565.67 T
+(used instead of a numeric value.) 129.6 549.67 T
+0 F
+(Syntax and encoding \336le description) 108 497.67 T
+2 F
+(This \336le contains the ANDF syntax and encoding, plus some information to) 108 468.67 T
+(provide some facilities for writing ANDF) 108 452.67 T
+(. It can be semi-automatically) 339.67 452.67 T
+(generated from a database provided with DRA) 108 436.67 T
+(\325) 367.57 436.67 T
+(s code drop.) 371.46 436.67 T
+(In this \336le ANDF) 108 408.67 T
+3 F
+(sorts) 209.84 408.67 T
+2 F
+( are described, with their associated constructs.) 237.05 408.67 T
+(A) 108 380.67 T
+3 F
+(sort) 121.6 380.67 T
+2 F
+( is de\336ned according to the following syntax:) 143.37 380.67 T
+4 12 Q
+(:<Sort_name>:<encoding_bits>:<Flags>) 153 364.67 T
+(<Sort_name>) 108 336.67 T
+2 14 Q
+( is the name of a) 187.16 336.67 T
+3 F
+(sort) 282.75 336.67 T
+2 F
+(.) 304.52 336.67 T
+4 12 Q
+-0.28 (<encoding_bits>) 108 320.67 P
+2 14 Q
+-0.13 ( is an integer value stating the number of encoding bits of) 215.94 320.67 P
+-0.45 (the) 108 304.67 P
+3 F
+-0.45 (sort) 128.15 304.67 P
+2 F
+-0.45 (. If) 149.92 304.67 P
+4 12 Q
+-0.92 (<encoding_bits>) 168.84 304.67 P
+2 14 Q
+-0.45 ( is zero, this means that the) 276.78 304.67 P
+3 F
+-0.45 (sort) 429.09 304.67 P
+2 F
+-0.45 ( will not appear) 450.86 304.67 P
+(in the ANDF encoding.) 108 288.67 T
+4 12 Q
+(<Flags>) 108 272.67 T
+2 14 Q
+( is used for additional information. Currently) 158.37 272.67 T
+(, only one \337ag is) 408.92 272.67 T
+-0.34 (de\336ned which indicates if the) 108 256.67 P
+3 F
+-0.34 (sort) 274.56 256.67 P
+2 F
+-0.34 ( can be extended or not \050See TDF encoding) 296.33 256.67 P
+([DRA-ENC-92]\051. A \325) 108 240.67 T
+4 12 Q
+(E) 228.07 240.67 T
+2 14 Q
+(\325 character means that the) 235.26 240.67 T
+3 F
+(sort) 382.52 240.67 T
+2 F
+( can be extended,) 404.29 240.67 T
+(another character means that the) 108 224.67 T
+3 F
+(sort) 292.56 224.67 T
+2 F
+( cannot be extended.) 314.33 224.67 T
+-0.13 (Constructs for a) 108 196.67 P
+3 F
+-0.13 (sort) 200.48 196.67 P
+2 F
+-0.13 ( are listed following its de\336nition. A construct is de\336ned) 222.25 196.67 P
+(according to the following syntax:) 108 180.67 T
+4 12 Q
+(<Construct_name>:<f) 108 164.67 T
+(lags><encoding> [<args>...]) 244.73 164.67 T
+(<Construct_name>) 108 136.67 T
+2 14 Q
+( is the name of a construct.) 223.14 136.67 T
+4 12 Q
+(<f) 108 120.67 T
+(lags>) 122.39 120.67 T
+2 14 Q
+( is used for additional information. Currently) 158.37 120.67 T
+(, only one \337ag is) 408.92 120.67 T
+-0.54 (de\336ned which indicates if the construct is a default one or not. A \325) 108 104.67 P
+4 12 Q
+-1.11 (*) 470.96 104.67 P
+2 14 Q
+-0.54 (\325 character) 478.15 104.67 P
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Using ANC.) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(means that this construct will be used when a construct for this) 108 701.67 T
+3 F
+(sort) 463.21 701.67 T
+2 F
+( is) 484.98 701.67 T
+(expected but is not present in the source \336le. At most one default construct) 108 685.67 T
+(per) 108 669.67 T
+3 F
+(sort) 129.37 669.67 T
+2 F
+( can be de\336ned. A \325) 151.14 669.67 T
+4 12 Q
+(@) 260.71 669.67 T
+2 14 Q
+(\325 means that this construct will be used when a) 267.91 669.67 T
+3 F
+(token) 108 653.67 T
+2 F
+( is read instead of a construct for this) 138.31 653.67 T
+3 F
+(sort) 348.54 653.67 T
+2 F
+(. At most one default) 370.31 653.67 T
+3 F
+(token) 491.57 653.67 T
+2 F
+(construct per) 108 637.67 T
+3 F
+(sort) 184.16 637.67 T
+2 F
+( can be de\336ned. The \337ag is omitted if the construct is not a) 205.93 637.67 T
+(default one. When de\336ning default constructs we must be careful to avoid) 108 621.67 T
+(in\336nite loops when they are applied. For example, the \336rst ar) 108 605.67 T
+(gument of a) 448.96 605.67 T
+(default construct must not be of the same) 108 589.67 T
+3 F
+(sort) 341.95 589.67 T
+2 F
+( as the construct itself.) 363.72 589.67 T
+(Constructs for the SOR) 108 573.67 T
+(TNAME) 238.14 573.67 T
+3 F
+(sort) 291.38 573.67 T
+2 F
+( can take a string \325) 313.15 573.67 T
+4 12 Q
+(\050<Sort_name>\051) 416.12 573.67 T
+2 14 Q
+(\325) 509.67 573.67 T
+(before the) 108 557.67 T
+4 12 Q
+(<f) 167.83 557.67 T
+(lags>) 182.22 557.67 T
+2 14 Q
+(. This is used to de\336ne which) 218.2 557.67 T
+3 F
+(sort) 385.33 557.67 T
+2 F
+( the construct refers to.) 407.1 557.67 T
+(If it is absent, the uppercase string of the construct is used. \325\050\051\325 is used to) 108 541.67 T
+(indicate that the construct doesn\325) 108 525.67 T
+(t refer to any) 292.73 525.67 T
+3 F
+(sort) 368.1 525.67 T
+2 F
+(.) 389.88 525.67 T
+4 12 Q
+(<args>) 108 497.67 T
+2 14 Q
+( describes the syntax for the construct ar) 151.18 497.67 T
+(guments. They are de\336ned) 376.69 497.67 T
+(using keywords, a set of special) 108 481.67 T
+3 F
+(sorts) 289.48 481.67 T
+2 F
+( and usual ANDF) 316.7 481.67 T
+3 F
+(sorts) 418.52 481.67 T
+2 F
+(. In the) 445.73 481.67 T
+(following, the notation) 108 465.67 T
+4 12 Q
+(<args>) 239.37 465.67 T
+2 14 Q
+( is used to express a possibly empty set of) 282.55 465.67 T
+(ar) 108 449.67 T
+(guments.) 118.62 449.67 T
+(Keywords are listed below:) 108 421.67 T
+2 13 Q
+(\245) 122.4 398.33 T
+4 12 Q
+(OPTION { <args> }) 136.8 398.33 T
+2 13 Q
+(An ANDF OPTION is used to encode) 172.8 383.33 T
+4 12 Q
+(<args>) 373.68 383.33 T
+2 13 Q
+(.) 416.86 383.33 T
+(\245) 122.4 360.33 T
+4 12 Q
+(LIST { <args> }) 136.8 360.33 T
+2 13 Q
+(The encoding will be a list of) 172.8 345.33 T
+4 12 Q
+(<args>) 328.25 345.33 T
+2 13 Q
+(. The syntax) 371.42 345.33 T
+4 12 Q
+(\050) 438.5 345.33 T
+(<args>) 452.9 345.33 T
+(\051) 503.27 345.33 T
+2 13 Q
+( can) 510.46 345.33 T
+(also be used.) 172.8 330.33 T
+(\245) 122.4 307.33 T
+4 12 Q
+(ARRAY { <args> }) 136.8 307.33 T
+2 13 Q
+( A set of) 172.8 292.33 T
+4 12 Q
+(<arg>) 220.4 292.33 T
+2 13 Q
+( is expected.) 256.38 292.33 T
+(\245) 122.4 269.33 T
+4 12 Q
+(BYTESTREAM { <args> }) 136.8 269.33 T
+(<args>) 172.8 254.33 T
+2 13 Q
+( will be encoded in a BYTESTREAM.) 215.98 254.33 T
+(\245) 122.4 231.33 T
+4 12 Q
+(BITSTREAM { <args> }) 136.8 231.33 T
+(<args>) 172.8 216.33 T
+2 13 Q
+( will be encoded in a BITSTREAM.) 215.98 216.33 T
+(\245) 122.4 193.33 T
+4 12 Q
+(BYTE_ALIGN { <args> }) 136.8 193.33 T
+(<args>) 172.8 178.33 T
+2 13 Q
+( will be byte aligned.) 215.98 178.33 T
+(\245) 122.4 155.33 T
+4 12 Q
+(RESOLVE { <args> }) 136.8 155.33 T
+2 13 Q
+(The semantics may be used to modify) 172.8 140.33 T
+4 12 Q
+(<args>) 372.97 140.33 T
+2 13 Q
+( according to the) 416.14 140.33 T
+(context.) 172.8 125.33 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Using ANC.) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(Special) 108 701.67 T
+3 F
+(sorts) 152.69 701.67 T
+2 F
+( are listed below:) 179.91 701.67 T
+2 13 Q
+(\245) 122.4 678.33 T
+4 12 Q
+(AUTO_PROP) 136.8 678.33 T
+2 13 Q
+(This) 172.8 663.33 T
+3 F
+(sort) 199.13 663.33 T
+2 F
+( is used to accept the right constructs when) 219.34 663.33 T
+4 12 Q
+(make_capsule) 445.46 663.33 T
+2 13 Q
+(is not used.) 172.8 648.33 T
+(\245) 122.4 625.33 T
+4 12 Q
+(TDFALL) 136.8 625.33 T
+2 13 Q
+(Any) 172.8 610.33 T
+3 F
+(sort) 198.41 610.33 T
+2 F
+( is expected here. Although this is never true in ANDF) 218.61 610.33 T
+(, it can) 501.4 610.33 T
+(be used when semantics does not provide enough information to) 172.8 595.33 T
+(check the) 172.8 580.33 T
+3 F
+(sort) 225.44 580.33 T
+2 F
+(.) 245.65 580.33 T
+(\245) 122.4 557.33 T
+4 12 Q
+(TDFSINT) 140.05 557.33 T
+2 13 Q
+(A signed integer value is expected and will be encoded as a) 172.8 542.33 T
+(TDFBOOL for the sign and a TDFINT for the unsigned value.) 172.8 527.33 T
+(\245) 122.4 504.33 T
+4 12 Q
+(TDFINT) 136.8 504.33 T
+2 13 Q
+(An integer value is expected and will be encoded as a TDFINT) 172.8 489.33 T
+(.) 499.64 489.33 T
+(\245) 122.4 466.33 T
+4 12 Q
+(TDFBOOL) 136.8 466.33 T
+2 13 Q
+(An integer value is expected and will be encoded as a TDFBOOL.) 172.8 451.33 T
+(\245) 122.4 428.33 T
+4 12 Q
+(TDFIDENT) 136.8 428.33 T
+2 13 Q
+(An identi\336er is expected and will be encoded as a TDFIDENT) 172.8 413.33 T
+(.) 496.4 413.33 T
+(\245) 122.4 390.33 T
+4 12 Q
+(TDFSTRING) 136.8 390.33 T
+2 13 Q
+(A string is expected and will be encoded as a TDFSTRING.) 172.8 375.33 T
+(\245) 122.4 352.33 T
+4 12 Q
+(TOKEN) 136.8 352.33 T
+2 13 Q
+(This) 172.8 337.33 T
+3 F
+(sort) 199.13 337.33 T
+2 F
+( needs to be de\336ned because of some special cases for) 219.34 337.33 T
+3 F
+(tokens) 503.13 337.33 T
+2 F
+(.) 536.31 337.33 T
+(\245) 122.4 314.33 T
+4 12 Q
+(SORTNAME) 136.8 314.33 T
+2 13 Q
+(This) 172.8 299.33 T
+3 F
+(sort) 199.13 299.33 T
+2 F
+( needs to be de\336ned for the right de\336nition of) 219.34 299.33 T
+3 F
+(tokens) 458.1 299.33 T
+2 F
+(.) 491.28 299.33 T
+(\245) 122.4 276.33 T
+4 12 Q
+(EXTERNAL) 136.8 276.33 T
+2 13 Q
+(This) 172.8 261.33 T
+3 F
+(sort) 199.13 261.33 T
+2 F
+( needs to be de\336ned for the de\336nition of external links.) 219.34 261.33 T
+2 14 Q
+-0.2 (Other) 108 233.67 P
+3 F
+-0.2 (sorts) 143.16 233.67 P
+2 F
+-0.2 ( can be used to indicate the) 170.37 233.67 P
+3 F
+-0.2 (sort) 324.02 233.67 P
+2 F
+-0.2 ( of an ar) 345.79 233.67 P
+-0.2 (gument. Non special) 391.17 233.67 P
+3 F
+-0.2 (sorts) 509.49 233.67 P
+2 F
+(need to be de\336ned in the \336le, but not necessarily before being referenced.) 108 217.67 T
+(A) 108 189.67 T
+3 F
+(sort) 121.6 189.67 T
+2 F
+( must de\336ne the) 143.37 189.67 T
+4 12 Q
+(__main__) 235.88 189.67 T
+2 14 Q
+( construct which is the entry point in the) 293.44 189.67 T
+(grammar) 108 173.67 T
+(. The) 157.74 173.67 T
+4 12 Q
+(__make_auto__) 189.99 173.67 T
+2 14 Q
+( construct is used instead of) 283.54 173.67 T
+4 12 Q
+(make_capsule) 442.1 173.67 T
+2 14 Q
+(when we want the capsule to be automatically built. The grammar cannot be) 108 157.67 T
+(modi\336ed without modifying the semantics part of ANC, unless the) 108 141.67 T
+4 12 Q
+(-) 108 125.67 T
+(no_check) 115.2 125.67 T
+2 14 Q
+( option is used.) 172.76 125.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 10) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. Conclusion) 108 700.33 T
+2 14 Q
+(ANC is still a prototype and needs to be improved to support the whole) 108 668.64 T
+(ANDF speci\336cation and to satisfy all our requirements. But it is already) 108 652.64 T
+(suf) 108 636.64 T
+(\336cient to write most of the A) 124.85 636.64 T
+(VS test cases and it will be used instead of) 284.72 636.64 T
+(TNC.) 108 620.64 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANC: ANDF Notation Compiler) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 10) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. Bibliography) 108 700.33 T
+2 14 Q
+([DRA-SPEC-92]) 108 668.64 T
+(The TDF speci\336cation - Issue 2.0 Revision 1 - December) 216 668.64 T
+(1992.) 216 652.64 T
+2 10 Q
+(The Defence Research Agency) 216 627.31 T
+(, St. Andrews Road, Malvern, W) 339.39 627.31 T
+(orcestershire,) 469.89 627.31 T
+(WR14 3PS, United Kingdom.) 216 615.31 T
+2 14 Q
+([DRA-ENC-92]) 108 588.64 T
+(TDF Bit Encoding - Issue 2.0 Revision 1 - December) 216 588.64 T
+(1992.) 216 572.64 T
+2 10 Q
+(The Defence Research Agency) 216 547.31 T
+(, St. Andrews Road, Malvern, W) 339.39 547.31 T
+(orcestershire,) 469.89 547.31 T
+(WR14 3PS, United Kingdom.) 216 535.31 T
+2 14 Q
+([OSF-A) 108 508.64 T
+(VS-93]) 151.28 508.64 T
+(ANDF V) 216 508.64 T
+(alidation Suites Speci\336cations - V1.0 - March) 266.13 508.64 T
+(25, 1993.) 216 492.64 T
+108 90 540 711 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 711 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "10" 11
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 10 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Courier-Oblique

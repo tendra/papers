@@ -1,0 +1,2714 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 14 FMDOCUMENT
+0 0 /Times-BoldItalic FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Courier FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+495 45 540 63 R
+7 X
+V
+90 747 540 747 2 L
+V
+3 H
+0 Z
+0 X
+N
+90 45 450 63 R
+7 X
+V
+90 90 540 675 R
+V
+0 18 Q
+0 X
+-0.9 (A Conformance Comparison between ANDF and GCC for) 120.39 663 S
+(X/Open V) 129.32 637 T
+(eri\336cation of an OSF/1 MK SS Platform) 200.79 637 T
+1 14 Q
+(Thomas J. W) 257.92 579.67 T
+(att Jr) 336.84 579.67 T
+(.) 368.58 579.67 T
+2 12 Q
+(March 1993) 285.86 551 T
+2 14 Q
+(Open Software Foundation) 243 512.67 T
+(Research Institute) 270 496.67 T
+(1 Cambridge Center) 261 480.67 T
+(Cambridge, MA 02142) 252 464.67 T
+1 10 Q
+(Abstract) 296.4 432.33 T
+2 12 Q
+(The VSX V) 90 401 T
+(eri\336cation T) 145.96 401 T
+(est Suite for XPG3 was used to conduct a contolled experiment to) 204.08 401 T
+(gauge the XPG3 conformance of the ANDF compiler) 90 387 T
+(.  An OSF/1) 346.14 387 T
+2 11 Q
+(NORMA) 407.12 387 T
+2 10 Q
+(1) 448.01 391.8 T
+2 12 Q
+( Micro-Kernel) 453.01 387 T
+(\050MK\051 Single Server \050SS\051 Release 4.1 platform on an i486 architecture was used to establish) 90 373 T
+(the baseline environment. The native gcc compiler was used as a conformance baseline) 90 359 T
+(against which to compare the maturity of the ANDF compiler) 90 345 T
+(.) 385.47 345 T
+(The ANDF compiler achieved a 94.2% rating of total XPG3 conformance.  W) 90 319 T
+(e are currently) 464.09 319 T
+(analyzing failed, uninitiated, and unresolved tests to understand, report and capture actual) 90 305 T
+(problems that may exist with the ANDF technology) 90 291 T
+(. Several error reports have been \336led) 338.07 291 T
+(from this ef) 90 277 T
+(fort.  Some tests test against a reference implementation or depend on ambiguous) 145.74 277 T
+(parts of the XPG3 standard; others are coded incorrectly against their intended test objective) 90 263 T
+(\321 all cases of which are thus invalid tests against the XPG3 standard and cause for request) 90 249 T
+(for waiver) 90 235 T
+(. This experiment has served to underscore the adage that testing is insuf) 138.96 235 T
+(\336cient to) 486.83 235 T
+(reveal the presence of errors in program code.) 90 221 T
+(This work was sponsored by a cooperative research agreement between the Open Software) 90 195 T
+(Foundation \050OSF\051 and Unix System Laboratories \050USL\051.) 90 181 T
+90 105 540 125.09 C
+90 112.99 221.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(1.  NORMA stands for No Remote Memory Access.) 90 97.67 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 2) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Intr) 90 736.84 T
+(oduction) 103.62 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+90 670.95 540 673.98 C
+72 672.46 540 672.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 16 Q
+0 X
+0 K
+( 1. Introduction) 90 679.31 T
+2 14 Q
+(This paper reports on our experience in the OSF Research Institute with using) 90 651.62 T
+(the ANDF compiler technology to build and execute the X/Open V) 90 635.62 T
+(eri\336cation) 464.63 635.62 T
+(Suite, VSX.) 90 619.62 T
+(Essentially) 90 591.62 T
+(, we are pursing the goal of increasing the robustness of the ANDF) 150.5 591.62 T
+(compiler technology toward an industrial strength level of quality such that it) 90 575.62 T
+(delivers product quality for applications across a wide variety of heterogenous) 90 559.62 T
+(platforms. T) 90 543.62 T
+(oward that end, we have installed a version of VSX using the) 158.2 543.62 T
+(ANDF compiler technology) 90 527.62 T
+(, and submitted it for execution on one of our) 246.1 527.62 T
+(project\325) 90 511.62 T
+(s platforms. VSX is one of a number of test suites in our robustness) 132.75 511.62 T
+(project plan.) 90 495.62 T
+(In subsequent sections we explain what VSX tests; summarize and compare the) 90 467.62 T
+(ANDF test results in table form with gcc for an OSF/1 MK SS R4.1 platform;) 90 451.62 T
+(review the current status of the failure analysis which gives a preliminary) 90 435.62 T
+(explanation of the delta between the conformance of gcc versus ANDF) 90 419.62 T
+(, and) 486.78 419.62 T
+(render tentative conclusions.) 90 403.62 T
+90 343.93 540 346.95 C
+72 345.44 540 345.44 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 16 Q
+0 X
+0 K
+( 2. Software Information.) 90 352.29 T
+1 10 Q
+(Softwar) 459.97 299.26 T
+(e Category) 493.65 299.26 T
+2 14 Q
+(VSX is the X/Open V) 90 271.59 T
+(eri\336cation Suite used for testing against conformance) 211.26 271.59 T
+(with the X/Open standard.) 90 255.59 T
+(VSX from X/Open Ltd. tests all of the interfaces and de\336nitions documented in) 90 227.59 T
+(the XPG.3 volume 2, 1989.  VSX includes tests for ANSI C, POSIX.1 and) 90 211.59 T
+(XPG.3 interfaces and de\336nitions which covers all header \336le, macro support) 90 195.59 T
+(and function calls in each standard. [Note: XPG.4 is the version used for) 90 179.59 T
+(OSF/1.2].) 90 163.59 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 3) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Softwar) 90 736.84 T
+(e Information.) 116.94 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+1 10 Q
+0 X
+(V) 428.49 683.31 T
+(ersion and Release Level) 434.79 683.31 T
+2 14 Q
+(VSX V) 90 655.64 T
+(ersion 3.205 was used.  It veri\336es conformance against the XPG3) 130.03 655.64 T
+(standard.) 90 639.64 T
+1 10 Q
+(ANDF T) 391.66 590.31 T
+(echnology V) 427.66 590.31 T
+(ersion Release) 479.21 590.31 T
+2 14 Q
+(Release TDF-93-01-27 of the ANDF T) 90 556.64 T
+(echnology was used.  It is based on the) 307.8 556.64 T
+(TDF Speci\336cation Issue 2.0 Revision 1 dated December 1992.) 90 540.64 T
+1 10 Q
+(GCC Compiler V) 386.57 491.31 T
+(ersion and Release) 460.6 491.31 T
+2 14 Q
+(Gcc 1.37.1 OSF Release 1.2.4.2 \050OSF internal release\051 was the native platform) 90 457.64 T
+(compiler) 90 441.64 T
+(.) 138.97 441.64 T
+1 10 Q
+(OS Platform Envir) 426.91 392.31 T
+(onment) 507.8 392.31 T
+2 14 Q
+(OSF/1) 90 358.64 T
+2 11 Q
+(NORMA) 130.05 358.64 T
+2 14 Q
+( Micro-Kernel 13.16 Single Server Release 4.1 was used as the) 170.94 358.64 T
+(native platform for this experiment.) 90 342.64 T
+1 10 Q
+(VSX Authors and sour) 433.85 293.31 T
+(ce) 531.12 293.31 T
+2 14 Q
+(The authors of VSX are Unisoft Ltd, Hayne St, London EC1.) 90 259.64 T
+(VSX 3.205 tests represent  228,675 lines of C source code which is) 90 231.64 T
+(copyrighted \050C\051 1989 X/Open Company Limited.) 90 215.64 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 4) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Summary of T) 90 736.84 T
+(est Results and Native Compiler Comparison.) 139.01 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+90 670.95 540 673.98 C
+72 672.46 540 672.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 16 Q
+0 X
+0 K
+( 3. Summary of T) 90 679.31 T
+(est Results and Native Compiler Comparison.) 203.59 679.31 T
+2 14 Q
+(The following tables report summary results for the ANDF and gcc compilers.) 90 651.62 T
+(Each column of data reports a particular category of result.  The meaning of) 90 635.62 T
+(these categories are given below in order to interpret the results.) 90 619.62 T
+1 F
+(Succeeded) 90 591.62 T
+2 F
+( means that the test executed correctly and to completion without) 152.18 591.62 T
+(any kind of problem. The implementation conforms with the de\336nitions in the) 90 575.62 T
+(XPG3 standard.) 90 559.62 T
+1 F
+(Failed) 90 531.62 T
+2 F
+(tests imply that some condition necessary for test success was not) 130.82 531.62 T
+(satis\336ed for some reason.  In order to understand the reason for failure, it is) 90 515.62 T
+(necessary to understand the test strategy and identify the conditions which led) 90 499.62 T
+(to the failure.) 90 483.62 T
+1 F
+(W) 90 455.62 T
+(arnings) 103.22 455.62 T
+2 F
+(happen when the system behaves in a way which is dif) 151.82 455.62 T
+(ferent from) 457.79 455.62 T
+(the functionality described explicitly in the XPG. Whenever a warning is) 90 439.62 T
+(given, the functionality is acceptable, but later issues of VSX may change the) 90 423.62 T
+(requirements in this area.) 90 407.62 T
+1 F
+(FIP) 90 379.62 T
+2 F
+(is information which cannot be easily checked by the system and is given) 116.04 379.62 T
+(for you to validate manually) 90 363.62 T
+(. For example, the result of the uname test is non-) 247.65 363.62 T
+(negative and needs visual veri\336cation.) 90 347.62 T
+1 F
+(Unr) 90 319.62 T
+(esolved) 113.84 319.62 T
+2 F
+(means that the test started but did not reach the point where the) 160.87 319.62 T
+(test was able to report a result.) 90 303.62 T
+1 F
+(Uninitiated) 267.59 303.62 T
+2 F
+( means that the particular test in) 335.23 303.62 T
+(question did not start to execute.  When a test is reported as uninitiated or) 90 287.62 T
+(unresolved, the reason why the test was not performed may be because of) 90 271.62 T
+(incorrect test parameters, preceding failures or external events) 90 255.62 T
+1 F
+(.) 438.14 255.62 T
+(Unsupported) 90 227.62 T
+2 F
+(means that an optional feature within XPG3 is not available or) 172.02 227.62 T
+(supported in the implementation under test.) 90 211.62 T
+(The) 90 183.62 T
+1 F
+(Untested) 115.26 183.62 T
+2 F
+( category is reported because there is no test written to check a) 168.1 183.62 T
+(particular feature.  For example, it is not possible to check that session IDs are) 90 167.62 T
+(inherited accross a fork\050\051 when job control is not available.) 90 151.62 T
+(The) 90 129.62 T
+1 F
+(NotInUse) 115.26 129.62 T
+2 F
+( category pertains to a number of tests which are reserved for) 171.99 129.62 T
+(future use. These are not failures and require no further work.) 90 113.62 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 5) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Summary of T) 90 736.84 T
+(est Results and Native Compiler Comparison.) 139.01 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+1 14 Q
+0 X
+(T) 81 680.64 T
+(able 1: VSX3.205 on OSF/1 MK R4.1 \050i486\051 with ANDF 93-01-27:) 89.05 680.64 T
+2 12 Q
+(T) 0 -270 193.45 610.6 TF
+(otal tests) 0 -270 193.45 617.09 TF
+(Succeeded) 0 -270 231.19 609.35 TF
+(Failed) 0 -270 268.93 620.01 TF
+(W) 0 -270 306.68 612.16 TF
+(arnings) 0 -270 306.68 622.52 TF
+(FIP) 0 -270 344.42 626.33 TF
+(Unresolved) 0 -270 382.16 607.35 TF
+(Uninitiated) 0 -270 419.9 608.01 TF
+(Unsupported) 0 -270 457.64 604.02 TF
+(Untested) 0 -270 495.39 613.68 TF
+(Not in Use) 0 -270 533.13 609.01 TF
+(ANSI.hdr) 85 588.02 T
+(336) 187.33 588.02 T
+(314) 225.07 588.02 T
+(12) 268.81 588.02 T
+(2) 350.29 588.02 T
+(8) 463.52 588.02 T
+(ANSI.os F) 85 570.02 T
+(1521) 181.34 570.02 T
+(1479) 219.08 570.02 T
+(16) 268.81 570.02 T
+(1) 312.55 570.02 T
+(2) 388.04 570.02 T
+(3) 463.52 570.02 T
+(20) 533.01 570.02 T
+(ANSI.os M) 85 552.02 T
+(56) 193.33 552.02 T
+(56) 231.07 552.02 T
+(POSIX.hdr) 85 534.02 T
+(332) 187.33 534.02 T
+(312) 225.07 534.02 T
+(13) 268.81 534.02 T
+(7) 463.52 534.02 T
+(POSIX.os F) 85 516.02 T
+(1388) 181.34 516.02 T
+(1264) 219.08 516.02 T
+(12) 268.81 516.02 T
+(4) 312.55 516.02 T
+(3) 350.29 516.02 T
+(11) 382.04 516.02 T
+(1) 425.78 516.02 T
+(54) 457.52 516.02 T
+(5) 501.26 516.02 T
+(34) 533.01 516.02 T
+(POSIX.os M) 85 498.02 T
+(2) 199.33 498.02 T
+(2) 237.07 498.02 T
+(XOPEN.cmd) 85 480.02 T
+(16) 193.33 480.02 T
+(16) 419.78 480.02 T
+(XOPEN.hdr) 85 462.02 T
+(60) 193.33 462.02 T
+(44) 231.07 462.02 T
+(15) 268.81 462.02 T
+(4) 350.29 462.02 T
+(1) 463.52 462.02 T
+(XOPEN.os) 85 444.02 T
+(219) 187.33 444.02 T
+(162) 225.07 444.02 T
+(10) 268.81 444.02 T
+(1) 312.55 444.02 T
+(46) 419.78 444.02 T
+(lang.C) 85 426.02 T
+(1292) 181.34 426.02 T
+(1285) 219.08 426.02 T
+(4) 274.81 426.02 T
+(3) 312.55 426.02 T
+(T) 85 408.02 T
+(OT) 92.11 408.02 T
+(AL) 107.14 408.02 T
+(5222) 181.34 408.02 T
+(4918) 219.08 408.02 T
+(82) 268.81 408.02 T
+(9) 312.55 408.02 T
+(5) 350.29 408.02 T
+(13) 382.04 408.02 T
+(63) 419.78 408.02 T
+(72) 457.52 408.02 T
+(5) 501.26 408.02 T
+(54) 533.01 408.02 T
+1 14 Q
+(T) 81 380.68 T
+(able 2: VSX3.205 on OSF/1 MK R4.1 \050i486\051 with gcc 1.37.1:) 89.05 380.68 T
+2 12 Q
+(T) 0 -270 193.45 310.64 TF
+(otal tests) 0 -270 193.45 317.13 TF
+(Succeeded) 0 -270 231.19 309.4 TF
+(Failed) 0 -270 268.93 320.05 TF
+(W) 0 -270 306.68 312.2 TF
+(arnings) 0 -270 306.68 322.57 TF
+(FIP) 0 -270 344.42 326.37 TF
+(Unresolved) 0 -270 382.16 307.39 TF
+(Uninitiated) 0 -270 419.9 308.05 TF
+(Unsupported) 0 -270 457.64 304.06 TF
+(Untested) 0 -270 495.39 313.72 TF
+(Not in Use) 0 -270 533.13 309.05 TF
+(ANSI.hdr) 85 288.06 T
+(336) 187.33 288.06 T
+(185) 225.07 288.06 T
+(6) 350.29 288.06 T
+(145) 451.53 288.06 T
+(0) 539 288.06 T
+(ANSI.os F) 85 270.06 T
+(1521) 181.34 270.06 T
+(1472) 219.08 270.06 T
+(9) 274.81 270.06 T
+(1) 312.55 270.06 T
+(16) 382.04 270.06 T
+(3) 463.52 270.06 T
+(20) 533.01 270.06 T
+(ANSI.os M) 85 252.06 T
+(56) 193.33 252.06 T
+(56) 231.07 252.06 T
+(POSIX.hdr) 85 234.06 T
+(332) 187.33 234.06 T
+(224) 225.07 234.06 T
+(2) 274.81 234.06 T
+(5) 350.29 234.06 T
+(101) 451.53 234.06 T
+(POSIX.os F) 85 216.06 T
+(1388) 181.34 216.06 T
+(1266) 219.08 216.06 T
+(11) 268.81 216.06 T
+(4) 312.55 216.06 T
+(3) 350.29 216.06 T
+(29) 382.04 216.06 T
+(36) 457.52 216.06 T
+(5) 501.26 216.06 T
+(34) 533.01 216.06 T
+(POSIX.os M) 85 198.06 T
+(2) 199.33 198.06 T
+(2) 237.07 198.06 T
+(XOPEN.cmd) 85 180.06 T
+(16) 193.33 180.06 T
+(16) 231.07 180.06 T
+(XOPEN.hdr) 85 162.06 T
+(60) 193.33 162.06 T
+(42) 231.07 162.06 T
+(1) 350.29 162.06 T
+(17) 457.52 162.06 T
+(XOPEN.os) 85 144.06 T
+(219) 187.33 144.06 T
+(216) 225.07 144.06 T
+(2) 274.81 144.06 T
+(1) 312.55 144.06 T
+(lang.C) 85 126.06 T
+(1292) 181.34 126.06 T
+(1279) 219.08 126.06 T
+(3) 312.55 126.06 T
+(10) 344.3 126.06 T
+(T) 85 108.06 T
+(OT) 92.11 108.06 T
+(AL) 107.14 108.06 T
+(5222) 181.34 108.06 T
+(4758) 219.08 108.06 T
+(24) 268.81 108.06 T
+(9) 312.55 108.06 T
+(25) 344.3 108.06 T
+(45) 382.04 108.06 T
+(0) 425.78 108.06 T
+(302) 451.53 108.06 T
+(5) 501.26 108.06 T
+(54) 533.01 108.06 T
+171.58 599.77 171.58 402.27 2 L
+V
+0.5 H
+N
+209.32 600.27 209.32 401.77 2 L
+V
+2 H
+N
+247.06 600.27 247.06 401.77 2 L
+V
+0.5 H
+N
+284.81 600.27 284.81 401.77 2 L
+V
+N
+322.55 600.27 322.55 401.77 2 L
+V
+N
+360.29 600.27 360.29 401.77 2 L
+V
+N
+398.03 600.27 398.03 401.77 2 L
+V
+N
+435.77 600.27 435.77 401.77 2 L
+V
+N
+473.52 600.27 473.52 401.77 2 L
+V
+N
+511.26 600.27 511.26 401.77 2 L
+V
+N
+549 599.77 549 402.27 2 L
+V
+N
+171.33 600.02 549.25 600.02 2 L
+V
+N
+171.33 582.02 549.25 582.02 2 L
+V
+N
+171.33 564.02 549.25 564.02 2 L
+V
+N
+171.33 546.02 549.25 546.02 2 L
+V
+N
+171.33 528.02 549.25 528.02 2 L
+V
+N
+171.33 510.02 549.25 510.02 2 L
+V
+N
+171.33 492.02 549.25 492.02 2 L
+V
+N
+171.33 474.02 549.25 474.02 2 L
+V
+N
+171.33 456.02 549.25 456.02 2 L
+V
+N
+171.33 438.02 549.25 438.02 2 L
+V
+N
+171.33 420.02 549.25 420.02 2 L
+V
+3 H
+N
+171.33 402.02 549.25 402.02 2 L
+V
+0.5 H
+N
+171.58 299.81 171.58 102.31 2 L
+V
+N
+209.32 300.31 209.32 101.81 2 L
+V
+2 H
+N
+247.06 300.31 247.06 101.81 2 L
+V
+0.5 H
+N
+284.81 300.31 284.81 101.81 2 L
+V
+N
+322.55 300.31 322.55 101.81 2 L
+V
+N
+360.29 300.31 360.29 101.81 2 L
+V
+N
+398.03 300.31 398.03 101.81 2 L
+V
+N
+435.77 300.31 435.77 101.81 2 L
+V
+N
+473.52 300.31 473.52 101.81 2 L
+V
+N
+511.26 300.31 511.26 101.81 2 L
+V
+N
+549 299.81 549 102.31 2 L
+V
+N
+171.33 300.06 549.25 300.06 2 L
+V
+N
+171.33 282.06 549.25 282.06 2 L
+V
+N
+171.33 264.06 549.25 264.06 2 L
+V
+N
+171.33 246.06 549.25 246.06 2 L
+V
+N
+171.33 228.06 549.25 228.06 2 L
+V
+N
+171.33 210.06 549.25 210.06 2 L
+V
+N
+171.33 192.06 549.25 192.06 2 L
+V
+N
+171.33 174.06 549.25 174.06 2 L
+V
+N
+171.33 156.06 549.25 156.06 2 L
+V
+N
+171.33 138.06 549.25 138.06 2 L
+V
+N
+171.33 120.06 549.25 120.06 2 L
+V
+3 H
+N
+171.33 102.06 549.25 102.06 2 L
+V
+0.5 H
+N
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 6) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(A Side by Side Comparison of ANDF vs gcc.) 90 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+90 670.95 540 673.98 C
+72 672.46 540 672.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 16 Q
+0 X
+0 K
+( 4. A Side by Side Comparison of ANDF vs gcc.) 90 679.31 T
+2 14 Q
+(The raw data in the previous summary tables can best be viewed in a side by) 90 647.62 T
+(side presentation given below) 90 631.62 T
+(.  The data for each cell is [ANDF  gcc] with) 255.81 631.62 T
+(blank spaces substituted for \3220\323 data :) 90 615.62 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 7) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(A Side by Side Comparison of ANDF vs gcc.) 90 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+1 12 Q
+0 X
+(T) 88.75 681.98 T
+(able 3: A Side by Side Comparison of ANDF) 95.65 681.98 T
+0 F
+( vs) 322.86 681.98 T
+1 F
+(. gcc) 335.85 681.98 T
+(T) 205.01 657.98 T
+(otal) 211.91 657.98 T
+(Succeeded) 250.57 657.98 T
+(Failed) 336.66 657.98 T
+(Uninitiated) 399.1 657.98 T
+(Unsupported) 469.88 657.98 T
+2 10.5 Q
+(ANDF) 244.07 636.23 T
+(gcc) 288.79 636.23 T
+(ANDF) 319.51 636.23 T
+(gcc) 364.23 636.23 T
+(ANDF) 394.94 636.23 T
+(gcc) 439.67 636.23 T
+(ANDF) 470.38 636.23 T
+(gcc) 515.1 636.23 T
+1 12 Q
+(Header Tests) 92.75 613.98 T
+2 F
+(ANSI.hdr) 92.75 593.98 T
+(336) 217.51 593.98 T
+(314) 255.23 593.98 T
+(185) 292.94 593.98 T
+(12) 336.66 593.98 T
+(8) 493.53 593.98 T
+(145) 519.26 593.98 T
+(POSIX.hdr) 92.75 575.98 T
+(332) 217.51 575.98 T
+(312) 255.23 575.98 T
+(224) 292.94 575.98 T
+(13) 336.66 575.98 T
+(2) 380.38 575.98 T
+(7) 493.53 575.98 T
+(101) 519.26 575.98 T
+(XOPEN.hdr) 92.75 557.98 T
+(60) 223.5 557.98 T
+(44) 261.22 557.98 T
+(42) 298.94 557.98 T
+(15) 336.66 557.98 T
+(1) 493.53 557.98 T
+(17) 525.26 557.98 T
+(Subtotal) 92.75 539.98 T
+(728) 217.51 539.98 T
+(670) 255.23 539.98 T
+(451) 292.94 539.98 T
+(40) 336.66 539.98 T
+(2) 380.38 539.98 T
+(16) 487.54 539.98 T
+(263) 519.26 539.98 T
+1 F
+(Function Tests) 92.75 521.98 T
+2 F
+(ANSI.os) 92.75 503.98 T
+(1521) 211.51 503.98 T
+(1479) 249.23 503.98 T
+(1472) 286.95 503.98 T
+(16) 336.66 503.98 T
+(9) 380.38 503.98 T
+(3) 493.53 503.98 T
+(3) 531.25 503.98 T
+(POSIX.os) 92.75 485.98 T
+(1388) 211.51 485.98 T
+(1264) 249.23 485.98 T
+(1266) 286.95 485.98 T
+(12) 336.66 485.98 T
+(11) 374.38 485.98 T
+(1) 418.09 485.98 T
+(54) 487.54 485.98 T
+(36) 525.26 485.98 T
+(XOPEN.os) 92.75 467.98 T
+(219) 217.51 467.98 T
+(162) 255.23 467.98 T
+(216) 292.94 467.98 T
+(10) 336.66 467.98 T
+(2) 380.38 467.98 T
+(46) 412.1 467.98 T
+(Subtotal) 92.75 449.98 T
+(3128) 211.51 449.98 T
+(2905) 249.23 449.98 T
+(2954) 286.95 449.98 T
+(38) 336.66 449.98 T
+(22) 374.38 449.98 T
+(47) 412.1 449.98 T
+(57) 487.54 449.98 T
+(39) 525.26 449.98 T
+1 F
+(Macr) 92.75 431.98 T
+(o T) 120.5 431.98 T
+(ests) 136.4 431.98 T
+2 F
+(ANSI.os M) 92.75 413.98 T
+(56) 223.5 413.98 T
+(56) 261.22 413.98 T
+(56) 298.94 413.98 T
+(POSIX.os M) 92.75 395.98 T
+(2) 229.5 395.98 T
+(2) 267.22 395.98 T
+(2) 304.94 395.98 T
+(Subtotal) 92.75 377.98 T
+(58) 223.5 377.98 T
+(58) 261.22 377.98 T
+(58) 298.94 377.98 T
+1 F
+(Other T) 92.75 359.98 T
+(ests) 133.29 359.98 T
+2 F
+(XOPEN.cmd) 92.75 341.98 T
+(16) 223.5 341.98 T
+(16) 298.94 341.98 T
+(16) 412.1 341.98 T
+(lang.C) 92.75 305.98 T
+(1292) 211.51 305.98 T
+(1285) 249.23 305.98 T
+(1279) 286.95 305.98 T
+(4) 342.66 305.98 T
+1 F
+(FIP) 267.55 269.98 T
+(Unresolved) 323.67 269.98 T
+(Header T) 92.75 251.98 T
+(ests) 140.62 251.98 T
+2 10.5 Q
+(ANDF) 244.07 250.98 T
+(gcc) 288.79 250.98 T
+(ANDF) 319.51 250.98 T
+(gcc) 364.23 250.98 T
+2 12 Q
+(ANSI.hdr) 92.75 231.48 T
+(2) 267.22 231.48 T
+(6) 304.94 231.48 T
+(POSIX.hdr) 92.75 213.48 T
+(5) 304.94 213.48 T
+(XOPEN.hdr) 92.75 195.48 T
+(4) 267.22 195.48 T
+(1) 304.94 195.48 T
+1 F
+(Function T) 92.75 159.48 T
+(ests) 148.63 159.48 T
+2 F
+(ANSI.os) 92.75 141.48 T
+(2) 342.66 141.48 T
+(16) 374.38 141.48 T
+(POSIX.os) 92.75 123.48 T
+(3) 267.22 123.48 T
+(3) 304.94 123.48 T
+(11) 336.66 123.48 T
+(29) 374.38 123.48 T
+196.75 605.73 196.75 534.23 2 L
+V
+0.5 H
+N
+196.75 515.73 196.75 444.23 2 L
+V
+N
+196.75 425.73 196.75 372.23 2 L
+V
+N
+196.75 353.73 196.75 336.23 2 L
+V
+N
+196.75 317.73 196.75 300.23 2 L
+V
+N
+239.5 606.23 239.5 533.73 2 L
+V
+2 H
+N
+239.5 516.23 239.5 443.73 2 L
+V
+N
+239.5 426.23 239.5 371.73 2 L
+V
+N
+239.5 354.23 239.5 335.73 2 L
+V
+N
+239.5 318.23 239.5 299.73 2 L
+V
+N
+239.5 243.23 239.5 189.73 2 L
+V
+0.5 H
+N
+239.5 153.23 239.5 117.73 2 L
+V
+N
+277.21 426.23 277.21 407.73 2 L
+V
+N
+314.93 606.23 314.93 533.73 2 L
+V
+N
+314.93 516.23 314.93 443.73 2 L
+V
+N
+314.93 426.23 314.93 371.73 2 L
+V
+N
+314.93 354.23 314.93 335.73 2 L
+V
+N
+314.93 318.23 314.93 299.73 2 L
+V
+N
+314.93 243.73 314.93 189.23 2 L
+V
+N
+314.93 153.73 314.93 117.23 2 L
+V
+N
+390.37 606.23 390.37 533.73 2 L
+V
+N
+390.37 516.23 390.37 443.73 2 L
+V
+N
+390.37 426.23 390.37 371.73 2 L
+V
+N
+390.37 354.23 390.37 335.73 2 L
+V
+N
+390.37 318.23 390.37 299.73 2 L
+V
+N
+390.37 243.23 390.37 189.73 2 L
+V
+N
+390.37 153.23 390.37 117.73 2 L
+V
+N
+465.81 606.23 465.81 533.73 2 L
+V
+N
+465.81 516.23 465.81 443.73 2 L
+V
+N
+465.81 426.23 465.81 371.73 2 L
+V
+N
+465.81 354.23 465.81 335.73 2 L
+V
+N
+465.81 318.23 465.81 299.73 2 L
+V
+N
+541.25 605.73 541.25 534.23 2 L
+V
+N
+541.25 515.73 541.25 444.23 2 L
+V
+N
+541.25 425.73 541.25 372.23 2 L
+V
+N
+541.25 353.73 541.25 336.23 2 L
+V
+N
+541.25 317.73 541.25 300.23 2 L
+V
+N
+196.5 605.98 541.5 605.98 2 L
+V
+N
+196.5 587.98 541.5 587.98 2 L
+V
+N
+196.5 569.98 541.5 569.98 2 L
+V
+N
+196.5 551.98 541.5 551.98 2 L
+V
+2 H
+N
+196.5 533.98 541.5 533.98 2 L
+V
+0.5 H
+N
+196.5 515.98 541.5 515.98 2 L
+V
+N
+196.5 497.98 541.5 497.98 2 L
+V
+N
+196.5 479.98 541.5 479.98 2 L
+V
+N
+196.5 461.98 541.5 461.98 2 L
+V
+2 H
+N
+196.5 443.98 541.5 443.98 2 L
+V
+0.5 H
+N
+196.5 425.98 541.5 425.98 2 L
+V
+N
+196.5 407.98 541.5 407.98 2 L
+V
+N
+196.5 389.98 541.5 389.98 2 L
+V
+2 H
+N
+196.5 371.98 541.5 371.98 2 L
+V
+0.5 H
+N
+196.5 353.98 541.5 353.98 2 L
+V
+N
+196.5 335.98 541.5 335.98 2 L
+V
+N
+196.5 317.98 541.5 317.98 2 L
+V
+N
+196.5 299.98 541.5 299.98 2 L
+V
+N
+239.25 243.48 390.62 243.48 2 L
+V
+N
+239.25 225.48 390.62 225.48 2 L
+V
+N
+239.25 207.48 390.62 207.48 2 L
+V
+N
+239.25 189.48 390.62 189.48 2 L
+V
+N
+239.25 153.48 390.62 153.48 2 L
+V
+N
+239.25 135.48 390.62 135.48 2 L
+V
+N
+239.25 117.48 390.62 117.48 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 8) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Pr) 90 736.84 T
+(eliminary Failur) 98.29 736.84 T
+(e Analysis.) 154.34 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+90 670.95 540 673.98 C
+72 672.46 540 672.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 16 Q
+0 X
+0 K
+( 5. Preliminary Failure Analysis.) 90 679.31 T
+2 14 Q
+(In this section, we will address the reasons for failure and uninitiated results of) 90 651.62 T
+(the ANDF compiler in order to understand the delta between it and gcc.  For) 90 635.62 T
+(this report, we are not interested in tests which fail for both gcc and the ANDF) 90 619.62 T
+(compiler) 90 603.62 T
+(, and point this out where relevant by use of an asterisk \050) 139.18 603.62 T
+1 F
+(*) 455.9 603.62 T
+2 F
+(\051.) 462.89 603.62 T
+1 F
+(5.1) 90 575.62 T
+(ANSI header test failur) 110.99 575.62 T
+(es) 250.25 575.62 T
+2 F
+(occur for one of three reasons:) 265.41 575.62 T
+(1.) 90 547.62 T
+(Seven tests contain source code which declares a local old-style pointer to a) 108 547.62 T
+(function returning an int, e.g.) 90 531.62 T
+3 12 Q
+(int \050*func\051\050\051;) 257.11 531.62 T
+2 14 Q
+(, and attempts to assign the) 357.86 531.62 T
+(address of a prototyped ANSI function of the same return type to the old-style) 90 515.62 T
+(pointer to a function.  The ANDF compiler correctly rejects this code because) 90 499.62 T
+(it does not conform to ANSI C.  If the local pointer to a function were properly) 90 483.62 T
+(prototyped for ANSI C, the ANDF compiler would succeed for these tests.) 90 467.62 T
+(2.) 90 439.62 T
+(Four tests are af) 108 439.62 T
+(fected by a de\336ciency in the current release of the ANDF) 197.51 439.62 T
+(compiler related to name space pollution between macros and ANDF tokens.) 90 423.62 T
+(This problem occurs when a #ifdef) 90 407.62 T
+4 12 Q
+(ANDF-token) 288.96 407.62 T
+2 14 Q
+( is used, e.g #ifdef bsearch.  The) 350.24 407.62 T
+(cause of this problem is improper detection of an) 90 391.62 T
+4 12 Q
+(ANDF-token) 367.86 391.62 T
+2 14 Q
+( as a macro where) 429.15 391.62 T
+(the token is declared as a function abstraction and no macro de\336nition exists) 90 375.62 T
+(for the function.  This de\336ciency caused another problem when #undef errno) 90 359.62 T
+(was used in the VSX source code.  In this case, an \322Undeclared\323 message was) 90 343.62 T
+(generated against errno which is an lvalued) 90 327.62 T
+4 12 Q
+(ANDF-token) 335.97 327.62 T
+2 14 Q
+(.) 397.26 327.62 T
+(3.) 90 299.62 T
+(One test fails due to a generic CISC installer de\336ciency related to testing the) 108 299.62 T
+(values of mathematical constants in XPG3 \050a \337oating point accuracy problem\051.) 90 283.62 T
+1 F
+(5.2) 90 255.62 T
+(POSIX header failur) 110.99 255.62 T
+(es) 235.11 255.62 T
+2 F
+(occur for one of three reasons:) 250.27 255.62 T
+(1.) 90 227.62 T
+(Five are for the same address of function assignment as cited above in 5.1.1.) 108 227.62 T
+(2.) 90 199.62 T
+(Five are due to token variety mismatches between ANDF header \336le) 108 199.62 T
+(constructs and the source code.  The mismatch occurs only because the source) 90 183.62 T
+(code is not properly casting an address of an expression which matches the) 90 167.62 T
+(pointer type of the lvalue assignment tar) 90 151.62 T
+(get.  If the right hand side of the) 315.15 151.62 T
+(expression were properly cast, the ANDF compiler would properly compile) 90 135.62 T
+(and pass these tests.) 90 119.62 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 464.22 56.33 T
+1 12 Q
+3.6 ( 9) 483.09 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Pr) 90 736.84 T
+(eliminary Failur) 98.29 736.84 T
+(e Analysis.) 154.34 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+2 14 Q
+0 X
+(3.) 90 680.64 T
+(One is due to the same macro name space pollution cited above in 5.1.2.) 108 680.64 T
+(4.) 90 652.64 T
+1 F
+(*) 108 652.64 T
+2 F
+(T) 115 652.64 T
+(wo tests also fail with gcc) 122.57 652.64 T
+2 11 Q
+(2) 267.53 658.24 T
+2 14 Q
+(.) 273.02 652.64 T
+1 F
+(5.3) 90 624.64 T
+(XOPEN header failur) 110.99 624.64 T
+(es) 241.33 624.64 T
+2 F
+(occur for one of three reasons:) 256.48 624.64 T
+(1.) 90 596.64 T
+(Seven are related to lack of support for the \322compile\323 token construct in the) 108 596.64 T
+(ANDF header \336le xpg3/regexp.h by the ANDF compiler \050tdfc\051.) 90 580.64 T
+(2.) 90 552.64 T
+(Six are related to the macro name space pollution cited above in 5.1.2.) 108 552.64 T
+(3.) 90 524.64 T
+(T) 108 524.64 T
+(wo are related to the same address of function assignment problem cited) 115.57 524.64 T
+(above in 5.1.1.) 90 508.64 T
+1 F
+(5.4  ANSI Function failur) 90 480.64 T
+(es) 241.73 480.64 T
+2 F
+(occur for one reason:) 256.89 480.64 T
+(1.) 90 452.64 T
+(Fourteen are related to the \337oating point CISC installer problem cited above) 108 452.64 T
+(in 5.1.3.) 90 436.64 T
+(2.) 90 408.64 T
+1 F
+(*) 108 408.64 T
+2 F
+(T) 115 408.64 T
+(wo also fail with gcc.) 122.57 408.64 T
+1 F
+(5.5  *) 90 380.64 T
+2 F
+(Eleven) 121.48 380.64 T
+1 F
+(POSIX Function failur) 163.84 380.64 T
+(es) 300.42 380.64 T
+2 F
+( also fail with gcc.) 312.07 380.64 T
+(One failure has been identi\336ed for retesting, and is under) 90 352.64 T
+(going further analysis.) 408.39 352.64 T
+1 F
+(5.6) 90 324.64 T
+2 F
+(All) 114.49 324.64 T
+1 F
+(XOPEN Function failur) 135.87 324.64 T
+(es) 278.66 324.64 T
+2 F
+( \05010\051 are related to the \337oating point CICS) 290.31 324.64 T
+(installer problem cited above in 5.1.3.) 90 308.64 T
+1 F
+(5.7) 90 280.64 T
+2 F
+(Four) 114.49 280.64 T
+1 F
+(lang.C failur) 144.42 280.64 T
+(es) 220.35 280.64 T
+2 F
+( occured because they all violate some aspect of) 232.01 280.64 T
+(ANSI C) 90 264.64 T
+1 F
+(.) 135.48 264.64 T
+(5.8) 90 242.64 T
+2 F
+(  Sixteen) 107.49 242.64 T
+1 F
+(XOPEN.cmd) 159.96 242.64 T
+2 F
+( tests resulted in an) 238.08 242.64 T
+1 F
+(uninitiated) 348.84 242.64 T
+2 F
+( status due to type) 414.16 242.64 T
+(incompatibilities between the source code and the ANDF header \336le) 90 226.64 T
+(declarations.  The ANDF compiler correctly rejects them as invalid ANSI C.) 90 210.64 T
+1 F
+(5.9) 90 182.64 T
+2 F
+(  Thirty-one) 107.49 182.64 T
+1 F
+(XOPEN Function) 177.83 182.64 T
+2 F
+( tests resulted in an) 283.95 182.64 T
+1 F
+(uninitiated) 394.71 182.64 T
+2 F
+( status due to) 460.03 182.64 T
+(the same reason cited in 5.3.1 above.) 90 166.64 T
+90 102.98 540 123.07 C
+90 110.98 221.98 110.98 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(2.  All tests also failed by gcc are the same tests in all instances cited in this report.) 90 95.65 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 454.62 56.33 T
+1 12 Q
+3.6 ( 10) 473.49 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Pr) 90 736.84 T
+(eliminary Failur) 98.29 736.84 T
+(e Analysis.) 154.34 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+1 14 Q
+0 X
+(5.10) 90 680.64 T
+2 F
+( Fifteen tests resulted in an) 114.49 680.64 T
+1 F
+(uninitiated) 268.39 680.64 T
+2 F
+(status due to the presence of some) 337.2 680.64 T
+(amount of ambiguity with type de\336nitions in the XPG standard regarding) 90 664.64 T
+(nl_catd. [Note: nl_item is similarly af) 90 648.64 T
+(fected by the lack of a precise de\336nition]) 300.4 648.64 T
+(VSX does not claim to be ANSI conformant itself, i.e. implemented in ANSI) 90 620.64 T
+(C, but does claim to test the ANSI interfaces \321 there is a dif) 90 604.64 T
+(ference.  It does) 430.18 604.64 T
+(this with source code that violates ANSI C \321 a condition that causes several of) 90 588.64 T
+(the XOPEN Function tests to result in an uninitiated status manifested during) 90 572.64 T
+(run-time test compilation.) 90 556.64 T
+(All of the tests are locale related and contain source code similar to the) 90 528.64 T
+(following code fragment:) 90 512.64 T
+3 12 Q
+(#include <nl_types.h>) 90 491.98 T
+(nl_catd catval;) 90 477.98 T
+(if\050\050catval = catopen \050...\051\051 == \050nl_catd\051-1\051 {...}) 90 463.98 T
+2 14 Q
+(The ANDF compiler correctly rejects this code fragment for two non-ANSI) 90 437.64 T
+(behaviorisms:) 90 421.64 T
+(\0501\051 the number -1 is being cast to something to which it may not necessarily) 90 393.64 T
+(convert, and) 90 377.64 T
+(\0502\051 the \322==\323 operator is being used between two operands which are not) 90 349.64 T
+(necessarily comparable, e.g. where nl_catd may be de\336ned as a structure on) 90 333.64 T
+(some platforms, ANSI C does not allow structure comparisons \050due to padding) 90 317.64 T
+(holes, etc.\051.) 90 301.64 T
+(The source of the problem appears to be a shortcoming in XPG where nl_catd) 90 273.64 T
+(is de\336ned as an arbitrary general type, and requires) 90 257.64 T
+3 12 Q
+(\050nl_catd\051-1) 379.1 257.64 T
+2 14 Q
+( as the error) 458.25 257.64 T
+(return type for catopen.  In principle, nl_catd could be de\336ned on a platform as) 90 241.64 T
+(a struct or union, and in fact, several of our platforms de\336ne it as) 90 225.64 T
+3 12 Q
+(int) 456.07 225.64 T
+2 14 Q
+( while) 477.65 225.64 T
+(others de\336ne it as) 90 209.64 T
+3 12 Q
+(typedef struct *.) 191.82 209.64 T
+2 14 Q
+(Under ANSI C conversion rules, integers can be converted to arbitrary pointer) 90 181.64 T
+(types, which would allow) 90 165.64 T
+3 12 Q
+(\050nl_catd\051-1) 237.3 165.64 T
+2 14 Q
+(.) 316.45 165.64 T
+(Currently) 90 137.64 T
+(, XPG implies that nl_catd should be de\336ned to be any type to which) 142.72 137.64 T
+(a -1 can be converted, including all arithmetic and pointer types.) 90 121.64 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 454.62 56.33 T
+1 12 Q
+3.6 ( 11) 473.49 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Pr) 90 736.84 T
+(eliminary Conclusions.) 98.29 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+2 14 Q
+0 X
+(W) 90 680.64 T
+(e believe the correct solution is to replace) 102.09 680.64 T
+3 12 Q
+(\050nl_catd\051-1) 338.35 680.64 T
+2 14 Q
+( in the XPG) 417.51 680.64 T
+(speci\336cation and in the VSX source code by a constant,) 90 664.64 T
+3 12 Q
+(nl_catd_error) 405.16 664.64 T
+2 14 Q
+(.) 497.94 664.64 T
+1 F
+(5.1) 90 636.64 T
+(1) 106.72 636.64 T
+2 F
+(  The) 113.72 636.64 T
+1 F
+(Unsupported) 145.97 636.64 T
+2 F
+( ANSI and POSIX Function tests are under) 224.49 636.64 T
+(investigation and are not reported here.) 90 620.64 T
+90 560.95 540 563.98 C
+72 562.46 540 562.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 16 Q
+0 X
+0 K
+( 6. Preliminary Conclusions.) 90 569.31 T
+2 14 Q
+(Despite having 3.4 times as many failures as the gcc compiler) 90 537.62 T
+(, the ANDF) 435.69 537.62 T
+(compiler recorded more successful tests than gcc.  The ANDF compiler) 90 521.62 T
+(provided 94.2% of complete XPG3 conformance for this version of VSX.  As a) 90 505.62 T
+(comparison, this version of the gcc compiler provided 91.1 % under the same) 90 489.62 T
+(environmental conditions in a controlled experiment.) 90 473.62 T
+(It is clear that the ANDF compiler provides more comprehensive API header) 90 445.62 T
+(\336le support for ANSI C, POSIX.1 andf XPG3 than this version of gcc: i.e.) 90 429.62 T
+(ANDF provides 92% of the total support required for complete conformance,) 90 413.62 T
+(while gcc provides only 62%.) 90 397.62 T
+(The ANDF compiler provides the same macro support for ANSI C and POSIX) 90 369.62 T
+(as gcc, where both provide 100% conformance.) 90 353.62 T
+(Since VSX is not implemented in ANSI C, we conjecture that an ANSI C) 90 325.62 T
+(implementation of the VSX suite would allow the ANDF compiler to achieve a) 90 309.62 T
+(higher conformance to XPG3 than the the data reported here indicates for this) 90 293.62 T
+(implementation of VSX..) 90 277.62 T
+(W) 90 249.62 T
+(e noticed that some tests were not accurately coded to test against their) 102.09 249.62 T
+(intended test objective.  For example, there are a number of tests which attempt) 90 233.62 T
+(to test against a macro version of a function, and increment local counter) 90 217.62 T
+(ar) 90 201.62 T
+(guments to determine if the ar) 100.62 201.62 T
+(guments are evaluated only once.  In particular) 268.64 201.62 T
+(,) 530.76 201.62 T
+(where the setjmp and longjmp tests are concerned, these tests should declare) 90 185.62 T
+(the local counters as volatile to determine their test objective accurately) 90 169.62 T
+(.) 490.12 169.62 T
+(There remains a question about the validity of the VSX test suite given the) 90 141.62 T
+(above \336ndings in the area of tests which are either incorrectly encoded or) 90 125.62 T
+(encoded against a reference implementation instead of the XPG3 standard. One) 90 109.62 T
+(can understand the reason for this in the following context: If any area of the) 90 93.62 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+90 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+90 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+90 46.88 540 63 R
+7 X
+V
+2 10 Q
+0 X
+(page) 454.62 56.33 T
+1 12 Q
+3.6 ( 12) 473.49 56.33 S
+2 10 Q
+(of) 505.88 56.33 T
+1 12 Q
+3.6 ( 12) 514.21 56.33 S
+90 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Pr) 90 736.84 T
+(eliminary Conclusions.) 98.29 736.84 T
+90 87.98 540 689.98 R
+7 X
+V
+2 14 Q
+0 X
+(standard is ambiguous, this leaves little room but to test against a reference) 90 680.64 T
+(implementation.  Such is not the intention of a veri\336cation suite, and needs to) 90 664.64 T
+(be addressed in the XPG4 standard as well \321 nl_catd and nl_item are not) 90 648.64 T
+(precisely de\336ned!) 90 632.64 T
+90 87.98 540 689.98 C
+90 87.98 522 213.98 C
+90 87.98 522 204.98 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 90 198.32 T
+(All Rights Reserved) 90 176.32 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 90 152.32 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 90 140.32 P
+-0.08 (ARRRANTY OF ANY) 425.36 140.32 P
+(KIND WITH REGARD T) 90 128.32 T
+(O THIS MA) 195.57 128.32 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 244.99 128.32 T
+(O, THE IMPLIED) 441.05 128.32 T
+-0.04 (W) 90 116.32 P
+-0.04 (ARRANTIES OF MERCHANT) 98.32 116.32 P
+-0.04 (ABILITY AND FITNESS FOR A P) 227.37 116.32 P
+-0.04 (AR) 372 116.32 P
+-0.04 (TICULAR PURPOSE. OSF shall) 385.28 116.32 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 90 104.32 T
+(damages in connection with the furnishing, performance, or use of this material.) 90 92.32 T
+90 87.98 540 689.98 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "12" 13
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 12 1
+%%DocumentFonts: Times-BoldItalic
+%%+ Times-Bold
+%%+ Times-Roman
+%%+ Courier
+%%+ Times-Italic

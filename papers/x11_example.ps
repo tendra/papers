@@ -1,0 +1,5096 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 595.3 841.9 0 1 12 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 1 /Symbol FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier-Bold FMFONTDEFINE
+5 0 /Times-BoldItalic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 .1 FMFILL
+2 .3 FMFILL
+3 .5 FMFILL
+4 .7 FMFILL
+5 .9 FMFILL
+6 .97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 .9 FMFILL
+18 .7 FMFILL
+19 .5 FMFILL
+20 .3 FMFILL
+21 .1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "i" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.9 0 FMBEGINPAGE
+0 40 Q
+0 X
+0 K
+(X1) 246.2 599.23 T
+(1 : An) 292.87 599.23 T
+(Example in API) 123.98 544.23 T
+(Speci\336cation) 179.53 489.23 T
+0 14 Q
+(Issue 1.0   \050September 1993\051) 230.19 401.57 T
+(Author:  Robert Andr) 243.27 285.57 T
+(ews) 375.54 285.57 T
+FMENDPAGE
+%%EndPage: "i" 2
+%%Page: "ii" 2
+595.3 841.9 0 FMBEGINPAGE
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+0 12 Q
+(Notice to Readers) 108 761.9 T
+1 10 Q
+0.32 (TDF is a portability technology and an architecture neutral format for expressing software applications) 108 739.23 P
+-0.82 (which was developed by the United Kingdom's Defence Research Agency \050DRA\051. DRA has demonstrated) 108 727.23 P
+1.99 (that the TDF technology can support ANSI C on MIPS) 108 715.23 P
+2 14 Q
+2.79 (\322) 346.08 715.23 P
+1 10 Q
+1.99 (, Intel 386) 357.14 715.23 P
+2 14 Q
+2.79 (\324) 401.93 715.23 P
+1 10 Q
+1.99 (, V) 414.38 715.23 P
+1.99 (AX) 427.3 715.23 P
+2 14 Q
+2.79 (\324) 441.73 715.23 P
+1 10 Q
+1.99 (, SP) 454.19 715.23 P
+1.99 (ARC) 471.37 715.23 P
+2 14 Q
+2.79 (\324) 491.92 715.23 P
+1 10 Q
+1.99 ( and) 504.37 715.23 P
+(Motorola) 108 703.23 T
+2 14 Q
+(\322) 145.2 703.23 T
+1 10 Q
+( 680x0.) 156.25 703.23 T
+(Requests for information about TDF should be directed to:) 108 681.23 T
+(    Dr) 108 659.23 T
+(. N E Peeling) 127.99 659.23 T
+(    Defence Research Agency) 108 647.23 T
+(    St. Andrews Road) 108 635.23 T
+(    Malvern) 108 623.23 T
+(    W) 108 611.23 T
+(orcestershire) 126.63 611.23 T
+(    United Kingdom WR14 3PS) 108 599.23 T
+(    T) 108 575.23 T
+(el. +44 684 895314) 123.4 575.23 T
+(    Fax +44 684 894303) 108 563.23 T
+(    Internet peeling%hermes.mod.uk) 108 539.23 T
+3 F
+(r) 250.95 539.23 T
+(elay) 254.47 539.23 T
+1 F
+(.mod.uk) 270.47 539.23 T
+0.54 (While every attempt has been made to ensure the accuracy of all the information in this document the) 108 515.23 P
+0 (Defence Research Agency assumes no liability to any party for loss or damage, whether direct, indirect,) 108 503.23 P
+-1.01 (incidental, or consequential, caused by errors or omissions or by statements of any kind in this document, or) 108 491.23 P
+-0.41 (for the use of any product or system described herein. The reader shall bear the sole responsibility for his/) 108 479.23 P
+(her actions taken in reliance on the information in this document.) 108 467.23 T
+-0.19 (This document is for advanced information. It is not necessarily to be regarded as a \336nal or of) 108 445.23 P
+-0.19 (\336cial state-) 479.35 445.23 P
+(ment by the Defence Research Agency) 108 433.23 T
+(.) 263.05 433.23 T
+(March 1993) 108 411.23 T
+(Intel 386 is a registered trademark of Intel Corporation) 108 367.23 T
+(MIPS is a registered trade mark of Mips Computer Systems Inc.) 108 345.23 T
+(V) 108 323.23 T
+(AX is a registered trademark of Digital Equipment Corporation) 113.93 323.23 T
+(SP) 108 301.23 T
+(ARC is a registered trademark of SP) 118.19 301.23 T
+(ARC International, Inc.) 263.29 301.23 T
+(Motorola is a registered trade mark of Motorola Inc.) 108 279.23 T
+2 14 Q
+(\323) 108 213.23 T
+1 10 Q
+( Crown Copyright 1993) 119.05 213.23 T
+FMENDPAGE
+%%EndPage: "ii" 3
+%%Page: "iii" 3
+595.3 841.9 0 FMBEGINPAGE
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0  September 1993) 129.65 799.23 T
+0 12 Q
+(Pr) 72 761.9 T
+(eface) 84.44 761.9 T
+1 10 Q
+(Document details :) 72 739.23 T
+(\245) 79.2 717.23 T
+(T) 86.4 717.23 T
+(itle : X1) 92.16 717.23 T
+(1 : An Example in API Speci\336cation) 124.55 717.23 T
+(\245) 79.2 695.23 T
+(Author : Robert Andrews) 86.4 695.23 T
+(\245) 79.2 673.23 T
+(Document version : Issue 1.0) 86.4 673.23 T
+(\245) 79.2 651.23 T
+(Date : September 1993) 86.4 651.23 T
+-0.2 (This is the \336rst issue of this document. It describes work carried out at DRA by the author) 72 629.23 P
+-0.2 (, David Hutch-) 428.01 629.23 P
+(inson, Sally Rees and John MacCallum.) 72 617.23 T
+FMENDPAGE
+%%EndPage: "iii" 4
+%%Page: "i" 4
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(i) 313.61 43.23 T
+(1) 108 763.23 T
+(APIs and Portability) 126 763.23 T
+(.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 209.88 763.23 T
+(1) 499 763.23 T
+(1.1) 115.2 746.23 T
+(The Role of APIs in TDF) 144 746.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 247.36 746.23 T
+(1) 499 746.23 T
+(1.2) 115.2 729.23 T
+(Describing APIs) 144 729.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 212.38 729.23 T
+(1) 499 729.23 T
+(1.2.1) 122.4 716.23 T
+(The tspec tool) 162 716.23 T
+(.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 219.88 716.23 T
+(2) 499 716.23 T
+(1.2.2) 122.4 703.23 T
+(API Description Guidelines) 162 703.23 T
+(  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 274.85 703.23 T
+(2) 499 703.23 T
+(1.3) 115.2 686.23 T
+(The X11 \050Release 5\051 API) 144 686.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 247.36 686.23 T
+(3) 499 686.23 T
+(2) 108 668.23 T
+(Describing X11 - Preliminaries) 126 668.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 252.36 668.23 T
+(4) 499 668.23 T
+(3) 108 650.23 T
+(Describing Xlib) 126 650.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 192.39 650.23 T
+(5) 499 650.23 T
+(3.1) 115.2 633.23 T
+(Chapter 1 of Xlib) 144 633.23 T
+(  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 214.88 633.23 T
+(5) 499 633.23 T
+(3.2) 115.2 616.23 T
+(Chapter 2 of Xlib) 144 616.23 T
+(  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 214.88 616.23 T
+(6) 499 616.23 T
+(3.3) 115.2 599.23 T
+(Chapter 3 of Xlib) 144 599.23 T
+(  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 214.88 599.23 T
+(8) 499 599.23 T
+(3.3.1) 122.4 586.23 T
+(The Region Type) 162 586.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 232.37 586.23 T
+(9) 499 586.23 T
+(3.3.2) 122.4 573.23 T
+(The XESetFlushGC Function) 162 573.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 282.35 573.23 T
+(9) 499 573.23 T
+(3.3.3) 122.4 560.23 T
+(The X Protocol Types) 162 560.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 252.36 560.23 T
+(9) 499 560.23 T
+(3.3.4) 122.4 547.23 T
+(The X10 Compatibility Functions) 162 547.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 297.34 547.23 T
+(9) 499 547.23 T
+(3.4) 115.2 530.23 T
+(Running tspec on Xlib) 144 530.23 T
+(  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 234.87 530.23 T
+(9) 499 530.23 T
+(3.5) 115.2 513.23 T
+(Building the Xlib TDF library) 144 513.23 T
+(  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 264.85 513.23 T
+(10) 494.01 513.23 T
+(4) 108 495.23 T
+(Describing Xt) 126 495.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 182.4 495.23 T
+(12) 494.01 495.23 T
+(4.1) 115.2 478.23 T
+(Widgets) 144 478.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 177.4 478.23 T
+(12) 494.01 478.23 T
+(4.1.1) 122.4 465.23 T
+(Hiding Data) 162 465.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 212.38 465.23 T
+(12) 494.01 465.23 T
+(4.1.2) 122.4 452.23 T
+(The Widget Hierarchy) 162 452.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 252.36 452.23 T
+(13) 494.01 452.23 T
+(4.1.3) 122.4 439.23 T
+(Conversion Tokens) 162 439.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 242.37 439.23 T
+(13) 494.01 439.23 T
+(4.2) 115.2 422.23 T
+(The XtArgVal Type) 144 422.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 227.38 422.23 T
+(15) 494.01 422.23 T
+(4.3) 115.2 405.23 T
+(Omissions from the Xt Specification) 144 405.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 292.34 405.23 T
+(16) 494.01 405.23 T
+(5) 108 387.23 T
+(Describing Xmu and Xaw) 126 387.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 232.37 387.23 T
+(16) 494.01 387.23 T
+(6) 108 369.23 T
+(X11 Applications) 126 369.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 197.39 369.23 T
+(17) 494.01 369.23 T
+(6.1) 115.2 352.23 T
+(maze) 144 352.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 167.41 352.23 T
+(17) 494.01 352.23 T
+(6.2) 115.2 335.23 T
+(puzzle) 144 335.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 172.4 335.23 T
+(18) 494.01 335.23 T
+(6.3) 115.2 318.23 T
+(x11perf) 144 318.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 177.4 318.23 T
+(18) 494.01 318.23 T
+(6.4) 115.2 301.23 T
+(xgas) 144 301.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 162.41 301.23 T
+(19) 494.01 301.23 T
+(6.5) 115.2 284.23 T
+(xeyes) 144 284.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 167.41 284.23 T
+(19) 494.01 284.23 T
+(7) 108 266.23 T
+(Conclusions) 126 266.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 177.4 266.23 T
+(20) 494.01 266.23 T
+(8) 108 248.23 T
+(References) 126 248.23 T
+(   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 172.4 248.23 T
+(20) 494.01 248.23 T
+(9) 108 230.23 T
+(Figures) 126 230.23 T
+( .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .) 157.41 230.23 T
+(21) 494.01 230.23 T
+FMENDPAGE
+%%EndPage: "i" 5
+%%Page: "ii" 5
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(ii) 276.22 43.23 T
+FMENDPAGE
+%%EndPage: "ii" 6
+%%Page: "1" 6
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 APIs and Portability) 388.9 799.23 T
+(1) 312.5 43.23 T
+108 731.9 523.3 743.9 C
+108 742.9 576 742.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 739.9 576 739.9 2 L
+N
+0 0 595.3 841.9 C
+108 695.9 523.3 707.9 C
+108 706.9 576 706.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 703.9 576 703.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(1) 108 715.9 T
+(APIs and Portability) 135 715.9 T
+108 635.9 523.3 645.9 C
+108 644.9 576 644.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 611.9 523.3 621.9 C
+108 620.9 576 620.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(1.1) 108 626.57 T
+(The Role of APIs in TDF) 144 626.57 T
+1 10 Q
+-0.12 (As was explained in [1], the TDF technology is designed to be an Architecture Neutral Distribution For-) 108 595.23 P
+-0.19 (mat; that is to say) 108 583.23 P
+-0.19 (, a form in which programs can be expressed and which may subsequently be compiled) 177.1 583.23 P
+-0.18 (to any of a number of dif) 108 571.23 P
+-0.18 (ferent tar) 206.65 571.23 P
+-0.18 (get machines. At the simplest level this means that the C) 242.64 571.23 P
+2 F
+-0.18 (\256) 469.38 571.23 P
+1 F
+-0.18 ( TDF com-) 479.24 571.23 P
+0.19 (piler \050or producer\051 cannot make any assumptions about the tar) 108 559.23 P
+0.19 (get machine. It does not know) 357.99 559.23 P
+0.19 (, for exam-) 478.78 559.23 P
+0.34 (ple, the signedness of) 108 547.23 P
+4 F
+0.82 (char) 197.91 547.23 P
+1 F
+0.34 (, the number of bits in an) 221.5 547.23 P
+4 F
+0.82 (int) 326.59 547.23 P
+1 F
+0.34 (, or how types are laid out within structures.) 344.58 547.23 P
+-0.15 (Instead it must represent these values abstractly) 108 535.23 P
+-0.15 (. It is then up to the TDF installer on each tar) 296.85 535.23 P
+-0.15 (get machine) 474.88 535.23 P
+(to substitute the actual local values for these abstractions.) 108 523.23 T
+2.71 (There is however another set of tar) 108 501.23 P
+2.71 (get dependent values which the producer needs to represent) 263.43 501.23 P
+0.31 (abstractly) 108 489.23 P
+0.31 (, namely those which represent the interface between the program and the system libraries on) 146.21 489.23 P
+0.19 (the tar) 108 477.23 P
+0.19 (get machine. For example, the ANSI standard says that on any compliant machine there is a type) 133.27 477.23 P
+-0.21 (called) 108 465.23 P
+4 F
+-0.5 (FILE) 134.16 465.23 P
+1 F
+-0.21 (, but that its precise details are implementation dependent. Thus the producer needs to know) 158.14 465.23 P
+-0.05 (to represent) 108 453.23 P
+4 F
+-0.13 (FILE) 157.3 453.23 P
+1 F
+-0.05 ( by an abstract value \050actually a TDF token\051 which each installer can substitute by the) 181.28 453.23 P
+0.48 (particular value of) 108 441.23 P
+4 F
+1.15 (FILE) 185.21 441.23 P
+1 F
+0.48 ( on that tar) 209.2 441.23 P
+0.48 (get machine. In order for this to be possible, the interface between) 253.49 441.23 P
+1.96 (the program and the tar) 108 429.23 P
+1.96 (get machine - the Application Programming Interface \050API\051 - needs to be) 208.92 429.23 P
+0.82 (described to the producer in abstract terms. This description needs to be at the same level as the API) 108 417.23 P
+-0.05 (speci\336cation. For example, it needs to be able to just express that "there is a type called) 108 405.23 P
+4 F
+-0.13 (FILE) 458.43 405.23 P
+1 F
+-0.05 (". In order) 482.42 405.23 P
+-0.2 (to express this information, the producer extends the C syntax by using certain) 108 393.23 P
+4 F
+-0.48 (#pragma token) 421.87 393.23 P
+1 F
+-0.2 ( state-) 499.35 393.23 P
+(ments \050see [3] for details\051. For example, the fact that) 108 381.23 T
+4 F
+(FILE) 320.61 381.23 T
+1 F
+( is a type would be expressed in the form :) 344.6 381.23 T
+4 F
+(#pragma token TYPE FILE #) 240.69 359.23 T
+1 F
+0.31 (Therefore the role of the API is far more important, and far more explicit, in the TDF compilation sys-) 108 341.23 P
+-0.07 (tem than with conventional compilers. The latter work directly with the API implementation in the form) 108 329.23 P
+1.93 (of system headers and system libraries, whereas the former has this abstract intermediate layer of) 108 317.23 P
+4 F
+0.23 (#pragma token) 108 305.23 P
+1 F
+0.09 ( statements which re\337ects the actual API speci\336cation. This means that to compile a) 186.18 305.23 P
+1.16 (program using the TDF system is to ef) 108 293.23 P
+1.16 (fectively check the syntactic aspects of it against the abstract) 270 293.23 P
+1.47 (paper speci\336cation of the API, rather than a particular implementation \050see [1]\051. Thus it provides a) 108 281.23 P
+(method of ef) 108 269.23 T
+(fectively API-checking these aspects of the program.) 158.89 269.23 T
+-0.03 (There is another type of API checking within the TDF system. The producer uses abstract values to rep-) 108 247.23 P
+0.78 (resent objects within the API, but each individual installer needs to provide the actual local values of) 108 235.23 P
+-0.1 (these objects. These local values are stored as TDF in a TDF library describing the API implementation.) 108 223.23 P
+0.37 (The construction of this library consists of comparing the abstract API speci\336cation, in the form of the) 108 211.23 P
+4 F
+0.75 (#pragma token) 108 199.23 P
+1 F
+0.31 ( statements, with the local API implementation, as described in the system headers.) 186.71 199.23 P
+(Thus this process provides a syntactic check of the API implementation against the speci\336cation.) 108 187.23 T
+108 151.9 523.3 161.9 C
+108 160.9 576 160.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 127.9 523.3 137.9 C
+108 136.9 576 136.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(1.2) 108 142.57 T
+(Describing APIs) 144 142.57 T
+1 10 Q
+1.55 (Thus for the TDF system to ef) 108 111.23 P
+1.55 (fectively check a program against its API, this API must have been) 238.14 111.23 P
+0.18 (described in terms of the) 108 99.23 P
+4 F
+0.44 (#pragma token) 210.22 99.23 P
+1 F
+0.18 ( syntax. Thus there has been a programme of API descrip-) 288.61 99.23 P
+FMENDPAGE
+%%EndPage: "1" 7
+%%Page: "2" 7
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Describing APIs) 377.18 799.23 T
+(2) 276.5 43.23 T
+0.81 (tion at DRA designed to provide such descriptions of standard APIs such as ANSI, POSIX, XPG3/4,) 72 763.23 P
+(SVID3 etc.) 72 751.23 T
+0 (It would be possible to describe APIs directly using) 72 729.23 P
+4 F
+0.01 (#pragma token) 281.08 729.23 P
+1 F
+0 ( statements, however there are a) 359.05 729.23 P
+1.15 (number of drawbacks to this approach. Firstly) 72 717.23 P
+1.15 (, although the) 262.28 717.23 P
+4 F
+2.76 (#pragma token) 322.91 717.23 P
+1 F
+1.15 ( syntax is extremely) 403.62 717.23 P
+0.37 (powerful and is capable of expressing extremely complex constructs, this also means that the syntax is) 72 705.23 P
+-0.15 (necessarily complex and unfamiliar) 72 693.23 P
+-0.15 (. The vast majority of constructs which APIs use are very simple and) 213.4 693.23 P
+0.05 (C-like, and so can be expressed using only a small subset of the) 72 681.23 P
+4 F
+0.12 (#pragma token) 329.69 681.23 P
+1 F
+0.05 ( syntax. The second) 407.76 681.23 P
+0.17 (drawback to this approach is that there are no internal checks applied to the input, so that misprints and) 72 669.23 P
+(incomplete speci\336cations can only be detected by extensive testing.) 72 657.23 T
+0 F
+(1.2.1) 72 631.23 T
+(The tspec tool) 108 631.23 T
+1 F
+0.45 (It was with these considerations in mind that a tool, called) 72 614.23 P
+3 F
+0.45 (tspec) 311.84 614.23 P
+1 F
+0.45 (, was developed at DRA to aid in API) 332.38 614.23 P
+0.22 (description.) 72 602.23 P
+3 F
+0.22 (tspec) 121.63 602.23 P
+1 F
+0.22 ( allows the API constructs to be entered in a form closer to C, which it then translates) 142.17 602.23 P
+0.2 (into the corresponding) 72 590.23 P
+4 F
+0.49 (#pragma token) 165.05 590.23 P
+1 F
+0.2 ( statements \050see [2] for details on) 243.49 590.23 P
+3 F
+0.2 (tspec) 380.09 590.23 P
+1 F
+0.2 (\051. During this transla-) 400.63 590.23 P
+0.87 (tion process it checks not only for syntax errors, but also for the use of undeclared types, namespace) 72 578.23 P
+0.34 (clashes etc. These checks are applied not only to individual headers within the API, but globally to the) 72 566.23 P
+0.98 (entire API. Note that) 72 554.23 P
+3 F
+0.98 (tspec) 161.7 554.23 P
+1 F
+0.98 ( is not intended to be an abstract speci\336cation language along the lines of) 182.24 554.23 P
+0.4 (Obscure or Clear) 72 542.23 P
+0.4 (, it is merely a tool which has been found useful for doing a speci\336c task : translating) 140.68 542.23 P
+(paper API speci\336cations into a form understood by the C) 72 530.23 T
+2 F
+(\256) 302.4 530.23 T
+1 F
+( TDF producer) 312.27 530.23 T
+(.) 371.12 530.23 T
+0.21 (As an example of) 72 508.23 P
+3 F
+0.21 (tspec) 145.56 508.23 P
+1 F
+0.21 ( input, consider the following extract from the speci\336cation of the ANSI) 166.1 508.23 P
+5 F
+0.21 (stdio.h) 459.8 508.23 P
+1 F
+(header :) 72 496.23 T
+4 F
+(+TYPE FILE ;) 126 474.23 T
+(+EXP FILE *stdin, *stdout, *stderr ;) 126 460.23 T
+(+FUNC FILE *fopen \050 const char *, const char * \051 ;) 126 446.23 T
+(+FUNC int fclose \050 FILE * \051 ;) 126 432.23 T
+1 F
+0.59 (This expresses that) 72 414.23 P
+4 F
+1.41 (FILE) 152.32 414.23 P
+1 F
+0.59 ( is a type,) 176.31 414.23 P
+4 F
+1.41 (stdin) 219.47 414.23 P
+1 F
+0.59 (,) 249.45 414.23 P
+4 F
+1.41 (stdout) 255.04 414.23 P
+1 F
+0.59 ( and) 291.02 414.23 P
+4 F
+1.41 (stderr) 311.62 414.23 P
+1 F
+0.59 ( are expressions of type) 347.6 414.23 P
+4 F
+1.41 (FILE *) 447.41 414.23 P
+1 F
+0.59 (,) 484.8 414.23 P
+(and that) 72 402.23 T
+4 F
+(fopen) 106.42 402.23 T
+1 F
+( and) 136.4 402.23 T
+4 F
+(fclose) 155.83 402.23 T
+1 F
+( are functions with the given prototypes.) 191.81 402.23 T
+0.05 (Many of the examples given in this paper will use the) 72 380.23 P
+3 F
+0.05 (tspec) 289.31 380.23 P
+1 F
+0.05 ( notation, so it is worth familiarising oneself) 309.85 380.23 P
+(with it. Hopefully this should be fairly simple for anyone familiar with C.) 72 368.23 T
+0 F
+(1.2.2) 72 342.23 T
+(API Description Guidelines) 108 342.23 T
+1 F
+1.15 (Essentially the process of describing an API speci\336cation to) 72 325.23 P
+3 F
+1.15 (tspec) 324.69 325.23 P
+1 F
+1.15 ( consists of ploughing through the) 345.23 325.23 P
+-0.02 (paper speci\336cation transcribing its descriptions of the objects comprising the API into their) 72 313.23 P
+3 F
+-0.02 (tspec) 438.46 313.23 P
+1 F
+-0.02 ( forms.) 459 313.23 P
+0.51 (If the speci\336cation is available in machine readable form then parts of this can be partially automated,) 72 301.23 P
+0.14 (particular since the C-like terms used in the speci\336cation are similar to those used by) 72 289.23 P
+3 F
+0.14 (tspec) 415.81 289.23 P
+1 F
+0.14 (. This is par-) 436.35 289.23 P
+0.4 (ticularly useful when the speci\336cation lists a lar) 72 277.23 P
+0.4 (ge number of similar objects, such as the list of strings) 265.35 277.23 P
+(given in Appendix E of the Xt speci\336cation.) 72 265.23 T
+-0.02 (It is worth brie\337y discussing some of the general considerations involved in the API description process) 72 243.23 P
+1.1 (before moving on to consider the speci\336c example of X1) 72 231.23 P
+1.1 (1 \050Release 5\051. The \336rst consideration when) 308.87 231.23 P
+0.07 (starting an API description is how this API relates to those previously described. For example, XPG3 is) 72 219.23 P
+0.52 (an extension of POSIX, so the structure of the description should re\337ect this. It would be very easy to) 72 207.23 P
+(write an shell script which, for each header) 72 195.23 T
+(,) 243.68 195.23 T
+5 F
+(x.h) 248.67 195.23 T
+1 F
+(, in the POSIX API, set up a header of the form :) 261.73 195.23 T
+4 F
+(+IMPLEMENT "posix", "x.h" ;) 126 173.23 T
+(# Add xpg3 specific stuff here) 126 159.23 T
+1 F
+1.07 (to act as a skeleton for the XPG3 API. Objects which are in XPG3 but not in POSIX could then be) 72 141.23 P
+-0.12 (added, as appropriate, either to these extension headers, or to XPG3-speci\336c headers, which may be cre-) 72 129.23 P
+(ated as required.) 72 117.23 T
+0.7 (The question of which headers comprise an API, and which objects are speci\336ed in which headers, is) 72 95.23 P
+-0.22 (another important one. Many APIs list their constituent headers at a conveniently early stage in the spec-) 72 83.23 P
+FMENDPAGE
+%%EndPage: "2" 8
+%%Page: "3" 8
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 The X1) 369.31 799.23 T
+(1 \050Release 5\051 API) 441.67 799.23 T
+(3) 312.5 43.23 T
+-0.04 (i\336cation, and go to great lengths to describe where objects are declared. Others are vaguer on these mat-) 108 763.23 P
+-0.25 (ters, and the person performing the API description is left to try and work out a suitable logical structure.) 108 751.23 P
+0.01 (The) 108 739.23 P
+3 F
+0.01 (tspec) 126.05 739.23 P
+5 F
+0.01 (MASTER) 149.11 739.23 P
+1 F
+0.01 ( \336le lists all the headers comprising the API, and needs to be kept up to date as new) 189.65 739.23 P
+(headers are added.) 108 727.23 T
+-0.14 (It is also important to remember that the API description is meant to accurately re\337ect the API speci\336ca-) 108 705.23 P
+0.34 (tion. Thus it is important to try to write down exactly what the speci\336cation says, and not to be unduly) 108 693.23 P
+1.09 (in\337uenced by one\325) 108 681.23 P
+1.09 (s knowledge of particular implementations. Probably the only legitimate reason to) 184.02 681.23 P
+-0.02 (consult the implementation\050s\051 during the description process proper is to help clarify the meaning of the) 108 669.23 P
+-0.16 (speci\336cation when this is not clear) 108 657.23 P
+-0.16 (. There will be a chance to review the \336nished API description against) 244.61 657.23 P
+0.44 (particular API implementations later) 108 645.23 P
+0.44 (, during the TDF library building process. Recall that this consists) 255.2 645.23 P
+0.5 (of comparing the API description with the API implementation. Although this was described above as) 108 633.23 P
+0.96 (being a check for the implementation, it may also be viewed as a check for the API description. For) 108 621.23 P
+-0.02 (example, many mistypings in the API description will be picked up by) 108 609.23 P
+3 F
+-0.02 (tspec) 392.36 609.23 P
+1 F
+-0.02 (, but others will be detected) 412.9 609.23 P
+(during the library build. For example, if I had typed :) 108 597.23 T
+4 F
+(+TYPE FILE ;) 162 575.23 T
+(+EXP PILE *stdin, *stdout, *stderr ;) 162 561.23 T
+1 F
+-0.16 (in the example above,) 108 543.23 P
+3 F
+-0.16 (tspec) 197.58 543.23 P
+1 F
+-0.16 ( would complain that the type) 218.12 543.23 P
+4 F
+-0.38 (PILE) 338.77 543.23 P
+1 F
+-0.16 ( has not been declared. However if I had) 362.75 543.23 P
+(typed :) 108 531.23 T
+4 F
+(+TYPE FILE ;) 162 509.23 T
+(+EXP FILE *stdon, *stdout, *stderr ;) 162 495.23 T
+3 F
+-0.03 (tspec) 108 477.23 P
+1 F
+-0.03 ( would not detect the error) 128.54 477.23 P
+-0.03 (. However the object) 233.59 477.23 P
+4 F
+-0.07 (stdon) 319.23 477.23 P
+1 F
+-0.03 ( would be left unde\336ned in the library build) 349.21 477.23 P
+1.18 (since the implementation would hopefully have spelt it correctly) 108 465.23 P
+1.18 (. What neither process can detect at) 374.4 465.23 P
+0.02 (present would be if I had omitted) 108 453.23 P
+4 F
+0.05 (stdin) 243.32 453.23 P
+1 F
+0.02 ( altogether) 273.31 453.23 P
+0.02 (, so it is important to try to avoid errors of this kind.) 315.39 453.23 P
+-0.07 (This may however be possible in future. The API speci\336cation describes a space of all permitted names,) 108 441.23 P
+0.59 (and it should be possible to detect where the implementation steps outside this space. If I had omitted) 108 429.23 P
+4 F
+-0.35 (stdin) 108 417.23 P
+1 F
+-0.15 ( from the speci\336cation then it will not be in this space, so its use by the implementation would be) 137.98 417.23 P
+(detected.) 108 405.23 T
+-0.06 (Where it is possible to detect such omissions is when using the generated) 108 383.23 P
+4 F
+-0.14 (#pragma token) 402.31 383.23 P
+1 F
+-0.06 ( headers to) 480.12 383.23 P
+-0.07 (compile an application which, for example, uses) 108 371.23 P
+4 F
+-0.17 (stdin) 303.19 371.23 P
+1 F
+-0.07 (. However any application will use only a small) 333.17 371.23 P
+(number of API constructs, so this is not a particularly ef) 108 359.23 T
+(fective way of detecting omissions.) 331.84 359.23 T
+108 323.9 523.3 333.9 C
+108 332.9 576 332.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 299.9 523.3 309.9 C
+108 308.9 576 308.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(1.3) 108 314.57 T
+(The X1) 144 314.57 T
+(1 \050Release 5\051 API) 187.15 314.57 T
+1 10 Q
+-0.18 (The main purpose of this paper is to illustrate some of the concepts involved in API speci\336cation in rela-) 108 283.23 P
+1.23 (tion to work carried out at DRA during September 1993 in describing the X1) 108 271.23 P
+1.23 (1 \050Release 5\051 API. Of) 431.5 271.23 P
+0.26 (course, X1) 108 259.23 P
+0.26 (1 is an extremely important API, but from the point of view of this paper it is also an "inter-) 151.19 259.23 P
+0.28 (esting" API. Most of the APIs described previously tend to be rather similar - once you have described) 108 247.23 P
+1.42 (POSIX, SVID3 is unlikely to provide many surprises. However X1) 108 235.23 P
+1.42 (1 raised a number of interesting) 389.37 235.23 P
+(issues, probably more than any API since the \336rst to be described, ANSI \050back in 1991\051.) 108 223.23 T
+(There are a number of possible reasons for this, which will be discussed during the course of the paper) 108 201.23 T
+(.) 517.41 201.23 T
+(\245) 115.2 179.23 T
+-0.04 (The X1) 122.4 179.23 P
+-0.04 (1 speci\336cation is looser than the more formal speci\336cations issued by) 152.24 179.23 P
+-0.04 (, for example, X/Open.) 428.8 179.23 P
+(\245) 115.2 157.23 T
+0.14 (It is also describing not one, but a hierarchy of APIs. Not only is there a split between, for example,) 122.4 157.23 P
+(Xlib and Xt, but also between "public" and "private" headers within Xt.) 122.4 145.23 T
+(\245) 115.2 123.23 T
+0.3 (In contrast to, say) 122.4 123.23 P
+0.3 (, POSIX, where there is a wide variety of implementations on dif) 193.71 123.23 P
+0.3 (ferent machines,) 456.94 123.23 P
+0.22 (most X1) 122.4 111.23 P
+0.22 (1 implementations tend to be based on the standard MIT implementation, and so tend to be) 156.4 111.23 P
+0.82 (very similar) 122.4 99.23 P
+0.82 (. Thus there is less of a distinction made between speci\336cation and implementation in) 170.69 99.23 P
+1.13 (this case. If an application works with the MIT implementation, the programmer is less likely to) 122.4 87.23 P
+FMENDPAGE
+%%EndPage: "3" 9
+%%Page: "4" 9
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Describing X1) 318.7 799.23 T
+(1 - Preliminaries) 419.38 799.23 T
+(4) 276.5 43.23 T
+0 (worry about other possible implementations. Because the TDF system is concerned with making the) 86.4 763.23 P
+0.54 (split between the speci\336cation and the implementation explicit, this attitude can cause problems. It) 86.4 751.23 P
+(could be said that the API the programmer is writing to is not X1) 86.4 739.23 T
+(1, but some extension, MIT) 346.15 739.23 T
+(-X1) 455.72 739.23 T
+(1.) 470.89 739.23 T
+0.93 (Finally in this introductory section it is worth mentioning the point of view from which this paper is) 72 717.23 P
+0.35 (written. It is based on work carried out by the author based on preliminary studies by a number of col-) 72 705.23 P
+0.43 (leagues. Neither I nor they are experts on X1) 72 693.23 P
+0.43 (1. Our knowledge of it comes from reading the speci\336ca-) 254.67 693.23 P
+0.68 (tion and from a study of how certain public domain X1) 72 681.23 P
+0.68 (1 applications are written. For the purposes of) 298.8 681.23 P
+0.76 (describing the speci\336cation this means that we have not been unduly in\337uenced by our knowledge of) 72 669.23 P
+(particular implementations, but have tried to re\337ect what is actually written.) 72 657.23 T
+72 625.9 487.3 637.9 C
+72 636.9 540 636.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 633.9 540 633.9 2 L
+N
+0 0 595.3 841.9 C
+72 589.9 487.3 601.9 C
+72 600.9 540 600.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 597.9 540 597.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(2) 72 609.9 T
+(Describing X1) 99 609.9 T
+(1 - Pr) 243.59 609.9 T
+(eliminaries) 300.44 609.9 T
+1 10 Q
+0.45 (As was mentioned in section 1.2.2, it is important to determine where an API \336ts into the hierarchy of) 72 533.23 P
+0.02 (previously speci\336ed APIs before attempting to describe it. X1) 72 521.23 P
+0.02 (1 is not an extension of an existing API in) 319.14 521.23 P
+0.15 (the way that XPG3 is an extension of POSIX. Instead it is a bolt-on API which can be used in conjunc-) 72 509.23 P
+0.32 (tion with a base API such as POSIX or XPG3. However) 72 497.23 P
+0.32 (, as mentioned above, X1) 299.36 497.23 P
+0.32 (1 is not a single API,) 401.86 497.23 P
+(but itself consists of a number of sub-APIs.) 72 485.23 T
+-0.05 (The simplest division is that re\337ected in the documentation, with the hierarchy from the basic X Library) 72 463.23 P
+0.61 (\050Xlib\051 to the X T) 72 451.23 P
+0.61 (oolkit \050Xt\051, the Miscellaneous Utilities \050Xmu\051 and the Athena W) 141.48 451.23 P
+0.61 (idgets \050Xaw\051. These) 405.31 451.23 P
+(are arranged in a very simple progression :) 72 439.23 T
+(Xlib) 228.15 417.23 T
+2 F
+(\315) 248.42 417.23 T
+1 F
+( Xt) 255.55 417.23 T
+2 F
+(\315) 270.54 417.23 T
+1 F
+( Xmu) 277.66 417.23 T
+2 F
+(\315) 302.65 417.23 T
+1 F
+( Xaw) 309.78 417.23 T
+0.3 (But there is also a hierarchy within, for example, Xt, given by the "public" and "private" headers. Nor-) 72 401.23 P
+0.93 (mal application writers are intended to use only the public headers, such as) 72 389.23 P
+5 F
+0.93 (X1) 386.13 389.23 P
+0.93 (1/Intrinsic.h) 397.24 389.23 P
+1 F
+0.93 (, whereas) 448.62 389.23 P
+0.27 (people de\336ning their own widgets may use the private headers, such as) 72 377.23 P
+5 F
+0.27 (X1) 361.44 377.23 P
+0.27 (1/IntrinsicP) 372.55 377.23 P
+0.27 (.h) 420.7 377.23 P
+1 F
+0.27 (. In the former) 428.75 377.23 P
+0.12 (the type) 72 365.23 P
+4 F
+0.28 (Widget) 106.65 365.23 P
+1 F
+0.12 (, for example, is a pointer to an opaque structure, whereas in the latter this structure is) 142.63 365.23 P
+-0.23 (less opaque and certain \336elds have become visible. Thus we may think of the private headers as being an) 72 353.23 P
+0.91 (extension API of the public headers. From this point of view the term "private" is misleading, so we) 72 341.23 P
+(shall use the term P-headers to refer to these \336les.) 72 329.23 T
+0.16 (A decision was made to specify Xlib, Xt, Xmu and Xaw as separate) 72 307.23 P
+3 F
+0.16 (tspec) 347.98 307.23 P
+1 F
+0.16 ( APIs called) 368.52 307.23 P
+5 F
+0.16 (xlib5) 420.34 307.23 P
+1 F
+0.16 (,) 440.89 307.23 P
+5 F
+0.16 (xt5) 446.04 307.23 P
+1 F
+0.16 (,) 458.82 307.23 P
+5 F
+0.16 (xmu5) 463.97 307.23 P
+1 F
+1.2 (and) 72 295.23 P
+5 F
+1.2 (xaw5) 90.12 295.23 P
+1 F
+1.2 (, but not to separate of) 111.78 295.23 P
+1.2 (f the P-headers into separate APIs. Instead each P-header is booby-) 206.96 295.23 P
+(trapped with lines of the form :) 72 283.23 T
+4 F
+(#ifndef __X11_P_HEADERS) 126 261.23 T
+(#error Unauthorized access to X11 P-headers) 126 247.23 T
+(#endif) 126 233.23 T
+1 F
+1.13 (The macro) 72 215.23 P
+4 F
+2.7 (__X11_P_HEADERS) 119.77 215.23 P
+1 F
+1.13 ( may be ef) 209.72 215.23 P
+1.13 (fectively hidden from the user by means of) 254.83 215.23 P
+3 F
+1.13 (tcc) 438.15 215.23 P
+1 F
+1.13 ( environ-) 449.81 215.23 P
+-0.16 (ments \050see [4]\051. In addition to the basic environments,) 72 203.23 P
+0 F
+-0.16 (xlib5) 289 203.23 P
+1 F
+-0.16 (,) 310.11 203.23 P
+0 F
+-0.16 (xt5) 314.95 203.23 P
+1 F
+-0.16 (,) 328.27 203.23 P
+0 F
+-0.16 (xmu5) 333.1 203.23 P
+1 F
+-0.16 ( and) 356.98 203.23 P
+0 F
+-0.16 (xaw5) 376.08 203.23 P
+1 F
+-0.16 (, there is, for example,) 398.29 203.23 P
+(an environment) 72 191.23 T
+0 F
+(xt5p) 136.95 191.23 T
+1 F
+(, consisting of :) 155.83 191.23 T
+4 F
+(+FLAG "-Yxt5") 126 169.23 T
+(+FLAG "-D__X11_P_HEADERS") 126 155.23 T
+1 F
+1.3 (The normal Xt application writer would then pass the \337ag) 72 137.23 P
+0 F
+1.3 (-Yxt5) 318.77 137.23 P
+1 F
+1.3 ( to) 342.64 137.23 P
+3 F
+1.3 (tcc) 358.02 137.23 P
+1 F
+1.3 (, whereas the widget de\336ner) 369.67 137.23 P
+(would use) 72 125.23 T
+0 F
+(-Yxt5p) 115.31 125.23 T
+1 F
+(. In this way the API requirements of a program may be made absolutely explicit.) 144.73 125.23 T
+FMENDPAGE
+%%EndPage: "4" 10
+%%Page: "5" 10
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 Describing Xlib) 406.4 799.23 T
+(5) 312.5 43.23 T
+108 757.9 523.3 769.9 C
+108 768.9 576 768.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 765.9 576 765.9 2 L
+N
+0 0 595.3 841.9 C
+108 721.9 523.3 733.9 C
+108 732.9 576 732.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 729.9 576 729.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(3) 108 741.9 T
+(Describing Xlib) 135 741.9 T
+1 10 Q
+-0.08 (Let us illustrate the description process by giving a detailed account of the description of the \336rst couple) 108 665.23 P
+0.02 (of chapters of the Xlib speci\336cation. This is best understood by reading it in parallel with the Xlib spec-) 108 653.23 P
+(i\336cation, [5].) 108 641.23 T
+108 605.9 523.3 615.9 C
+108 614.9 576 614.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 581.9 523.3 591.9 C
+108 590.9 576 590.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(3.1) 108 596.57 T
+(Chapter 1 of Xlib) 144 596.57 T
+1 10 Q
+2.25 (Chapter 1 is primarily introductory in character) 108 565.23 P
+2.25 (, but contains the speci\336cation of some important) 310.42 565.23 P
+0.2 (objects. Section 1.1 is intended to be an overview) 108 553.23 P
+0.2 (, and most of the objects it mentions \050printed in) 307.19 553.23 P
+0 F
+0.2 (bold) 501.08 553.23 P
+1 F
+0.2 (\051) 519.97 553.23 P
+0.28 (are properly speci\336ed elsewhere. For example, referring to the index shows that) 108 541.23 P
+4 F
+0.67 (XSync) 432.78 541.23 P
+1 F
+0.28 ( is speci\336ed on) 462.77 541.23 P
+0.82 (page 184. However the types) 108 529.23 P
+4 F
+1.98 (Window) 230.91 529.23 P
+1 F
+0.82 (,) 266.25 529.23 P
+4 F
+1.98 (Font) 272.07 529.23 P
+1 F
+0.82 ( etc. are explicitly mentioned here for the one and only) 296.05 529.23 P
+1.44 (time. They are all synonyms for the same integral resource ID type. Skipping ahead to Section 1.4) 108 517.23 P
+(reveals that this type is called) 108 505.23 T
+4 F
+(XID) 228.47 505.23 T
+1 F
+(, so we can specify our \336rst objects in the header) 246.46 505.23 T
+5 F
+(X1) 443.54 505.23 T
+(1/X.h) 454.65 505.23 T
+1 F
+( :) 477.15 505.23 T
+4 F
+(+TYPE \050 int \051 XID ;) 162 483.23 T
+(+TYPEDEF XID Window ;) 162 469.23 T
+(+TYPEDEF XID Font ;) 162 455.23 T
+(+TYPEDEF XID Pixmap ;) 162 441.23 T
+(+TYPEDEF XID Colormap ;) 162 427.23 T
+(+TYPEDEF XID Cursor ;) 162 413.23 T
+(+TYPEDEF XID GContext ;) 162 399.23 T
+1 F
+-0.13 (Moving on to Section 1.2, the integral type) 108 381.23 P
+4 F
+-0.32 (Status) 281.28 381.23 P
+1 F
+-0.13 ( is speci\336ed. Exactly which header it is de\336ned in is) 317.26 381.23 P
+(not given - it is probably) 108 369.23 T
+5 F
+(X1) 209.05 369.23 T
+(1/X.h) 220.17 369.23 T
+1 F
+( again. So we have :) 242.67 369.23 T
+4 F
+(+TYPE \050 int \051 Status ;) 162 347.23 T
+1 F
+0.24 (Section 1.3 contains the \336rst chunk of substantial information, with a list of the headers comprising the) 108 329.23 P
+0.96 (Xlib API. The form of wording used, that "the following include \336les are part of the Xlib standard",) 108 317.23 P
+0.18 (seems to allow for implementations to add their own headers. However these would be implementation) 108 305.23 P
+0.12 (dependent, and so form no part of a description of the API in its most general form. Thus we can set up) 108 293.23 P
+(these thirteen headers and list them in the) 108 281.23 T
+3 F
+(tspec) 276.22 281.23 T
+5 F
+(MASTER) 299.26 281.23 T
+1 F
+( \336le.) 339.8 281.23 T
+0.35 (There are also some objects speci\336ed, and some relations between the headers spelt out in this section.) 108 259.23 P
+(For example, in) 108 247.23 T
+5 F
+(X1) 173.51 247.23 T
+(1/Xlib.h) 184.63 247.23 T
+1 F
+( we have :) 217.68 247.23 T
+4 F
+(+USE "xlib5", "X11/X.h" ;) 162 225.23 T
+(+DEFINE XlibSpecificationRelease 5 ;) 162 211.23 T
+1 F
+0.67 (The information on the kind of object speci\336ed in each header is also useful, and should be used as a) 108 193.23 P
+(basis for deciding where various objects should be put.) 108 181.23 T
+(The header) 108 159.23 T
+5 F
+(X1) 155.17 159.23 T
+(1/keysym.h) 166.29 159.23 T
+1 F
+( is completely speci\336ed in this section to be :) 212.09 159.23 T
+4 F
+(%%) 162 137.23 T
+(#define XK_MISCELLANY) 162 123.23 T
+(#define XK_LATIN1) 162 109.23 T
+(#define XK_LATIN2) 162 95.23 T
+(#define XK_LATIN3) 162 81.23 T
+FMENDPAGE
+%%EndPage: "5" 11
+%%Page: "6" 11
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Chapter 2 of Xlib) 373.29 799.23 T
+(6) 276.5 43.23 T
+4 F
+(#define XK_LATIN4) 126 763.23 T
+(#define XK_GREEK) 126 749.23 T
+(%%) 126 735.23 T
+(+USE "xlib5", "X11/keysymdef.h" ;) 126 721.23 T
+1 F
+1.07 (however the contents of) 72 703.23 P
+5 F
+1.07 (X1) 174.52 703.23 P
+1.07 (1/keysymdef.h) 185.64 703.23 P
+1 F
+1.07 ( are never precisely speci\336ed within the Xlib speci\336cation.) 244.21 703.23 P
+0.5 (The actual) 72 691.23 P
+4 F
+1.19 (KeySym) 117.4 691.23 P
+1 F
+0.5 ( values are standard \050Latin-1 is ISO8859-1 etc.\051, but the actual) 153.38 691.23 P
+4 F
+1.19 (XK_) 410.59 691.23 P
+1 F
+0.5 ( macros repre-) 428.58 691.23 P
+0.42 (senting them are not given. The decision reached on how to handle this gap in the speci\336cation was to) 72 679.23 P
+0.16 (copy the names of the) 72 667.23 P
+4 F
+0.39 (KeySym) 163.03 667.23 P
+1 F
+0.16 (\325) 199.01 667.23 P
+0.16 (s from the implementation, but to abstract their values by making them) 201.79 667.23 P
+(tokenised objects. Thus the) 72 655.23 T
+3 F
+(tspec) 183.32 655.23 T
+1 F
+( speci\336cation of) 203.86 655.23 T
+5 F
+(X1) 270.2 655.23 T
+(1/keysymdef.h) 281.32 655.23 T
+1 F
+( has the form :) 339.88 655.23 T
+4 F
+(+IFDEF XK_MISCELLANY) 126 633.23 T
+(+CONST KeySym XK_BackSpace, XK_Tab, XK_LineFeed ;) 126 619.23 T
+(....) 126 605.23 T
+(+ENDIF) 126 591.23 T
+(....) 126 577.23 T
+1 F
+0.48 (Moving on, Section 1.4 speci\336es a number of generic values and types, including the generic resource) 72 559.23 P
+(ID type) 72 547.23 T
+4 F
+(XID) 104.75 547.23 T
+1 F
+( already mentioned. Presumedly these are meant to be de\336ned in) 122.74 547.23 T
+5 F
+(X1) 383.11 547.23 T
+(1/X.h) 394.22 547.23 T
+1 F
+(. W) 416.72 547.23 T
+(e have :) 430.35 547.23 T
+4 F
+(+TYPE \050 int \051 Bool ;) 126 525.23 T
+(+CONST Bool True, False ;) 126 511.23 T
+(+DEFINE None 0 ;) 126 497.23 T
+(+TYPEDEF char *XPointer ;) 126 483.23 T
+1 F
+0.04 (Actually there is a bit of reading between the lines here. It is not actually stated that) 72 465.23 P
+4 F
+0.09 (Bool) 409.07 465.23 P
+1 F
+0.04 ( is an integral) 433.05 465.23 P
+1.07 (type, but it is not a particularly radical assumption. The translation of "universal null resource ID or) 72 453.23 P
+(atom" to) 72 441.23 T
+4 F
+(0) 108.84 441.23 T
+1 F
+( is also probably acceptable.) 114.84 441.23 T
+0.28 (The rest of Chapter 1 is concerned with the conventions used in Xlib and contains no further speci\336ca-) 72 419.23 P
+(tion items.) 72 407.23 T
+72 371.9 487.3 381.9 C
+72 380.9 540 380.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 347.9 487.3 357.9 C
+72 356.9 540 356.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(3.2) 72 362.57 T
+(Chapter 2 of Xlib) 108 362.57 T
+1 10 Q
+0.38 (The real speci\336cation begins with the display functions in Chapter 2. W) 72 331.23 P
+0.38 (e are immediately faced with a) 362.43 331.23 P
+(dilemma, since these functions are declared in the "traditional" style :) 72 319.23 T
+4 F
+(Display *XOpenDisplay \050 display_name \051) 126 297.23 T
+(char *display_name ;) 126 283.23 T
+1 F
+(rather than as a prototype :) 72 265.23 T
+4 F
+(Display *XOpenDisplay \050 char *display_name \051) 126 243.23 T
+1 F
+0.04 (Obviously) 72 225.23 P
+0.04 (, since TDF is concerned with API checking, we wish to express the function ar) 113 225.23 P
+0.04 (gument infor-) 432.02 225.23 P
+0.37 (mation to allow the ar) 72 213.23 P
+0.37 (guments to be type checked. This means that we want to convert all the function) 161.01 213.23 P
+0.33 (declarations to prototype forms. This presents no dif) 72 201.23 P
+0.33 (\336culties in the case above, since the two forms are) 283.4 201.23 P
+0.1 (exactly equivalent from the point of view of the C calling conventions. However this is not always nec-) 72 189.23 P
+0.94 (essarily the case. W) 72 177.23 P
+0.94 (e have ignored this possibility for the time being and directly transformed all the) 153.39 177.23 P
+-0.06 (function declarations into prototypes \050this is probably justi\336ed by the second point in Section 1.8\051, how-) 72 165.23 P
+0.26 (ever to exactly represent what is in the speci\336cation we could use the TDF producer) 72 153.23 P
+0.26 (\325) 411.83 153.23 P
+0.26 (s weak prototypes) 414.61 153.23 P
+(\050see [3]\051.) 72 141.23 T
+(The contents of Section 2.1 can now be summarised by adding :) 72 119.23 T
+4 F
+(+TYPE \050 struct \051 Display ;) 126 97.23 T
+(+TYPE \050 struct \051 Screen ;) 126 83.23 T
+FMENDPAGE
+%%EndPage: "6" 12
+%%Page: "7" 12
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 Chapter 2 of Xlib) 400.29 799.23 T
+(7) 312.5 43.23 T
+4 F
+(+FUNC Display *XOpenDisplay \050 char * \051 ;) 162 763.23 T
+1 F
+0.53 (to) 108 745.23 P
+5 F
+0.53 (X1) 118.81 745.23 P
+0.53 (1/Xlib.h) 129.92 745.23 P
+1 F
+0.53 (. W) 162.97 745.23 P
+0.53 (e have had to reverse the order of speci\336cation of the function) 177.14 745.23 P
+4 F
+1.28 (XOpenDisplay) 433.87 745.23 P
+1 F
+0.53 ( and) 505.83 745.23 P
+0.05 (the type) 108 733.23 P
+4 F
+0.11 (Display) 142.52 733.23 P
+1 F
+0.05 ( so that the type is declared before it is used. Note that) 184.49 733.23 P
+4 F
+0.11 (Display) 404.4 733.23 P
+1 F
+0.05 ( and) 446.38 733.23 P
+4 F
+0.11 (Screen) 465.9 733.23 P
+1 F
+0.05 ( have) 501.88 733.23 P
+0.93 (been speci\336ed to be opaque structure types, thereby enforcing the use of the information macros and) 108 721.23 P
+(functions to access elements of these structures.) 108 709.23 T
+(The display macros and functions in Section 2.2.1 are easily translated into :) 108 687.23 T
+4 F
+(+EXP unsigned long AllPlanes ;) 162 665.23 T
+(+FUNC unsigned long XAllPlanes \050 void \051 ;) 162 651.23 T
+(+MACRO unsigned long BlackPixel \050 Display *, int \051 ;) 162 637.23 T
+(+FUNC unsigned long XBlackPixel \050 Display *, int \051 ;) 162 623.23 T
+(+MACRO unsigned long WhitePixel \050 Display *, int \051 ;) 162 609.23 T
+(+FUNC unsigned long XWhitePixel \050 Display *, int \051 ;) 162 595.23 T
+(....) 162 581.23 T
+1 F
+-0.07 (Why both versions are considered necessary is not entirely clear) 108 563.23 P
+-0.07 (. In most APIs, functions may be imple-) 363.58 563.23 P
+0.44 (mented by macros, but there is an underlying function with the same ef) 108 551.23 P
+0.44 (fect which may be accessed by) 397.6 551.23 P
+4 F
+0.32 (#undef) 108 539.23 P
+1 F
+0.14 (-ing the macro. This is the meaning of the) 143.98 539.23 P
+3 F
+0.14 (tspec) 315.08 539.23 P
+4 F
+0.32 (+FUNC) 338.26 539.23 P
+1 F
+0.14 ( construct. X1) 368.24 539.23 P
+0.14 (1\325) 424.49 539.23 P
+0.14 (s use of explicit macro) 432.26 539.23 P
+(forms seems super\337uous.) 108 527.23 T
+1.06 (The start of Section 2.2.2 presents another problem. A speci\336cation of the type) 108 505.23 P
+4 F
+2.55 (XPixmapFormat-) 439.34 505.23 P
+1.76 (Values) 108 493.23 P
+1 F
+0.73 ( is given as follows : "The) 143.98 493.23 P
+4 F
+1.76 (XPixmapFormatValues) 256.19 493.23 P
+1 F
+0.73 ( structure provides an interface to the) 370.12 493.23 P
+(pixmap format information that is returned at the time of a connection setup. It contains :) 108 481.23 T
+4 F
+(typedef struct {) 162 459.23 T
+(int depth ;) 198 445.23 T
+(int bits_per_pixel ;) 198 431.23 T
+(int scanline_pad ;) 198 417.23 T
+(} XPixmapFormatValues ;) 162 403.23 T
+1 F
+-0.1 (\050page 14\051". It is not clear from this whether) 108 385.23 P
+4 F
+-0.24 (XPixmapFormatValues) 282.72 385.23 P
+1 F
+-0.1 ( is precisely the given structure,) 396.66 385.23 P
+0.51 (or whether it contains the given \336elds \050but not necessarily in the given order and not necessarily com-) 108 373.23 P
+-0.13 (prising the entire structure\051. It is the word "contains" which troubles me. Both forms may be represented) 108 361.23 P
+(in) 108 349.23 T
+3 F
+(tspec) 118.27 349.23 T
+1 F
+(. In the former case, the statement :) 138.81 349.23 T
+4 F
+(+FIELD \050 struct \051 XPixmapFormatValues := {) 162 327.23 T
+(int depth ;) 198 313.23 T
+(int bits_per_pixel ;) 198 299.23 T
+(int scanline_pad ;) 198 285.23 T
+(} ;) 162 271.23 T
+1 F
+-0.16 (should be used, whereas if the de\336nition is not exact the) 108 253.23 P
+4 F
+-0.39 (:=) 332.74 253.23 P
+1 F
+-0.16 ( should be omitted. The only dif) 344.73 253.23 P
+-0.16 (ference from) 472.12 253.23 P
+(the user) 108 241.23 T
+(\325) 139.73 241.23 T
+(s point of view is that in the former case the use of static initialisers such as :) 142.51 241.23 T
+4 F
+(XPixmapFormatValues v = { 1, 8, 0 } ;) 162 219.23 T
+1 F
+1.04 (is legitimate, whereas in the latter there is no correspondence between the initialising values and the) 108 201.23 P
+0.16 (structure \336elds, so the initialiser is not legitimate. The dif) 108 189.23 P
+0.16 (ference from the API speci\336er) 338.32 189.23 P
+0.16 (\325) 460.34 189.23 P
+0.16 (s point of view) 463.12 189.23 P
+0.04 (is that an exact structure can be an evolutionary dead-end. If in some future revision of the speci\336cation) 108 177.23 P
+0.91 (we wish to add a new \336eld to this structure, then this is not necessarily backwards compatible in the) 108 165.23 P
+-0.14 (exact structure case, although it is for the incompletely speci\336ed structure. The decision made on how to) 108 153.23 P
+1.14 (interpret this structure de\336nition was that, since X1) 108 141.23 P
+1.14 (1\325) 320.46 141.23 P
+1.14 (s form of specifying structures looks exact, the) 328.24 141.23 P
+(exact form is assumed unless otherwise stated in the speci\336cation.) 108 129.23 T
+(The rest of Section 2.2 presents few dif) 108 107.23 T
+(\336culties. Starting with Section 2.2.2 it contains :) 264.92 107.23 T
+4 F
+(+FUNC XPixmapFormatValues \050 Display *, int * \051 ;) 162 85.23 T
+FMENDPAGE
+%%EndPage: "7" 13
+%%Page: "8" 13
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Chapter 3 of Xlib) 373.29 799.23 T
+(8) 276.5 43.23 T
+4 F
+(+MACRO int ImageByteOrder \050 Display * \051 ;) 126 763.23 T
+(+FUNC int XImageByteOrder \050 Display * \051 ;) 126 749.23 T
+(+CONST int LSBFirst, MSBFirst ;) 126 735.23 T
+(+MACRO int BitmapUnit \050 Display * \051 ;) 126 721.23 T
+(+FUNC int XBitmapUnit \050 Display * \051 ;) 126 707.23 T
+(....) 126 693.23 T
+1 F
+0.94 (Note that the return values) 72 675.23 P
+4 F
+2.26 (LSBFirst) 185.24 675.23 P
+1 F
+0.94 ( and) 233.21 675.23 P
+4 F
+2.26 (MSBFirst) 254.52 675.23 P
+1 F
+0.94 ( for) 302.5 675.23 P
+4 F
+2.26 (ImageByteOrder) 321.03 675.23 P
+1 F
+0.94 ( have been given. It) 404.98 675.23 P
+(would be easy to miss the speci\336cation of these values.) 72 663.23 T
+0.04 (Section 2.3 raises another issue. The function) 72 641.23 P
+4 F
+0.09 (XNoOp) 256.29 641.23 P
+1 F
+0.04 ( takes a) 286.28 641.23 P
+4 F
+0.09 (Display *) 318.86 641.23 P
+1 F
+0.04 ( ar) 372.92 641.23 P
+0.04 (gument, but its result type) 383.04 641.23 P
+-0.13 (is not speci\336ed. There are two possible ways of looking at this. The C rules state that) 72 629.23 P
+4 F
+-0.31 (XNoOp) 411.49 629.23 P
+1 F
+-0.13 ( is assumed) 441.47 629.23 P
+0.04 (to return) 72 617.23 P
+4 F
+0.1 (int) 108.73 617.23 P
+1 F
+0.04 (. However any value returned is meaningless, so to stop it being used it can be ar) 126.72 617.23 P
+0.04 (gued that) 450.33 617.23 P
+0.45 (the function should be declared to return) 72 605.23 P
+4 F
+1.08 (void) 239.74 605.23 P
+1 F
+0.45 (. Whereas the former is technically correct, the latter is) 263.72 605.23 P
+-0.16 (more useful from the point of view of API checking. Thus the latter solution has been used. When this is) 72 593.23 P
+(done the rest of Chapter 2 is straightforward. The) 72 581.23 T
+3 F
+(tspec) 271.85 581.23 T
+1 F
+( description begins :) 292.39 581.23 T
+4 F
+(+FUNC void XNoOp \050 Display * \051 ;) 126 559.23 T
+(+FUNC void XFree \050 void * \051 ;) 126 545.23 T
+(....) 126 531.23 T
+72 493.9 487.3 503.9 C
+72 502.9 540 502.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 469.9 487.3 479.9 C
+72 478.9 540 478.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(3.3) 72 484.57 T
+(Chapter 3 of Xlib) 108 484.57 T
+1 10 Q
+-0.04 (Chapter 3 presents few new issues. Note however that the mask value macros) 72 453.23 P
+4 F
+-0.09 (CWBackPixmap) 384.06 453.23 P
+1 F
+-0.04 ( etc. are) 456.02 453.23 P
+(explicitly de\336ned, so it is necessary to directly quote these values :) 72 441.23 T
+4 F
+(%%) 126 419.23 T
+(#define CWBackPixmap \0501L<<0\051) 126 405.23 T
+(#define CWBackPixel \0501L<<1\051) 126 391.23 T
+(#define CWBackBorderPixmap \0501L<<2\051) 126 377.23 T
+(....) 126 363.23 T
+(%%) 126 349.23 T
+1 F
+-0.2 (Precisely why the exact values of these macros needs to be given in the speci\336cation is not clear) 72 331.23 P
+-0.2 (. All that) 452.44 331.23 P
+(is really necessary is to specify that they exist as) 72 319.23 T
+4 F
+(long) 267.97 319.23 T
+1 F
+( constants :) 291.96 319.23 T
+4 F
+(+CONST long CWBackPixmap, CWBackPixel, .... ;) 126 297.23 T
+1 F
+-0.23 (their precise values being implementation dependent. As with exact structures, exact values are potential) 72 279.23 P
+(blocks to an evolutionary approach to API speci\336cation.) 72 267.23 T
+0.31 (The object) 72 245.23 P
+4 F
+0.73 (CopyFromParent) 117.57 245.23 P
+1 F
+0.31 ( causes a few problems. When it is \336rst mentioned, in Section 3.2, it is) 201.53 245.23 P
+(used as a default) 72 233.23 T
+4 F
+(Pixmap) 140.83 233.23 T
+1 F
+( or) 176.81 233.23 T
+4 F
+(Colormap) 190.13 233.23 T
+1 F
+(, so the speci\336cation :) 238.11 233.23 T
+4 F
+(+CONST XID CopyFromParent ;) 126 211.23 T
+1 F
+-0.17 (seems appropriate. However in Section 3.3 several of the ar) 72 193.23 P
+-0.17 (guments to) 308.74 193.23 P
+4 F
+-0.4 (XCreateWindow) 355.05 193.23 P
+1 F
+-0.17 ( can be) 433.01 193.23 P
+4 F
+-0.4 (Cop-) 463.31 193.23 P
+1.5 (yFromParent) 72 181.23 P
+1 F
+0.63 (. These have types) 137.96 181.23 P
+4 F
+1.5 (int) 216.8 181.23 P
+1 F
+0.63 (,) 234.79 181.23 P
+4 F
+1.5 (unsigned int) 240.41 181.23 P
+1 F
+0.63 ( and) 313.88 181.23 P
+4 F
+1.5 (Visual *) 334.56 181.23 P
+1 F
+0.63 (. So) 384.04 181.23 P
+4 F
+1.5 (CopyFromParent) 403.34 181.23 P
+1 F
+(can be an integer or a pointer without an explicit cast. Therefore the speci\336cation :) 72 169.23 T
+4 F
+(+DEFINE CopyFromParent 0 ;) 126 147.23 T
+1 F
+(seems inevitable.) 72 129.23 T
+(The rest of the description process is similar) 72 107.23 T
+(. Some particular issues are worth mentioning :) 248.27 107.23 T
+FMENDPAGE
+%%EndPage: "8" 14
+%%Page: "9" 14
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 Running tspec on Xlib) 380.29 799.23 T
+(9) 312.5 43.23 T
+0 F
+(3.3.1) 108 763.23 T
+(The Region T) 144 763.23 T
+(ype) 201.57 763.23 T
+1 F
+1.17 (The type) 108 746.23 P
+4 F
+2.8 (Region) 148.09 746.23 P
+1 F
+1.17 ( speci\336ed in Section 16.5 has been made not, as described, an opaque type, but a) 184.07 746.23 P
+-0.03 (pointer to an opaque type. This is because it seems to be universally assumed by application writers that) 108 734.23 P
+4 F
+(Region) 108 722.23 T
+1 F
+( is a pointer) 143.98 722.23 T
+(. For example,) 190.35 722.23 T
+3 F
+(xterm) 250.58 722.23 T
+1 F
+( has :) 273.34 722.23 T
+4 F
+(\050 Region \051 NULL) 162 700.23 T
+1 F
+(Also, for example, in :) 108 682.23 T
+4 F
+(void XIntersectRegion \050 Region, Region, Region \051 ;) 162 660.23 T
+1 F
+0.13 (the third ar) 108 642.23 P
+0.13 (gument is used to return the intersection of the \336rst two. Most types cannot be used to return) 151.93 642.23 P
+(values in this way) 108 630.23 T
+(, although pointers can.) 179.25 630.23 T
+0 F
+(3.3.2) 108 604.23 T
+(The XESetFlushGC Function) 144 604.23 T
+1 F
+(There is an obvious misprint in Appendix C, where the prototype of) 108 587.23 T
+4 F
+(XESetFlushGC) 381.99 587.23 T
+1 F
+( should be :) 453.95 587.23 T
+4 F
+(int \050 *XESetFlushGC \050 Display *, int, int \050*\051 \050\051 \051 \050\051 ;) 162 565.23 T
+1 F
+(i.e. the function ar) 108 547.23 T
+(gument should be the same type as the function returned.) 180.82 547.23 T
+0 F
+(3.3.3) 108 521.23 T
+(The X Pr) 144 521.23 T
+(otocol T) 183.24 521.23 T
+(ypes) 217.2 521.23 T
+1 F
+0.78 (The status of the types in) 108 504.23 P
+5 F
+0.78 (X1) 215.39 504.23 P
+0.78 (1/Xproto.h) 226.5 504.23 P
+1 F
+0.78 ( is not clear) 270.66 504.23 P
+0.78 (. In Appendix C it is stated that for each of the X) 318.8 504.23 P
+0.74 (requests listed in Appendix A there is a request number) 108 492.23 P
+0.74 (,) 336.06 492.23 P
+4 F
+1.78 (X_DoSomething) 341.8 492.23 P
+1 F
+0.74 (, and there may also be a) 419.76 492.23 P
+0.56 (request structure,) 108 480.23 P
+4 F
+1.35 (xDoSomethingReq) 180.46 480.23 P
+1 F
+0.56 (, and a reply structure,) 270.41 480.23 P
+4 F
+1.35 (xDoSomethingReply) 365.1 480.23 P
+1 F
+0.56 (. However for) 466.39 480.23 P
+-0.08 (which requests these structures exist, and the precise form they take is only given in the X Protocol doc-) 108 468.23 P
+-0.24 (umentation, not in Xlib. Therefore it was decided to put the constants) 108 456.23 P
+4 F
+-0.58 (X_DoSomething) 384.93 456.23 P
+1 F
+-0.24 ( in) 462.89 456.23 P
+5 F
+-0.24 (xlib5) 475.18 456.23 P
+1 F
+-0.24 (, but to) 495.73 456.23 P
+0.69 (reserve the structures for some extension API,) 108 444.23 P
+5 F
+0.69 (xproto5) 299.93 444.23 P
+1 F
+0.69 (. The) 331.58 444.23 P
+4 F
+1.66 (GetReq) 356 444.23 P
+1 F
+0.69 (,) 391.98 444.23 P
+4 F
+1.66 (GetReqExtra) 397.67 444.23 P
+1 F
+0.69 (,) 463.64 444.23 P
+4 F
+1.66 (GetResReq) 469.33 444.23 P
+1 F
+(and) 108 432.23 T
+4 F
+(GetEmptyReq) 124.93 432.23 T
+1 F
+( macros also more properly belong to this extension.) 190.89 432.23 T
+0 F
+(3.3.4) 108 406.23 T
+(The X10 Compatibility Functions) 144 406.23 T
+1 F
+(The X10 compatibility functions have been omitted. They are obsolete and should not be used.) 108 389.23 T
+108 353.9 523.3 363.9 C
+108 362.9 576 362.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 329.9 523.3 339.9 C
+108 338.9 576 338.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(3.4) 108 344.57 T
+(Running tspec on Xlib) 144 344.57 T
+1 10 Q
+0.12 (Once the description had been entered in this way) 108 313.23 P
+0.12 (,) 307.57 313.23 P
+3 F
+0.12 (tspec) 312.68 313.23 P
+1 F
+0.12 ( was be run to convert it into the corresponding) 333.22 313.23 P
+4 F
+(#pragma token) 108 301.23 T
+1 F
+( statements. This is done by means of the command-line :) 185.96 301.23 T
+4 F
+(tspec -u -v xlib5) 264.68 279.23 T
+3 F
+0.12 (tspec) 108 261.23 P
+1 F
+0.12 ( bears the same relationship to the description as a compiler does to a program, so it is not surpris-) 128.54 261.23 P
+-0.03 (ing that the \336rst attempt to run) 108 249.23 P
+3 F
+-0.03 (tspec) 231.9 249.23 P
+1 F
+-0.03 ( resulted in a number of errors. Most of these were simple misprints) 252.44 249.23 P
+0.12 (in the description, which are easily corrected. Others involve types being used before they are declared,) 108 237.23 P
+1.23 (and were solved by reordering the code. However the following types were detected as never being) 108 225.23 P
+(declared, because they are not properly speci\336ed in the speci\336cation :) 108 213.23 T
+(\245) 115.2 191.23 T
+4 F
+(GC) 122.4 191.23 T
+1 F
+(,) 134.39 191.23 T
+(\245) 115.2 169.23 T
+4 F
+(XcmsCCC) 122.4 169.23 T
+1 F
+(,) 164.38 169.23 T
+(\245) 115.2 147.23 T
+4 F
+(XrmHashTable) 122.4 147.23 T
+1 F
+(,) 194.36 147.23 T
+(\245) 115.2 125.23 T
+4 F
+(ScreenFormat) 122.4 125.23 T
+1 F
+(.) 194.36 125.23 T
+1.35 (What the speci\336cation does have to say about these types seems consistent with the \336rst two being) 108 103.23 P
+-0.21 (pointers to opaque types, and the latter two being opaque types, so these speci\336cations were added to the) 108 91.23 P
+(description.) 108 79.23 T
+FMENDPAGE
+%%EndPage: "9" 15
+%%Page: "10" 15
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Building the Xlib TDF library) 323.03 799.23 T
+(10) 274 43.23 T
+72 759.9 487.3 769.9 C
+72 768.9 540 768.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 735.9 487.3 745.9 C
+72 744.9 540 744.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(3.5) 72 750.57 T
+(Building the Xlib TDF library) 108 750.57 T
+1 10 Q
+0.08 (Once the API description has been run through) 72 719.23 P
+3 F
+0.08 (tspec) 263.04 719.23 P
+1 F
+0.08 (, the next test is to compare it with an implementa-) 283.58 719.23 P
+0.46 (tion of that API through the TDF library building process. The model implementation of X1) 72 707.23 P
+0.46 (1 used for) 446.41 707.23 P
+0.69 (this process was that provided with a pre-release version of System V Release 4.2 running on an ICL) 72 695.23 P
+(SP) 72 683.23 T
+(ARC machine. The errors shown up by the library building process are of four types :) 82.19 683.23 T
+(\245) 79.2 661.23 T
+(Idiosyncrasies of the library building process,) 86.4 661.23 T
+(\245) 79.2 639.23 T
+(Misprints in the speci\336cation,) 86.4 639.23 T
+(\245) 79.2 617.23 T
+(Errors in the description process,) 86.4 617.23 T
+(\245) 79.2 595.23 T
+(Errors and omissions in the implementation.) 86.4 595.23 T
+1.36 (The \336rst type of error generally arises because the library building process uses the system headers) 72 573.23 P
+0.24 (describing the API implementation in a non-standard manner) 72 561.23 P
+0.24 (. For example, consider the API speci\336ca-) 317.67 561.23 P
+(tion :) 72 549.23 T
+4 F
+(+TYPE Complex ;) 126 527.23 T
+(+MACRO int Real \050 Complex \051 ;) 126 513.23 T
+(+MACRO int Imag \050 Complex \051 ;) 126 499.23 T
+1 F
+(and the implementation :) 72 481.23 T
+4 F
+(#define Real\050 c \051 \050 \050 c \051.real \051) 126 459.23 T
+(#define Imag\050 c \051 \050 \050 c \051.imag \051) 126 445.23 T
+(typedef struct {) 126 431.23 T
+(int real ;) 162 417.23 T
+(int imag ;) 162 403.23 T
+(} Complex ;) 126 389.23 T
+1 F
+0.3 (For most purposes the macros) 72 371.23 P
+4 F
+0.72 (Real) 195.92 371.23 P
+1 F
+0.3 ( and) 219.91 371.23 P
+4 F
+0.72 (Imag) 239.93 371.23 P
+1 F
+0.3 ( in the implementation are just stored by the preproces-) 263.92 371.23 P
+0.18 (sor and expanded when required. However in the library build they are not just macros, they are de\336ni-) 72 359.23 P
+0.21 (tions of the tokens) 72 347.23 P
+4 F
+0.49 (Real) 148.89 347.23 P
+1 F
+0.21 ( and) 172.88 347.23 P
+4 F
+0.49 (Imag) 192.72 347.23 P
+1 F
+0.21 (. As such they are expanded when they are encountered. But at this) 216.71 347.23 P
+0.2 (stage we only know that) 72 335.23 P
+4 F
+0.48 (Complex) 172.66 335.23 P
+1 F
+0.2 ( is an opaque type, not that it is the given structure. Thus the de\336ni-) 214.64 335.23 P
+0.47 (tion of) 72 323.23 P
+4 F
+1.14 (Real) 101.82 323.23 P
+1 F
+0.47 ( will fail with an error to the ef) 125.81 323.23 P
+0.47 (fect that) 252.68 323.23 P
+4 F
+1.14 (Complex) 288.6 323.23 P
+1 F
+0.47 ( does not have a \336eld called) 330.58 323.23 P
+4 F
+1.14 (real) 447.43 323.23 P
+1 F
+0.47 (. T) 471.42 323.23 P
+0.47 (o) 482.3 323.23 P
+0.73 (conclude : when it comes to token de\336nitions, the declare before use rule even applies to the body of) 72 311.23 P
+0.2 (macro de\336nitions. In the model implementation of X1) 72 299.23 P
+0.2 (1 the headers) 289.03 299.23 P
+5 F
+0.2 (X1) 344.87 299.23 P
+0.2 (1/Xlib.h) 355.98 299.23 P
+1 F
+0.2 ( and) 389.04 299.23 P
+5 F
+0.2 (X1) 408.87 299.23 P
+0.2 (1/Xcms.h) 419.99 299.23 P
+1 F
+0.2 ( need a) 458.58 299.23 P
+(little hacking around to get round this problem.) 72 287.23 T
+0.32 (A similar problem concerns duplicate macros. Normally a macro may be de\336ned any number of times,) 72 265.23 P
+-0.22 (provided the de\336nitions are consistent. However if these macros are being used to de\336ne tokens they can) 72 253.23 P
+(lead to multiple token de\336nition errors.) 72 241.23 T
+0.09 (Some of the implementation errors shown up by the library building process are technical is nature. For) 72 219.23 P
+0.2 (example it does not allow tokens representing types \050or \336eld selectors\051 to be de\336ned by macros. This is) 72 207.23 P
+-0.16 (because these objects do not occupy the macro namespace \050see [3]\051, so such implementations are illegal.) 72 195.23 P
+-0.09 (The model implementation de\336nes the types) 72 183.23 P
+4 F
+-0.21 (Bool) 251.38 183.23 P
+1 F
+-0.09 ( and) 275.36 183.23 P
+4 F
+-0.21 (Status) 294.62 183.23 P
+1 F
+-0.09 ( by macros, so it is necessary to change) 330.6 183.23 P
+(these into) 72 171.23 T
+4 F
+(typedef) 113.09 171.23 T
+1 F
+(\325) 155.61 171.23 T
+(s.) 158.39 171.23 T
+-0.13 (All other errors show up genuine contradictions between the description of the API and the implementa-) 72 149.23 P
+0.71 (tion. On the \336rst run through the vast majority of these will be because there has been an error in the) 72 137.23 P
+1.15 (description process and the description does not re\337ect what is actually in the speci\336cation. What is) 72 125.23 P
+(more interesting is when the speci\336cation and the implementation disagree.) 72 113.23 T
+0.84 (There are only a couple of such disagreements in Xlib. The \336rst class are the unde\336ned token errors.) 72 91.23 P
+-0.01 (These occur when an object is speci\336ed in the) 72 79.23 P
+3 F
+-0.01 (tspec) 258.13 79.23 P
+1 F
+-0.01 ( description of the API, but is not de\336ned in the API) 278.67 79.23 P
+FMENDPAGE
+%%EndPage: "10" 16
+%%Page: "11" 16
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 Building the Xlib TDF library) 350.03 799.23 T
+(11) 310 43.23 T
+-0.15 (implementation. As mentioned above, many of these are due to mistypings in the description. Others are) 108 763.23 P
+0.1 (due to the library build looking in the wrong place - if an object is de\336ned in a dif) 108 751.23 P
+0.1 (ferent header than the) 436.12 751.23 P
+-0.16 (one prescribed by the) 108 739.23 P
+3 F
+-0.16 (tspec) 195.62 739.23 P
+1 F
+-0.16 ( description it may be necessary to modify the library build to make it look in) 216.16 739.23 P
+0.44 (the alternative location. This sort of error is particularly common when the speci\336cation is vague as to) 108 727.23 P
+0.75 (which headers objects are de\336ned in. However some unde\336ned token errors are due to genuine omis-) 108 715.23 P
+-0.16 (sions from the implementation. In the Xlib library build the following such omissions were discovered :) 108 703.23 P
+(\245) 115.2 681.23 T
+2.03 (The atoms) 122.4 681.23 P
+4 F
+4.88 (XA_WM_COLORMAP_WINDOWS) 170.88 681.23 P
+1 F
+2.03 (,) 302.81 681.23 P
+4 F
+4.88 (XA_WM_PROTOCOLS) 309.84 681.23 P
+1 F
+2.03 ( and) 399.79 681.23 P
+4 F
+4.88 (XA_WM_STATE) 423.29 681.23 P
+1 F
+2.03 ( are not) 489.25 681.23 P
+0.04 (de\336ned. These values are best left unde\336ned so that an attempt to install a program which uses them) 122.4 669.23 P
+(will fail. This is done by adding the following lines to the implementation :) 122.4 657.23 T
+4 F
+(#pragma ignore XA_WM_COLORMAP_WINDOWS) 162 635.23 T
+(#pragma ignore XA_WM_PROTOCOLS) 162 621.23 T
+(#pragma ignore XA_WM_STATE) 162 607.23 T
+1 F
+(\245) 115.2 589.23 T
+2.15 (The value) 122.4 589.23 P
+4 F
+5.17 (XcmsInitFailure) 168.89 589.23 P
+1 F
+2.15 ( is not de\336ned. A de\336nition of it to be) 258.84 589.23 P
+4 F
+5.17 (XcmsInitDefault) 433.35 589.23 P
+1 F
+(\050which seems reasonable\051 was provided.) 122.4 577.23 T
+(\245) 115.2 555.23 T
+0.06 (The cursor) 122.4 555.23 P
+4 F
+0.15 (XC_dot_box_mask) 168.04 555.23 P
+1 F
+0.06 ( is not de\336ned in the implementation. I suspect that this is because) 257.99 555.23 P
+(the name of this cursor should be) 122.4 543.23 T
+4 F
+(XC_dotbox) 257.59 543.23 T
+1 F
+(.) 311.56 543.23 T
+(\245) 115.2 521.23 T
+0.57 (The value) 122.4 521.23 P
+4 F
+1.36 (EPERBATCH) 165.72 521.23 P
+1 F
+0.57 ( is not de\336ned. It is not clear what its value should be, so it was left unde-) 219.69 521.23 P
+(\336ned.) 122.4 509.23 T
+0.3 (The second class of errors occur when the speci\336cation and the implementation both specify an object,) 108 487.23 P
+-0.17 (but their speci\336cations disagree. A number of such errors occurred with Xlib. The \336rst concerns the type) 108 475.23 P
+4 F
+0.71 (XcmsColorFormat) 108 463.23 P
+1 F
+0.3 ( which is speci\336ed to be) 197.95 463.23 P
+4 F
+0.71 (unsigned long) 298.56 463.23 P
+1 F
+0.3 ( but de\336ned to be) 377.23 463.23 P
+4 F
+0.71 (unsigned int) 450.62 463.23 P
+1 F
+0.37 (in the implementation. Not a vital error I agree, but one requiring attention. The solution decided upon) 108 451.23 P
+0.91 (was to relax the speci\336cation slightly by making) 108 439.23 P
+4 F
+2.19 (XcmsColorFormat) 311.29 439.23 P
+1 F
+0.91 ( a general integral type in the) 401.24 439.23 P
+(API description.) 108 427.23 T
+0.7 (The remaining errors detected concern function prototypes. In the speci\336cation) 108 405.23 P
+4 F
+1.67 (XrmCombineFile-) 433.35 405.23 P
+0.92 (Database) 108 393.23 P
+1 F
+0.38 ( returns) 155.97 393.23 P
+4 F
+0.92 (void) 189.49 393.23 P
+1 F
+0.38 (, whereas in the implementation it returns) 213.48 393.23 P
+4 F
+0.92 (Status) 384.94 393.23 P
+1 F
+0.38 (. A careful reading of the) 420.92 393.23 P
+0.19 (speci\336cation however reveals that it is later assumes that the function does indeed return a status value,) 108 381.23 P
+(so that the) 108 369.23 T
+4 F
+(void) 151.59 369.23 T
+1 F
+( return value is a misprint in the speci\336cation.) 175.57 369.23 T
+(The function) 108 347.23 T
+4 F
+(XcmsStoreColors) 161.85 347.23 T
+1 F
+( is declared in the speci\336cation to be :) 251.8 347.23 T
+4 F
+(Status XcmsStoreColors \050 Display *, Colormap, XcmsColor [],) 162 325.23 T
+(int, Bool [] \051 ;) 198 311.23 T
+1 F
+(whereas the implementation has :) 108 293.23 T
+4 F
+(Status XcmsStoreColors \050 Display *, Colormap, XcmsColor [],) 162 271.23 T
+(unsigned int, Bool [] \051 ;) 198 257.23 T
+1 F
+1.32 (This dif) 108 239.23 P
+1.32 (ference is very minor \050no programs are likely to break because of it\051, but I suspect that the) 140.52 239.23 P
+1.78 (implementation is correct. Other similar functions with names beginning with) 108 227.23 P
+4 F
+4.28 (Xcms) 439.27 227.23 P
+1 F
+1.78 ( seem to have) 463.26 227.23 P
+4 F
+2.71 (unsigned int) 108 215.23 P
+1 F
+1.13 ( for their) 182.67 215.23 P
+4 F
+2.71 (ncolors) 223.53 215.23 P
+1 F
+1.13 ( ar) 265.5 215.23 P
+1.13 (gument, although those beginning with just) 276.72 215.23 P
+4 F
+2.71 (X) 459.23 215.23 P
+1 F
+1.13 ( seem to have) 465.23 215.23 P
+4 F
+(int) 108 203.23 T
+1 F
+(.) 125.99 203.23 T
+(The function) 108 181.23 T
+4 F
+(XcmsAllocNamedColor) 161.85 181.23 T
+1 F
+( presents a similar dif) 275.79 181.23 T
+(\336culty) 361.66 181.23 T
+(. The speci\336cation has :) 386.56 181.23 T
+4 F
+(Status XcmsAllocNamedColor \050 Display *, Colormap, char *,) 162 159.23 T
+(XcmsColorFormat, XcmsColor *, XcmsColor * \051 ;) 198 145.23 T
+1 F
+(whereas the implementation has :) 108 127.23 T
+4 F
+(Status XcmsAllocNamedColor \050 Display *, Colormap, char *,) 162 105.23 T
+(XcmsColor *, XcmsColor *, XcmsColorFormat \051 ;) 198 91.23 T
+FMENDPAGE
+%%EndPage: "11" 17
+%%Page: "12" 17
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Describing Xt) 387.17 799.23 T
+(12) 274 43.23 T
+-0.19 (I suspect that the implementation is correct by analogy with) 72 763.23 P
+4 F
+-0.45 (XcmsAllocColor) 311.65 763.23 P
+1 F
+-0.19 ( and other functions, in) 395.6 763.23 P
+(which the colour format ar) 72 751.23 T
+(gument comes last.) 178.4 751.23 T
+72 719.9 487.3 731.9 C
+72 730.9 540 730.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 727.9 540 727.9 2 L
+N
+0 0 595.3 841.9 C
+72 683.9 487.3 695.9 C
+72 694.9 540 694.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 691.9 540 691.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(4) 72 703.9 T
+(Describing Xt) 99 703.9 T
+1 10 Q
+0.37 (W) 72 627.23 P
+0.37 (e now move on to consider the X T) 80.64 627.23 P
+0.37 (oolkit Intrinsics \050Xt\051 as speci\336ed in [6]. This will be described in) 223.93 627.23 P
+(less detail than Xlib.) 72 615.23 T
+72 579.9 487.3 589.9 C
+72 588.9 540 588.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 555.9 487.3 565.9 C
+72 564.9 540 564.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(4.1) 72 570.57 T
+(W) 108 570.57 T
+(idgets) 121.74 570.57 T
+0 10 Q
+(4.1.1) 72 533.23 T
+(Hiding Data) 108 533.23 T
+1 F
+0.49 (The Xt widgets provide any example of how much easier it is to hide data with TDF than with just C.) 72 516.23 P
+(For example, in) 72 504.23 T
+5 F
+(X1) 137.51 504.23 T
+(1/Intrinsic.h) 148.63 504.23 T
+1 F
+(, we can write :) 200.01 504.23 T
+4 F
+(+TYPE \050 struct \051 CoreRec ;) 126 482.23 T
+(+TYPEDEF CoreRec *CoreWidget ;) 126 468.23 T
+1 F
+(and in) 72 450.23 T
+5 F
+(X1) 99.21 450.23 T
+(1/IntrinsicP) 110.32 450.23 T
+(.h) 158.46 450.23 T
+1 F
+( :) 166.52 450.23 T
+4 F
+(+USE "xt5", "X11/Intrinsic.h" ;) 126 428.23 T
+(+FIELD CoreRec {) 126 414.23 T
+(CorePart core ;) 162 400.23 T
+(} ;) 126 386.23 T
+1 F
+0.5 (So that if) 72 368.23 P
+5 F
+0.5 (X1) 112.65 368.23 P
+0.5 (1/Intrinsic.h) 123.77 368.23 P
+1 F
+0.5 ( is included we know that) 175.15 368.23 P
+4 F
+1.2 (CoreWidget) 283.09 368.23 P
+1 F
+0.5 ( is a pointer to the opaque structure) 343.05 368.23 P
+0.9 (type) 72 356.23 P
+4 F
+2.15 (CoreRec) 92.61 356.23 P
+1 F
+0.9 (, whereas if) 134.58 356.23 P
+5 F
+0.9 (X1) 186.11 356.23 P
+0.9 (1/IntrinsicP) 197.23 356.23 P
+0.9 (.h) 245.37 356.23 P
+1 F
+0.9 ( is included we get the additional information that) 253.43 356.23 P
+4 F
+2.15 (Cor-) 463.31 356.23 P
+(eRec) 72 344.23 T
+1 F
+( has a \336eld) 95.99 344.23 T
+4 F
+(core) 141.51 344.23 T
+1 F
+( of type) 165.5 344.23 T
+4 F
+(CorePart) 198.53 344.23 T
+1 F
+(.) 246.5 344.23 T
+0.47 (In fact,) 72 322.23 P
+4 F
+1.12 (CoreRec) 103.74 322.23 P
+1 F
+0.47 ( consists of precisely this one \336eld \050it does not appear with the non-exact structures,) 145.71 322.23 P
+0.44 (such as) 72 310.23 P
+4 F
+1.07 (CorePart) 104.53 310.23 P
+1 F
+0.44 (, listed at the end of Section 1.5\051. Therefore what we should actually write in) 152.51 310.23 P
+5 F
+0.44 (X1) 468.41 310.23 P
+0.44 (1/) 479.52 310.23 P
+(IntrinsicP) 72 298.23 T
+(.h) 112.37 298.23 T
+1 F
+( is as follows :) 120.42 298.23 T
+4 F
+(+USE "xt5", "X11/Intrinsic.h" ;) 126 276.23 T
+(+FIELD CoreRec := {) 126 262.23 T
+(CorePart core ;) 162 248.23 T
+(} ;) 126 234.23 T
+1 F
+-0.07 (The distinction between this and the previous speci\336cation is interesting. In both cases we are extending) 72 216.23 P
+0.58 (the API given in) 72 204.23 P
+5 F
+0.58 (X1) 142.61 204.23 P
+0.58 (1/Intrinsic.h) 153.72 204.23 P
+1 F
+0.58 ( by) 205.1 204.23 P
+5 F
+0.58 (X1) 221.25 204.23 P
+0.58 (1/IntrinsicP) 232.37 204.23 P
+0.58 (.h) 280.51 204.23 P
+1 F
+0.58 (. However in the \336rst case, it is by adding a new) 288.57 204.23 P
+0.48 (object, the \336eld selector) 72 192.23 P
+4 F
+1.15 (CoreRec.core) 171.9 192.23 P
+1 F
+0.48 (, whereas in the second case it is by specialising an existing) 243.86 192.23 P
+(object,) 72 180.23 T
+4 F
+(CoreRec) 101.42 180.23 T
+1 F
+(, to the structure :) 143.4 180.23 T
+4 F
+(struct {) 126 158.23 T
+(CorePart core ;) 162 144.23 T
+(} ;) 126 130.23 T
+1 F
+0.17 (Alternatively expressed : in the \336rst case we are adding a generator) 72 112.23 P
+0.17 (, in the second we are adding a rela-) 341.88 112.23 P
+0.26 (tion.) 72 100.23 P
+3 F
+0.26 (tspec) 92.81 100.23 P
+1 F
+0.26 ( is designed primarily for adding generators; its support for adding relations is an area which) 113.35 100.23 P
+(needs development.) 72 88.23 T
+FMENDPAGE
+%%EndPage: "12" 18
+%%Page: "13" 18
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 W) 437.61 799.23 T
+(idgets) 489.12 799.23 T
+(13) 310 43.23 T
+(Another interesting point is that if I write :) 108 763.23 T
+4 F
+(#include <X11/Intrinsic.h>) 162 741.23 T
+(CoreRec c ;) 162 727.23 T
+1 F
+(then the producer will use the token) 108 709.23 T
+4 F
+(CoreRec) 253.73 709.23 T
+1 F
+( to represent the type of) 295.71 709.23 T
+4 F
+(c) 392.85 709.23 T
+1 F
+(, whereas if I write :) 398.85 709.23 T
+4 F
+(#include <X11/IntrinsicP.h>) 162 687.23 T
+(CoreRec c ;) 162 673.23 T
+1 F
+1.27 (it will use the explicit structure de\336nition. Of course it is important that the two representations are) 108 655.23 P
+0.29 (equivalent, that is that the de\336nition of the token) 108 643.23 P
+4 F
+0.69 (CoreRec) 307.16 643.23 P
+1 F
+0.29 ( is the given structure. But the de\336nition of) 349.13 643.23 P
+-0.07 (this token corresponds to the de\336nition of the structure) 108 631.23 P
+4 F
+-0.17 (CoreRec) 328.59 631.23 P
+1 F
+-0.07 ( in the implementation, so all we actu-) 370.57 631.23 P
+-0.25 (ally require is that the implementation and the description agree as to the de\336nition of) 108 619.23 P
+4 F
+-0.59 (CoreRec) 449.37 619.23 P
+1 F
+-0.25 (. Unfor-) 491.35 619.23 P
+0.12 (tunately) 108 607.23 P
+0.12 (, in this one case, the TDF library building process is not able to check this, because the C rules) 139.55 607.23 P
+0.44 (for structure de\336nitions get in the way) 108 595.23 P
+0.44 (. What we ef) 262.68 595.23 P
+0.44 (fectively have is two de\336nitions for the same struc-) 314.89 595.23 P
+0.07 (ture, which we want checked for consistency) 108 583.23 P
+0.07 (. Unfortunately C does not allow for even consistent redef-) 287.32 583.23 P
+(initions of structures, so it is not possible to check for consistency during the library build.) 108 571.23 T
+0 F
+(4.1.2) 108 545.23 T
+(The W) 144 545.23 T
+(idget Hierar) 172.97 545.23 T
+(chy) 225.26 545.23 T
+1 F
+0.52 (Xt describes a hierarchy of widgets \050and widget-like objects\051, illustrated in Fig. 1. This hierarchy may) 108 528.23 P
+1.19 (be extended by de\336ning new widgets. This can be done either by extension APIs, such as Xaw and) 108 516.23 P
+0 (Motif, or by individual application writers. The hierarchy gets more re\336ned as one moves down the dia-) 108 504.23 P
+(gram : the set of) 108 492.23 T
+4 F
+(CompositeWidget) 175.45 492.23 T
+1 F
+(\325) 265.4 492.23 T
+(s is a subset of the set of) 268.18 492.23 T
+4 F
+(CoreWidget) 368.12 492.23 T
+1 F
+(\325) 428.08 492.23 T
+(s etc.) 430.86 492.23 T
+0.49 (The C type system does not allow for compile-time checking of this widget hierarchy) 108 470.23 P
+0.49 (. For example, if) 455.47 470.23 P
+(we had :) 108 458.23 T
+4 F
+(extern void UseCoreWidget \050 CoreWidget \051 ;) 162 436.23 T
+(void UseCompositeWidget \050 CompositeWidget w \051) 162 422.23 T
+({) 162 408.23 T
+(UseCoreWidget \050 w \051 ;) 198 394.23 T
+(return ;) 198 380.23 T
+(}) 162 366.23 T
+1 F
+0.35 (this will fail to compile, because the conversion from) 108 348.23 P
+4 F
+0.83 (CompositeWidget) 326.53 348.23 P
+1 F
+0.35 ( to) 416.48 348.23 P
+4 F
+0.83 (CoreWidget) 429.94 348.23 P
+1 F
+0.35 ( implied) 489.91 348.23 P
+0.12 (by the widget hierarchy cannot be expressed to the compiler) 108 336.23 P
+0.12 (. It would of course be possible to put in an) 349.17 336.23 P
+(explicit cast. But explicit casts can equally well go against the widget hierarchy) 108 324.23 T
+(.) 425.19 324.23 T
+0.04 (For this reason, the X1) 108 302.23 P
+0.04 (1 speci\336cation and X1) 199.13 302.23 P
+0.04 (1 application writers do not explicitly spell out the class of) 288.56 302.23 P
+0.22 (each widget, but instead use the generic type,) 108 290.23 P
+4 F
+0.54 (Widget) 293.55 290.23 P
+1 F
+0.22 (. If Fig. 1 is thought of as showing all the legiti-) 329.53 290.23 P
+0.99 (mate conversions between classes of widgets \050by following the lines up\051, the use of the generic type) 108 278.23 P
+4 F
+0.22 (Widget) 108 266.23 P
+1 F
+0.09 ( ef) 143.98 266.23 P
+0.09 (fectively breaks the hierarchy) 154.16 266.23 P
+0.09 (. Any class of widget can be converted to, and from,) 272.29 266.23 P
+4 F
+0.22 (Widget) 484.82 266.23 P
+1 F
+0.09 (,) 520.8 266.23 P
+(therefore it is possible to convert between any two classes of widgets.) 108 254.23 T
+0 F
+(4.1.3) 108 228.23 T
+(Conversion T) 144 228.23 T
+(okens) 201.11 228.23 T
+1 F
+0.34 (TDF actually allows for type hierarchies such as those in Fig. 1 to be expressed. Suppose that we have) 108 211.23 P
+0.72 (types) 108 199.23 P
+4 F
+1.73 (One) 132.32 199.23 P
+1 F
+0.72 (,) 150.31 199.23 P
+4 F
+1.73 (Two) 156.02 199.23 P
+1 F
+0.72 (,) 174.01 199.23 P
+4 F
+1.73 (Three) 179.73 199.23 P
+1 F
+0.72 (,) 209.71 199.23 P
+4 F
+1.73 (Four) 215.43 199.23 P
+1 F
+0.72 ( arranged in the hierarchy shown in Fig. 2. This may be expressed as) 239.42 199.23 P
+(follows :) 108 187.23 T
+4 F
+(+TYPE One, Two, Three, Four ;) 162 165.23 T
+(+MACRO One __Convert21 \050 Two \051 ;) 162 137.23 T
+(+MACRO Two __Convert32 \050 Three \051 ;) 162 123.23 T
+(+MACRO Two __Convert42 \050 Four \051 ;) 162 109.23 T
+(+MACRO One __Convert41 \050 Three \051 ;) 162 95.23 T
+(+MACRO One __Convert41 \050 Four \051 ;) 162 81.23 T
+FMENDPAGE
+%%EndPage: "13" 19
+%%Page: "14" 19
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 W) 410.61 799.23 T
+(idgets) 462.12 799.23 T
+(14) 274 43.23 T
+4 F
+(%%) 126 749.23 T
+(#ifndef __BUILDING_LIBS) 126 735.23 T
+(#pragma accept conversion __Convert21) 126 721.23 T
+(#pragma accept conversion __Convert32) 126 707.23 T
+(#pragma accept conversion __Convert42) 126 693.23 T
+(#pragma accept conversion __Convert31) 126 679.23 T
+(#pragma accept conversion __Convert41) 126 665.23 T
+(#endif) 126 651.23 T
+(%%) 126 637.23 T
+1 F
+0.63 (The) 72 619.23 P
+4 F
+1.51 (__Convert) 90.67 619.23 P
+1 F
+0.63 ( macros express all the legimate conversions allowed by the hierarchy in an explicit) 144.64 619.23 P
+0.08 (fashion. However the) 72 607.23 P
+4 F
+0.19 (#pragma accept conversion) 160.5 607.23 P
+1 F
+0.08 ( statements make them into implicit conver-) 310.81 607.23 P
+0.23 (sions. When the C) 72 595.23 P
+2 F
+0.23 (\256) 148.71 595.23 P
+1 F
+0.23 ( TDF producer has to convert a value of one type to another type, it \336rstly checks) 158.57 595.23 P
+0.41 (all the normal C conversion rules and then all the tokens registered using) 72 583.23 P
+4 F
+1 (#pragma accept con-) 371.36 583.23 P
+(version) 72 571.23 T
+1 F
+(. For example, in :) 113.98 571.23 T
+4 F
+(One x ;) 126 549.23 T
+(Two y = x ;) 126 535.23 T
+1 F
+-0.13 (the conversion token) 72 517.23 P
+4 F
+-0.31 (__Convert21) 157.38 517.23 P
+1 F
+-0.13 ( is used to transform) 223.35 517.23 P
+4 F
+-0.31 (x) 306.81 517.23 P
+1 F
+-0.13 ( from a value of type) 312.8 517.23 P
+4 F
+-0.31 (One) 398.07 517.23 P
+1 F
+-0.13 ( to a value of type) 416.06 517.23 P
+4 F
+(Two) 72 505.23 T
+1 F
+(. In ef) 89.99 505.23 T
+(fect the program is transformed to :) 113.4 505.23 T
+4 F
+(One x ;) 126 483.23 T
+(Two y = __Convert21 \050 x \051 ;) 126 469.23 T
+1 F
+(As another example, suppose that we have :) 72 451.23 T
+4 F
+(extern void UseTwo \050 Two \051 ;) 126 429.23 T
+(void Use \050 One a, Three b \051) 126 415.23 T
+({) 126 401.23 T
+(UseTwo \050 b \051 ;) 162 387.23 T
+(UseTwo \050 a \051 ;) 162 373.23 T
+(return ;) 162 359.23 T
+(}) 126 345.23 T
+1 F
+0.32 (then the) 72 327.23 P
+4 F
+0.77 (Three) 107.07 327.23 P
+2 F
+0.32 (\256) 139.87 327.23 P
+4 F
+0.77 (Two) 152.55 327.23 P
+1 F
+0.32 ( conversion on line 4 will be allowed \050using) 170.54 327.23 P
+4 F
+0.77 (__Convert32) 351.38 327.23 P
+1 F
+0.32 (\051, but the) 417.35 327.23 P
+4 F
+0.77 (One) 456.62 327.23 P
+2 F
+0.32 (\256) 477.43 327.23 P
+4 F
+(Two) 72 315.23 T
+1 F
+( conversion on line 5 will not.) 89.99 315.23 T
+0.01 (The) 72 293.23 P
+4 F
+0.04 (__Convert) 90.06 293.23 P
+1 F
+0.01 ( tokens are implementation-dependent, and must be explicitly de\336ned during the TDF) 144.02 293.23 P
+-0.24 (library building process. \050Note that the) 72 281.23 P
+4 F
+-0.58 (#pragma accept conversion) 227.94 281.23 P
+1 F
+-0.24 ( statements are protected by) 376.69 281.23 P
+-0.11 (the) 72 269.23 P
+4 F
+-0.27 (__BUILDING_LIBS) 86.6 269.23 P
+1 F
+-0.11 ( macro, which is by convention de\336ned during library building - this is to stop) 176.55 269.23 P
+(the conversion tokens being de\336ned recursively) 72 257.23 T
+(.\051 An example implementation might be :) 262.05 257.23 T
+4 F
+(typedef struct { int a ; } *One ;) 126 235.23 T
+(typedef struct { int a, b ; } *Two ;) 126 221.23 T
+(typedef struct { int a, b, c ; } *Three ;) 126 207.23 T
+(typedef struct { int a, b, d ; } *Four ;) 126 193.23 T
+(#define __Convert21\050 x \051 \050 \050 One \051 \050 x \051 \051) 126 165.23 T
+(#define __Convert32\050 x \051 \050 \050 Two \051 \050 x \051 \051) 126 151.23 T
+(#define __Convert42\050 x \051 \050 \050 Two \051 \050 x \051 \051) 126 137.23 T
+(#define __Convert31\050 x \051 \050 \050 One \051 \050 x \051 \051) 126 123.23 T
+(#define __Convert41\050 x \051 \050 \050 One \051 \050 x \051 \051) 126 109.23 T
+FMENDPAGE
+%%EndPage: "14" 20
+%%Page: "15" 20
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 The XtAr) 391.47 799.23 T
+(gV) 472.34 799.23 T
+(al T) 483.45 799.23 T
+(ype) 498.57 799.23 T
+(15) 310 43.23 T
+0.03 (A point worth making is that it is necessary to express all the possible conversions in this way) 108 763.23 P
+0.03 (. The pro-) 483.54 763.23 P
+-0.12 (ducer cannot handle transitivity in conversion tokens. T) 108 751.23 P
+-0.12 (ransitivity is decidedly an) 329.43 751.23 P
+3 F
+-0.12 (n) 434.45 751.23 P
+3 8 Q
+-0.1 (2) 439.44 756.23 P
+1 10 Q
+-0.12 ( problem; for exam-) 443.44 751.23 P
+(ple the 1) 108 739.23 T
+(1 basic conversions in Fig. 1 expand to 54 when transitivity is taken into account.) 142.05 739.23 T
+0.32 (So the TDF extensions to C can express the widget hierarchy "properly". However) 108 717.23 P
+0.32 (, since the hierarchy) 441.85 717.23 P
+-0.18 (cannot be exploited from C and so is not used by application writers, and is anyway broken by the use of) 108 705.23 P
+4 F
+(Widget) 108 693.23 T
+1 F
+( as a generic type, it is probably not worth the ef) 143.98 693.23 T
+(fort.) 336.99 693.23 T
+108 657.9 523.3 667.9 C
+108 666.9 576 666.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 633.9 523.3 643.9 C
+108 642.9 576 642.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(4.2) 108 648.57 T
+(The XtArgV) 144 648.57 T
+(al T) 217.71 648.57 T
+(ype) 240.39 648.57 T
+1 10 Q
+1.09 (The implementation-speci\336c types described in Section 1.5 of the Xt speci\336cation raise a number of) 108 617.23 P
+-0.18 (issues.) 108 605.23 P
+4 F
+-0.44 (XtArgVal) 136.69 605.23 P
+1 F
+-0.18 ( is designed to be a generic type lar) 184.67 605.23 P
+-0.18 (ge enough to hold most pointer and integral types,) 324.04 605.23 P
+2.79 (and examining various X1) 108 593.23 P
+2.79 (1 applications shows that both pointers and integers are converted to) 221.75 593.23 P
+4 F
+-0.14 (XtArgVal) 108 581.23 P
+1 F
+-0.06 (\325) 155.97 581.23 P
+-0.06 (s without explicit casts. The solution to this is try to write down exactly what is in the spec-) 158.75 581.23 P
+(i\336cation.) 108 569.23 T
+4 F
+(XtArgVal) 145.76 569.23 T
+1 F
+( is an opaque type, and for certain integral and pointer types) 193.73 569.23 T
+4 F
+(t) 436.05 569.23 T
+1 F
+( the conversions :) 442.05 569.23 T
+4 F
+(XtArgVal) 162 547.23 T
+2 F
+(\256) 215.97 547.23 T
+4 F
+( t) 225.84 547.23 T
+(t) 162 533.23 T
+2 F
+(\256) 173.99 533.23 T
+4 F
+( XtArgVal) 183.86 533.23 T
+1 F
+-0.16 (are allowed. This can be done using the conversion tokens mentioned above. The) 108 515.23 P
+3 F
+-0.16 (tspec) 433.13 515.23 P
+1 F
+-0.16 ( description takes) 453.67 515.23 P
+(the form :) 108 503.23 T
+4 F
+(+TYPE XtArgVal ;) 162 481.23 T
+(+TOKEN __MyXtArgValToPtr) 162 467.23 T
+(%% PROC { TYPE t, EXP rvalue : XtArgVal : e |\134) 198 453.23 T
+(EXP e } EXP rvalue : t * : %% ;) 198 439.23 T
+(+TOKEN __MyPtrToXtArgVal) 162 425.23 T
+(%% PROC { TYPE t, EXP rvalue : t * : e |\134) 198 411.23 T
+(EXP e } EXP rvalue : XtArgVal : %% ;) 198 397.23 T
+(+TOKEN __MyXtArgValToInt) 162 383.23 T
+(%% PROC { VARIETY v, EXP rvalue : XtArgVal : e |\134) 198 369.23 T
+(EXP e } EXP rvalue : v : %% ;) 198 355.23 T
+(+TOKEN __MyIntToXtArgVal) 162 341.23 T
+(%% PROC { VARIETY v, EXP rvalue : v : e |\134) 198 327.23 T
+(EXP e } EXP rvalue : XtArgVal : %% ;) 198 313.23 T
+(%%) 162 299.23 T
+(#ifndef __BUILDING_LIBS) 162 285.23 T
+(#pragma accept conversion __MyXtArgValToPtr) 162 271.23 T
+(#pragma accept conversion __MyPtrToXtArgVal) 162 257.23 T
+(#pragma accept conversion __MyIntToXtArgVal) 162 243.23 T
+(#pragma accept conversion __MyXtArgValToInt) 162 229.23 T
+(#endif) 162 215.23 T
+(%%) 162 201.23 T
+1 F
+0.75 (Note that this is one of the rare occasions when we need to step outside the) 108 183.23 P
+3 F
+0.75 (tspec) 421.96 183.23 P
+1 F
+0.75 ( syntax and directly) 442.5 183.23 P
+0.25 (access the full power of the) 108 171.23 P
+4 F
+0.6 (#pragma token) 221.62 171.23 P
+1 F
+0.25 ( syntax. For example the \336rst) 300.17 171.23 P
+4 F
+0.6 (+TOKEN) 420.76 171.23 P
+1 F
+0.25 ( statement trans-) 456.73 171.23 P
+(lates to :) 108 159.23 T
+4 F
+(#pragma token PROC { TYPE t, EXP rvalue : XtArgVal : e |\134) 162 137.23 T
+(EXP e } EXP value : t * : __MyXtArgValToPtr #) 198 123.23 T
+1 F
+1.44 (This means that) 108 105.23 P
+4 F
+3.46 (__MyXtArgValToPtr) 178.12 105.23 P
+1 F
+1.44 ( takes an expression) 280.06 105.23 P
+4 F
+3.46 (e) 368.53 105.23 P
+1 F
+1.44 ( of type) 374.53 105.23 P
+4 F
+3.46 (XtArgVal) 411.88 105.23 P
+1 F
+1.44 ( and returns an) 459.86 105.23 P
+0.43 (expression of type) 108 93.23 P
+4 F
+1.04 (t *) 185.08 93.23 P
+1 F
+0.43 ( for some type) 204.11 93.23 P
+4 F
+1.04 (t) 265.81 93.23 P
+1 F
+0.43 (. The actual value of) 271.8 93.23 P
+4 F
+1.04 (t) 358.35 93.23 P
+1 F
+0.43 ( will be deduced by the C) 364.34 93.23 P
+2 F
+0.43 (\256) 472.04 93.23 P
+1 F
+0.43 ( TDF pro-) 481.9 93.23 P
+FMENDPAGE
+%%EndPage: "15" 21
+%%Page: "16" 21
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Omissions from the Xt Speci\336cation) 297.49 799.23 T
+(16) 274 43.23 T
+0.62 (ducer from the context in which) 72 763.23 P
+4 F
+1.48 (__MyXtArgValToPtr) 206.15 763.23 P
+1 F
+0.62 ( is used. Thus) 308.09 763.23 P
+4 F
+1.48 (__MyXtArgValToPtr) 368.02 763.23 P
+1 F
+0.62 ( is a) 469.96 763.23 P
+(generic) 72 751.23 T
+4 F
+(XtArgVal) 103.91 751.23 T
+1 F
+( to pointer conversion token. \050See [3] for more details.\051) 151.89 751.23 T
+1.44 (The conversion tokens need to be de\336ned in the implementation. If) 72 729.23 P
+4 F
+3.45 (XtArgVal) 358.18 729.23 P
+1 F
+1.44 ( is) 406.15 729.23 P
+4 F
+3.45 (long) 420.69 729.23 P
+1 F
+1.44 (, as in the) 444.68 729.23 P
+(model implementation, this takes the form :) 72 717.23 T
+4 F
+(#define __MyXtArgValToPtr\050 x \051 \050 \050 void * \051 \050 x \051 \051) 126 695.23 T
+(#define __MyPtrToXtArgVal\050 x \051 \050 \050 XtArgVal \051 \050 x \051 \051) 126 681.23 T
+(#define __MyXtArgValToInt\050 x \051 \050 x \051) 126 667.23 T
+(#define __MyIntToXtArgVal\050 x \051 \050 x \051) 126 653.23 T
+1 F
+(Note that the implicit conversion tokens have been de\336ned in terms of explicit conversions.) 72 635.23 T
+72 599.9 487.3 609.9 C
+72 608.9 540 608.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 575.9 487.3 585.9 C
+72 584.9 540 584.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(4.3) 72 590.57 T
+(Omissions fr) 108 590.57 T
+(om the Xt Speci\336cation) 183.54 590.57 T
+1 10 Q
+1.83 (The following omissions from the Xt speci\336cation were discovered when running) 72 559.23 P
+3 F
+1.83 (tspec) 421.58 559.23 P
+1 F
+1.83 ( on the Xt) 442.12 559.23 P
+(description.) 72 547.23 T
+(\245) 79.2 525.23 T
+(The type) 86.4 525.23 T
+4 F
+(Pixel) 124.15 525.23 T
+1 F
+( is not speci\336ed. It is probably an integral type.) 154.13 525.23 T
+(\245) 79.2 503.23 T
+1.07 (The types) 86.4 503.23 P
+4 F
+2.57 (XtValueMask) 130.18 503.23 P
+1 F
+1.07 (,) 196.14 503.23 P
+4 F
+2.57 (XtGeometryMask) 202.21 503.23 P
+1 F
+1.07 (,) 286.17 503.23 P
+4 F
+2.57 (XtEventMask) 292.23 503.23 P
+1 F
+1.07 ( and) 358.2 503.23 P
+4 F
+2.57 (XtGCMask) 379.77 503.23 P
+1 F
+1.07 ( are not speci-) 427.74 503.23 P
+(\336ed. They are probably integral types.) 86.4 491.23 T
+(\245) 79.2 469.23 T
+0.01 (The types) 86.4 469.23 P
+4 F
+0.03 (XtInputId) 128.06 469.23 P
+1 F
+0.01 (,) 182.03 469.23 P
+4 F
+0.03 (XtIntervalId) 187.04 469.23 P
+1 F
+0.01 ( and) 259 469.23 P
+4 F
+0.03 (XtWorkProcId) 278.45 469.23 P
+1 F
+0.01 ( are not speci\336ed. They are proba-) 350.41 469.23 P
+(bly integral types \050see section 6.4\051.) 86.4 457.23 T
+0.19 (In addition the following contradictions between the speci\336cation and the implementation were discov-) 72 435.23 P
+(ered :) 72 423.23 T
+(\245) 79.2 401.23 T
+2.49 (In the speci\336cation) 86.4 401.23 P
+4 F
+5.97 (XtPending) 172.42 401.23 P
+1 F
+2.49 ( returns) 226.39 401.23 P
+4 F
+5.97 (Boolean) 264.12 401.23 P
+1 F
+2.49 (, whereas in the implementation it returns) 306.09 401.23 P
+4 F
+(XtInputMask) 86.4 389.23 T
+1 F
+(. I suspect that the implementation is correct.) 152.36 389.23 T
+(\245) 79.2 367.23 T
+0.1 (In the speci\336cation) 86.4 367.23 P
+4 F
+0.24 (XtDestroyGC) 165.26 367.23 P
+1 F
+0.1 ( has two ar) 231.22 367.23 P
+0.1 (guments, a) 274.92 367.23 P
+4 F
+0.24 (Widget) 320.93 367.23 P
+1 F
+0.1 ( and a) 356.91 367.23 P
+4 F
+0.24 (GC) 383.58 367.23 P
+1 F
+0.1 (, whereas in the imple-) 395.57 367.23 P
+1.48 (mentation it only has the) 86.4 355.23 P
+4 F
+3.55 (GC) 195.13 355.23 P
+1 F
+1.48 ( ar) 207.13 355.23 P
+1.48 (gument. This is a discrepancy documented in the text. It can be) 218.69 355.23 P
+-0.11 (worked round by ignoring the given implementation of) 86.4 343.23 P
+4 F
+-0.26 (XtDestroyGC) 308.17 343.23 P
+1 F
+-0.11 ( and rede\336ning it in terms of) 374.13 343.23 P
+4 F
+(XtReleaseGC) 86.4 331.23 T
+1 F
+( as follows :) 152.36 331.23 T
+4 F
+(#define XtDestroyGC\050 w, gc \051 XtReleaseGC \050 w, gc \051) 126 309.23 T
+72 275.9 487.3 287.9 C
+72 286.9 540 286.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 283.9 540 283.9 2 L
+N
+0 0 595.3 841.9 C
+72 239.9 487.3 251.9 C
+72 250.9 540 250.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 247.9 540 247.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(5) 72 259.9 T
+(Describing Xmu and Xaw) 99 259.9 T
+1 10 Q
+0.56 (The description of Xmu and Xaw from [7] and [8] raises few new issues. There are a couple of omis-) 72 183.23 P
+(sions and misprints in Xmu :) 72 171.23 T
+(\245) 79.2 149.23 T
+(The type) 86.4 149.23 T
+4 F
+(XmuWidgetNode) 124.15 149.23 T
+1 F
+( is not speci\336ed. It has been made an opaque type.) 202.11 149.23 T
+(\245) 79.2 127.23 T
+0.96 (The type) 86.4 127.23 P
+4 F
+2.31 (CloseHook) 126.07 127.23 P
+1 F
+0.96 ( is not speci\336ed, but since it can take the value) 180.04 127.23 P
+4 F
+2.31 (NULL) 378.83 127.23 P
+1 F
+0.96 ( it must be a pointer) 402.81 127.23 P
+(type.) 86.4 115.23 T
+(\245) 79.2 93.23 T
+0.65 (In the speci\336cation) 86.4 93.23 P
+4 F
+1.56 (XctData) 166.9 93.23 P
+1 F
+0.65 ( is described as a structure with certain \336elds, whereas in the imple-) 208.88 93.23 P
+(mentation it is a pointer to this structure. The implementation is almost certainly correct.) 86.4 81.23 T
+FMENDPAGE
+%%EndPage: "16" 22
+%%Page: "17" 22
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 X1) 400.1 799.23 T
+(1 Applications) 454.42 799.23 T
+(17) 310 43.23 T
+(\245) 115.2 763.23 T
+0.25 (There is a misprint in the speci\336cation of) 122.4 763.23 P
+4 F
+0.59 (XmuStandardColormap) 290.92 763.23 P
+1 F
+0.25 ( - its \336rst ar) 404.85 763.23 P
+0.25 (gument should be) 451.73 763.23 P
+(a) 122.4 751.23 T
+4 F
+(Display *) 129.34 751.23 T
+1 F
+(.) 183.31 751.23 T
+0.09 (In addition, Xmu uses the type) 108 729.23 P
+4 F
+0.21 (caddr_t) 233.72 729.23 P
+1 F
+0.09 ( as a generic pointer to data. This is one of my bugbears since) 275.69 729.23 P
+-0.16 (everyone uses it, but nobody speci\336es it. For example, in XPG3 it is optional. SVID3 also describes it as) 108 717.23 P
+0.77 (being optional, but then uses it in its RPC section. Its use in Xmu is unnecessary since Xlib speci\336es) 108 705.23 P
+4 F
+0.09 (XPointer) 108 693.23 P
+1 F
+0.04 (, which is a similar generic pointer to data \050I think the use of) 155.57 693.23 P
+4 F
+0.09 (caddr_t) 400.12 693.23 P
+1 F
+0.04 ( is a hang-over from) 442.09 693.23 P
+0.6 (a previous release\051. This illustrates one of the considerations in API speci\336cation : the dependency on) 108 681.23 P
+0.45 (other APIs. The only other external types imported by X1) 108 669.23 P
+0.45 (1 are) 342.61 669.23 P
+4 F
+1.08 (wchar_t) 365.71 669.23 P
+1 F
+0.45 (,) 407.69 669.23 P
+4 F
+1.08 (size_t) 413.13 669.23 P
+1 F
+0.45 ( and) 449.11 669.23 P
+4 F
+1.08 (FILE) 469.44 669.23 P
+1 F
+0.45 (, which) 493.42 669.23 P
+(all appear in ANSI.) 108 657.23 T
+(In Xaw we have the following contradiction between the speci\336cation and the implementation :) 108 635.23 T
+(\245) 115.2 613.23 T
+4 F
+2.94 (XawSimpleMenuClearActiveEntry) 122.4 613.23 P
+1 F
+1.22 ( returns) 296.3 613.23 P
+4 F
+2.94 (Widget) 331.5 613.23 P
+1 F
+1.22 ( in the speci\336cation, but) 367.48 613.23 P
+4 F
+2.94 (void) 471.88 613.23 P
+1 F
+1.22 ( in the) 495.86 613.23 P
+(implementation. I suspect that the implementation is correct.) 122.4 601.23 T
+108 569.9 523.3 581.9 C
+108 580.9 576 580.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 577.9 576 577.9 2 L
+N
+0 0 595.3 841.9 C
+108 533.9 523.3 545.9 C
+108 544.9 576 544.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 541.9 576 541.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(6) 108 553.9 T
+(X1) 135 553.9 T
+(1 Applications) 162.99 553.9 T
+1 10 Q
+0.77 (The next stage of the testing process is to try to compile a few X1) 108 477.23 P
+0.77 (1 applications using the) 381.06 477.23 P
+4 F
+1.86 (#pragma) 481.32 477.23 P
+2.81 (token) 108 465.23 P
+1 F
+1.17 ( headers generated from the) 137.98 465.23 P
+3 F
+1.17 (tspec) 257.35 465.23 P
+1 F
+1.17 ( description. These applications were all compiled to tar) 277.89 465.23 P
+1.17 (get) 511.08 465.23 P
+0.75 (independent TDF on a 68040 based machine running HP-UX, and this TDF was installed on the ICL) 108 453.23 P
+0.97 (SP) 108 441.23 P
+0.97 (ARC machine running System V 4.2 previously used to build the TDF libraries. Because this was) 118.19 441.23 P
+0.93 (merely an experiment and not a serious porting exercise, the default) 108 429.23 P
+3 F
+0.93 (tcc) 391.89 429.23 P
+1 F
+0.93 ( compilation mode,) 403.55 429.23 P
+0 F
+0.93 (-Xa) 486.29 429.23 P
+1 F
+0.93 (, was) 501.83 429.23 P
+(used, rather than the stricter) 108 417.23 T
+0 F
+(-Xc) 221.8 417.23 T
+1 F
+( or) 236.78 417.23 T
+0 F
+(-Xs) 250.1 417.23 T
+1 F
+( \050see [4] for details\051.) 264.53 417.23 T
+(All the applications compiled come from the MIT X1) 108 395.23 T
+(1 Release 5 demos.) 321.93 395.23 T
+108 359.9 523.3 369.9 C
+108 368.9 576 368.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 335.9 523.3 345.9 C
+108 344.9 576 344.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(6.1) 108 350.57 T
+(maze) 144 350.57 T
+3 10 Q
+0.06 (maze) 108 319.23 P
+1 F
+0.06 ( is a very simple Xlib application, so it should be possible to specify its API using the) 128.54 319.23 P
+0 F
+0.06 (-Yxlib5) 474.1 319.23 P
+1 F
+0.06 ( \337ag) 505.75 319.23 P
+0.8 (to) 108 307.23 P
+3 F
+0.8 (tcc) 119.08 307.23 P
+1 F
+0.8 (. However there is a problem : the program uses the header) 130.73 307.23 P
+5 F
+0.8 (X1) 378.79 307.23 P
+0.8 (1/Xos.h) 389.91 307.23 P
+1 F
+0.8 ( and a couple of bitmaps) 421.29 307.23 P
+(which do not form part of Xlib proper) 108 295.23 T
+(, but are speci\336c to the MIT implementation.) 259.44 295.23 T
+-0.2 (For this reason it was decided to set up a simple extension API,) 108 273.23 P
+5 F
+-0.2 (xmit5) 361.39 273.23 P
+1 F
+-0.2 (, containing some commonly used,) 384.72 273.23 P
+(MIT speci\336c headers. The contents of) 108 261.23 T
+5 F
+(xmit5) 262.05 261.23 T
+1 F
+( are as follows :) 285.37 261.23 T
+(\245) 115.2 239.23 T
+0.65 (The header) 122.4 239.23 P
+5 F
+0.65 (X1) 170.87 239.23 P
+0.65 (1/Xfuncs.h) 181.99 239.23 P
+1 F
+0.65 (, which includes) 227.25 239.23 P
+5 F
+0.65 (string.h) 296.94 239.23 P
+1 F
+0.65 ( and de\336nes) 328.88 239.23 P
+4 F
+1.56 (index) 381.07 239.23 P
+1 F
+0.65 (,) 411.06 239.23 P
+4 F
+1.56 (rindex) 416.7 239.23 P
+1 F
+0.65 (,) 452.68 239.23 P
+4 F
+1.56 (bcopy) 458.33 239.23 P
+1 F
+0.65 (,) 487.67 239.23 P
+4 F
+1.56 (bzero) 493.31 239.23 P
+1 F
+(and) 122.4 227.23 T
+4 F
+(bcmp) 139.33 227.23 T
+1 F
+(.) 163.32 227.23 T
+(\245) 115.2 205.23 T
+2.63 (The header) 122.4 205.23 P
+5 F
+2.63 (X1) 174.84 205.23 P
+2.63 (1/Xos.h) 185.95 205.23 P
+1 F
+2.63 (, which includes the header above. It also includes) 217.33 205.23 P
+5 F
+2.63 (time.h) 444.46 205.23 P
+1 F
+2.63 ( and de\336nes) 470.29 205.23 P
+4 F
+2.39 (struct timeval) 122.4 193.23 P
+1 F
+1 ( and) 208.74 193.23 P
+4 F
+2.39 (struct timezone) 230.17 193.23 P
+1 F
+1 (. If the API extends POSIX, it also includes) 322.51 193.23 P
+5 F
+1 (sys/) 508.3 193.23 P
+(types.h) 122.4 181.23 T
+1 F
+(,) 150.99 181.23 T
+5 F
+(fcntl.h) 155.99 181.23 T
+1 F
+( and) 182.93 181.23 T
+5 F
+(unistd.h) 202.36 181.23 T
+1 F
+(.) 235.97 181.23 T
+(\245) 115.2 159.23 T
+(Most of the standard bitmaps supplied with the MIT release.) 122.4 159.23 T
+0.21 (W) 108 137.23 P
+0.21 (ith this extension,) 117.04 137.23 P
+3 F
+0.21 (maze) 190.96 137.23 P
+1 F
+0.21 ( may be compiled using the) 211.5 137.23 P
+0 F
+0.21 (-Yxlib5 -Yxmit5) 325.47 137.23 P
+1 F
+0.21 ( \337ags to) 394.8 137.23 P
+3 F
+0.21 (tcc) 429.59 137.23 P
+1 F
+0.21 (. No further dif) 441.24 137.23 P
+0.21 (\336cul-) 502.2 137.23 P
+(ties are encountered.) 108 125.23 T
+FMENDPAGE
+%%EndPage: "17" 23
+%%Page: "18" 23
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 puzzle) 417.44 799.23 T
+(18) 274 43.23 T
+72 759.9 487.3 769.9 C
+72 768.9 540 768.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 735.9 487.3 745.9 C
+72 744.9 540 744.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(6.2) 72 750.57 T
+(puzzle) 108 750.57 T
+1 10 Q
+1.09 (The API for) 72 719.23 P
+3 F
+1.09 (puzzle) 126.07 719.23 P
+1 F
+1.09 ( dif) 151.05 719.23 P
+1.09 (fers only from that of) 165.57 719.23 P
+3 F
+1.09 (maze) 259.01 719.23 P
+1 F
+1.09 ( in that it uses POSIX as its underlying base API,) 279.55 719.23 P
+(rather than ANSI. This may be expressed by passing the) 72 707.23 T
+0 F
+(-Y) 299.33 707.23 T
+(posix -Yxlib5 -Yxmit5) 308.96 707.23 T
+1 F
+( \337ags to) 402.8 707.23 T
+3 F
+(tcc) 436.95 707.23 T
+1 F
+(.) 448.6 707.23 T
+0.08 (There is a problem which occurs during the compilation.) 72 685.23 P
+3 F
+0.08 (puzzle) 302.03 685.23 P
+1 F
+0.08 ( assumes that the structure) 327.02 685.23 P
+4 F
+0.2 (Visual) 435.41 685.23 P
+1 F
+0.08 ( has) 471.39 685.23 P
+0.1 (a \336eld) 72 673.23 P
+4 F
+0.25 (visualid) 99.41 673.23 P
+1 F
+0.1 (, whereas the speci\336cation asserts that it is an opaque type. This is the TDF compiler) 147.38 673.23 P
+(earning its money by detecting that the application does not conform to the Xlib API.) 72 661.23 T
+0.47 (Having detected this problem, how do we work around it? There are several possible approaches. Per-) 72 639.23 P
+1.28 (haps the easiest is for the application writer to say) 72 627.23 P
+1.28 (, OK I know what Xlib says, but ignore that and) 282.43 627.23 P
+0.41 (assume that) 72 615.23 P
+4 F
+0.98 (Visual) 122.23 615.23 P
+1 F
+0.41 ( is de\336ned as in the standard MIT implementation. This may be expressed as fol-) 158.21 615.23 P
+(lows :) 72 603.23 T
+4 F
+(#ifdef __ANDF__) 126 581.23 T
+(#pragma ignore Visual) 126 567.23 T
+(typedef struct {) 126 553.23 T
+(XExtData *ext_data ;) 162 539.23 T
+(VisualID visualid ;) 162 525.23 T
+(....) 162 511.23 T
+(} Visual ;) 126 497.23 T
+(#endif) 126 483.23 T
+1 F
+1.51 (Note that the application writer is here using a simple extension API of Xlib. Using this extension) 72 465.23 P
+0.47 (reduces the portability of the program - it will only be portable to machines which have this particular) 72 453.23 P
+(de\336nition for) 72 441.23 T
+4 F
+(Visual) 126.97 441.23 T
+1 F
+(.) 162.95 441.23 T
+(Another problem encountered when compiling) 72 419.23 T
+3 F
+(puzzle) 261.59 419.23 T
+1 F
+( is a very common one. The source has :) 286.57 419.23 T
+4 F
+(#include <errno.h>) 126 397.23 T
+(extern int errno ;) 126 383.23 T
+1 F
+0.78 (which the TDF producer objects to, because) 72 365.23 P
+4 F
+1.88 (errno) 256.23 365.23 P
+1 F
+0.78 ( need not be an) 286.22 365.23 P
+4 F
+1.88 (extern int) 353.14 365.23 P
+1 F
+0.78 (, but a modi\336able) 414.98 365.23 P
+(lvalue of type) 72 353.23 T
+4 F
+(int) 129.46 353.23 T
+1 F
+(. The easiest workaround is to change the program to :) 147.45 353.23 T
+4 F
+(#include <errno.h>) 126 331.23 T
+(#ifndef errno) 126 317.23 T
+(extern int errno ;) 126 303.23 T
+(#endif) 126 289.23 T
+72 251.9 487.3 261.9 C
+72 260.9 540 260.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+72 227.9 487.3 237.9 C
+72 236.9 540 236.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(6.3) 72 242.57 T
+(x1) 108 242.57 T
+(1perf) 121.22 242.57 T
+1 10 Q
+0.76 (The API for) 72 211.23 P
+3 F
+0.76 (x1) 125.07 211.23 P
+0.76 (1perf) 133.76 211.23 P
+1 F
+0.76 ( is again given by) 154.86 211.23 P
+0 F
+0.76 (-Y) 231.66 211.23 P
+0.76 (posix -Yxlib5 -Yxmit5) 241.29 211.23 P
+1 F
+0.76 (. The application compiles \336rst time,) 336.64 211.23 P
+(apart from one error) 72 199.23 T
+(. The source has :) 152.21 199.23 T
+4 F
+(time_t t = time \050 \050 long * \051 NULL \051 ;) 126 177.23 T
+1 F
+(which is only correct if) 72 159.23 T
+4 F
+(time_t) 167.21 159.23 T
+1 F
+( is) 203.19 159.23 T
+4 F
+(long) 214.85 159.23 T
+1 F
+(. This should be corrected to :) 238.84 159.23 T
+4 F
+(time_t t = time \050 \050 time_t * \051 NULL \051 ;) 126 137.23 T
+FMENDPAGE
+%%EndPage: "18" 24
+%%Page: "19" 24
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 xgas) 452.2 799.23 T
+(19) 310 43.23 T
+108 759.9 523.3 769.9 C
+108 768.9 576 768.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 735.9 523.3 745.9 C
+108 744.9 576 744.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(6.4) 108 750.57 T
+(xgas) 144 750.57 T
+3 10 Q
+0.29 (xgas) 108 719.23 P
+1 F
+0.29 ( is a more interesting application since it uses the Athena widgets and the P-headers from Xt. This) 126.32 719.23 P
+0.59 (API is given by passing the) 108 707.23 P
+0 F
+0.59 (-Yxaw5p) 223.72 707.23 P
+1 F
+0.59 ( \337ag to) 262.03 707.23 P
+3 F
+0.59 (tcc) 294.07 707.23 P
+1 F
+0.59 (. There are a couple of problems. Firstly) 305.73 707.23 P
+4 F
+1.42 (NULL) 473.68 707.23 P
+1 F
+0.59 ( is not) 497.67 707.23 P
+(de\336ned, so it is necessary to insert a couple of :) 108 695.23 T
+4 F
+(#include <stdio.h>) 162 673.23 T
+1 F
+1.5 (statements. This shows the peril of including something, which includes something, which declares) 108 655.23 P
+0.53 (what you want - it isn\325) 108 643.23 P
+0.53 (t always portable. The second problem is that) 200.68 643.23 P
+3 F
+0.53 (xgas) 388.95 643.23 P
+1 F
+0.53 ( consistently uses) 407.27 643.23 P
+4 F
+1.27 (caddr_t) 481.32 643.23 P
+1 F
+0.19 (when it means) 108 631.23 P
+4 F
+0.46 (XtPointer) 168.81 631.23 P
+1 F
+0.19 (. A global replacement solves this problem.) 222.23 631.23 P
+3 F
+0.19 (xgas) 399.83 631.23 P
+1 F
+0.19 ( also assumes that) 418.15 631.23 P
+4 F
+0.46 (XtIn-) 493.31 631.23 P
+-0.29 (tervalId) 108 619.23 P
+1 F
+-0.12 ( is an integral type, which was used to help make the decision on this type mentioned in sec-) 155.97 619.23 P
+(tion 4.3) 108 607.23 T
+108 571.9 523.3 581.9 C
+108 580.9 576 580.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+108 547.9 523.3 557.9 C
+108 556.9 576 556.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+0 14 Q
+0 X
+0 K
+(6.5) 108 562.57 T
+(xeyes) 144 562.57 T
+3 10 Q
+0.49 (xeyes) 108 531.23 P
+1 F
+0.49 ( also de\336nes its own widget, and also uses the non-rectangular window shape extension. It was a) 129.64 531.23 P
+0.6 (simple task to describe the latter as part of a separate extension API,) 108 519.23 P
+5 F
+0.6 (xext5) 391.17 519.23 P
+1 F
+0.6 (. The API for) 413.38 519.23 P
+3 F
+0.6 (xeyes) 471.58 519.23 P
+1 F
+0.6 ( is then) 493.22 519.23 P
+(described by passing the) 108 507.23 T
+0 F
+(-Yxpg3 -Yxmu5p -Yxext5 -Yxmit5) 208.49 507.23 T
+1 F
+( \337ags to) 355.32 507.23 T
+3 F
+(tcc) 389.48 507.23 T
+1 F
+(.) 401.13 507.23 T
+0.94 (The \336rst problem encountered is that) 108 485.23 P
+3 F
+0.94 (xgas) 263.51 485.23 P
+1 F
+0.94 ( applies functions which are expecting a) 281.83 485.23 P
+4 F
+2.24 (Widget) 451.3 485.23 P
+1 F
+0.94 (, such as) 487.28 485.23 P
+4 F
+2.4 (XtDisplay) 108 473.23 P
+1 F
+1 (, directly to its own widget,) 161.32 473.23 P
+4 F
+2.4 (EyesWidget) 279.49 473.23 P
+1 F
+1 (, without an explicit cast. As was mentioned) 339.45 473.23 P
+0.48 (above, this is disallowed by the C prototype rules. There are two possible solutions. The dull one is to) 108 461.23 P
+0.36 (insert all the explicit casts. The interesting one is to de\336ne a conversion token which tells the producer) 108 449.23 P
+(that) 108 437.23 T
+4 F
+(EyesWidget) 125.49 437.23 T
+2 F
+(\256) 187.96 437.23 T
+4 F
+(Widget) 200.32 437.23 T
+1 F
+( conversions are allowed. This is done as follows :) 236.3 437.23 T
+4 F
+(#ifdef __ANDF__) 162 415.23 T
+(#pragma token PROC \050 EXP rvalue : EyesWidget : \051 |\134) 162 401.23 T
+(EXP rvalue : Widget : CrossEyes #) 198 387.23 T
+(#define CrossEyes\050 w \051 \050 \050 Widget \051 \050 w \051 \051) 162 373.23 T
+(#pragma accept conversion CrossEyes) 162 359.23 T
+(#endif) 162 345.23 T
+1 F
+(Note that we are providing both the conversion token and its de\336nition.) 108 327.23 T
+-0.02 (The only other problem encountered is that) 108 305.23 P
+3 F
+-0.02 (xeyes) 283.04 305.23 P
+1 F
+-0.02 ( steps outside the Xlib speci\336cation by directly access-) 304.68 305.23 P
+(ing the) 108 293.23 T
+4 F
+(root) 137.98 293.23 T
+1 F
+( \336eld of the opaque structure) 161.97 293.23 T
+4 F
+(Screen) 279.11 293.23 T
+1 F
+( in the expression :) 315.09 293.23 T
+4 F
+(XtScreen \050 toplevel \051->root) 162 271.23 T
+1 F
+0.14 (Because) 108 253.23 P
+4 F
+0.33 (Screen) 143.94 253.23 P
+1 F
+0.14 ( is genuinely opaque in the) 179.92 253.23 P
+4 F
+0.33 (#pragma token) 290.68 253.23 P
+1 F
+0.14 ( headers this error is detected by the C) 368.97 253.23 P
+2 F
+(\256) 108 241.23 T
+1 F
+( TDF producer) 117.86 241.23 T
+(. The screen access macros should be used instead :) 176.71 241.23 T
+4 F
+(RootWindowOfScreen \050 XtScreen \050 toplevel \051 \051) 162 219.23 T
+FMENDPAGE
+%%EndPage: "19" 25
+%%Page: "20" 25
+595.3 841.9 0 FMBEGINPAGE
+72 785.9 487.3 795.9 C
+72 794.9 540 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 72 799.23 T
+(1  Issue 1.0   September 1993) 129.65 799.23 T
+(                 Conclusions) 394.1 799.23 T
+(20) 274 43.23 T
+72 757.9 487.3 769.9 C
+72 768.9 540 768.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 765.9 540 765.9 2 L
+N
+0 0 595.3 841.9 C
+72 721.9 487.3 733.9 C
+72 732.9 540 732.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 729.9 540 729.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(7) 72 741.9 T
+(Conclusions) 99 741.9 T
+1 10 Q
+0.78 (In addition to providing a useful end product - the) 72 665.23 P
+4 F
+1.87 (#pragma token) 281.89 665.23 P
+1 F
+0.78 ( headers which allow the C) 361.72 665.23 P
+2 F
+0.78 (\256) 477.43 665.23 P
+1 F
+0.83 (TDF producer to API-check applications - the API description process is a useful exercise in its own) 72 653.23 P
+(right because of the information it provides on the underlying paper speci\336cation.) 72 641.23 T
+-0.13 (While the paper speci\336cation remains merely as a paper document it is an entirely passive object. T) 72 619.23 P
+-0.13 (rans-) 467.32 619.23 P
+-0.08 (forming it into the) 72 607.23 P
+3 F
+-0.08 (tspec) 147.19 607.23 P
+1 F
+-0.08 ( form makes it an active entity) 167.73 607.23 P
+-0.08 (, by allowing applications and implementations to) 288.17 607.23 P
+1.06 (be checked against it, as well as allowing for internal checks to be applied. Any omissions from the) 72 595.23 P
+(speci\336cation become immediately obvious, as do any dependencies on other APIs.) 72 583.23 T
+72 551.9 487.3 563.9 C
+72 562.9 540 562.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 559.9 540 559.9 2 L
+N
+0 0 595.3 841.9 C
+72 515.9 487.3 527.9 C
+72 526.9 540 526.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+72 523.9 540 523.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(8) 72 535.9 T
+(Refer) 99 535.9 T
+(ences) 155.82 535.9 T
+1 10 Q
+([1]) 72 459.23 T
+3 F
+(TDF and Portability) 86.15 459.23 T
+1 F
+(, DRA, 1993.) 167.69 459.23 T
+([2]) 72 447.23 T
+3 F
+(tspec - An API Speci\336cation T) 86.15 447.23 T
+(ool) 205.43 447.23 T
+1 F
+(, DRA, 1993.) 218.2 447.23 T
+([3]) 72 435.23 T
+3 F
+(The C to TDF Pr) 86.15 435.23 T
+(oducer) 154.09 435.23 T
+1 F
+(, DRA, 1993.) 181.44 435.23 T
+([4]) 72 423.23 T
+3 F
+(tcc User) 86.15 423.23 T
+(\325) 120.1 423.23 T
+(s Guide) 122.14 423.23 T
+1 F
+(, DRA, 1993.) 152.96 423.23 T
+([5]) 72 411.23 T
+3 F
+(Xlib - C Language X Interface) 86.15 411.23 T
+1 F
+(, MIT) 207.47 411.23 T
+(, 1991.) 230.04 411.23 T
+([6]) 72 399.23 T
+3 F
+(X T) 86.15 399.23 T
+(oolkit Intrinsics - C Language X Interface) 99.39 399.23 T
+1 F
+(, MIT) 267.07 399.23 T
+(, 1991.) 289.65 399.23 T
+([7]) 72 387.23 T
+3 F
+(Xmu Library) 86.15 387.23 T
+1 F
+(, MIT) 136.86 387.23 T
+(, 1991.) 159.44 387.23 T
+([8]) 72 375.23 T
+3 F
+(Athena W) 86.15 375.23 T
+(idget Set - C Language Interface) 124.74 375.23 T
+1 F
+(, MIT) 255.49 375.23 T
+(, 1991.) 278.07 375.23 T
+FMENDPAGE
+%%EndPage: "20" 26
+%%Page: "21" 26
+595.3 841.9 0 FMBEGINPAGE
+108 785.9 523.3 795.9 C
+108 794.9 576 794.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Specifying X1) 108 799.23 T
+(1  Issue 1.0  September 1993) 165.65 799.23 T
+(                 Figures) 440.54 799.23 T
+(21) 310 43.23 T
+108 757.9 523.3 769.9 C
+108 768.9 576 768.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 765.9 576 765.9 2 L
+N
+0 0 595.3 841.9 C
+108 721.9 523.3 733.9 C
+108 732.9 576 732.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+108 729.9 576 729.9 2 L
+N
+0 0 595.3 841.9 C
+0 24 Q
+0 X
+0 K
+(9) 108 741.9 T
+(Figur) 135 741.9 T
+(es) 191.87 741.9 T
+108 651.9 523.3 661.9 C
+108 660.9 576 660.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Fig. 1. The W) 108 665.23 T
+(idget Hierarchy for Xt.) 163.4 665.23 T
+108 220.9 523.3 230.9 C
+108 229.9 576 229.9 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+0 0 595.3 841.9 C
+1 10 Q
+0 X
+0 K
+(Fig. 2. Example T) 108 234.23 T
+(ype Hierarchy) 179.76 234.23 T
+145.26 256.9 486.04 651.9 C
+271.26 609.9 325.26 627.9 R
+3 X
+0 K
+V
+0.5 H
+0 Z
+0 X
+N
+271.26 573.9 325.26 591.9 R
+3 X
+V
+0 X
+N
+271.26 537.9 325.26 555.9 R
+3 X
+V
+0 X
+N
+199.26 465.9 253.26 483.9 R
+3 X
+V
+0 X
+N
+343.26 465.9 397.26 483.9 R
+3 X
+V
+0 X
+N
+271.26 501.9 325.26 519.9 R
+3 X
+V
+0 X
+N
+271.26 429.9 325.26 447.9 R
+3 X
+V
+0 X
+N
+415.26 429.9 469.26 447.9 R
+3 X
+V
+0 X
+N
+271.26 393.9 325.26 411.9 R
+3 X
+V
+0 X
+N
+271.26 357.9 325.26 375.9 R
+3 X
+V
+0 X
+N
+271.26 321.9 325.26 339.9 R
+3 X
+V
+0 X
+N
+271.26 285.9 325.26 303.9 R
+3 X
+V
+0 X
+N
+274.26 606.9 328.26 624.9 R
+7 X
+V
+0 X
+N
+202.26 462.9 256.26 480.9 R
+7 X
+V
+0 X
+N
+418.26 426.9 472.26 444.9 R
+7 X
+V
+0 X
+N
+274.26 282.9 328.26 300.9 R
+7 X
+V
+0 X
+N
+301.26 606.9 301 490.4 2 L
+1 H
+N
+274.26 570.9 328.26 588.9 R
+7 X
+V
+0.5 H
+0 X
+N
+274.26 534.9 328.26 552.9 R
+7 X
+V
+0 X
+N
+274.26 498.9 328.26 516.9 R
+7 X
+V
+0 X
+N
+300.51 301.27 300.75 455.28 2 L
+1 H
+N
+274.26 426.9 328.26 444.9 R
+7 X
+V
+0.5 H
+0 X
+N
+274.26 390.9 328.26 408.9 R
+7 X
+V
+0 X
+N
+274.26 354.9 328.26 372.9 R
+7 X
+V
+0 X
+N
+274.26 318.9 328.26 336.9 R
+7 X
+V
+0 X
+N
+229.26 480.9 229.5 489.9 372.5 489.9 372.5 454.41 4 L
+1 H
+N
+346.26 462.9 400.26 480.9 R
+7 X
+V
+0.5 H
+0 X
+N
+300.56 454.78 372.56 454.78 2 L
+1 H
+N
+445.26 444.9 445.26 454.4 2 L
+N
+372.56 454.78 445.31 454.59 2 L
+N
+1 10 Q
+(Object) 287.75 612.4 T
+(RectObj) 285 576.65 T
+(Core) 291.63 540.4 T
+(Composite) 279.25 504.4 T
+(Constraint) 208.88 468.65 T
+(Shell) 362.25 468.65 T
+(WMShell) 281.63 432.65 T
+(V) 281.38 396.65 T
+(endorSh) 287.48 396.65 T
+(T) 276.63 360.65 T
+(ransientSh) 282.38 360.65 T
+(T) 276.38 324.15 T
+(opLevelSh) 281.78 324.15 T
+(ApplShell) 280.25 288.9 T
+(OverrideSh) 422.5 432.65 T
+0 0 595.3 841.9 C
+147.38 97.65 483.91 220.9 C
+202.51 125.13 256.51 143.13 R
+3 X
+0 K
+V
+0.5 H
+0 Z
+0 X
+N
+205.51 122.13 259.51 140.13 R
+7 X
+V
+0 X
+N
+346.51 125.13 400.51 143.13 R
+3 X
+V
+0 X
+N
+233.63 143.12 233.88 149.13 377.74 149.13 377.74 125.42 4 L
+1 H
+N
+274.51 197.13 328.51 215.13 R
+3 X
+V
+0.5 H
+0 X
+N
+274.51 161.13 328.51 179.13 R
+3 X
+V
+0 X
+N
+305.44 199.34 305.44 148.71 2 L
+1 H
+N
+277.51 194.13 331.51 212.13 R
+7 X
+V
+0.5 H
+0 X
+N
+277.51 158.13 331.51 176.13 R
+7 X
+V
+0 X
+N
+349.51 122.13 403.51 140.13 R
+7 X
+V
+0 X
+N
+1 10 Q
+(One) 295.63 199.63 T
+(T) 295.75 163.63 T
+(wo) 301.16 163.63 T
+(Three) 221 127.38 T
+(Four) 368.26 127.88 T
+0 0 595.3 841.9 C
+FMENDPAGE
+%%EndPage: "21" 27
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.9
+%%Pages: 26 1
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Symbol
+%%+ Times-Italic
+%%+ Courier-Bold
+%%+ Times-BoldItalic

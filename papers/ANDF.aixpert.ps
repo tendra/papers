@@ -1,0 +1,2533 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 16 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+5 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(July 6, 1993 macrakis@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(\251 1993 OSF) 360 56.33 T
+(1 of 13) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (Delivering Applications to Multiple Platforms) 125.09 695 S
+-1.2 (using ANDF) 262.08 665 S
+1 19 Q
+-0.95 (1) 377.38 674.6 S
+0 12 Q
+(Stavr) 278.97 578 T
+(os Macrakis) 306.73 578 T
+(Open Softwar) 254.47 548 T
+(e Foundation) 325.88 548 T
+(Resear) 277.31 533 T
+(ch Institute) 312.39 533 T
+(June 1993) 298.18 503 T
+0 14 Q
+(Open systems pr) 180 421.67 T
+(omise developers a large range) 279.25 421.67 T
+(of target platforms thr) 180 405.67 T
+(ough standard API\325) 314.58 405.67 T
+(s.) 433.01 405.67 T
+(This pr) 180 389.67 T
+(omise has only partially been r) 223.68 389.67 T
+(ealized,) 406.51 389.67 T
+(because porting and distribution r) 180 373.67 T
+(emain) 384.22 373.67 T
+(dif\336cult. The Ar) 180 357.67 T
+(chitectur) 276.53 357.67 T
+(e-Neutral Distribution) 329.9 357.67 T
+(Format \050ANDF\051 is a portability and) 180 341.67 T
+(distribution technology being investigated by) 180 325.67 T
+(OSF Resear) 180 309.67 T
+(ch Institute, that allows a single) 251.64 309.67 T
+(virtual binary to run on all conforming) 180 293.67 T
+(platforms. W) 180 277.67 T
+(e pr) 258.51 277.67 T
+(esent the technology) 281.96 277.67 T
+(, discuss) 401.67 277.67 T
+(its applications, and examine open issues.) 180 261.67 T
+108 201.98 540 205 C
+108 203.49 459 203.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 210.33 T
+2 14 Q
+(Software developers want applications to run on many platforms. End users) 108 178.64 T
+(want free choice of both applications and platforms. Platform vendors want) 108 162.64 T
+(the freedom to improve their platforms over time.) 108 146.64 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(1.  T) 108 97.67 T
+(o appear in) 127.68 97.67 T
+3 F
+(AIXpert) 179.24 97.67 T
+2 F
+(, August 1993.) 214.02 97.67 T
+3 F
+(AIXpert) 281.46 97.67 T
+2 F
+( is a publication for AIX developers.) 316.25 97.67 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(De\336ning the ANDF T) 108 736.84 T
+(echnology) 180.34 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(Open systems standards can make this happen through standard Application) 108 701.67 T
+(Programming Interfaces \050APIs\051. But developers have discovered that APIs) 108 685.67 T
+-0.12 (by themselves cannot guarantee application portability in the absence of API) 108 669.67 P
+-0.5 (conformity checking and rigorous portability checking. Moreover) 108 653.67 P
+-0.5 (, even if the) 472.45 653.67 P
+(source code of an application is portable, each platform requires its own) 108 637.67 T
+(binary version.) 108 621.67 T
+(ANDF technology proposes a solution to these problems. ANDF checks) 108 593.67 T
+(applications\325 conformity to an API and translates them into a virtual binary) 108 577.67 T
+(format which can be installed on any platform supporting that API.) 108 561.67 T
+108 501.98 540 505 C
+108 503.49 459 503.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. De\336ning the ANDF T) 108 510.33 T
+(echnology) 266.9 510.33 T
+2 14 Q
+-0.11 (As an independent or) 108 478.64 P
+-0.11 (ganization promoting open systems, the Open Software) 226.73 478.64 P
+(Foundation \050OSF\051 is the natural forum for providing portability and) 108 462.64 T
+(distribution technology for open systems applications.) 108 446.64 T
+-0.05 (OSF thus initiated a request for technology \050RFT\051 for an architecture-neutral) 108 418.64 P
+(distribution format and its associated tools. After de\336ning the problem and) 108 402.64 T
+(design goals, a variety of proposed solutions were evaluated, and one was) 108 386.64 T
+(chosen for further investigation.) 108 370.64 T
+0 F
+(The Pr) 108 318.64 T
+(oblem) 149.33 318.64 T
+2 F
+(Software and hardware development, marketing, and purchasing decisions) 108 289.64 T
+-0.5 (are closely linked today) 108 273.64 P
+-0.5 (. Software vendors pay heavy porting and distribution) 238.89 273.64 P
+(costs for each additional hardware platform, so concentrate their ef) 108 257.64 T
+(forts on a) 482.32 257.64 T
+(few) 108 241.64 T
+(, and are restricted to the least common denominator of programming) 128.07 241.64 T
+(methods and languages available on tar) 108 225.64 T
+(get platforms. Hardware vendors) 328.08 225.64 T
+(avoid innovation for fear that applications will not be available, and must) 108 209.64 T
+(build development environments for each new combination of architecture) 108 193.64 T
+(and language. End users are locked into software-hardware combinations) 108 177.64 T
+(where individual components cannot be procured competitively) 108 161.64 T
+(.) 463.84 161.64 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(De\336ning the ANDF T) 108 736.84 T
+(echnology) 180.34 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+0 14 Q
+0 X
+(Design goals for ANDF) 108 701.67 T
+2 F
+(ANDF was thus speci\336ed to provide technology to support the development) 108 672.67 T
+(of portable code and to distribute it in an architecture-neutral format.) 108 656.67 T
+(The major design goals for ANDF were:) 108 628.67 T
+2 13 Q
+(\245) 122.4 605.33 T
+(Architecture neutrality\321easy to install on new architectures;) 136.8 605.33 T
+(\245) 122.4 582.33 T
+(Language neutrality;) 136.8 582.33 T
+(\245) 122.4 559.33 T
+(Easy extension to any given API;) 136.8 559.33 T
+(\245) 122.4 536.33 T
+(Protection from reverse engineering\321hard to reconstruct a source program;) 136.8 536.33 T
+(\245) 122.4 513.33 T
+(Ef) 136.8 513.33 T
+(\336cient code\321comparable to native compilers;) 148.82 513.33 T
+(\245) 122.4 490.33 T
+(Small size\321comparable to usual executables; and) 136.8 490.33 T
+(\245) 122.4 467.33 T
+(Openness to future evolution and innovation in software, hardware, and) 136.8 467.33 T
+(APIs.) 136.8 452.33 T
+0 14 Q
+(Pr) 108 400.67 T
+(oposed solutions) 122.51 400.67 T
+2 F
+(Three classes of solution were proposed: shrouded source, compiler) 108 371.67 T
+(intermediate languages, and annotated object. Shrouded source is C code) 108 355.67 T
+(where meaningful identi\336ers are replaced with generated arbitrary symbols) 108 339.67 T
+(and control structure is \337attened. It solves the reverse engineering problem,) 108 323.67 T
+(but not the language and architecture neutrality problems. Annotated object) 108 307.67 T
+(is machine code \050typically for the 80x86 family\051 with additional information) 108 291.67 T
+-0.04 (added to make it decompilable and recompilable. This clearly does not solve) 108 275.67 P
+(architecture neutrality in a satisfactory way) 108 259.67 T
+(.) 349.17 259.67 T
+0 F
+(The ANDF Solution) 108 207.67 T
+2 F
+(The solution chosen for further study was a compiler intermediate language,) 108 178.67 T
+(the TDF technology from the U.K. Defence Research Agency) 108 162.67 T
+2 11 Q
+(2) 454.6 168.27 T
+2 14 Q
+(. TDF/ANDF) 460.1 162.67 T
+(is a compiler technology that has been designed from the start to guarantee) 108 146.67 T
+(neutrality) 108 130.67 T
+(.) 160.72 130.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(2.  formerly the Royal Signals and Radar Establishment) 108 97.67 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(How ANDF works) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 326 540 329.02 C
+108 327.51 459 327.51 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. How ANDF works) 108 334.36 T
+2 14 Q
+(An ANDF producer translates from the source language into the ANDF) 108 302.67 T
+(intermediate language, as shown in Figure 1. The ANDF producer is) 108 286.67 T
+(language-dependent but machine-independent. The ANDF intermediate) 108 270.67 T
+(language is language-independent as well as machine-independent. Finally) 108 254.67 T
+(,) 526.01 254.67 T
+-0.51 (an ANDF installer translates from ANDF to machine language. T) 108 238.67 P
+-0.51 (ypically) 469.26 238.67 P
+-0.51 (, the) 513.43 238.67 P
+(producer runs on the developer) 108 222.67 T
+(\325) 282.6 222.67 T
+(s machine, and the installer on the user) 286.49 222.67 T
+(\325) 504.63 222.67 T
+(s) 508.52 222.67 T
+(machine.) 108 206.67 T
+(Application source may be written in any programming language supported) 108 178.67 T
+(by some ANDF producer; it must of course be portable code. The ANDF) 108 162.67 T
+-0.56 (producer transforms this source code into ANDF form. This form removes all) 108 146.67 P
+(language dependencies by translating them into ANDF constructs. The) 108 130.67 T
+(ANDF format is language- and platform- independent, is tightly encoded,) 108 114.67 T
+61.13 345.02 540 711 C
+61.13 345.02 540 711 R
+7 X
+0 K
+V
+226.27 537 289.27 573 R
+V
+0.5 H
+0 Z
+0 X
+N
+2 12 Q
+(ANDF) 241.44 558.21 T
+(Producer) 236.12 546.21 T
+460.13 537 523.13 573 R
+7 X
+V
+0 X
+N
+(ANDF) 475.3 558.21 T
+(Installer) 471.98 546.21 T
+451.13 483 532.13 519 18 RR
+7 X
+V
+0 X
+N
+(Application) 463.31 504.21 T
+(Executable) 464.98 492.21 T
+334.27 537 415.27 573 18 RR
+7 X
+V
+0 X
+N
+(Application) 346.45 558.21 T
+(ANDF) 358.44 546.21 T
+217.13 600 298.13 636 18 RR
+7 X
+V
+0 X
+N
+(Application) 229.31 621.21 T
+(Source) 240.98 609.21 T
+3 14 Q
+(Language) 226.32 671.44 T
+(Dependent) 224 659.44 T
+(Platform) 462.25 671.44 T
+(Dependent) 456.82 659.44 T
+260.94 583.17 257.63 571.63 254.32 583.17 257.63 583.17 4 Y
+V
+257.63 600 257.63 583.17 2 L
+7 X
+V
+1 H
+0 X
+N
+448.59 558.31 460.13 555 448.59 551.69 448.59 555 4 Y
+V
+415.27 555 448.59 555 2 L
+7 X
+V
+0 X
+N
+495.44 530.54 492.13 519 488.82 530.54 492.13 530.54 4 Y
+V
+492.13 537 492.13 530.54 2 L
+7 X
+V
+0 X
+N
+168.93 422.71 180.47 419.4 168.93 416.09 168.93 419.4 4 Y
+V
+144.47 419.4 168.93 419.4 2 L
+7 X
+V
+0.5 H
+0 X
+N
+130.82 486 184.82 510 12 RR
+7 X
+V
+0 X
+N
+135.73 446.35 179.92 471.6 R
+7 X
+V
+0 X
+N
+2 12 Q
+(Program representations) 211.82 493.9 T
+(ANDF tools) 211.82 454.88 T
+322.73 558.31 334.27 555 322.73 551.69 322.73 555 4 Y
+V
+289.27 555 322.73 555 2 L
+7 X
+V
+1 H
+0 X
+N
+3 14 Q
+(Language and Platform) 303.41 671.44 T
+(Independent) 335.68 657.44 T
+2 12 Q
+(Data flow) 211.82 415.31 T
+(Figure 1. Simplified block diagram of the ANDF technology) 133.13 362.6 T
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(How ANDF works) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(and does not contain the information necessary to reverse engineer the) 108 701.67 T
+(application. The ANDF installer is platform-speci\336c, and creates a platform-) 108 685.67 T
+(speci\336c executable.) 108 669.67 T
+-0.43 (This simple scheme would work if programs did not refer to outside libraries.) 108 641.67 P
+-0.54 (But any realistic program refers to a multitude of libraries de\336ned by the API.) 108 625.67 P
+(And each platform de\336nes the library interfaces concretely) 108 609.67 T
+(, that is, with) 436.2 609.67 T
+(platform dependencies. But the true de\336nition of interfaces as de\336ned by) 108 593.67 T
+-0.14 (standards is abstract. It contains only that information necessary to use them,) 108 577.67 P
+(and no information about their implementation.) 108 561.67 T
+-0.34 (An important innovation in ANDF is a mechanism for separating the abstract) 108 533.67 P
+(interface into two concrete interfaces: the language-dependent interface, and) 108 517.67 T
+(the platform-dependent interface, as shown in Figure 2. The producer uses) 108 501.67 T
+(the abstract interfaces as expressed for the programming language to check) 108 485.67 T
+(the application\325) 108 469.67 T
+(s use of the interfaces, and generate appropriate ANDF code.) 194.67 469.67 T
+(The installer uses a platform-dependent version of the interfaces to translate) 108 453.67 T
+(the ANDF code into native code.) 108 437.67 T
+-0.17 (Besides using standard APIs, an application may also wish to take advantage) 108 409.67 P
+(of speci\336c non-standard interfaces on particular platforms. The ANDF) 108 393.67 T
+(technology manages this by providing for platform-dependent libraries and) 108 377.67 T
+(conditional compilation.) 108 361.67 T
+(The ANDF producer can thus be considered to be a compiler for an ideal) 108 333.67 T
+-0.12 (platform, which supports strictly standard programming language semantics,) 108 317.67 P
+(and strictly standard library interfaces. The ANDF representation of a) 108 301.67 T
+(program contains only the information needed to run on that ideal platform.) 108 285.67 T
+(The ANDF installer implements the ideal platform by \336lling out the abstract) 108 269.67 T
+(form with the concrete details of its platform-speci\336c implementation.) 108 253.67 T
+0 F
+(The internal structur) 108 201.67 T
+(e of the ANDF intermediate language) 234.45 201.67 T
+2 F
+(As we have seen, programs are translated from the source language \050) 108 172.67 T
+3 F
+(e.g.) 493.45 172.67 T
+2 F
+(C\051) 517.15 172.67 T
+(into the ANDF language. ANDF is a tree-structured language with) 108 156.67 T
+-0.13 (unambiguous and clean semantics. This makes it architecture- and language-) 108 140.67 P
+(independent, and easy to process internally) 108 124.67 T
+(.) 348.02 124.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(How ANDF works) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(For instance: when a construct has options or attributes, they are all explicit;) 108 251.67 T
+-0.26 (all operations are completely speci\336ed for both normal and exceptional cases) 108 235.67 P
+-0.35 (independently of tar) 108 219.67 P
+-0.35 (get machine; there are no scope rules, since all names are) 219.75 219.67 P
+(guaranteed unique; ANDF only represents the concrete aspects of types.) 108 203.67 T
+(One of the major departures of ANDF from conventional compiler) 108 175.67 T
+(intermediate languages is the provision of a general syntax macro facility) 108 159.67 T
+2 11 Q
+(3) 518.37 165.27 T
+2 14 Q
+(.) 523.86 159.67 T
+(Unlike ordinary C compilers, where macro expansion precedes all further) 108 143.67 T
+108 117 540 137.09 C
+108 124.99 239.98 124.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(3.  Similar to Lisp macros, where a program subtree expands to a subtree; and unlike C macros,) 108 109.67 T
+(where a sequence of tokens expands to another sequence of tokens.) 118.8 97.67 T
+7.13 261 540 711 C
+7.13 261 540 711 R
+7 X
+0 K
+V
+340.13 679.95 340.13 328.95 2 L
+3 K
+V
+0.5 H
+0 Z
+3 X
+N
+232.13 679.95 232.13 328.95 2 L
+7 X
+V
+3 X
+N
+97.13 525.59 160.13 561.59 R
+7 X
+0 K
+V
+0 X
+N
+2 12 Q
+(ANDF) 112.31 546.79 T
+(Producer) 106.98 534.79 T
+367.28 525.59 430.28 561.59 R
+7 X
+V
+0 X
+N
+(ANDF) 382.46 546.79 T
+(Installer) 379.13 534.79 T
+403.28 366.59 484.28 402.59 18 RR
+7 X
+V
+0 X
+N
+(Application) 415.46 387.79 T
+(Executable) 417.14 375.79 T
+250.28 633.59 331.28 669.59 18 RR
+7 X
+V
+3 X
+N
+0 X
+(Abstract) 270.46 654.79 T
+(Interfaces) 267.14 642.79 T
+421.28 588.59 502.28 624.59 18 RR
+7 X
+V
+0 X
+N
+(Platform) 440.79 609.79 T
+(Interfaces) 438.14 597.79 T
+412.28 420.59 475.28 456.59 R
+7 X
+V
+0 X
+N
+(Native) 427.8 441.79 T
+(Linker) 427.8 429.79 T
+358.43 471.59 439.28 507.59 18 RR
+7 X
+V
+0 X
+N
+(Application) 370.54 492.79 T
+(Object) 382.87 480.79 T
+457.28 471.59 538.13 507.59 18 RR
+7 X
+V
+0 X
+N
+(Library) 479.72 492.79 T
+(Object) 481.72 480.79 T
+250.28 525.59 331.28 561.59 18 RR
+7 X
+V
+0 X
+N
+(Application) 262.46 546.79 T
+(ANDF) 274.46 534.79 T
+43.13 588.59 124.13 624.59 18 RR
+7 X
+V
+0 X
+N
+(Application) 55.31 609.79 T
+(Source) 66.97 597.79 T
+3 14 Q
+(Language) 124.32 694.4 T
+(Dependent) 122 682.4 T
+(Platform) 440.38 694.4 T
+(Dependent) 434.95 682.4 T
+133.13 588.59 214.13 624.59 18 RR
+7 X
+V
+0 X
+N
+2 12 Q
+(Language) 149.98 609.79 T
+(Interfaces) 149.99 597.79 T
+259.28 462.59 322.28 498.59 R
+7 X
+V
+0 X
+N
+(ANDF) 274.46 483.79 T
+(Transformers) 258.48 471.79 T
+118.25 572.06 124.12 561.6 113.6 567.36 115.93 569.71 4 Y
+V
+97.13 588.59 115.93 569.7 2 L
+7 X
+V
+1 H
+0 X
+N
+143.64 567.36 133.12 561.6 138.99 572.06 141.32 569.71 4 Y
+V
+160.13 588.59 141.32 569.7 2 L
+7 X
+V
+0.5 H
+0 X
+N
+238.79 547.07 250.28 543.59 238.7 540.46 238.74 543.76 4 Y
+V
+160.13 544.95 238.75 543.76 2 L
+7 X
+V
+1 H
+0 X
+N
+298.59 510.12 295.28 498.59 291.97 510.12 295.28 510.12 4 Y
+V
+295.28 525.59 295.28 510.12 2 L
+7 X
+V
+0.5 H
+0 X
+N
+226.09 617.86 214.12 616.96 223.79 624.06 224.94 620.96 4 Y
+2 X
+V
+259.28 633.59 224.94 620.96 2 L
+7 X
+V
+2 X
+N
+410.52 620.93 421.27 615.59 409.33 614.42 409.93 617.68 4 Y
+V
+322.28 633.59 409.94 617.67 2 L
+7 X
+V
+2 X
+N
+355.75 546.9 367.28 543.59 355.75 540.28 355.75 543.59 4 Y
+0 X
+V
+331.28 543.59 355.75 543.59 2 L
+7 X
+V
+1 H
+0 X
+N
+406.59 519.12 403.28 507.59 399.97 519.12 403.28 519.12 4 Y
+V
+403.28 525.59 403.28 519.12 2 L
+7 X
+V
+0 X
+N
+430.82 465.13 439.26 456.6 427.58 459.36 429.2 462.24 4 Y
+V
+412.28 471.59 429.22 462.23 2 L
+7 X
+V
+0 X
+N
+468.94 459.36 457.26 456.6 465.7 465.13 467.32 462.24 4 Y
+V
+484.28 471.59 467.34 462.23 2 L
+7 X
+V
+0.5 H
+0 X
+N
+451.59 414.12 448.28 402.59 444.97 414.12 448.28 414.12 4 Y
+V
+448.28 420.59 448.28 414.12 2 L
+7 X
+V
+1 H
+0 X
+N
+85.75 343.99 97.28 340.68 85.75 337.38 85.75 340.68 4 Y
+V
+61.28 340.68 85.75 340.68 2 L
+7 X
+V
+0.5 H
+0 X
+N
+(Data flow) 128.64 336.59 T
+85.75 319.59 97.28 316.29 85.75 312.98 85.75 316.29 4 Y
+2 X
+V
+61.28 316.29 85.75 316.29 2 L
+7 X
+V
+2 X
+N
+0 X
+(Dependency) 128.64 312.19 T
+47.64 407.28 101.64 431.28 12 RR
+7 X
+V
+0 X
+N
+52.54 367.63 96.74 392.88 R
+7 X
+V
+0 X
+N
+(Program representations) 128.64 415.19 T
+(ANDF tools) 128.64 376.16 T
+47.64 445.68 101.64 469.68 12 RR
+3 X
+N
+0 X
+(Abstraction) 128.64 453.59 T
+273.97 514.05 277.28 525.59 280.59 514.05 277.28 514.05 4 Y
+V
+277.28 514.05 277.28 498.59 2 L
+N
+495.27 519.42 493.27 507.59 488.7 518.69 491.99 519.06 4 Y
+2 X
+V
+484.28 588.59 492 519.05 2 L
+N
+422.78 567.36 412.26 561.6 418.13 572.06 420.45 569.71 4 Y
+0 X
+V
+439.28 588.59 420.48 569.7 2 L
+N
+3 14 Q
+(Language and Platform) 214.13 694.4 T
+(Independent) 246.4 680.4 T
+2 12 Q
+(Figure 2. Abstract and concrete interfaces in ANDF) 115.13 281.6 T
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Portability and ANDF) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(processing, ANDF producers can pass along unexpanded macros to the) 108 701.67 T
+(installer) 108 685.67 T
+(. Thus platform-dependent macros can de\336ne platform-dependent) 152.31 685.67 T
+-0.29 (implementations of standard interfaces. These syntax macros are also used to) 108 669.67 P
+(save space in the ANDF representation by abbreviating common sequences.) 108 653.67 T
+(ANDF also supports static conditions \050) 108 625.67 T
+4 F
+-0.7 (#if) 326.04 625.67 S
+2 F
+(\051, which can be used to) 349.13 625.67 T
+(parameterize program behavior depending on platform.) 108 609.67 T
+(Besides being powerful, the ANDF representation is also compact, and is) 108 581.67 T
+(comparable in size to machine binaries.) 108 565.67 T
+108 505.98 540 509 C
+108 507.49 459 507.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. Portability and ANDF) 108 514.33 T
+2 14 Q
+(The ANDF technology cannot make a non-portable program more portable;) 108 482.64 T
+(however) 108 466.64 T
+(, it performs the important function of checking portability and) 155.62 466.64 T
+(de\336ning standard interfaces portably) 108 450.64 T
+(.) 311.88 450.64 T
+0 F
+(The installation envir) 108 398.64 T
+(onment) 236.03 398.64 T
+2 F
+(ANDF itself is independent of the installation environment. This does not) 108 369.64 T
+(automatically imply that all programs distributed in ANDF will be) 108 353.64 T
+(independent of the installation environment. For instance, a program may) 108 337.64 T
+(require particular numerical libraries or operating system interfaces. It may) 108 321.64 T
+(require \337oating-point precision higher than that provided on the tar) 108 305.64 T
+(get) 482.77 305.64 T
+(platform. In these cases, the ANDF installer will report that it cannot install) 108 289.64 T
+(the application.) 108 273.64 T
+(Alternatively) 108 245.64 T
+(, a non-portable program may depend on dynamic behavior left) 180.93 245.64 T
+(explicitly unde\336ned by the ANDF speci\336cation, such as the transient) 108 229.64 T
+-0.14 (behavior of a variable which has not been declared as volatile or the result of) 108 213.64 P
+-0.47 (an unsafe conversion \050a C \324cast\325\051. The ANDF translator does do a good job of) 108 197.64 P
+(\337agging unportable constructs, but cannot guarantee identical behavior if) 108 181.64 T
+(programs depend on unde\336ned constructs.) 108 165.64 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(The History of ANDF) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+0 14 Q
+0 X
+(Standard interfaces) 108 701.67 T
+2 F
+(ANDF is only useful in the presence of standard interfaces. T) 108 672.67 T
+(oday) 450.92 672.67 T
+(, standard) 477.21 672.67 T
+(interfaces exist for operating system primitives \050XPG,) 108 656.67 T
+3 F
+(etc.) 414.24 656.67 T
+2 F
+(\051 and for certain) 434.05 656.67 T
+(classes of graphic user interfaces \050) 108 640.67 T
+3 F
+(e.g.) 300.32 640.67 T
+2 F
+(Motif\051. There is a natural syner) 324.03 640.67 T
+(gy) 498.64 640.67 T
+(between ANDF technology and wider interface standards. Since the ANDF) 108 624.67 T
+(technology can deal with source-code conditionals, it can handle multiple) 108 608.67 T
+(incompatible interfaces, but at the cost of complicating application) 108 592.67 T
+(programming.) 108 576.67 T
+108 516.98 540 520 C
+108 518.49 459 518.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. The History of ANDF) 108 525.33 T
+2 14 Q
+(The idea of a universal intermediate language goes at least as far back as) 108 493.64 T
+-0.27 (1958, under the name \322UNCOL\323 \050UNiversal Computer) 108 477.64 P
+-0.27 (-Oriented Language\051.) 416.59 477.64 P
+(The primary motivation for UNCOL was the high cost and slow delivery of) 108 461.64 T
+-0.12 (compilers for new machines. At the time, compilers were universally written) 108 445.64 P
+(in machine language from scratch, and were thus neither easy to write nor) 108 429.64 T
+(portable.) 108 413.64 T
+(Regrettably) 108 385.64 T
+(, the project was too ambitious for the technology of the day) 172.38 385.64 T
+(.) 508.8 385.64 T
+(UNCOL was never fully de\336ned and certainly never implemented. UNCOL) 108 369.64 T
+(is remembered as the \336rst attempt at a universal intermediate language, but) 108 353.64 T
+(none of its particular ideas have survived it.) 108 337.64 T
+(Since UNCOL, a great deal of progress has been made in compiler) 108 309.64 T
+(technology in general, and intermediate languages in particular) 108 293.64 T
+(. Most) 460.07 293.64 T
+(compilers today are divided into two major pieces, the front end, which) 108 277.64 T
+-0.34 (handles language syntax and semantics, and the back end, which translates to) 108 261.64 P
+(machine language. Compiler porting has become a routine software) 108 245.64 T
+(engineering activity: front ends require only minor modi\336cations; back ends) 108 229.64 T
+(are often table-driven, so retar) 108 213.64 T
+(geting them is relatively straightforward) 276.76 213.64 T
+(\050although tuning for performance is still dif) 108 197.64 T
+(\336cult\051.) 351.03 197.64 T
+(Although intermediate languages are machine-independent in their overall) 108 169.64 T
+(design, almost all practical compilers assume a particular tar) 108 153.64 T
+(get during front) 446.22 153.64 T
+(end processing and intermediate code generation, since architecture-) 108 137.64 T
+(neutrality has not been a goal.) 108 121.64 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Distribution of softwar) 108 736.84 T
+(e) 186.03 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 13) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(TDF/ANDF uses the same fundamental approach, but applies it directly to) 108 701.67 T
+(the problem of neutrality) 108 685.67 T
+(. The ANDF front end is completely tar) 246.61 685.67 T
+(get-) 467.87 685.67 T
+(independent, as is the intermediate language. This is not a radical departure) 108 669.67 T
+(from today\325) 108 653.67 T
+(s standard compiler technology) 173.68 653.67 T
+(, but a goal-directed evolution.) 348.04 653.67 T
+108 593.98 540 597 C
+108 595.49 459 595.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(6. Distribution of software) 108 602.33 T
+2 14 Q
+(ANDF\325) 108 570.64 T
+(s motivating application is software distribution. Distribution of) 149.98 570.64 T
+(standard applications by software vendors is the most visible use, but many) 108 554.64 T
+(others are possible.) 108 538.64 T
+0 F
+(Distribution of Applications) 108 486.64 T
+2 F
+(Before ANDF) 108 457.64 T
+(, a software vendor had to produce a dif) 186.54 457.64 T
+(ferent version of) 408.93 457.64 T
+-0.2 (software for each tar) 108 441.64 P
+-0.2 (get platform. Even on the same tar) 222.52 441.64 P
+-0.2 (get machine, dif) 414.19 441.64 P
+-0.2 (ferent) 504.07 441.64 P
+-0.24 (operating systems or versions of the operating system might require dif) 108 425.64 P
+-0.24 (ferent) 504.11 425.64 P
+(binary versions.) 108 409.64 T
+(W) 108 381.64 T
+(ith ANDF) 120.65 381.64 T
+(, a software vendor can distribute a single package, which can) 175.89 381.64 T
+(then be installed on a wide variety of platforms. This greatly simpli\336es the) 108 365.64 T
+-0.5 (software vendor) 108 349.64 P
+-0.5 (\325) 198.54 349.64 P
+-0.5 (s development and reduces marketing and distribution costs.) 202.43 349.64 P
+(At the same time, it provides real bene\336ts for end users and hardware) 108 333.64 T
+(vendors, creating a free market by making execution platforms) 108 317.64 T
+(interchangeable and encouraging innovation and competition.) 108 301.64 T
+0 F
+(Distribution of Libraries and Modules) 108 249.64 T
+2 F
+(Because of its linking mechanisms, ANDF can also be used to distribute) 108 220.64 T
+(software libraries.) 108 204.64 T
+-0.25 (Thus end user or) 108 176.64 P
+-0.25 (ganizations can build new software out of modules provided) 200.65 176.64 P
+-0.34 (by vendors. This would be useless if interfaces were not well-de\336ned, but the) 108 160.64 P
+(increasing importance of object-oriented software design promises to make) 108 144.64 T
+(such standard interfaces more and more common.) 108 128.64 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Some Open Issues) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 13) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(Even for standard applications such as X clients and numerical libraries,) 108 701.67 T
+(ANDF makes possible a plug-compatible replacement business.) 108 685.67 T
+0 F
+(Single-user \322distribution\323) 108 633.67 T
+2 F
+(A single user nowadays may use many dif) 108 604.67 T
+(ferent machines. In particular) 344.41 604.67 T
+(, in) 508.6 604.67 T
+(the high-performance computing area, users will often develop and debug) 108 588.67 T
+(programs on one machine as preparation to executing them on another) 108 572.67 T
+(.) 501.27 572.67 T
+-0.05 (T) 108 556.67 P
+-0.05 (oday) 115.57 556.67 P
+-0.05 (, such users have problems with uniform behavior of their applications) 141.86 556.67 P
+(across these platforms.) 108 540.67 T
+(ANDF solves this problem, and gives them even greater \337exibility in choice) 108 512.67 T
+(of execution machines.) 108 496.67 T
+(In particular) 108 468.67 T
+(, a user could call for benchmarks of the execution of a program) 176.21 468.67 T
+(on a wide variety of tar) 108 452.67 T
+(get architectures. When the most cost-ef) 237.92 452.67 T
+(fective) 463.04 452.67 T
+-0.01 (solution was found, the production code could be moved to it with no risk of) 108 436.67 P
+(anomalous behavior) 108 420.67 T
+(.) 220.32 420.67 T
+0 F
+(ANDF for Cr) 108 368.67 T
+(oss-development) 187.78 368.67 T
+2 F
+(All ANDF development is, in some sense, cross-development: the) 108 339.67 T
+(development environment is dif) 108 323.67 T
+(ferent from the delivery environment. This) 286.14 323.67 T
+(means that, unlike most traditional compilers, the ANDF tools are tuned to) 108 307.67 T
+-0.42 (cross-development. In particular) 108 291.67 P
+-0.42 (, the ANDF Producer incorporates one of the) 288.06 291.67 P
+(most sophisticated portability checkers available. The very fact that a single) 108 275.67 T
+-0.31 (ANDF producer is used for all tar) 108 259.67 P
+-0.31 (gets guarantees that language semantics are) 294.73 259.67 P
+(uniform across platforms.) 108 243.67 T
+108 183.98 540 187 C
+108 185.49 459 185.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(7. Some Open Issues) 108 192.33 T
+2 14 Q
+-0.21 (ANDF has thus met most of the goals de\336ned by OSF and its members at the) 108 160.64 P
+(beginning of the RFT process. Y) 108 144.64 T
+(et ANDF has not yet been adopted by) 290.04 144.64 T
+(industry) 108 128.64 T
+(. Continued analysis at the OSF Research Institute, and discussions) 152.96 128.64 T
+(with OSF member companies have helped us identify several key open) 108 112.64 T
+(issues, and to take steps to resolve them.) 108 96.64 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Some Open Issues) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 13) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+0 14 Q
+0 X
+(Performance) 108 701.67 T
+2 F
+(OSF has performed rather extensive performance measurements on the) 108 672.67 T
+(ANDF technology) 108 656.67 T
+(. For a wide range of platforms and applications,) 210.86 656.67 T
+(performance is comparable to native compilers \050) 108 640.67 T
+5 F
+(\261) 379.23 640.67 T
+2 F
+(5%\051. However) 386.91 640.67 T
+(, certain) 467.94 640.67 T
+-0.22 (applications \050notably \337oating-point intensive ones\051 are systematically slower) 108 624.67 P
+(on some platforms.) 108 608.67 T
+(OSF and its partners are investigating the causes of this discrepancy and) 108 580.67 T
+(working towards improving installers.) 108 564.67 T
+0 F
+(Language neutrality) 108 512.67 T
+2 F
+(ANDF was originally designed to be usable for a wide range of languages,) 108 483.67 T
+(including C, C++, Fortran, Cobol,) 108 467.67 T
+3 F
+(etc) 302.2 467.67 T
+2 F
+(. But as of today) 318.51 467.67 T
+(, ANDF producers are) 409.72 467.67 T
+(only available for C. Although C is the most important programming) 108 451.67 T
+(language for open systems applications, it is not the only important one.) 108 435.67 T
+(OSF and its partners are thus actively developing Fortran 77, C++, Ada, and) 108 407.67 T
+(other ANDF producers. Several issues have been identi\336ed in these) 108 391.67 T
+(languages which may require ANDF extensions in order to provide good) 108 375.67 T
+(performance while preserving language neutrality) 108 359.67 T
+(. On the other hand, it) 386.08 359.67 T
+(appears that no changes will be needed to the base technology) 108 343.67 T
+(.) 454.49 343.67 T
+-0.14 (Con\336rmation of this will have to await validation and performance testing of) 108 315.67 P
+(the completed implementations.) 108 299.67 T
+0 F
+(Pr) 108 247.67 T
+(ecision of the de\336nition) 122.51 247.67 T
+2 F
+(ANDF is currently de\336ned informally by an English-language speci\336cation.) 108 218.67 T
+(It is also implicitly de\336ned by the existing producers and installers.) 108 202.67 T
+-0.26 (As ANDF gains wider use, more precise speci\336cations will be necessary) 108 174.67 P
+-0.26 (. For) 510.59 174.67 P
+(this reason, OSF\325) 108 158.67 T
+(s partners are developing a formal de\336nition of ANDF) 204.79 158.67 T
+(, and) 508.33 158.67 T
+(OSF is developing validation methods and suites for ANDF producers and) 108 142.67 T
+(installers. As these ef) 108 126.67 T
+(forts progress, con\336dence in the precision of the) 227.44 126.67 T
+(speci\336cation increases.) 108 110.67 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Some Open Issues) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 13) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+0 14 Q
+0 X
+(Data portability) 108 701.67 T
+2 F
+(ANDF does not address the issue of data portability and binary \336le formats.) 108 672.67 T
+(In particular) 108 656.67 T
+(, ANDF provides no support for hiding the byte ordering of the) 176.21 656.67 T
+(platform.) 108 640.67 T
+(OSF is currently investigating this issue.) 108 612.67 T
+0 F
+(Reuse of existing compilers) 108 560.67 T
+2 F
+-0.29 (Until recently) 108 531.67 P
+-0.29 (, all ANDF producers and installers came from the same source) 184.14 531.67 P
+(code base. Hardware vendors typically have lar) 108 515.67 T
+(ge investments in existing) 373.13 515.67 T
+(compilers and especially the optimizer phase, so would like to reuse) 108 499.67 T
+(components in their ANDF implementations.) 108 483.67 T
+-0.17 (One widely distributed compiler is the Gnu C compiler \050) 108 455.67 P
+4 F
+-0.38 -0.7 (gcc) 423.18 455.67 B
+2 F
+-0.17 (\051, which runs on) 446.26 455.67 P
+(many dif) 108 439.67 T
+(ferent platforms. An OSF demonstration project called) 157.88 439.67 T
+4 F
+-0.7 (gandf) 467.23 439.67 S
+2 F
+(reuses the) 108 423.67 T
+4 F
+-0.7 (gcc) 167.06 423.67 S
+2 F
+( compiler) 190.15 423.67 T
+(\325) 243.91 423.67 T
+(s back end by translating ANDF into) 247.8 423.67 T
+4 F
+-0.7 (gcc) 457.27 423.67 S
+2 F
+(\325) 480.36 423.67 T
+(s) 484.25 423.67 T
+-0.05 (intermediate language. It then generates native code using the) 108 407.67 P
+4 F
+-0.12 -0.7 (gcc) 456.46 407.67 B
+2 F
+-0.05 ( back end.) 479.55 407.67 P
+-0.54 (Not only does this demonstrate the feasibility of reusing back ends, it has also) 108 391.67 P
+(permitted the rapid creation of new back ends. Currently) 108 375.67 T
+(, this back end has a) 423.79 375.67 T
+(performance penalty of approximately 10% compared to native) 108 359.67 T
+4 F
+-0.7 (gcc) 466.27 359.67 S
+2 F
+-0.14 (compilers. OSF has also begun work in reuse of existing language front ends.) 108 343.67 P
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Delivering Applications to Multiple Platforms) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 13) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+108 693.49 459 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(8. Conclusion) 108 700.33 T
+2 14 Q
+(ANDF provides a way of de\336ning an applications programming interface in) 108 668.64 T
+(an architecture-neutral way) 108 652.64 T
+(, then compiling an application to the abstract) 260.17 652.64 T
+(interface. Compiled programs are thus guaranteed to conform to the) 108 636.64 T
+(interface, and not just some implementations of it.) 108 620.64 T
+-0.31 (The resulting ANDF capsule is an architecture-independent representation of) 108 592.64 P
+(the program which can be installed on any of a wide range of machine) 108 576.64 T
+(architectures. ANDF thus helps realize the potential of standard APIs.) 108 560.64 T
+-0.5 (Although a great deal of progress has been made in ANDF) 108 532.64 P
+-0.5 (, it has not yet been) 430.66 532.64 P
+(adopted by industry) 108 516.64 T
+(. OSF\325) 218.24 516.64 T
+(s ongoing research program continues to examine) 254.79 516.64 T
+(the potential and the limitations of ANDF technology) 108 500.64 T
+(.) 406.75 500.64 T
+-0.19 (The OSF Research Institute encourages hardware vendors and ISV\325) 108 472.64 P
+-0.19 (s to work) 484.98 472.64 P
+(with us to realize ANDF\325) 108 456.64 T
+(s potential.) 249.46 456.64 T
+108 90 540 711 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 711 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "13" 14
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 13 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Symbol

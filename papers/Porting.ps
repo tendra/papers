@@ -1,0 +1,3400 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 13 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+5 0 /Courier-Oblique FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(6/29/93 04:57 pm macrakis@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(1 of 22) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (Porting to ANDF) 247.03 695 S
+0 12 Q
+(Stavr) 278.97 601 T
+(os Macrakis) 306.73 601 T
+(Open Softwar) 254.47 585 T
+(e Foundation) 325.88 585 T
+(V) 252.76 553 T
+(ersion of January 22, 1993) 260.32 553 T
+0 14 Q
+(Fr) 180 463.67 T
+(om strictly portable applications, ANDF) 194.51 463.67 T
+(pr) 180 447.67 T
+(oduces strictly portable distributions. Most) 193.74 447.67 T
+(applications ar) 180 431.67 T
+(e not strictly portable, and must) 268.77 431.67 T
+-0.02 (be adapted to ANDF befor) 180 415.67 P
+-0.02 (e distribution. ANDF) 338.23 415.67 P
+(pr) 180 399.67 T
+(ovides abstraction mechanisms which) 193.74 399.67 T
+(support portability) 180 383.67 T
+(.) 293.13 383.67 T
+108 323.98 540 327 C
+90 325.49 558 325.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 332.33 T
+2 14 Q
+-0.08 (OSF\325) 108 300.64 P
+-0.08 (s Architecture-Neutral Distribution Format \050ANDF\051 allows distributing) 137.55 300.64 P
+(a single binary application to multiple platforms. T) 108 284.64 T
+(o do this successfully) 392.3 284.64 T
+(, the) 511.48 284.64 T
+(application must be portable.) 108 268.64 T
+(A strictly portable application does not depend on any platform-speci\336c) 108 240.64 T
+(behavior) 108 224.64 T
+(, but only on standard language semantics and standard) 156.4 224.64 T
+(programming interfaces. It can be compiled and run with no modi\336cations) 108 208.64 T
+(on any conforming platform. It can also be compiled by an ANDF producer) 108 192.64 T
+(and installed and run on any conforming platform.) 108 176.64 T
+(V) 108 148.64 T
+(ery few applications are strictly portable: Only recently have the necessary) 116.55 148.64 T
+(standards been published and widely implemented. Application writers) 108 132.64 T
+(exploit platform-speci\336c features. V) 108 116.64 T
+(erifying portability is not always easy) 309.29 116.64 T
+(.) 519.42 116.64 T
+(And sometimes, portability has not been a goal during development.) 108 100.64 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Degr) 108 736.84 T
+(ees of Application Portability) 124.73 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+-0.01 (Still, many applications are easily portable. This paper gives some advice on) 108 710.67 P
+(how to move them onto the ANDF technology) 108 694.67 T
+(. Some applications are) 367.88 694.67 T
+(portable by being parameterized by platform, that is, they use the) 108 678.67 T
+(preprocessor to compile a somewhat dif) 108 662.67 T
+(ferent program for each platform.) 331.19 662.67 T
+(W) 108 646.67 T
+(e show how to handle this situation in ANDF) 120.09 646.67 T
+(. Some applications expect) 372.39 646.67 T
+(extensions to standard interfaces. W) 108 630.67 T
+(e show how to handle this within ANDF) 309.33 630.67 T
+(.) 534.81 630.67 T
+(W) 108 602.67 T
+(ith these techniques, most applications can be ported once to ANDF and) 120.65 602.67 T
+(thereafter be installed on a wide range of conforming platforms with no) 108 586.67 T
+(additional porting ef) 108 570.67 T
+(fort.) 222.01 570.67 T
+108 510.98 540 514 C
+90 512.49 558 512.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. Degrees of Application Portability) 108 519.33 T
+2 14 Q
+(Before open systems, applications could only be made to run on many) 108 487.64 T
+(platforms by creating a dif) 108 471.64 T
+(ferent variant for each platform, that is,) 256.19 471.64 T
+3 F
+(porting) 479.62 471.64 T
+2 F
+( it.) 520.83 471.64 T
+(Applications which can be or have been ported to many systems are called) 108 455.64 T
+3 F
+(portable) 108 439.64 T
+2 F
+(.) 155.42 439.64 T
+(W) 108 411.64 T
+(ith open systems, applications can run on many platforms without) 120.65 411.64 T
+(variants if they rely only on industry-standard languages and application) 108 395.64 T
+(programming interfaces \050APIs\051. W) 108 379.64 T
+(e call such applications) 301.95 379.64 T
+3 F
+(strictly portable) 435.63 379.64 T
+2 F
+(.) 525.42 379.64 T
+(For instance, an application written in portable ANSI C, using only XPG/3) 108 363.64 T
+(operating system calls and Motif user interface calls, is strictly portable to) 108 347.64 T
+(all open system platforms which support these standards\321as most now do.) 108 331.64 T
+2 11 Q
+(1) 528.9 337.24 T
+3 14 Q
+(\321 Strictly portable sour) 108 279.64 T
+(ce yields strictly portable ANDF) 243.14 279.64 T
+2 F
+(The source of a strictly portable application can be compiled and run) 108 250.64 T
+(without modi\336cation on any compliant platform. It can also be compiled by) 108 234.64 T
+(an ANDF producer on one platform into the ANDF form, and installed by) 108 218.64 T
+(an ANDF installer on any other compliant platform. That is, if the source is) 108 202.64 T
+(strictly portable, the ANDF form is also strictly portable.) 108 186.64 T
+108 129 540 149.09 C
+108 136.99 239.98 136.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.74 (1.  Both application and platform must strictly respect the semantics and the syntax of the interfaces.) 108 121.67 P
+-0.17 (Also, applications must rely on standard header \336les, and not attempt to declare interfaces them-) 118.8 109.67 P
+(selves.) 118.8 97.67 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Degr) 108 736.84 T
+(ees of Application Portability) 124.73 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(So, any strictly portable application can be distributed using ANDF by) 108 710.67 T
+(simply substituting the ANDF producer and installer for the various native) 108 694.67 T
+(compilers.) 108 678.67 T
+(A good example of a strictly portable application is the ANDF C producer) 108 650.67 T
+(itself \050tcc\051. W) 108 634.67 T
+(e have successfully installed it on all platforms with ANDF) 184.2 634.67 T
+(installers with no modi\336cations.) 108 618.67 T
+3 F
+(\321 New applications can easily be strictly portable) 108 566.67 T
+2 F
+(Applications written today can easily be strictly portable. By using standard) 108 537.67 T
+(and well-documented languages and interfaces, and following widely-) 108 521.67 T
+(understood portability guidelines, they will be strictly portable, and thus) 108 505.67 T
+(installable as source or as ANDF on all conforming open system platforms.) 108 489.67 T
+(W) 108 461.67 T
+(ith a disciplined use of ANDF features, portable applications can also) 120.65 461.67 T
+(take advantage of platform-speci\336c features.) 108 445.67 T
+3 F
+(\321 Many legacy applications ar) 108 393.67 T
+(e portable, but not strictly portable) 283.92 393.67 T
+2 F
+(Unfortunately) 108 364.67 T
+(, few) 185.59 364.67 T
+3 F
+(existing) 217.06 364.67 T
+2 F
+( applications are strictly portable, for many) 260.59 364.67 T
+(reasons.) 108 348.67 T
+(Many existing applications were written before open system standards were) 108 320.67 T
+(published. After all, ANSI C was only standardized in 1989. Motif) 108 304.67 T
+(\325) 482.25 304.67 T
+(s) 486.14 304.67 T
+(speci\336cation was published in 1989. And in both cases, there was some lag) 108 288.67 T
+(between publication of the speci\336cation and full implementation by a wide) 108 272.67 T
+(range of vendors. Existing applications often rely on versions of Unix which) 108 256.67 T
+(do not completely conform to current industry standards.) 108 240.67 T
+(Some programs have a continuing requirement to be backwards compatible) 108 212.67 T
+(with pre-ANSI compilers or non-standard APIs, because an important part) 108 196.67 T
+(of their market does not yet support open systems standards.) 108 180.67 T
+(Programs often exploit platform-speci\336c features for additional) 108 152.67 T
+(functionality or performance. Sometimes, necessary functionality is not) 108 136.67 T
+(covered by the standards, and must be provided in a dif) 108 120.67 T
+(ferent way on each) 417.47 120.67 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Degr) 108 736.84 T
+(ees of Application Portability) 124.73 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(platform. This was especially true in earlier versions of open systems API) 108 710.67 T
+(standards.) 108 694.67 T
+(Many legacy applications are, however) 108 666.67 T
+(, portable with a modicum of ef) 326.98 666.67 T
+(fort) 503.55 666.67 T
+(to ANDF) 108 650.67 T
+(, and once ported to ANDF) 159.35 650.67 T
+(, are strictly portable to all platforms) 310.57 650.67 T
+(supporting ANDF) 108 634.67 T
+(.) 208.32 634.67 T
+(An example of such a portable commercial legacy application is W) 108 606.67 T
+(ingz,) 483.6 606.67 T
+(which was ported to ANDF with little ef) 108 590.67 T
+(fort, and now runs on all ANDF) 334.33 590.67 T
+(platforms.) 108 574.67 T
+3 F
+(\321 Many applications ar) 108 522.67 T
+(e parameterized by platform) 243.91 522.67 T
+2 F
+(Many applications are portable by being parameterized, that is, they use) 108 493.67 T
+(make\336les and preprocessor conditionals and macros to compile a somewhat) 108 477.67 T
+(dif) 108 461.67 T
+(ferent program for each platform. This is often true of applications which) 123.29 461.67 T
+(started out on one platform, and were ported successively to others.) 108 445.67 T
+(Parameterization is also useful when applications want to take advantage of) 108 429.67 T
+(platform-speci\336c features while remaining portable.) 108 413.67 T
+(Parameterized portability is handled in the ANDF framework by conditional) 108 385.67 T
+(compilation and the token mechanism, which are described in greater detail) 108 369.67 T
+(below) 108 353.67 T
+(.) 141.29 353.67 T
+(An example of a heavily-parameterized portable application is Gnu Emacs.) 108 325.67 T
+(Gnu Emacs uses a variety of tricks to ensure ef) 108 309.67 T
+(\336cient application on a wide) 370.82 309.67 T
+(range of platforms. Also, it adds functionality whose implementation is) 108 293.67 T
+(highly platform-dependent \050notably unexec\051. Gnu Emacs has been) 108 277.67 T
+(successfully ported to ANDF) 108 261.67 T
+(.) 270.49 261.67 T
+3 F
+(\321 Some applications ar) 108 209.67 T
+(e not very portable) 242.35 209.67 T
+2 F
+(Some applications are hard to port.) 108 180.67 T
+(This may be because the developers were unaware of portability techniques,) 108 152.67 T
+(or because they considered portability unnecessary) 108 136.67 T
+(. Some developers may) 391.92 136.67 T
+(have considered \322tuning\323 for a particular platform more important than) 108 120.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Degr) 108 736.84 T
+(ees of Application Portability) 124.73 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(portability) 108 710.67 T
+(. Of course, applications that depend critically on non-standard) 165.4 710.67 T
+(interfaces cannot be portable.) 108 694.67 T
+-0.04 (The marks of a hard-to-port application are extensive reliance on proprietary) 108 666.67 P
+(features or enhancements to standard interface, or on the details of its) 108 650.67 T
+(implementation \050\322piercing the veil of abstraction\323\051.) 108 634.67 T
+0 F
+(Strict portability) 108 582.67 T
+2 F
+(The ANDF model of strict portability is very simple. The program should) 108 553.67 T
+(be written in ANSI C or another language supported by ANDF) 108 537.67 T
+(, and use) 458.97 537.67 T
+(only standard interfaces. In additional, all external procedures must be) 108 521.67 T
+(declared before use.) 108 505.67 T
+2 11 Q
+(2) 220.27 511.27 T
+2 14 Q
+(ANDF can support any standard interface, since interface de\336nitions are) 108 477.67 T
+(written in a special sublanguage\321the token mechanism\321available to all) 108 461.67 T
+(ANDF users; they are not built into the technology) 108 445.67 T
+(. Currently) 391.58 445.67 T
+(, the following) 451.3 445.67 T
+(interfaces are supplied with the technology:) 108 429.67 T
+2 11 Q
+(POSIX) 355.93 429.67 T
+2 14 Q
+(,) 387.67 429.67 T
+2 11 Q
+(XPG/3) 394.67 429.67 T
+2 14 Q
+(, System) 425.18 429.67 T
+2 11 Q
+(V) 476.89 429.67 T
+2 14 Q
+(.4, and) 483.01 429.67 T
+(the OSF Application Environment Speci\336cation \050currently incomplete\051.) 108 413.67 T
+(Other interfaces, such as W) 108 397.67 T
+(indows) 261.69 397.67 T
+2 11 Q
+(NT) 305.61 397.67 T
+2 14 Q
+(, Macintosh OS, or) 319.22 397.67 T
+2 11 Q
+(VMS) 428.82 397.67 T
+2 14 Q
+( could equally) 452.63 397.67 T
+(well be de\336ned, with no modi\336cations to the producer or installer) 108 381.67 T
+(.) 473.72 381.67 T
+(When compiling a program using ANDF) 108 353.67 T
+(, ANDF header \336les are used rather) 336.56 353.67 T
+(than normal header \336les. Using the token mechanism described in this) 108 337.67 T
+(paper) 108 321.67 T
+(, ANDF header \336les declare only the visible part of the interface while) 138.52 321.67 T
+(deferring its implementation. This not only produces an ANDF form which) 108 305.67 T
+(can be installed on any platform, but also provides a high level of API) 108 289.67 T
+(interface checking. Applications could also use the token mechanism to) 108 273.67 T
+(provide more abstract interfaces\321and therefore better type checking\321) 108 257.67 T
+(between program modules.) 108 241.67 T
+108 117 540 137.09 C
+108 124.99 239.98 124.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.38 (2.  Implicit declarations, although tolerated by ANSI C, are known to be a common source of error) 108 109.67 P
+-0.38 (.) 534.88 109.67 P
+(See Harbison and Steele or any of the portability handbooks.) 118.8 97.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Degr) 108 736.84 T
+(ees of Application Portability) 124.73 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+(Partial portability) 108 710.67 T
+2 F
+(There are two main ways in which a program can be partially- or non-) 108 681.67 T
+(portable: it can be written using non-portable language constructs; or it can) 108 665.67 T
+(use non-standard programming interfaces \050or use standard ones incorrectly\051.) 108 649.67 T
+3 F
+(\321 Language pr) 108 597.67 T
+(oblems) 195.33 597.67 T
+2 F
+(Most programming languages have dialects and implementation) 108 568.67 T
+(dependencies. Dialects are dif) 108 552.67 T
+(ferent versions of the language, with non-) 275.6 552.67 T
+(standard extensions or restrictions. Implementation dependencies are) 108 536.67 T
+(features of a language which are not guaranteed to have the same meaning) 108 520.67 T
+(in dif) 108 504.67 T
+(ferent implementations.) 137.68 504.67 T
+(In the C world, two important dialects are the original C language as) 108 476.67 T
+(presented by Kernighan and Ritchie, \050K&R C\051, and ANSI Standard C. Since) 108 460.67 T
+(there is in fact considerable variation in pre-standard C compilers, which) 108 444.67 T
+(usually go somewhat beyond K&R C, ANSI C is more portable. ANSI C) 108 428.67 T
+(also provides additional mechanisms \050notably function prototypes\051 which) 108 412.67 T
+(permit stricter static portability and interface checking. \050ANDF C can give) 108 396.67 T
+(the K&R or the ANSI interpretation of a program.\051) 108 380.67 T
+(Still, ANSI C has not resolved all the implementation dependencies of C.) 108 352.67 T
+(For instance, C integer declarations remain imprecise. C allows declarations) 108 336.67 T
+(of integers as \322short\323, \322int\323, or \322long\323. Shorts must be at least 16 bits, longs) 108 320.67 T
+(must be at least 32 bits, and ints must be no smaller than shorts and no) 108 304.67 T
+(lar) 108 288.67 T
+(ger than longs. Thus portable programs cannot assume anything more) 122.51 288.67 T
+(than this. The ANDF technology contains additional mechanisms for) 108 272.67 T
+(specifying ranges of integers more precisely) 108 256.67 T
+(, but C programs cannot take) 354.61 256.67 T
+(advantage of them without adding ANDF-dependent constructs \050pragmas\051.) 108 240.67 T
+(W) 108 212.67 T
+(orse, many compilers are permissive, and although they may implement) 120.09 212.67 T
+(conforming C programs correctly) 108 196.67 T
+(, they also accept nonconforming C and,) 294.78 196.67 T
+(rather than give errors, generate interpretations that programmers \336nd useful) 108 180.67 T
+(\050this is not an accident; it typically comes from the programmer being aware) 108 164.67 T
+(of \322typical\323 compiler behavior\051. This means that even code that compiles) 108 148.67 T
+(and runs correctly on many compilers may contain non-portable constructs.) 108 132.67 T
+2 11 Q
+(3) 530.81 138.27 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(3.  See \322Porting Postgres...\323, W) 108 97.67 T
+(att, 1992.) 245.66 97.67 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Degr) 108 736.84 T
+(ees of Application Portability) 124.73 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+3 14 Q
+0 X
+(\321 Pr) 108 710.67 T
+(ogramming interface pr) 137.41 710.67 T
+(oblems) 270.59 710.67 T
+2 F
+(Standards documents de\336ne standard application programming interfaces) 108 681.67 T
+(by specifying the abstract interface, that is, the characteristics that an) 108 665.67 T
+(application programmer can depend on.) 108 649.67 T
+(Using an interface means including a header \336le of de\336nitions, which are) 108 621.67 T
+(required to be fully speci\336ed. Header \336les typically include data type) 108 605.67 T
+(de\336nitions, function de\336nitions, macro de\336nitions, and variable) 108 589.67 T
+(declarations. Although the function de\336nitions are abstract \050that is, they) 108 573.67 T
+(contain no more information than that needed to use them\051, type and macro) 108 557.67 T
+(de\336nitions are not.) 108 541.67 T
+(Applications programmers thus can take advantage of the internal structure) 108 513.67 T
+(of these interfaces, intentionally or unwittingly) 108 497.67 T
+(. For instance, although the) 369.81 497.67 T
+(internal structure of a) 108 481.67 T
+4 F
+-0.7 (stdio) 231.57 481.67 S
+2 F
+( buf) 270.04 481.67 T
+(fer is not part of) 291.94 481.67 T
+4 F
+-0.7 (stdio) 385.59 481.67 S
+2 F
+(\325) 424.07 481.67 T
+(s interface, it is) 427.96 481.67 T
+(typically present in the header \336le, since it is used by macros such as) 108 465.67 T
+4 F
+-0.7 (putchar) 108 449.67 S
+2 F
+(.) 161.1 449.67 T
+(Checking for these dependencies is dif) 108 421.67 T
+(\336cult because many) 324.2 421.67 T
+(implementations\325 concrete de\336nitions are similar or identical, so even) 108 405.67 T
+(porting to multiple platforms will not detect non-standard use of APIs.) 108 389.67 T
+(The ANDF technology introduces a mechanism for de\336ning only the) 108 361.67 T
+(abstract interface, and then later checking for the conformance of the) 108 345.67 T
+(concrete to the abstract interface. This is part of the token mechanism \050) 108 329.67 T
+3 F
+(q.v) 505.52 329.67 T
+(.) 521.19 329.67 T
+2 F
+(\051.) 524.69 329.67 T
+0 F
+(Further r) 108 277.67 T
+(eading on portability in C) 164.87 277.67 T
+2 F
+(There are several books available on writing portable code in C. They) 108 248.67 T
+(present both general principles and particular traps.) 108 232.67 T
+(The general principles are simple: never say the same thing in two dif) 108 204.67 T
+(ferent) 497.91 204.67 T
+(places; only rely on the standard properties of data types; don\325) 108 188.67 T
+(t use obscure) 456.72 188.67 T
+(features. The detail is what makes these books valuable. W) 108 172.67 T
+(e have found) 437.58 172.67 T
+(Rabinowitz and Schaap particularly useful for C language issues, and) 108 156.67 T
+(Horton for reference material on portability within Unix variants.) 108 140.67 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Support for Portability in ANDF C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Harbison and Steele has excellent discussion of machine dependencies and) 108 710.67 T
+(traps in the C language, but portability advice is less prominent than a) 108 694.67 T
+(complete description of language semantics.) 108 678.67 T
+108 618.98 540 622 C
+90 620.49 558 620.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. Support for Portability in ANDF C) 108 627.33 T
+2 14 Q
+(ANDF C supports portability in two ways: interface abstraction and) 108 595.64 T
+(conditional compilation.) 108 579.64 T
+(Interface abstraction is also a well-known technique, but is often thought of) 108 551.64 T
+(primarily as a software engineering method rather than a portability) 108 535.64 T
+(technique. ANDF C adds a general-purpose interface abstraction) 108 519.64 T
+(mechanism to C, called tokens. T) 108 503.64 T
+(okens\325 interfaces are declared when the) 293.96 503.64 T
+(program is compiled by the producer) 108 487.64 T
+(, but their de\336nitions are only supplied) 314.57 487.64 T
+(when the program is installed.) 108 471.64 T
+(Conditional compilation is a traditional way of parameterizing applications.) 108 443.64 T
+(ANDF C supports it fully) 108 427.64 T
+(. In particular) 250.13 427.64 T
+(, the conditional can depend on) 325.34 427.64 T
+(tokens which are only de\336ned at install time, thus allowing install-time) 108 411.64 T
+(conditional compilation.) 108 395.64 T
+0 F
+(T) 108 343.64 T
+(okens ar) 116.05 343.64 T
+(e abstract interfaces) 166.71 343.64 T
+2 F
+(T) 108 314.64 T
+(okens are ANDF\325) 115.57 314.64 T
+(s key abstraction and therefore portability mechanism.) 214.27 314.64 T
+2 11 Q
+(4) 518.55 320.24 T
+2 14 Q
+(T) 108 298.64 T
+(okens de\336ne abstract interfaces which are later instantiated by concrete) 115.57 298.64 T
+(interfaces. The abstract interfaces are used by the producer) 108 282.64 T
+(, and the concrete) 436.52 282.64 T
+(interfaces by the installer) 108 266.64 T
+(. The process of compiling token de\336nitions) 248.29 266.64 T
+(guarantees that the concrete interfaces are type-correct implementations of) 108 250.64 T
+(the abstract interfaces.) 108 234.64 T
+(For instance, consider) 108 206.64 T
+4 F
+-0.7 (getc) 234.69 206.64 S
+2 F
+(. Abstractly) 265.47 206.64 T
+(, it is simply a function of a \336le) 329.85 206.64 T
+(pointer returning an integer) 108 190.64 T
+(. It is almost always implemented as a macro for) 260.73 190.64 T
+(ef) 108 174.64 T
+(\336ciency) 118.62 174.64 T
+(, and that macro refers to the internal structure of a \336le structure.) 162.01 174.64 T
+(But that internal structure dif) 108 158.64 T
+(fers from implementation to implementation,) 270.2 158.64 T
+108 129 540 149.09 C
+108 136.99 239.98 136.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(4.  Some writers use \322token\323 as a synonym for \322lexeme\323 or \322lexical element.\323 The ANDF use of) 108 121.67 T
+-0.41 (token is completely dif) 118.8 109.67 P
+-0.41 (ferent: it is an interface speci\336cation whose implementation is deferred to) 218.37 109.67 P
+(installation.) 118.8 97.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Support for Portability in ANDF C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 22) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(and should not be visible to the user of getc. Y) 108 710.67 T
+(et although C provides) 367.38 710.67 T
+(function declarators, it does not provide macro declarators\321that is, there is) 108 694.67 T
+(no way to separate the declaration of a) 108 678.67 T
+4 F
+-0.7 (getc) 327.15 678.67 S
+2 F
+( macro from its) 357.93 678.67 T
+(implementation. An ANDF function token is precisely what is needed: a) 108 662.67 T
+(macro declarator) 108 646.67 T
+(.) 201.64 646.67 T
+3 F
+(\321 T) 108 594.67 T
+(okens abstract pr) 130.43 594.67 T
+(ogram elements) 227.07 594.67 T
+2 F
+(T) 108 565.67 T
+(okens can abstract many kinds of program element, including identi\336ers,) 115.57 565.67 T
+(types, and macros.) 108 549.67 T
+(T) 108 521.67 T
+(okens must be declared before use. T) 115.57 521.67 T
+(okens can replace any part of a C) 322.47 521.67 T
+(program, not just a statement or an expression. For instance, tokens can) 108 505.67 T
+(represent a type or a structure \336eld.) 108 489.67 T
+(Uses of tokens can be checked for type correctness from just their) 108 461.67 T
+(declaration, without looking at the body) 108 445.67 T
+(. This is critical to their usefulness,) 330.95 445.67 T
+(since they typically have dif) 108 429.67 T
+(ferent bodies on dif) 265.52 429.67 T
+(ferent tar) 374.47 429.67 T
+(gets.) 425.11 429.67 T
+(These abstract interfaces are a useful facility for modern software) 108 401.67 T
+(engineering practice, and become crucial for the de\336nition of portable) 108 385.67 T
+(interfaces: the abstract interface is the portable interface, and the concrete) 108 369.67 T
+(interface is a particular implementation of the interface.) 108 353.67 T
+(In the C producer) 108 325.67 T
+(, tokens are an extension to C\325) 205.75 325.67 T
+(s de\336nition facilities. T) 374.8 325.67 T
+(okens) 503.65 325.67 T
+(allow separating the declaration of types, macros, constants, and other) 108 309.67 T
+(entities from the actual values they take. This is necessary because types,) 108 293.67 T
+(macros, and constants are visible parts of library interfaces. Although) 108 277.67 T
+(standards such as) 108 261.67 T
+2 11 Q
+(POSIX) 208.65 261.67 T
+2 14 Q
+( specify these interfaces abstractly) 240.39 261.67 T
+(, there is no) 431.42 261.67 T
+(provision in the C language for declaring them abstractly) 108 245.67 T
+(, that is, without) 426.54 245.67 T
+(committing to a particular implementation. The) 108 229.67 T
+4 F
+-0.7 (time_t) 377.34 229.67 S
+2 F
+( type is a good) 423.51 229.67 T
+(example of the problem.) 108 213.67 T
+3 F
+(\321 An example: the pr) 108 161.67 T
+(oblem with) 230.28 161.67 T
+5 F
+-0.7 (time_t) 295.58 161.67 S
+2 11 Q
+(POSIX) 108 132.67 T
+2 14 Q
+( de\336nes several functions which manipulate values of type) 139.74 132.67 T
+4 F
+-0.7 (time_t) 470.45 132.67 S
+2 F
+(,) 516.62 132.67 T
+(de\336ned as the number of seconds since midnight, 1 Jan 1970. POSIX) 108 116.67 T
+(guarantees that it will be an arithmetic type, but does not commit to any) 108 100.67 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Support for Portability in ANDF C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(particular type. On the other hand, the include \336les which de\336ne the) 108 710.67 T
+(interface for a normal C compilation must commit to a particular type,) 108 694.67 T
+(typically) 108 678.67 T
+4 F
+-0.7 (long) 160.47 678.67 S
+2 F
+(,) 191.25 678.67 T
+4 F
+-0.7 (double) 198.25 678.67 S
+2 F
+(, or) 244.42 678.67 T
+4 F
+-0.7 (long double) 266.57 678.67 S
+2 F
+( :) 351.22 678.67 T
+4 F
+-0.7 (typedef long time_t;) 144 650.67 S
+2 F
+(Thus if an application writer unwittingly assumes that time_t is a long, the) 108 622.67 T
+(native compiler cannot catch the portability error in a piece of code like:) 108 606.67 T
+4 F
+-0.7 (time_t clock; ...) 144 578.67 S
+-0.7 (if \050clock & 1\051 ... /* Odd second? */) 144 562.67 S
+2 F
+(since) 108 534.67 T
+4 F
+-0.7 (time_t) 140.25 534.67 S
+2 F
+( is simply another name for) 186.43 534.67 T
+4 F
+-0.7 (long) 343.43 534.67 S
+2 F
+( to it.) 374.22 534.67 T
+3 F
+(\321 The token solution for) 108 482.67 T
+5 F
+-0.7 (time_t) 250.65 482.67 S
+2 F
+(ANDF provides a mechanism to de\336ne) 108 453.67 T
+4 F
+-0.7 ( time_t) 326.8 453.67 S
+2 F
+( as) 380.67 453.67 T
+(an arithmetic type) 399.32 453.67 T
+(without specifying which one:) 108 437.67 T
+4 F
+-0.7 (#pragma token ARITHMETIC time_t #) 144 409.67 S
+2 F
+(This de\336nition is used in the platform-independent header \336les read by the) 108 381.67 T
+(producer) 108 365.67 T
+(. The token) 156.96 365.67 T
+4 F
+-0.7 (time_t) 223.8 365.67 S
+2 F
+( can now be used anywhere a type name could) 269.97 365.67 T
+(be used, for instance in the de\336nition of a structure or the declaration of a) 108 349.67 T
+(function.) 108 333.67 T
+(On the other hand, the platform-dependent header \336les contain the) 108 305.67 T
+(corresponding concrete interface, speci\336ed as usual with a) 108 289.67 T
+4 F
+-0.7 (typedef.) 437.9 289.67 S
+0 F
+(The kinds of tokens used for C) 108 237.67 T
+2 F
+(T) 108 208.67 T
+(okens can abstract pure expressions \050r) 115.57 208.67 T
+(-values\051, object references \050l-values\051,) 327.83 208.67 T
+(integer constants, types, member selectors, certain kinds of macros, and) 108 192.67 T
+(functions.) 108 176.67 T
+(A token can be used anywhere the corresponding type of expression could) 108 148.67 T
+(be used in standard C. For instance, a type token can be used not only to) 108 132.67 T
+(declare variables, but also to build up structures and unions, or to de\336ne) 108 116.67 T
+(function parameters.) 108 100.67 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Support for Portability in ANDF C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The full syntax and semantics of tokens in the C producer are discussed in) 108 710.67 T
+(the document) 108 694.67 T
+3 F
+(The token syntax for the C pr) 187.28 694.67 T
+(oducer) 350 694.67 T
+2 11 Q
+(5) 388.85 700.27 T
+2 14 Q
+(. The current token) 394.35 694.67 T
+(de\336nition syntax corresponds closely to the internal structure of tokens in) 108 678.67 T
+(ANDF) 108 662.67 T
+(, rather than to C\325) 144.97 662.67 T
+(s syntax; an alternative syntax is being studied) 243.29 662.67 T
+(which follows C more closely) 108 646.67 T
+(, and thus makes it easier to rewrite existing) 274.98 646.67 T
+(interfaces in terms of tokens.) 108 630.67 T
+(Here, we summarize the dif) 108 602.67 T
+(ferent kinds of tokens and their uses.) 262.78 602.67 T
+3 F
+(\321 Expr) 108 550.67 T
+(essions) 150.62 550.67 T
+2 F
+(A token of type) 108 521.67 T
+4 F
+-0.7 (EXP) 198.94 521.67 S
+2 F
+( can replace a) 222.02 521.67 T
+3 F
+(primary-expr) 302.05 521.67 T
+(ession) 376.13 521.67 T
+2 F
+(. All) 411.11 521.67 T
+4 F
+-0.7 (EXP) 439.49 521.67 S
+2 F
+(s have a) 462.58 521.67 T
+(speci\336ed storage type \050lvalue or rvalue\051 and type. Only lvalue) 108 505.67 T
+4 F
+-0.7 (EXP) 457.35 505.67 S
+2 F
+(s may) 480.43 505.67 T
+(appear on the left-hand side of an assignment.) 108 489.67 T
+(Rvalue) 108 461.67 T
+4 F
+-0.7 (EXP) 151.14 461.67 S
+2 F
+(s are often used to de\336ne platform-dependent constants such as) 174.23 461.67 T
+4 F
+-0.7 (MAXFLOAT) 108 445.67 S
+2 F
+( and) 169.56 445.67 T
+4 F
+-0.7 (stdin) 196.77 445.67 S
+2 F
+(.) 235.24 445.67 T
+4 F
+-0.7 (MAXFLOAT) 242.24 445.67 S
+2 F
+( is of course of type double \050a built-in) 303.8 445.67 T
+(type\051 but) 108 429.67 T
+4 F
+-0.7 (stdin) 161.63 429.67 S
+2 F
+( is of type) 200.11 429.67 T
+4 F
+-0.7 (FILE *) 259.19 429.67 S
+2 F
+(, where) 305.36 429.67 T
+4 F
+-0.7 (FILE) 350.04 429.67 S
+2 F
+( is a type token.) 380.82 429.67 T
+(Lvalue) 108 401.67 T
+4 F
+-0.7 (EXP) 150.35 401.67 S
+2 F
+(s are often used for variables such as) 173.44 401.67 T
+4 F
+-0.7 (errno) 382.49 401.67 S
+2 F
+( or) 420.96 401.67 T
+4 F
+-0.7 (curscr) 439.62 401.67 S
+2 F
+(\050curses.h\051. Again,) 108 385.67 T
+4 F
+-0.7 (errno) 210.97 385.67 S
+2 F
+( is de\336ned by ANSI as an) 249.45 385.67 T
+4 F
+-0.7 (int) 395.96 385.67 S
+2 F
+(, but) 419.05 385.67 T
+4 F
+-0.7 (curscr) 447.42 385.67 S
+2 F
+(is of) 501.29 385.67 T
+(type) 108 369.67 T
+4 F
+-0.7 (WINDOW *) 135.59 369.67 S
+2 F
+(, where) 197.16 369.67 T
+4 F
+-0.7 (WINDOW) 241.84 369.67 S
+2 F
+( is a type token.) 288.01 369.67 T
+3 F
+(\321 Integer constants) 108 317.67 T
+2 F
+(Constants used for array sizes and bit\336eld widths must be natural numbers) 108 288.67 T
+(\050non-negative integers\051, and are de\336ned as) 108 272.67 T
+4 F
+-0.7 ( NAT) 345.8 272.67 S
+2 F
+( tokens. T) 376.58 272.67 T
+(o allow the use of) 431.18 272.67 T
+(unmodi\336ed platform-dependent header \336les, the ANDF installer is) 108 256.67 T
+(particularly clever at handling implicit declarations of such constants.) 108 240.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(5.  Core, 1992.) 108 97.67 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Support for Portability in ANDF C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+3 14 Q
+0 X
+(\321 T) 108 710.67 T
+(ypes) 130.68 710.67 T
+2 F
+(T) 108 681.67 T
+(ypes can be tokenized at several levels of speci\336city) 115.57 681.67 T
+(.) 406.88 681.67 T
+(A completely abstract type is simply a) 108 653.67 T
+4 F
+-0.7 (TYPE) 326.03 653.67 S
+2 F
+(. V) 356.81 653.67 T
+(ariables and parameters can) 372.36 653.67 T
+(be declared of type TYPE, but no operations which require knowledge of) 108 637.67 T
+(the type may be used. This is useful for opaque types such as FILE, whose) 108 621.67 T
+(internal structure is not de\336ned by standards, and must be free to vary) 108 605.67 T
+(across implementations.) 108 589.67 T
+(Abstract integer) 108 561.67 T
+(, \337oat, and arithmetic types can be declared, and have the) 197.2 561.67 T
+(corresponding operations.) 108 545.67 T
+(Struct and Union types can be declared, and support any de\336ned member) 108 517.67 T
+(selectors \050see the next section\051.) 108 501.67 T
+(A tokenized type T can be used to build up composed types, such as pointer) 108 473.67 T
+(-) 532.48 473.67 T
+(to-T) 108 457.67 T
+(, a struct with a \336eld of type T) 131.06 457.67 T
+(, and so on. Since) 299.08 457.67 T
+4 F
+-0.7 (stdin) 401.29 457.67 S
+2 F
+( is of type) 439.77 457.67 T
+4 F
+-0.7 (FILE *) 108 441.67 S
+2 F
+(, it is legal to dereference it, but not to examine its internal \336elds) 154.17 441.67 T
+(using) 108 425.67 T
+4 F
+-0.7 (->) 141.82 425.67 S
+2 F
+(.) 157.21 425.67 T
+3 F
+(\321 Member selectors) 108 373.67 T
+2 F
+(Standards often require that a type be a structure or union containing certain) 108 344.67 T
+(\336elds. They usually leave the order of the \336elds unde\336ned, and permit) 108 328.67 T
+(implementations to support additional, internal, \336elds.) 108 312.67 T
+(ANDF tokens permit declaring individual \336elds\325 names and types without) 108 284.67 T
+(specifying the complete structure or union, and without specifying the order) 108 268.67 T
+(.) 532.77 268.67 T
+3 F
+(\321 Functions and certain kinds of macr) 108 216.67 T
+(os) 326.69 216.67 T
+2 F
+(T) 108 187.67 T
+(okens can replace functions and certain kinds of macros. T) 115.57 187.67 T
+(o be precise,) 443.33 187.67 T
+(they can replace macros which expand to expressions or to sequences of) 108 171.67 T
+(statements. They cannot replace arbitrary sequences of lexemes \050) 108 155.67 T
+3 F
+(e.g.) 472.08 155.67 T
+4 F
+-0.7 (#define begin {) 108 139.67 S
+2 F
+(\051. \050However) 231.13 139.67 T
+(, that kind of macro is rarely if ever) 298.17 139.67 T
+(platform-dependent.\051) 108 123.67 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Support for Portability in ANDF C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The abstraction provided by tokenized macros is valuable not only for) 108 710.67 T
+(portability) 108 694.67 T
+(, but also for static checking. In ef) 165.4 694.67 T
+(fect, the ar) 355.94 694.67 T
+(guments and result of) 415.13 694.67 T
+(ANDF tokenized macros are tagged for type and storage class, so error) 108 678.67 T
+(messages can in many cases be given in terms of the macro application) 108 662.67 T
+(rather than the macro expansion.) 108 646.67 T
+(There are actually two kinds of function token,) 108 618.67 T
+4 F
+-0.7 (FUNC) 374.19 618.67 S
+2 F
+( and) 404.97 618.67 T
+4 F
+-0.7 (MACRO) 432.17 618.67 S
+2 F
+(. The) 470.65 618.67 T
+(distinction is necessary because) 108 602.67 T
+4 F
+-0.7 (FUNC) 289.09 602.67 S
+2 F
+(s cannot return lvalues, and) 319.87 602.67 T
+4 F
+-0.7 (MACRO) 476.86 602.67 S
+2 F
+(s\325) 515.34 602.67 T
+(names cannot be passed as function parameters. On the other hand,) 108 586.67 T
+4 F
+-0.7 (FUNC) 486.87 586.67 S
+2 F
+(s) 517.65 586.67 T
+(can be implemented as macros and) 108 570.67 T
+4 F
+-0.7 (MACRO) 306.96 570.67 S
+2 F
+(s by functions \050as long as they) 345.43 570.67 T
+(don\325) 108 554.67 T
+(t return lvalues\051.) 133.4 554.67 T
+0 F
+(Conditional compilation) 108 502.67 T
+2 F
+(ANDF C supports ANSI C conditional compilation using C\325) 108 473.67 T
+(s) 446.17 473.67 T
+4 F
+-0.7 ( #if) 451.61 473.67 S
+2 F
+( and) 482.39 473.67 T
+4 F
+-0.7 (#ifdef) 108 457.67 S
+2 F
+( constructs. Although) 154.17 457.67 T
+4 F
+-0.7 (#ifdef) 277.77 457.67 S
+2 F
+( is reserved for traditional) 323.94 457.67 T
+(preprocessing,) 108 441.67 T
+4 F
+-0.7 (#if) 192.71 441.67 S
+2 F
+( has additional functionality) 215.8 441.67 T
+(.) 371.52 441.67 T
+(If the condition can be fully evaluated at production time, standard C) 108 413.67 T
+(preprocessor semantics are applied. In particular) 108 397.67 T
+(, the contents of each) 378.65 397.67 T
+(branch of the) 108 381.67 T
+4 F
+-0.7 (#if) 185.32 381.67 S
+2 F
+(can be arbitrary lexeme sequences. Syntactic analysis) 216.1 381.67 T
+(then happens after the branch of the) 108 365.67 T
+4 F
+-0.7 (#if) 311.99 365.67 S
+2 F
+( is chosen.) 335.08 365.67 T
+(On the other hand, if the condition cannot be fully evaluated at production) 108 337.67 T
+(time because it contains deferred constants or expressions in the form of) 108 321.67 T
+(tokens, its evaluation is deferred to installation time. In this case, ANDF C) 108 305.67 T
+(compiles both branches of the) 108 289.67 T
+4 F
+-0.7 (#if) 279.38 289.67 S
+2 F
+(, and evaluates the conditions and selects) 302.46 289.67 T
+(a branch at installation time.) 108 273.67 T
+(For this to work, the branches of the) 108 245.67 T
+4 F
+-0.7 (#if) 314.36 245.67 S
+2 F
+(must be syntactically complete) 345.14 245.67 T
+(program fragments. Moreover) 108 229.67 T
+(, the branches must be statically consistent. In) 276.47 229.67 T
+(particular) 108 213.67 T
+(, this means that inconsistent declarations cannot be contained) 161.06 213.67 T
+(within tar) 108 197.67 T
+(get-dependent conditions. Thus, complicated conditional) 161.77 197.67 T
+(declarations are best handled using the token mechanism.) 108 181.67 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(De\336ning libraries) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(14 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+3 14 Q
+0 X
+(\321 Applications of conditional compilation) 108 710.67 T
+2 F
+(Programs often contain con\336guration constants. ANDF deferred constants) 108 681.67 T
+(\050tokens\051 can replace these constants where they are unresolved until install) 108 665.67 T
+(time.) 108 649.67 T
+(Install-time conditional compilation is typically used for tar) 108 621.67 T
+(get-dependent) 441.61 621.67 T
+(constructs. But it can also be used to con\336gure an application for a user) 108 605.67 T
+(\325) 508.01 605.67 T
+(s) 511.9 605.67 T
+(needs. For instance, the user could turn security features on or of) 108 589.67 T
+(f, or) 470.3 589.67 T
+(preallocate \336xed-size buf) 108 573.67 T
+(fers corresponding to the expected load or) 249.18 573.67 T
+(available memory) 108 557.67 T
+(.) 207.74 557.67 T
+108 497.98 540 501 C
+90 499.49 558 499.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. De\336ning libraries) 108 506.33 T
+2 14 Q
+(ANDF supports de\336ning libraries which are only linked to an application on) 108 474.64 T
+(installation. System service libraries are of course implemented this way) 108 458.64 T
+(,) 512.81 458.64 T
+(but other common libraries such as graphic user interfaces and numerical) 108 442.64 T
+(packages can be, as well.) 108 426.64 T
+(As always, interface de\336nitions used by the applications programmer and) 108 398.64 T
+(the library programmer must agree. If the interface consists only of) 108 382.64 T
+(functions, static variables, and explicit types, it may be de\336ned simply using) 108 366.64 T
+(C prototypes and declarations.) 108 350.64 T
+(If the interface also includes macros or opaque types, ANDF\325) 108 322.64 T
+(s token) 451.51 322.64 T
+(mechanism should be used to de\336ne them abstractly) 108 306.64 T
+(.) 398.96 306.64 T
+(One of ANDF\325) 108 278.64 T
+(s special features is a name space of unique identi\336ers,) 191.94 278.64 T
+(similar to Internet addresses, so that there is no possibility of namespace) 108 262.64 T
+(clashes.) 108 246.64 T
+(Thus, ANDF supports separately distributed libraries.) 108 218.64 T
+0 F
+(Advantages of tokenized libraries) 108 166.64 T
+2 F
+-0.14 (T) 108 137.64 P
+-0.14 (ar) 115.57 137.64 P
+-0.14 (get-dependent compilation is powerful, but tokens have many advantages) 126.19 137.64 P
+(over it.) 108 121.64 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Suggested pr) 108 736.84 T
+(ocedur) 152.06 736.84 T
+(es) 175.45 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(15 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(T) 108 710.67 T
+(ar) 115.57 710.67 T
+(get-dependent compilation in fact gives source which has many variants.) 126.19 710.67 T
+(Both static analysis and dynamic testing of such code is much harder than) 108 694.67 T
+(with single-source code.) 108 678.67 T
+(T) 108 650.67 T
+(okens force a clean de\336nition of an interface.) 115.57 650.67 T
+(T) 108 622.67 T
+(okens improve error) 115.57 622.67 T
+(-checking because they are abstract.) 228.75 622.67 T
+(T) 108 594.67 T
+(okens make it more likely that the interface will be robust.) 115.57 594.67 T
+108 534.98 540 538 C
+90 536.49 558 536.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. Suggested procedures) 108 543.33 T
+2 14 Q
+(In our porting experience at OSF) 108 511.64 T
+(, we have developed procedures for porting) 291.47 511.64 T
+(existing software to ANDF) 108 495.64 T
+(.) 258.84 495.64 T
+(The general outline of this procedure is:) 108 467.64 T
+2 13 Q
+(\245) 122.4 444.31 T
+(check-out of the ANDF compiler;) 136.8 444.31 T
+(\245) 122.4 421.31 T
+(survey of the application\325) 136.8 421.31 T
+(s portability;) 269.16 421.31 T
+(\245) 122.4 398.31 T
+(modi\336cation of the application to increase its portability;) 136.8 398.31 T
+(\245) 122.4 375.31 T
+(validation of the result;) 136.8 375.31 T
+(\245) 122.4 352.31 T
+(tuning on particular platforms.) 136.8 352.31 T
+2 14 Q
+(The \336rst step is simply a \322sanity check\323.) 108 324.64 T
+(The portability survey) 108 296.64 T
+(, the second step, is critical. It usually allows) 231.45 296.64 T
+(estimating the amount of porting ef) 108 280.64 T
+(fort necessary) 305.57 280.64 T
+(. For some applications,) 382.75 280.64 T
+(this ef) 108 264.64 T
+(fort may be prohibitive. For others, it may be negligible. The) 142.34 264.64 T
+(portability survey should give suf) 108 248.64 T
+(\336cient information to permit an informed) 295.86 248.64 T
+(go/no-go decision on the ANDF port.) 108 232.64 T
+(The third step modi\336es the application to make it portable and represents) 108 204.64 T
+(the bulk of the time investment.) 108 188.64 T
+(V) 108 160.64 T
+(alidation, the fourth step, recognizes that no technology is perfect. There) 116.55 160.64 T
+(may be installer bugs, or hidden platform dependencies in the application.) 108 144.64 T
+(Finally) 108 116.64 T
+(, the ANDF technology does allow tuning for particular platforms) 146.74 116.64 T
+(through the use of platform-speci\336c library de\336nitions.) 108 100.64 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Suggested pr) 108 736.84 T
+(ocedur) 152.06 736.84 T
+(es) 175.45 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(16 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+(Compiler check-out) 108 710.67 T
+2 F
+(The \336rst step of porting to ANDF is checking that the application\325) 108 681.67 T
+(s) 477.61 681.67 T
+(language usage is accepted by the ANDF compiler) 108 665.67 T
+(. \050W) 391.29 665.67 T
+(e assume that the) 415.03 665.67 T
+(application compiles successfully using the standard compiler available on) 108 649.67 T
+(the machine.\051 The possible problems here are that the application uses non-) 108 633.67 T
+(standard constructions, or that the compiler has bugs.) 108 617.67 T
+(This check is performed by compiling the application with the ANDF C) 108 589.67 T
+(compiler in \322native mode\323. In this mode, it uses the libraries available on) 108 573.67 T
+(the local platform rather than the tokenized libraries. Thus issues of correct) 108 557.67 T
+(interface usage are separated from issues of correct language usage.) 108 541.67 T
+(Compiling and testing the application compiled in native mode is a sanity) 108 513.67 T
+(check for the application, the C producer) 108 497.67 T
+(, and the local installer and often) 336.31 497.67 T
+(detects trivial errors.) 108 481.67 T
+3 F
+(\321 Other tools) 108 429.67 T
+2 F
+(There are stand-alone C portability checkers on the market. The tcc \050ANDF\051) 108 400.67 T
+(compiler itself is, however) 108 384.67 T
+(, an excellent static portability checker and strict) 256.67 384.67 T
+(ANSI C compiler) 108 368.67 T
+(, and generally gives good error messages.) 206.16 368.67 T
+0 F
+(Portability survey) 108 316.67 T
+2 F
+(The portability survey) 108 287.67 T
+(, the second step, is critical. It usually allows) 231.45 287.67 T
+(estimating the amount of porting ef) 108 271.67 T
+(fort necessary) 305.57 271.67 T
+(. For some applications,) 382.75 271.67 T
+(this ef) 108 255.67 T
+(fort may be prohibitive. For others, it may be negligible. The) 142.34 255.67 T
+(portability survey should give suf) 108 239.67 T
+(\336cient information to permit an informed) 295.86 239.67 T
+(go/no-go decision on the ANDF port.) 108 223.67 T
+(The primary emphasis of this step is on correct usage of the API, including) 108 195.67 T
+(the ef) 108 179.67 T
+(fects that an abstract interface has on types used within the program.) 139.22 179.67 T
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Suggested pr) 108 736.84 T
+(ocedur) 152.06 736.84 T
+(es) 175.45 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(17 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+3 14 Q
+0 X
+(\321 T) 108 710.67 T
+(ools) 130.43 710.67 T
+2 F
+(As for interfaces, the ANDF header \336les for the various APIs are maximally) 108 681.67 T
+(abstract, that is, they contain no information other than that speci\336ed by the) 108 665.67 T
+(speci\336cation of the interface. Thus any dependence on internal \336elds is) 108 649.67 T
+(detected at production time, even if every actual implementation supplies) 108 633.67 T
+(consistent additional information.) 108 617.67 T
+(One area where style and portability checkers such as lint, and OSPC,) 108 589.67 T
+2 11 Q
+(6) 499.32 595.27 T
+2 14 Q
+( and) 504.82 589.67 T
+(ProQA are stricter than tcc is inter) 108 573.67 T
+(-module consistency) 299.68 573.67 T
+(. This is useful) 414.19 573.67 T
+(whenever applications do not use common header \336les, but instead declare) 108 557.67 T
+(externals explicitly) 108 541.67 T
+(. Although it is considered to be poor practice, it is) 213.96 541.67 T
+(allowed by ANSI C and tcc.) 108 525.67 T
+(Also, tcc performs no dynamic checking as do tools such as CenterLine C) 108 497.67 T
+2 11 Q
+(7) 521.88 503.27 T
+2 14 Q
+(and the Model Implementation C compiler) 108 481.67 T
+(.) 346.25 481.67 T
+2 11 Q
+(8) 349.74 487.27 T
+2 14 Q
+( These tools can be useful for) 355.24 481.67 T
+(development and debugging.) 108 465.67 T
+0 F
+(Portability engineering) 108 413.67 T
+2 F
+(In the third step, tar) 108 384.67 T
+(get dependencies are eliminated.) 217.73 384.67 T
+(There are two main strategies to follow:) 108 356.67 T
+(One is rewriting code to make it respect the standard APIs. This can be a) 108 328.67 T
+(long and arduous process.) 108 312.67 T
+(Another possible approach is to create a \322translation\323 layer) 108 284.67 T
+(. A set of tokens) 437.52 284.67 T
+(is de\336ned in place of the interfaces the application expects, and tar) 108 268.67 T
+(get-) 480.01 268.67 T
+(dependent token de\336nition libraries translate these tokens to appropriate) 108 252.67 T
+(operations.) 108 236.67 T
+(Our experience is that translation layers are cost-ef) 108 208.67 T
+(fective when a lar) 392.56 208.67 T
+(ge) 492.16 208.67 T
+(application has been written to a non-standard interface. They are also a) 108 192.67 T
+108 159 540 179.09 C
+108 166.99 239.98 166.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.08 (6.  Open Systems Portability Checker from Knowledge Software, 62 Fernhill Road, Farnborough,) 108 151.67 P
+(Hants GU14) 118.8 139.67 T
+(9RZ England; OSPC@knosof.uucp.) 176.77 139.67 T
+-0.23 (7.  CenterLine C \050formerly Saber C\051 from CenterLine Software, 10 Fawcett St., Cambridge, Mass.) 108 124.67 P
+(02138, USA.) 118.8 112.67 T
+(8.  Also from Knowledge Software.) 108 97.67 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Suggested pr) 108 736.84 T
+(ocedur) 152.06 736.84 T
+(es) 175.45 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(18 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+-0.02 (cost-ef) 108 710.67 P
+-0.02 (fective way of emulating widely-used) 145.82 710.67 P
+3 F
+-0.02 (de facto) 360.6 710.67 P
+2 F
+-0.02 ( standards such as BSD) 405.26 710.67 P
+(header \336les.) 108 694.67 T
+(In both the rewriting and the translation strategies, it is often the case that a) 108 666.67 T
+(parameterized application has one tar) 108 650.67 T
+(get platform which is much closer to) 316.79 650.67 T
+(standard interfaces than others. This is often a good starting point for) 108 634.67 T
+(porting to the standard APIs.) 108 618.67 T
+0 F
+(V) 108 566.67 T
+(alidation) 116.82 566.67 T
+2 F
+(V) 108 537.67 T
+(alidation, the fourth step, recognizes that no technology is perfect. There) 116.55 537.67 T
+(may be installer bugs, or hidden platform dependencies in the application.) 108 521.67 T
+(W) 108 505.67 T
+(e therefore recommend that an application ported to ANDF be validated) 120.09 505.67 T
+(on all convenient platforms. Our experience so far is that producer and) 108 489.67 T
+(installer bugs are rare. They should become rarer) 108 473.67 T
+(, and con\336dence in) 381.76 473.67 T
+(producers and installers should increase, once the ANDF validation suites) 108 457.67 T
+(are put in place. Still, per) 108 441.67 T
+(-platform validation gives additional con\336dence,) 248.79 441.67 T
+(and we would not recommend shipping software without such testing.) 108 425.67 T
+0 F
+(Platform-speci\336c tuning) 108 373.67 T
+2 F
+(Finally) 108 344.67 T
+(, the ANDF technology does allow tuning for particular platforms) 146.74 344.67 T
+(through the use of platform-speci\336c library de\336nitions.) 108 328.67 T
+(The two main areas where tuning can be ef) 108 300.67 T
+(fective are data declarations and) 348.65 300.67 T
+(use of system services. As always, the tradeof) 108 284.67 T
+(f of tuning is harder) 364.61 284.67 T
+(debugging and validation: naturally) 108 268.67 T
+(, validation procedures should be) 306.47 268.67 T
+(performed after tuning on all variants of the code.) 108 252.67 T
+3 F
+(\321 T) 108 200.67 T
+(uning data declarations) 130.95 200.67 T
+2 F
+(The ANDF installer usually does a very good job of selecting layouts for) 108 171.67 T
+(data. However) 108 155.67 T
+(, it must respect the semantics of the original C program. This) 189.03 155.67 T
+(means for instance that struct \336elds must be in the same order as in their) 108 139.67 T
+(declaration. It is sometimes advantageous to pack structs dif) 108 123.67 T
+(ferently on) 444.68 123.67 T
+(dif) 108 107.67 T
+(ferent machines. This can be done cleanly in ANDF by tokenizing the) 123.29 107.67 T
+FMENDPAGE
+%%EndPage: "18" 19
+%%Page: "19" 19
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(19 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(struct members, and only committing to a particular layout in a platform-) 108 710.67 T
+(dependent header \336le. Alternatively) 108 694.67 T
+(, dif) 307.6 694.67 T
+(ferent declarations can be compiled) 329.89 694.67 T
+(conditionally) 108 678.67 T
+(.) 180.94 678.67 T
+(The same techniques can be used for applications which want packed \336eld) 108 650.67 T
+(widths to vary so as to exploit a tar) 108 634.67 T
+(get machine most ef) 303.63 634.67 T
+(\336ciently) 416.46 634.67 T
+(. An example) 461.42 634.67 T
+(of this is Gnu Emacs\325) 108 618.67 T
+(s Lisp_Object, which is used to represent every object) 228.49 618.67 T
+(visible to its extension language. In this case, the ef) 108 602.67 T
+(fort required to support) 395.72 602.67 T
+(parameterized code is worthwhile.) 108 586.67 T
+3 F
+(\321 T) 108 534.67 T
+(uning use of system services) 130.95 534.67 T
+2 F
+(Another area where platform-speci\336c tuning can be appropriate is in the use) 108 505.67 T
+(of system services. For instance, an application which makes heavy use of) 108 489.67 T
+(\336le directories may wish to work on their internal representation. This is) 108 473.67 T
+(clearly a non-portable technique, but may be worthwhile for important) 108 457.67 T
+(tar) 108 441.67 T
+(get platforms.) 122.51 441.67 T
+(Another example is interprocess communication and locking mechanisms.) 108 413.67 T
+(Dif) 108 397.67 T
+(ferent platforms may have vastly dif) 126.4 397.67 T
+(ferent performance characteristics) 329.39 397.67 T
+(for these operations, so it may be appropriate to provide for tar) 108 381.67 T
+(get platform) 459.04 381.67 T
+(parameterization of these operations.) 108 365.67 T
+108 305.98 540 309 C
+90 307.49 558 307.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(6. Conclusion) 108 314.33 T
+2 14 Q
+(Strictly portable applications can be as easily distributed in ANDF form as) 108 282.64 T
+(in source form, probably more so.) 108 266.64 T
+(T) 108 238.64 T
+(aking existing portable, but not) 115.57 238.64 T
+3 F
+(strictly) 293.58 238.64 T
+2 F
+( portable, applications and moving) 332.45 238.64 T
+(them onto the ANDF technology requires removing tar) 108 222.64 T
+(get-dependent) 415.93 222.64 T
+(language constructs and limiting non-standard API use. It is possible,) 108 206.64 T
+(however) 108 190.64 T
+(, to interface to non-standard APIs, since ANDF\325) 155.62 190.64 T
+(s de\336nition) 429.58 190.64 T
+(mechanism \050tokens\051 is available to the library writer) 108 174.64 T
+(.) 399.85 174.64 T
+(ANDF is a technology for distributing applications. Portable applications) 108 146.64 T
+(can be moved onto ANDF through a well-de\336ned porting process, which) 108 130.64 T
+-0.01 (then makes them installable on a wide range of platforms. New applications,) 108 114.64 P
+FMENDPAGE
+%%EndPage: "19" 20
+%%Page: "20" 20
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(20 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(and existing strictly portable applications, can bene\336t from ANDF with) 108 710.67 T
+(almost no modi\336cation.) 108 694.67 T
+(The ANDF technology makes easily portable applications into easily) 108 666.67 T
+(distributed applications.) 108 650.67 T
+FMENDPAGE
+%%EndPage: "20" 21
+%%Page: "21" 21
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(21 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(7. Bibliography) 108 709.33 T
+108 661.95 540 664.98 C
+90 663.46 558 663.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 14 Q
+0 X
+0 K
+(C Language) 108 669.64 T
+2 F
+-0.33 (Samuel P. Harbison, Guy L. Steele, Jr.,) 108 640.62 P
+3 F
+-0.33 (C: A Refer) 329.16 640.62 P
+-0.33 (ence Manual) 387.83 640.62 P
+2 F
+-0.33 ( \0503rd edition\051.) 460.16 640.62 P
+(Prentice-Hall, 1991.) 144 624.62 T
+(X3 Accredited Standards Committee,) 108 598.62 T
+3 F
+(Pr) 321.36 598.62 T
+(ogramming Language C) 334.83 598.62 T
+2 F
+( \050American) 471.65 598.62 T
+(National Standard for Information Systems\051, Doc. No. X3J11/90-012,) 144 582.62 T
+(February 14, 1990.) 144 566.62 T
+108 522.93 540 525.95 C
+90 524.44 558 524.44 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 14 Q
+0 X
+0 K
+(Portability in C) 108 530.62 T
+2 F
+-0.04 (L.W. Cannon et al.,) 108 501.6 P
+3 F
+-0.04 (Recommended C Style and Coding Standar) 221.32 501.6 P
+-0.04 (ds) 462.74 501.6 P
+2 F
+-0.04 (. Available) 475.18 501.6 P
+(by anonymous FTP from cs.washington.edu as ~ftp/pub/cstyle.tar.Z.) 144 485.6 T
+(A. Dolenc, A. Lemmke, D. Keppel, G.V. Reilly,) 108 459.6 T
+3 F
+(Notes on W) 382.75 459.6 T
+(riting Portable) 446.5 459.6 T
+(Pr) 144 443.6 T
+(ograms in C) 157.48 443.6 T
+2 F
+(. Available by anonymous FTP from sauna.hut.fi as) 226.67 443.6 T
+(~ftp/pub/CompSciLib/doc/portableC. {tex, sty, bib, ps.Z} or from) 144 427.6 T
+(cs.washington.edu as ~ftp/pub/cport.tar.Z.) 144 411.6 T
+(Mark R. Horton,) 108 385.6 T
+3 F
+(Portable C Softwar) 204.77 385.6 T
+(e) 313.1 385.6 T
+2 F
+(. Prentice Hall, 1990.) 319.31 385.6 T
+(Rex Jaeschke,) 108 359.6 T
+3 F
+(Portability and the C Language) 190.76 359.6 T
+2 F
+(. Hayden Books, 1989.) 368.79 359.6 T
+(Andrew Koenig,) 108 333.6 T
+3 F
+(C T) 204.76 333.6 T
+(raps and Pitfalls) 224.6 333.6 T
+2 F
+(. Addison-Wesley, 1989.) 317.9 333.6 T
+(Henry Rabinowitz and Chaim Schaap,) 108 307.6 T
+3 F
+(Portable C) 326.41 307.6 T
+2 F
+(. Prentice-Hall, 1990.) 388.21 307.6 T
+(Thomas Plum,) 108 281.6 T
+3 F
+(C Pr) 193.13 281.6 T
+(ogramming Guidelines) 219.43 281.6 T
+2 F
+( \0502nd edition\051. Plum Hall, Inc. \0501) 348.08 281.6 T
+(Spruce Ave., Cardiff, NJ 08232\051, 1989.) 144 265.59 T
+108 221.91 540 224.93 C
+90 223.42 558 223.42 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 14 Q
+0 X
+0 K
+(Application Pr) 108 229.59 T
+(ogramming Interfaces) 190.27 229.59 T
+2 F
+(Open Software Foundation,) 108 200.57 T
+3 F
+(Application Envir) 266.56 200.57 T
+(onment Speci\336cation \050AES\051) 365.93 200.57 T
+2 F
+(,) 519.82 200.57 T
+(multiple volumes, Prentice Hall, 1990.) 144 184.57 T
+-0.4 (X/Open Company, Ltd.,) 108 158.57 P
+3 F
+-0.4 (X/Open Portability Guide) 245.93 158.57 P
+2 F
+-0.4 ( \050Issue 3\051, 7 vols., Prentice) 389.7 158.57 P
+(Hall, 1988.) 144 142.57 T
+(IEEE Std 1003.1-1988,) 108 116.57 T
+3 F
+(IEEE Standar) 242.09 116.57 T
+(d Portable Operating System for) 319.69 116.57 T
+(Computer Envir) 144 100.57 T
+(onments) 234.04 100.57 T
+2 F
+(, IEEE, 1988.) 280.68 100.57 T
+FMENDPAGE
+%%EndPage: "21" 22
+%%Page: "22" 22
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Porting to ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(22 of 22) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Donald Lewine,) 108 710.67 T
+2 11 Q
+( POSIX) 198.15 710.67 T
+3 14 Q
+( Pr) 232.64 710.67 T
+(ogrammer) 249.61 710.67 T
+(\325) 308.42 710.67 T
+(s Guide: W) 311.27 710.67 T
+(riting Portable) 373.46 710.67 T
+2 11 Q
+(UNIX) 460.53 710.67 T
+3 14 Q
+(Pr) 144 694.67 T
+(ograms) 157.48 694.67 T
+2 F
+(. O\325Reilly and Associates, Inc. \050103 Morris St., Suite A,) 199.45 694.67 T
+(Sebastopol, Calif. 95472\051, 1991.) 144 678.67 T
+108 634.98 540 638 C
+90 636.49 558 636.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 14 Q
+0 X
+0 K
+(ANDF T) 108 642.67 T
+(okens) 154.52 642.67 T
+2 F
+(P.W. Core,) 108 613.64 T
+3 F
+(The token syntax for the C pr) 173.68 613.64 T
+(oducer) 336.4 613.64 T
+2 F
+(. DRA Malvern, 1992.) 375.25 613.64 T
+(P.W. Core,) 108 587.64 T
+3 F
+(#pragma extensions to the C pr) 173.68 587.64 T
+(oducer) 349.23 587.64 T
+2 F
+(, DRA Malvern, 1992.) 388.08 587.64 T
+(Thomas J. Watt, Jr.,) 108 561.64 T
+3 F
+(T) 223.81 561.64 T
+(okenizing Applications in the ANDF Pr) 230.31 561.64 T
+(ototype) 450.17 561.64 T
+2 F
+(. OSF) 491.36 561.64 T
+(Research Institute, February 1990.) 144 545.64 T
+108 501.95 540 504.98 C
+90 503.46 558 503.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 14 Q
+0 X
+0 K
+(Application porting to ANDF) 108 509.64 T
+2 F
+-0.89 (Andrew Johnson,) 108 480.62 P
+3 F
+-0.89 (Application Development Using ANDF) 207.64 480.62 P
+2 F
+-0.89 (. \050slide presentation\051) 424.54 480.62 P
+(OSF Research Institute, 1992.) 144 464.62 T
+(Thomas J. Watt, Jr.,) 108 438.62 T
+3 F
+(Porting Postgr) 223.81 438.62 T
+(es with the Resear) 306.87 438.62 T
+(ch Pr) 408.57 438.62 T
+(ototype ANDF) 438.75 438.62 T
+(T) 144 422.62 T
+(echnology) 150.49 422.62 T
+2 F
+(. OSF Research Institute, December 1992.) 208 422.62 T
+0 F
+(For further information please contact:) 216 368.62 T
+(Stavr) 216 340.62 T
+(os Macrakis) 248.39 340.62 T
+(macrakis@osf.org) 216 324.62 T
+(\050617\051 621-7356) 216 308.62 T
+108 90 540 720 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "22" 23
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 22 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Courier-Oblique

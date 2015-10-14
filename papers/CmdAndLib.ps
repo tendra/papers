@@ -1,0 +1,3538 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 17 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Courier FMFONTDEFINE
+3 0 /Times-Roman FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(29 Jun 93 - 23:14 fabre@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(\251 1993 OSF) 360 56.33 T
+(1 of 16) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (ANDFizing OSF/1 R1.2 commands) 166.12 695 S
+0 12 Q
+(Christian Fabr) 282.96 608 T
+(e) 359.71 608 T
+(Open Softwar) 254.47 578 T
+(e Foundation) 325.88 578 T
+(Resear) 277.31 563 T
+(ch Institute) 312.39 563 T
+(June 1993) 298.18 518 T
+0 14 Q
+(This paper pr) 180 436.67 T
+(esents a study of ANDFizing) 262.16 436.67 T
+(OSF/1 R1.2 commands. It describes the various) 180 420.67 T
+(portability issues encounter) 180 404.67 T
+(ed while) 344.55 404.67 T
+(ANDFizing the basic) 180 388.67 T
+2 F
+(/bin/ls) 307.09 388.67 T
+0 F
+( command.) 365.86 388.67 T
+108 328.98 540 332 C
+90 330.49 558 330.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 337.33 T
+3 14 Q
+(This paper presents an investigation of the issues involved in porting OSF/1) 108 305.64 T
+(R1.2 commands to the ANDF) 108 289.64 T
+3 11 Q
+(1) 275.52 295.24 T
+3 14 Q
+( technology) 281.01 289.64 T
+(.) 345.78 289.64 T
+(OSF/1 Release 1.2 \050OSF/1 for short\051 is the latest version of the operating) 108 261.64 T
+(system developed by OSF) 108 245.64 T
+(. Release 1.2 is compliant with IEEE Std 1003.2-) 253.41 245.64 T
+(1992 [POSIX-SU] and based on the Mach technology) 108 229.64 T
+(. Additionally) 409.05 229.64 T
+(, OSF/1) 485.88 229.64 T
+(Release 1.2 has been successfully tested against the X/Open veri\336cation) 108 213.64 T
+(suites \050VSX4\051, verifying source compliance with the base pro\336le of the) 108 197.64 T
+(X/Open Portability Guide Issue 4 [XPG/4-IF]) 108 181.64 T
+3 11 Q
+(2) 364.11 187.24 T
+3 14 Q
+(.) 369.61 181.64 T
+108 144 540 164.09 C
+108 151.99 239.98 151.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+-0.6 (1.  ANDF is an architecture- and language- neutral distribution format being developed by OSF and) 108 136.67 P
+-0.51 (other collaborators around the world. It is based on the TDF technology provided by the Defence) 118.8 124.67 P
+(Research Agency \050DRA\051 of the UK Ministry of Defense.) 118.8 112.67 T
+-0.31 (2.  Note that the API de\336ned by [ANSI-C] is included in [POSIX-IF] itself included in [XPG/4-IF].) 108 97.67 P
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(T) 108 736.84 T
+(oken libraries to achieve ar) 112.6 736.84 T
+(chitectur) 205.28 736.84 T
+(e neutrality) 235.78 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(Our investigation involved porting commands to the ANDF compiler) 108 701.67 T
+(,) 495.32 701.67 T
+-0.26 (delivering them as a set of tar) 108 685.67 P
+-0.26 (get-independent \324) 271.72 685.67 P
+2 F
+-0.63 (.j) 369.77 685.67 P
+3 F
+-0.26 (\325 \336les) 386.56 685.67 P
+3 11 Q
+-0.21 (3) 417.78 691.27 P
+3 14 Q
+-0.26 (, and installing them) 423.27 685.67 P
+(on two platforms: i386 and mips, both running OSF/1. So far) 108 669.67 T
+(, the) 449.48 669.67 T
+(investigation has focused on the) 108 653.67 T
+2 F
+(/bin/ls) 291.05 653.67 T
+3 F
+( command.) 349.82 653.67 T
+108 593.98 540 597 C
+90 595.49 558 595.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. T) 108 602.33 T
+(oken libraries to achieve architecture neutrality) 132.29 602.33 T
+3 14 Q
+(The key feature of ANDF for achieving architecture neutrality is the) 108 570.64 T
+4 F
+(token) 493.85 570.64 T
+3 F
+(mechanism. A token is roughly a typed macro: its tar) 108 554.64 T
+(get-independent) 404.67 554.64 T
+-0.49 (de\336nition is given in the C producer headers \336les, and each platform provides) 108 538.64 P
+(its actual declaration through a tar) 108 522.64 T
+(get-dependent token library to be mer) 298.55 522.64 T
+(ged) 509.3 522.64 T
+(with the \324) 108 506.64 T
+2 F
+(.j) 161.63 506.64 T
+3 F
+(\325 ANDF \336le before translation.) 178.42 506.64 T
+(Porting with ANDF is usually done in 4 phases:) 108 478.64 T
+(\245) 118.8 454.64 T
+(Compile and run the application on the current platform with the native) 129.6 454.64 T
+(compiler) 129.6 438.64 T
+(, hence using the native standard headers and standard libraries.) 178.78 438.64 T
+(This is just a sanity check.) 129.6 422.64 T
+(\245) 118.8 398.64 T
+(Compile and run the application on the current platform with the ANDF) 129.6 398.64 T
+(compilation chain using the native header \336les and the native libraries.) 129.6 382.64 T
+-0.63 (This phase is to show up any discrepancies between the native C compiler) 129.6 366.64 P
+(and the ANDF compilation chain.) 129.6 350.64 T
+(\245) 118.8 326.64 T
+(Compile and run the application on the current platform with the ANDF) 129.6 326.64 T
+(compilation chain using ANDF tar) 129.6 310.64 T
+(get-independent include \336les and the) 323.67 310.64 T
+(tar) 129.6 294.64 T
+(get-dependant token library) 144.11 294.64 T
+(. Currently DRA provides \336ve sets of API) 297.86 294.64 T
+(headers: ANSI-C, GCC, SYS-V) 129.6 278.64 T
+(, POSIX, and XPG/3.) 307.74 278.64 T
+(\245) 118.8 254.64 T
+(Check that the generated \324) 129.6 254.64 T
+2 F
+(.j) 276.48 254.64 T
+3 F
+(\325 \336les can be installed and run on other) 293.27 254.64 T
+(platforms.) 129.6 238.64 T
+108 201 540 221.09 C
+108 208.99 239.98 208.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(3.  This document uses the following terminology:) 108 193.67 T
+(A) 118.8 181.67 T
+4 F
+(pr) 129.48 181.67 T
+(oducer) 138.84 181.67 T
+3 F
+( is all of the software that is used to produce the ANDF form of an application. The) 169.35 181.67 T
+-0.29 (primary component of a producer is a) 118.8 169.67 P
+4 F
+-0.29 (compiler) 284.9 169.67 P
+3 F
+-0.29 (, which does the actual translation of source code) 323.52 169.67 P
+-0.31 (into ANDF) 118.8 157.67 P
+-0.31 (. An) 167.36 157.67 P
+4 F
+-0.31 (installer) 188.41 157.67 P
+3 F
+-0.31 ( is all of the software used to install an application on a tar) 225.04 157.67 P
+-0.31 (get. The main) 477.45 157.67 P
+(components of an installer are the) 118.8 145.67 T
+4 F
+(TDF binder) 270.14 145.67 T
+3 F
+( which resolves the tar) 322.32 145.67 T
+(get-dependencies by mer) 420.98 145.67 T
+(g-) 530.61 145.67 T
+-0.5 (ing the tar) 118.8 133.67 P
+-0.5 (get independent ANDF \336les with the) 162.16 133.67 P
+4 F
+-0.5 (token libraries) 323.96 133.67 P
+3 F
+-0.5 ( of the platform, and the) 387.85 133.67 P
+4 F
+-0.5 (translator) 493.79 133.67 P
+3 F
+-0.39 (which does the actual translation of tar) 118.8 121.67 P
+-0.39 (get-dependent ANDF into machine-code. The tar) 286.49 121.67 P
+-0.39 (get-inde-) 500.34 121.67 P
+-0.71 (pendent ANDF \336les \050output of producers\051 are suf) 118.8 109.67 P
+-0.71 (\336xed by \324) 330.59 109.67 P
+2 F
+-1.7 (.j) 371.28 109.67 P
+3 F
+-0.71 (\325. The tar) 384.46 109.67 P
+-0.71 (get-dependant ANDF \336les) 423.42 109.67 P
+(\050input of translator\051 are suf) 118.8 97.67 T
+(\336xed by \324) 236.98 97.67 T
+2 F
+(.t) 279.09 97.67 T
+3 F
+(\325.) 292.27 97.67 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Standard APIs and OSF/1) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(For more details about porting C software using the ANDF technology) 108 701.67 T
+(, see) 503.51 701.67 T
+([SM/OSF-I-93].) 108 685.67 T
+108 625.98 540 629 C
+90 627.49 558 627.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. Standard APIs and OSF/1) 108 634.33 T
+3 14 Q
+(As stated above, the OSF/1 operating system supports various) 108 602.64 T
+4 F
+(de jur) 458.56 602.64 T
+(e) 491.08 602.64 T
+3 F
+( APIs:) 497.29 602.64 T
+([ANSI-C], [POSIX-IF], [XPG/3-IF] & [XPG/4-IF]. The of) 108 586.64 T
+(\336cial API) 436.9 586.64 T
+-0.3 (supported by OSF is described in [AES]) 108 570.64 P
+3 11 Q
+-0.24 (4) 331.61 576.24 P
+3 14 Q
+-0.3 (. Besides these) 337.11 570.64 P
+4 F
+-0.3 (de-jur) 422.48 570.64 P
+-0.3 (e) 456.16 570.64 P
+3 F
+-0.3 ( APIs, OSF/1) 462.38 570.64 P
+(supports partially APIs coming from other branches of the Unix family such) 108 554.64 T
+(as:) 108 538.64 T
+(\245) 118.8 514.64 T
+(Mach, from Carnegie Mellon University) 129.6 514.64 T
+(, as OSF/1 is based on the Mach) 355.25 514.64 T
+(technology;) 129.6 498.64 T
+(\245) 118.8 474.64 T
+(BSD, from the University of Berkeley) 129.6 474.64 T
+(.) 342.44 474.64 T
+4 F
+(e.g.) 349.43 474.64 T
+3 F
+( the sockets;) 369.64 474.64 T
+(\245) 118.8 450.64 T
+(System-V) 129.6 450.64 T
+(, from USL.) 183.76 450.64 T
+4 F
+(e.g.) 254.89 450.64 T
+3 F
+( shared memory facilities and semaphores.) 275.09 450.64 T
+(The actual interface) 108 422.64 T
+4 F
+(accessible) 222.61 422.64 T
+3 F
+( \050as opposed to) 280.12 422.64 T
+4 F
+(supported) 367.95 422.64 T
+3 F
+(\051 through OSF\325) 423.92 422.64 T
+(s) 508.66 422.64 T
+2 F
+(/usr/include) 108 406.64 T
+3 F
+( headers and the C libraries is much lar) 208.74 406.64 T
+(ger than [AES].) 426.89 406.64 T
+(Moreover) 108 390.64 T
+(, as the OSF/1 commands have to access internal structures of the) 162.61 390.64 T
+(OS, they are more likely to use) 108 374.64 T
+4 F
+(unsupported) 285.21 374.64 T
+3 11 Q
+(5) 355.17 380.24 T
+3 14 Q
+( APIs.) 360.67 374.64 T
+4 F
+(e.g.) 399.15 374.64 T
+3 F
+(:) 419.35 374.64 T
+2 F
+(/bin/ps) 426.74 374.64 T
+3 F
+( has to) 485.51 374.64 T
+(access the process table of OSF/1\325) 108 358.64 T
+(s kernel to obtain the status of a process.) 299.58 358.64 T
+108 298.95 540 301.98 C
+90 300.46 558 300.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. ANDFizing the) 108 307.31 T
+2 14 Q
+(/bin/ls) 228.85 307.31 T
+1 16 Q
+( command) 287.61 307.31 T
+0 14 Q
+(The) 108 251.62 T
+2 F
+(ls) 134.82 251.62 T
+0 F
+( command) 151.61 251.62 T
+2 F
+-0.11 (ls) 108 222.62 P
+3 F
+-0.05 ( is a basic command of all Unix operating systems. The baseline behavior) 124.79 222.62 P
+(as described in detail in [POSIX-SU] and [XPG/4-CU] is supported by OSF) 108 206.62 T
+(together with some additional functionality) 108 190.62 T
+(.) 348.84 190.62 T
+2 F
+(ls) 355.83 190.62 T
+3 F
+( prints out \336le names and) 372.62 190.62 T
+(directory contents in various formats,) 108 174.62 T
+4 F
+(e.g.) 320.96 174.62 T
+3 F
+(:) 341.17 174.62 T
+108 132 540 152.09 C
+108 139.99 239.98 139.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(4.  [AES] is OSF\325) 108 124.67 T
+(s of) 185.83 124.67 T
+(\336cial API. It incorporates features coming either from BSD or System-V) 201.8 124.67 T
+(. Its) 519.85 124.67 T
+(de\336nition is several years old, an updated version is in progress at OSF) 118.8 112.67 T
+(.) 430.09 112.67 T
+-0.06 (5.  The word) 108 97.67 P
+4 F
+-0.06 (unsupported) 166.65 97.67 P
+3 F
+-0.06 ( just means that OSF is not committed to the stability of these interfaces.) 221.58 97.67 P
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(\245) 118.8 701.67 T
+(Line-by-line, or with \336le names aligned in columns \050option) 129.6 701.67 T
+2 F
+(-C) 464.62 701.67 T
+3 F
+(\051;) 481.41 701.67 T
+(\245) 118.8 677.67 T
+-0.87 (The) 129.6 677.67 P
+2 F
+-2.09 (-F) 153.99 677.67 P
+3 F
+-0.87 ( option appends a character at the end at a \336le name to give its type:) 170.78 677.67 P
+-0.1 (\324) 129.6 661.67 P
+2 F
+-0.23 (/) 134.26 661.67 P
+3 F
+-0.1 (\325 for directories, \324) 142.65 661.67 P
+2 F
+-0.23 (*) 241.05 661.67 P
+3 F
+-0.1 (\325 for executables \324) 249.45 661.67 P
+2 F
+-0.23 (@) 350.56 661.67 P
+3 F
+-0.1 (\325 for symbolic links, and \324) 358.96 661.67 P
+2 F
+-0.23 (=) 503.83 661.67 P
+3 F
+-0.1 (\325 for) 512.22 661.67 P
+(sockets, as in \050where) 129.6 645.67 T
+2 F
+(bin) 249.67 645.67 T
+3 F
+( is a symbolic link to) 274.85 645.67 T
+2 F
+(/usr/bin) 395.36 645.67 T
+3 F
+(\051:) 462.52 645.67 T
+2 10 Q
+(% ls -F) 144 626.33 T
+(bin@) 144 614.33 T
+3 14 Q
+(\245) 118.8 591.67 T
+-0.06 (Just the \336le name, or both \336le name and additional information about the) 129.6 591.67 P
+-0.06 (\336le \050option) 129.6 575.67 P
+2 F
+-0.15 (-l) 194.78 575.67 P
+3 F
+-0.06 (\051 like the size, the number of links\311 For special \336les \050) 211.57 575.67 P
+4 F
+-0.06 (e.g.) 516.36 575.67 P
+3 F
+-0.07 (in the) 129.6 559.67 P
+2 F
+-0.16 (/dev) 164.45 559.67 P
+3 F
+-0.07 ( directory\051) 198.03 559.67 P
+2 F
+-0.16 (ls -l) 260.07 559.67 P
+3 F
+-0.07 ( prints out their) 301.89 559.67 P
+4 F
+-0.07 (major) 391.02 559.67 P
+3 F
+-0.07 ( and) 424.45 559.67 P
+4 F
+-0.07 (minor) 451.52 559.67 P
+3 F
+-0.07 ( numbers) 484.95 559.67 P
+(of the device in place of the size, for example:) 129.6 543.67 T
+2 10 Q
+(% ls -l /dev/tty) 144 524.33 T
+(lcrw-rw-rw- 1 root 19) 144 512.33 T
+( 2, 0 May) 299.91 512.33 T
+(7 15:23 /dev/tty) 365.88 512.33 T
+3 14 Q
+(\245) 118.8 489.67 T
+(While listing directories with some options turned on \050) 129.6 489.67 T
+4 F
+(e.g.) 435.86 489.67 T
+2 F
+(-l) 459.57 489.67 T
+3 F
+(\051, the) 476.36 489.67 T
+2 F
+(ls) 508.61 489.67 T
+3 F
+-0.11 (command prints out on the \336rst line of output the actual size occupied by) 129.6 473.67 P
+(the directory elements, in 512 byte units, for example:) 129.6 457.67 T
+2 10 Q
+(% ls -l) 144 438.33 T
+(total 66) 144 426.33 T
+(-rw-r--r-- 1 fabre wheel) 144 414.33 T
+(32081 May  7) 299.91 414.33 T
+(16:06 ls.c) 377.87 414.33 T
+(-rw-r--r-- 1 fabre wheel) 144 402.33 T
+(411 Feb 25 13:56 ls_msg.h) 311.91 402.33 T
+2 14 Q
+(ls) 108 351.67 T
+0 F
+( and portability) 124.79 351.67 T
+3 F
+(The purpose of this investigation is not to have a portable version of) 108 322.67 T
+2 F
+(/bin/ls) 108 306.67 T
+3 F
+(, but rather to detect and highlight the dependencies of OSF\325) 166.77 306.67 T
+(s) 504.49 306.67 T
+-0.17 (version upon the various levels of API provided by OSF/1, in order to have a) 108 290.67 P
+(portable version of OSF\325) 108 274.67 T
+(s \337avor of) 246.75 274.67 T
+2 F
+(/bin/ls) 306.98 274.67 T
+3 F
+(. Indeed, a side-ef) 365.75 274.67 T
+(fect of this) 465.35 274.67 T
+(investigation is that it seems impossible to write a version of) 108 258.67 T
+2 F
+(/bin/ls) 450.42 258.67 T
+3 F
+(providing all the functionality that one can expect from this command by) 108 242.67 T
+(strictly adhering to) 108 226.67 T
+4 F
+(de jur) 217.21 226.67 T
+(e) 249.73 226.67 T
+3 F
+( APIs.) 255.94 226.67 T
+(The) 108 198.67 T
+2 F
+(ls) 133.26 198.67 T
+3 F
+( command is built from one C source \336le) 150.05 198.67 T
+2 F
+(ls.c) 382.85 198.67 T
+3 F
+(. This \336le acquires) 416.43 198.67 T
+(object) 108 182.67 T
+3 11 Q
+(6) 142.2 188.27 T
+3 14 Q
+( de\336nitions/declarations from various standard header include \336les.) 147.69 182.67 T
+(Some of these objects have got a precise \050) 108 166.67 T
+4 F
+(de jur) 342.71 166.67 T
+(e) 375.23 166.67 T
+3 F
+(\051 de\336nition, either through) 381.44 166.67 T
+-0.12 (OSF\325) 108 150.67 P
+-0.12 (s speci\336ed interface [AES] or through other speci\336ed interfaces such as) 137.55 150.67 P
+-0.14 ([XPG/4-IF] or [SVID-3]. Other objects have no) 108 134.67 P
+4 F
+-0.14 (de-jur) 377.48 134.67 P
+-0.14 (e) 411.16 134.67 P
+3 F
+-0.14 ( speci\336cation, but are) 417.37 134.67 P
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(6.  By object we mean types, function names, constants\311) 108 97.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(present for historical reasons on almost all Unix \337avors, and therefore are) 108 701.67 T
+(also present in OSF/1. The) 108 685.67 T
+2 F
+(ioctl\050\051) 261.13 685.67 T
+3 F
+( function is such an historical facility) 319.9 685.67 T
+(.) 526.52 685.67 T
+(W) 108 657.67 T
+(e describe here the various issues raised while porting) 120.09 657.67 T
+2 F
+(ls) 425.14 657.67 T
+3 F
+(.) 441.93 657.67 T
+4 F
+(\321 The) 108 605.67 T
+2 F
+(errno) 148.42 605.67 T
+4 F
+( variable) 190.4 605.67 T
+2 F
+(ls.c) 108 576.67 T
+3 F
+( includes) 141.58 576.67 T
+2 F
+(<sys/errno.h>) 195.21 576.67 T
+3 F
+( to provide the de\336nition of the) 304.35 576.67 T
+2 F
+(errno) 481.97 576.67 T
+3 F
+(variable, and the) 108 560.67 T
+2 F
+(EACCES) 204.37 560.67 T
+3 F
+( constant. No standards body speci\336es this \336le.) 254.74 560.67 T
+-0.56 (According to [XPG/4-IF], these entities are de\336ned in the standard header \336le) 108 544.67 P
+2 F
+(<errno.h>) 108 528.67 T
+3 F
+(.) 183.56 528.67 T
+(The) 108 500.67 T
+2 F
+(<sys/errno.h>) 133.26 500.67 T
+3 F
+( header was replaced by) 242.4 500.67 T
+2 F
+(<errno.h>) 380.32 500.67 T
+3 F
+(.) 455.88 500.67 T
+4 F
+(\321 Size of the scr) 108 448.67 T
+(een in columns) 201.54 448.67 T
+3 F
+(T) 108 419.67 T
+(o line-up names in columns,) 115.57 419.67 T
+2 F
+(ls) 277.25 419.67 T
+3 F
+( either uses the value present in the) 294.04 419.67 T
+-0.33 (environment variable) 108 403.67 P
+2 F
+-0.8 (COLUMNS) 230.13 403.67 P
+3 F
+-0.33 (, or obtains the horizontal size, in characters,) 288.9 403.67 P
+(of the window it is running in. The latter is done by a call to) 108 387.67 T
+2 F
+(ioctl\050\051) 447.68 387.67 T
+3 F
+( with) 506.45 387.67 T
+(the constants) 108 371.67 T
+2 F
+(STDOUT_FILENO) 184.17 371.67 T
+3 F
+(and) 301.71 371.67 T
+2 F
+(TIOCGWINSZ) 325.41 371.67 T
+3 F
+( and an empty) 409.37 371.67 T
+2 F
+(winsize) 108 355.67 T
+3 F
+( structure as parameters. After the call, the number of columns of) 166.77 355.67 T
+(the enclosing window is in the \336eld) 108 339.67 T
+2 F
+(ws_col) 310.5 339.67 T
+3 F
+( of the) 360.87 339.67 T
+2 F
+(winsize) 400.12 339.67 T
+3 F
+( structure.) 458.89 339.67 T
+(Here we come down to critical issues with regards to) 108 311.67 T
+2 F
+(ls) 407.99 311.67 T
+3 F
+( portability) 424.79 311.67 T
+(.) 485.68 311.67 T
+(Obtaining the size of a window seems to be highly OS-dependent: OSF/1) 108 295.67 T
+(uses a structure named) 108 279.67 T
+2 F
+(winsize) 238.56 279.67 T
+3 F
+( and the command passed to) 297.33 279.67 T
+2 F
+(ioctl\050\051) 459 279.67 T
+3 F
+( is) 517.77 279.67 T
+2 F
+(TIOCGWINSZ) 108 263.67 T
+3 11 Q
+(7) 191.95 269.27 T
+3 14 Q
+(, while SunOS de\336nes a structure named) 197.45 263.67 T
+2 F
+(ttysize) 428.29 263.67 T
+3 F
+(, and the) 487.06 263.67 T
+(command name is) 108 247.67 T
+2 F
+(TIOGSIZE) 213.32 247.67 T
+3 F
+(.) 280.48 247.67 T
+(Fortunately enough, these two interfaces have the same pro\336le:) 108 219.67 T
+(\245) 118.8 195.67 T
+(For the structure: Four) 129.6 195.67 T
+2 F
+(unsigned short) 259.41 195.67 T
+3 F
+( handling the horizontal and) 376.94 195.67 T
+(vertical size of the screen, in numbers of characters and in numbers of) 129.6 179.67 T
+(pixels, in the same order;) 129.6 163.67 T
+(\245) 118.8 139.67 T
+(An integer constant to name the command.) 129.6 139.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(7.  This way of obtaining the size of a screen originally comes from BSD.) 108 97.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(ANDF provides a way of unifying these two interfaces: As these two) 108 701.67 T
+(interfaces exactly map one onto each other) 108 685.67 T
+(, only one set of token names is) 346.79 685.67 T
+(required, say the couple) 108 669.67 T
+2 F
+(winsize) 245.17 669.67 T
+3 F
+(/) 303.93 669.67 T
+2 F
+(TIOCGWINSZ) 307.82 669.67 T
+3 F
+(. The ANDF tar) 391.78 669.67 T
+(get-) 480.12 669.67 T
+(independent headers could turn source code references to the) 108 653.67 T
+2 F
+(ttysize) 108 637.67 T
+3 F
+(/) 166.77 637.67 T
+2 F
+(TIOGSIZE) 170.66 637.67 T
+3 F
+( interface into ANDF references to tokens as de\336ned) 237.82 637.67 T
+-0.26 (by) 108 621.67 P
+2 F
+-0.62 (winsize) 125.23 621.67 P
+3 F
+-0.26 (/) 184 621.67 P
+2 F
+-0.62 (TIOCGWINSZ) 187.89 621.67 P
+3 F
+-0.26 (. On the tar) 271.84 621.67 P
+-0.26 (get-platform, the token library could) 333.77 621.67 P
+-0.26 (use either) 108 605.67 P
+2 F
+-0.63 (ttysize) 164.99 605.67 P
+3 F
+-0.26 (/) 223.75 605.67 P
+2 F
+-0.63 (TIOGSIZE) 227.64 605.67 P
+3 F
+-0.26 ( or) 294.81 605.67 P
+2 F
+-0.63 (winsize) 312.93 605.67 P
+3 F
+-0.26 (/) 371.7 605.67 P
+2 F
+-0.63 (TIOCGWINSZ) 375.59 605.67 P
+3 F
+-0.26 ( to implement) 459.55 605.67 P
+(the) 108 589.67 T
+2 F
+(winsize) 128.6 589.67 T
+3 F
+(/) 187.36 589.67 T
+2 F
+(TIOCGWINSZ) 191.25 589.67 T
+3 F
+( related tokens. Such a scenario provides the) 275.21 589.67 T
+(maximum \337exibility:) 108 573.67 T
+(\245) 118.8 549.67 T
+(Source code could use both interfaces;) 129.6 549.67 T
+(\245) 118.8 525.67 T
+(T) 129.6 525.67 T
+(ar) 137.17 525.67 T
+(gets are only required to provide one of them.) 147.79 525.67 T
+(For the time being, despite its broad availability on actual platforms, the) 108 497.67 T
+2 F
+(ioctl\050\051) 108 481.67 T
+3 F
+( function is left unspeci\336ed by all standardization bodies, as it is) 166.77 481.67 T
+(too platform dependent.) 108 465.67 T
+(This issue of obtaining the size of the window could be \336xed in many ways:) 108 437.67 T
+(1.) 129.6 413.67 T
+(Put the relevant code for each platform between) 180 413.67 T
+2 F
+( #ifdefs) 448.5 413.67 T
+(__MY_PLATFORM) 180 397.67 T
+3 F
+( and) 289.14 397.67 T
+2 F
+(#endif) 316.34 397.67 T
+3 F
+(.) 366.71 397.67 T
+(The generated ANDF will be portable only among platforms) 180 381.67 T
+-0.77 (whose speci\336c C code has been enclosed in) 180 365.67 P
+2 F
+-1.84 (#ifdefs) 421.02 365.67 P
+3 F
+-0.77 (at ANDF) 486.35 365.67 P
+(generation time. Furthermore, should the semantics of the) 180 349.67 T
+2 F
+(ioctl\050\051) 180 333.67 T
+3 11 Q
+(8) 238.77 339.27 T
+3 14 Q
+( function change in a future version of OSF/1, the) 244.26 333.67 T
+(ANDF code would no longer be valid, preventing upwards) 180 317.67 T
+(compatibility) 180 301.67 T
+(.) 253.73 301.67 T
+(2.) 129.6 277.67 T
+(De\336ning a new C macro named) 180 277.67 T
+2 F
+(get_window_number_of_columns\050int stream\051) 180 261.67 T
+3 F
+(which will return the size of the window as an integer) 180 245.67 T
+(. The) 480.01 245.67 T
+(de\336nition of this macro being in a new header \336le named, say) 180 229.67 T
+2 F
+-2.13 (<osf-commands.h>) 180 213.67 P
+3 F
+-0.89 (. The native version of this header would) 314.33 213.67 P
+(generate the proper macro expansion, and the ANDF headers) 180 197.67 T
+(could tokenise it. In this case, it is up to the token library to) 180 181.67 T
+(provide the de\336nition of this token. That is, if a new platform is) 180 165.67 T
+(introduced, or if a given interface to obtain the window size) 180 149.67 T
+(changes, a corresponding token will have to be provided in the) 180 133.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(8.) 108 97.67 T
+2 F
+(ioctl\050\051) 121.73 97.67 T
+3 F
+( is an unsupported function provided by OSF/1.) 167.88 97.67 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(token library for this platform. The user will then be able to use) 180 701.67 T
+-0.38 (the) 180 685.67 P
+4 F
+-0.38 (same) 200.21 685.67 P
+3 F
+-0.38 ( existing ANDF) 228.97 685.67 P
+-0.38 (. When all OSF/1 commands have gone) 316.48 685.67 P
+-0.15 (through this ANDF porting process, we will end up with the \336le) 180 669.67 P
+2 F
+(<osf-commands.h>) 180 653.67 T
+3 F
+( summarizing all) 314.33 653.67 T
+4 F
+(unspeci\336ed) 411.88 653.67 T
+3 F
+( interfaces) 474.83 653.67 T
+-0.8 (used by OSF/1 commands, and therefore covering the actual API) 180 637.67 P
+(used by OSF/1 commands) 180 621.67 T
+(3.) 129.6 597.67 T
+(De\336nition of a new set of ANDF-C header \336les extending the) 180 597.67 T
+-0.44 (current set of APIs delivered by DRA, namely) 180 581.67 P
+-0.44 (, [ANSI-C], GCC,) 435.6 581.67 P
+([POSIX-IF], [SVID-3], [XPG/3-IF] and soon [XPG/4] and) 180 565.67 T
+([AES]) 180 549.67 T
+3 11 Q
+(9) 215.75 555.27 T
+3 14 Q
+(. This new environment, which we will call) 221.24 549.67 T
+2 F
+(osc12) 467.63 549.67 T
+3 F
+(,) 509.61 549.67 T
+-1.2 (would describe unspeci\336ed facilities actually provided by OSF/1.) 180 533.67 P
+-1.09 (Note that such a process will allow upwards compatibility as long) 180 517.67 P
+-0.58 (as this API is actually supported by the tar) 180 501.67 P
+-0.58 (get platform. When all) 412.15 501.67 P
+-1.11 (OSF/1 commands have gone through this ANDF porting process,) 180 485.67 P
+(we will end-up with the environment named) 180 469.67 T
+2 F
+(osc12) 431.44 469.67 T
+3 F
+(summarizing all) 180 453.67 T
+4 F
+(unspeci\336ed) 274.06 453.67 T
+3 F
+( interfaces used by OSF/1) 337.01 453.67 T
+(commands, and therefore having the actual API used by OSF/1) 180 437.67 T
+(commands.) 180 421.67 T
+(It is worth noting that \0501\051 is a common approach but provides the least) 108 393.67 T
+-0.07 (compatibility: A new platform might not be able to use existing ANDF as its) 108 377.67 P
+(speci\336c code would not be included into existing ANDF code.) 108 361.67 T
+(W) 108 333.67 T
+(e have used the scheme described in \0503\051 to ensure the maximum) 120.09 333.67 T
+(consistency with the existing environments:) 108 317.67 T
+(\245) 118.8 293.67 T
+(A new) 129.6 293.67 T
+2 F
+(osc12) 170.01 293.67 T
+3 F
+( ANDF environment has been created on top of DRA) 211.99 293.67 T
+(\325) 509.27 293.67 T
+(s) 513.16 293.67 T
+(XPG/4 environment.) 129.6 277.67 T
+4 F
+(i.e.) 249.7 277.67 T
+3 F
+(: At this starting point,) 266.8 277.67 T
+2 F
+(osc12) 396.63 277.67 T
+3 F
+( is strictly) 438.61 277.67 T
+(equivalent to DRA) 129.6 261.67 T
+(\325) 233.76 261.67 T
+(s XPG/4 environment.) 237.65 261.67 T
+(\245) 118.8 237.67 T
+(A new \336le) 129.6 237.67 T
+2 F
+(<sys/ioctl.h>) 191.39 237.67 T
+3 F
+( has been added to this environment. This) 300.53 237.67 T
+(\336le de\336nes the very minimum required by) 129.6 221.67 T
+2 F
+(/bin/ls) 368.62 221.67 T
+3 F
+(:) 427.38 221.67 T
+(-) 133.2 197.67 T
+(A de\336nition of the) 144 197.67 T
+2 F
+( ioctl\050int,int,\311\051) 247 197.67 T
+3 F
+( function.) 389.72 197.67 T
+(-) 133.2 173.67 T
+(A de\336nition of the) 144 173.67 T
+2 F
+(TIOCGWINSZ) 250.49 173.67 T
+3 F
+( constant.) 334.45 173.67 T
+(-) 133.2 149.67 T
+(A de\336nition of) 144 149.67 T
+2 F
+(winsize) 229.9 149.67 T
+3 F
+( as a structure name.) 288.67 149.67 T
+108 117 540 137.09 C
+108 124.99 239.98 124.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+-0.52 (9.  This is AES revision A. As mentioned above, this version is several years old, and a new version) 108 109.67 P
+(is in progress at OSF) 118.8 97.67 T
+(.) 210.09 97.67 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(-) 133.2 701.67 T
+(A de\336nition of) 144 701.67 T
+2 F
+(ws_col) 229.9 701.67 T
+3 F
+( as an) 280.27 701.67 T
+2 F
+(unsigned short) 315.63 701.67 T
+3 F
+( \336eld of the) 433.17 701.67 T
+2 F
+(winsize) 144 685.67 T
+3 F
+( structure.) 202.77 685.67 T
+4 F
+(\321 Internationalization support) 108 633.67 T
+2 F
+-0.26 (ls) 108 604.67 P
+3 F
+-0.11 ( uses the function) 124.79 604.67 P
+2 F
+-0.26 (mbswidth\050\051) 226.19 604.67 P
+3 F
+-0.11 ( \050declared in) 310.14 604.67 P
+2 F
+-0.26 (<mbstr.h>) 383.25 604.67 P
+3 F
+-0.11 (\051 to obtain the) 458.81 604.67 P
+-0.54 (width, in screen columns, of a \336le name expressed in) 108 588.67 P
+4 F
+-0.54 (multi byte strings) 402.62 588.67 P
+3 F
+-0.54 ( \050) 498.72 588.67 P
+4 F
+-0.54 (mbs) 506.34 588.67 P
+3 F
+-0.54 (\051,) 528.88 588.67 P
+(as opposed to) 108 572.67 T
+4 F
+(wide character strings) 187.67 572.67 T
+3 F
+( \050) 313.6 572.67 T
+4 F
+(wcs) 321.76 572.67 T
+3 F
+(\051. Both mbs and wcs provide the) 342.75 572.67 T
+(same level of functionality) 108 556.67 T
+(. However) 256.71 556.67 T
+(, the mbs strings are partially) 314.43 556.67 T
+3 11 Q
+(10) 476.88 562.27 T
+3 14 Q
+(supported by) 108 540.67 T
+4 F
+(de-jur) 184.17 540.67 T
+(e) 217.85 540.67 T
+3 F
+( standards whereas wcs are more completely supported.) 224.07 540.67 T
+(No standards body speci\336es) 108 524.67 T
+2 F
+(<mbstr.h>) 268.11 524.67 T
+3 F
+(; it is inherited from AIX) 343.67 524.67 T
+3 11 Q
+(1) 483.97 530.27 T
+(1) 489.06 530.27 T
+3 14 Q
+(.) 494.55 524.67 T
+(The dates of last modi\336cations of a \336le are converted into a character string) 108 496.67 T
+-0.56 (according to the current national language support status. The conversion of a) 108 480.67 P
+2 F
+-0.63 (tm) 108 464.67 P
+3 F
+-0.26 ( structure into an string of characters requires a temporary buf) 124.79 464.67 P
+-0.26 (fer) 468.52 464.67 P
+-0.26 (. The size) 483.28 464.67 P
+(of this buf) 108 448.67 T
+(fer is de\336ned by an OSF/1 constant named) 165.27 448.67 T
+2 F
+(NLTBMAX) 407 448.67 T
+3 F
+( available) 465.77 448.67 T
+(from OSF/1\325) 108 432.67 T
+(s) 179.14 432.67 T
+2 F
+(<time.h>) 188.08 432.67 T
+3 F
+( header) 255.24 432.67 T
+(.) 295.26 432.67 T
+(The call to) 108 404.67 T
+2 F
+(mbswidth\050\051) 171.34 404.67 T
+3 F
+( was replaced by the sequence:) 255.3 404.67 T
+(\245) 118.8 380.67 T
+(Convert the mbs string into a wcs string;) 129.6 380.67 T
+(\245) 118.8 356.67 T
+(Call the XPG/4 function) 129.6 356.67 T
+2 F
+(wcswidth\050\051) 269.52 356.67 T
+3 F
+( with the converted wcs string to) 353.48 356.67 T
+(get the actual screen width of the original mbs string.) 129.6 340.67 T
+(The header) 108 312.67 T
+2 F
+(<mbstr.h>) 174.04 312.67 T
+3 F
+( was replaced in the list of include \336les, by the) 249.6 312.67 T
+2 F
+(<wchar.h>) 108 296.67 T
+(<limits.h>) 187.06 296.67 T
+3 F
+( and) 271.01 296.67 T
+2 F
+(<stdlib.h>) 298.21 296.67 T
+3 F
+( headers.) 382.17 296.67 T
+(The constant) 108 268.67 T
+2 F
+(NLTBMAX) 183.39 268.67 T
+3 F
+( was added to the) 242.16 268.67 T
+2 F
+(osc12) 342.8 268.67 T
+3 F
+( environment as part of the) 384.78 268.67 T
+2 F
+(<time.h>) 108 252.67 T
+3 F
+( header) 175.16 252.67 T
+(.) 215.18 252.67 T
+108 144 540 164.09 C
+108 151.99 239.98 151.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+-0.17 (10.  Only) 108 136.67 P
+4 F
+-0.17 (partially) 151.44 136.67 P
+3 F
+-0.17 ( because [ANSI-C] and [XPG/4-IF] provides almost only functions to convert a) 189.29 136.67 P
+-0.68 (mbs string from and to a wcs string, and no functions to) 118.8 124.67 P
+4 F
+-0.68 (e.g.) 358.75 124.67 P
+3 F
+-0.68 ( convert a mbs string to a long integer) 374.61 124.67 P
+-0.68 (.) 535.18 124.67 P
+(See [ANSI-C] and [XPG/4-IF] for details.) 118.8 112.67 T
+(1) 108 97.67 T
+(1.  AIX is IBM\325) 113.09 97.67 T
+(s \337avor of Unix.) 182.97 97.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 16) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+4 14 Q
+0 X
+(\321 File status) 108 701.67 T
+3 F
+(The information about a \336le is obtained by a call to the) 108 672.67 T
+2 F
+(stat\050\051) 418.91 672.67 T
+3 F
+( function) 469.28 672.67 T
+-0.39 (\050de\336ned in) 108 656.67 P
+2 F
+-0.94 (<sys/stat.h>) 170.96 656.67 P
+3 F
+-0.39 (\051 which \336lls up a) 271.7 656.67 P
+2 F
+-0.94 (stat) 367.31 656.67 P
+3 F
+-0.39 ( structure for a given \336le) 400.89 656.67 P
+(name.) 108 640.67 T
+(The basic type of \336les and their related information available through the) 108 612.67 T
+2 F
+(stat) 108 596.67 T
+3 F
+( structure is described in [XPG/4-IF]. OSF/1 supports others types of) 141.58 596.67 T
+(\336les imported from others members of the Unix family:) 108 580.67 T
+(Symbolic links. They are de\336ned in [SVID-3] and [AES]. Both these) 129.6 556.67 T
+(de\336nitions provides a) 180 540.67 T
+2 F
+(S_IFLNK) 303.99 540.67 T
+3 F
+( constant to distinguish a link) 362.75 540.67 T
+(from other \336les, but strange enough, none of them provide a) 180 524.67 T
+2 F
+-1.33 (S_ISLNK\050\051) 180 508.67 P
+3 F
+-0.56 ( macro to question if a given \336le is a symbolic link,) 255.56 508.67 P
+(similar to those they provides for others types of \336les. OSF/1) 180 492.67 T
+-0.75 (does provides these two macros in its headers \336les. The) 180 476.67 P
+2 F
+-1.8 (stat\050\051) 486.88 476.67 P
+3 F
+-0.29 (function returns the status of the object pointed to by the link, as) 180 460.67 P
+-0.12 (opposed to the status of the link itself. T) 180 444.67 P
+-0.12 (o query the status of the) 403.13 444.67 P
+(link itself, the) 180 428.67 T
+2 F
+(lstat\050\051) 260.85 428.67 T
+3 F
+( function is de\336ned in [AES] and) 319.61 428.67 T
+([SVID-3]. ls.c uses the BUFSIZ constant as the size of the) 180 412.67 T
+(temporary which holds the path to the pointed \336le. This is not) 180 396.67 T
+(correct: The maximum size of a symbolic link is) 180 380.67 T
+2 F
+(PATH_MAX) 454.77 380.67 T
+3 F
+(.) 521.93 380.67 T
+(Sockets, originally from BSD. In order to distinguish them from others) 129.6 356.67 T
+(kinds of \336les, OSF/1 provides for this purpose a constant:) 180 340.67 T
+2 F
+(S_IFSOCK) 180 324.67 T
+3 F
+( and a macro) 247.16 324.67 T
+2 F
+(S_ISSOCK\050\051) 322.54 324.67 T
+3 F
+(.) 406.49 324.67 T
+(The constants) 108 296.67 T
+2 F
+(S_IFLNK) 188.83 296.67 T
+3 F
+(,) 247.6 296.67 T
+2 F
+(S_IFSOCK) 254.6 296.67 T
+3 F
+(, the macros) 321.76 296.67 T
+2 F
+(S_ISLNK\050\051) 393.26 296.67 T
+(S_ISSOCK\050\051) 108 280.67 T
+3 F
+( and the function) 191.95 280.67 T
+2 F
+(lstat\050\051) 289.89 280.67 T
+3 F
+( have been added to) 348.65 280.67 T
+2 F
+(osc12) 463.28 280.67 T
+3 F
+(\325) 505.26 280.67 T
+(s) 509.15 280.67 T
+2 F
+(<sys/stat.h>) 108 264.67 T
+3 F
+( headers.) 208.74 264.67 T
+(Occurrences of) 108 236.67 T
+2 F
+(BUFSIZ) 196.57 236.67 T
+3 F
+( was replaced with either) 246.94 236.67 T
+2 F
+(PATH_MAX) 390.32 236.67 T
+3 F
+( or) 457.49 236.67 T
+2 F
+(PATH_MAX+1) 108 220.67 T
+3 F
+( when they meant the size of the lar) 191.95 220.67 T
+(gest symbolic link or the) 390.66 220.67 T
+(size of the temporary to holds the name of a link respectively) 108 204.67 T
+(.) 449.45 204.67 T
+4 F
+(\321) 108 152.67 T
+(Size of blocks) 123.94 152.67 T
+3 F
+(File sizes are obtained by a call to the) 108 123.67 T
+2 F
+(stat\050\051) 322.12 123.67 T
+3 F
+( function.) 372.5 123.67 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(This structure is only partially de\336ned by standards bodies, and the size in) 108 701.67 T
+(number of blocks is part of the information that is de\336ned in some standards) 108 685.67 T
+([SVID-3] and not in others [XPG/4-IF]) 108 669.67 T
+3 11 Q
+(12) 327.57 675.27 T
+3 14 Q
+(.) 338.55 669.67 T
+2 F
+(ls.c) 108 641.67 T
+3 F
+( includes the header) 141.58 641.67 T
+2 F
+(<sys/param.h>) 256.6 641.67 T
+3 F
+( to obtain the constant) 365.74 641.67 T
+2 F
+(REPORT_SIZE) 108 625.67 T
+3 F
+(, which is used as disk block size to compute the number of) 200.35 625.67 T
+(\336le system blocks occupied by \336les in a directory) 108 609.67 T
+(. As XPG/4 requires this) 383.8 609.67 T
+(constant to be 512 bytes \050[XPG/4-CU], page 446, 1) 108 593.67 T
+3 11 Q
+(st) 395.58 599.27 T
+3 14 Q
+( paragraph\051 we have) 402.91 593.67 T
+(hard-coded this de\336nition into the source code. The original) 108 577.67 T
+2 F
+(ls.c) 446.88 577.67 T
+3 F
+( de\336ned) 480.46 577.67 T
+2 F
+(REPORT_SIZE) 108 561.67 T
+3 F
+( as the same as) 200.35 561.67 T
+2 F
+(UBSIZE) 287 561.67 T
+3 F
+( which may not have be 512 for all) 337.38 561.67 T
+(implementations. This constant was taken from a BSD inherited \336le:) 108 545.67 T
+2 F
+(<sys/param.h>) 108 529.67 T
+3 F
+(.) 217.14 529.67 T
+(The \336eld) 108 501.67 T
+2 F
+(st_blocks) 161.63 501.67 T
+3 F
+( of the) 237.19 501.67 T
+2 F
+(stat) 276.44 501.67 T
+3 F
+( structure has to be multiplied by) 310.02 501.67 T
+2 F
+-0.92 (S_BLKSIZE) 108 485.67 P
+3 F
+-0.38 ( to get the actual size of disk space in bytes allocated to this \336le.) 183.56 485.67 P
+-0.23 ([SVID-3]) 108 469.67 P
+3 11 Q
+-0.18 (13) 161.62 475.27 P
+3 14 Q
+-0.23 ( de\336nes this \336eld as being:) 172.6 469.67 P
+4 F
+-0.23 (The total number of physical blocks of) 323.58 469.67 P
+(size 512 bytes actually allocated on disk) 108 453.67 T
+3 F
+( \050quoted from [SVID-3], page 6-) 333.42 453.67 T
+(135\051.) 108 437.67 T
+(The de\336nition of) 108 409.67 T
+2 F
+(REPORT_SIZE) 205.55 409.67 T
+3 F
+( to 512 bytes is now directly in the \336le) 297.9 409.67 T
+2 F
+(ls.c) 108 393.67 T
+3 F
+(, and the header) 141.58 393.67 T
+2 F
+(<sys/param.h>) 233.66 393.67 T
+3 F
+( is no longer included.) 342.8 393.67 T
+(Reference to the constant) 108 365.67 T
+2 F
+(S_BLKSIZE) 253.32 365.67 T
+3 F
+( has been removed and replaced by) 328.88 365.67 T
+(the hard-coded constant 512.) 108 349.67 T
+4 F
+(\321 Major and minor modes of devices) 108 297.67 T
+3 F
+(W) 108 268.67 T
+(ith the) 120.65 268.67 T
+2 F
+(-l) 159.52 268.67 T
+3 F
+( option,) 176.31 268.67 T
+2 F
+(ls) 222.57 268.67 T
+3 F
+( lists major and minor numbers of devices, that is the) 239.36 268.67 T
+(number of the driver and the number of the device respectively) 108 252.67 T
+(. Such) 459.92 252.67 T
+(information currently has no) 108 236.67 T
+4 F
+(de jur) 271.22 236.67 T
+(e) 303.74 236.67 T
+3 F
+( de\336nition. OSF/1 provides this) 309.95 236.67 T
+108 192 540 212.09 C
+108 199.99 239.98 199.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(12.  This is a major drawback and means that the) 108 184.67 T
+2 F
+(ls) 325.86 184.67 T
+3 F
+( command could not be written in a fully por-) 339.04 184.67 T
+(table fashion,) 118.8 172.67 T
+4 F
+(i.e.) 180.74 172.67 T
+3 F
+( it is not possible to write an [XPG/4-CU] compliant version of) 194.17 172.67 T
+2 F
+(ls) 474.31 172.67 T
+3 F
+( using only) 487.49 172.67 T
+(information provided by the [XPG/4-IF] API.) 118.8 160.67 T
+(13.  It is worth noting that there is a small discrepancy in [SVID-3] concerning this \336eld: In the) 108 145.67 T
+2 F
+-0.8 (stat) 118.8 133.67 P
+3 F
+-0.33 ( structure \336elds list \050page 5-70 and page 6-133\051, a C comment in front of the) 145.17 133.67 P
+2 F
+-0.8 (st_blocks) 478.26 133.67 P
+3 F
+(\336elds says:) 118.8 121.67 T
+2 F
+(/*) 170.07 121.67 T
+(Number of st_blksize blocks allocated for this) 189.85 121.67 T
+-0.3 (object) 118.8 109.67 P
+-0.3 (*/) 164.94 109.67 P
+3 F
+-0.12 (, while the description of the \336eld \050page 6-135\051 says:) 178.13 109.67 P
+4 F
+-0.12 (The total number of physical) 411.53 109.67 P
+(blocks of size 512 bytes actually allocated on disk) 118.8 97.67 T
+3 F
+(. The latter is correct.) 337.9 97.67 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(information in two dif) 108 701.67 T
+(ferent ways depending on whether the code is to have) 231.73 701.67 T
+(access to the kernel structure or not) 108 685.67 T
+3 11 Q
+(14) 306.17 691.27 T
+3 14 Q
+(:) 317.16 685.67 T
+(C Macros if the compiled code is kernel code) 129.6 661.67 T
+2 F
+(, ls.c) 383.74 661.67 T
+3 F
+( obtains these) 434.11 661.67 T
+(macros from the) 180 645.67 T
+2 F
+(<sys/types.h>) 275.2 645.67 T
+3 F
+( include \336le, which in turn) 384.34 645.67 T
+(obtains them from the) 180 629.67 T
+2 F
+(<machine/types.h>) 306.7 629.67 T
+3 F
+( header) 449.42 629.67 T
+(.) 489.44 629.67 T
+(C functions in other cases.) 129.6 605.67 T
+(In order to have a public API \050) 108 577.67 T
+4 F
+(i.e.) 279.36 577.67 T
+3 F
+( outside of the kernel\051, the function) 296.46 577.67 T
+(mechanism has been chosen:) 108 561.67 T
+(The two function) 108 533.67 T
+2 F
+(major\050\051) 207.88 533.67 T
+3 F
+( and) 266.64 533.67 T
+2 F
+(minor\050\051) 293.85 533.67 T
+3 F
+( have been added to the) 352.61 533.67 T
+2 F
+(<sys/types.h>) 108 517.67 T
+(osc12) 220.64 517.67 T
+3 F
+( header) 262.61 517.67 T
+(.) 302.63 517.67 T
+4 F
+(\321 Obsolete featur) 108 465.67 T
+(es of de-jur) 210.09 465.67 T
+(e APIs) 273.3 465.67 T
+3 F
+-0.37 (Some features are declared obsolete in a given version of an API. This means) 108 436.67 P
+(that these features might be widthdrawn in futures releases. However) 108 420.67 T
+(, to) 494.47 420.67 T
+-0.36 (ensure maximum upwards portability of source code, many vendors continue) 108 404.67 P
+-0.2 (to support the obsolete features of an API as long as they do not con\337ict with) 108 388.67 P
+(the current one.) 108 372.67 T
+4 F
+(e.g.) 198.92 372.67 T
+3 F
+(:) 219.13 372.67 T
+([XPG/3-IF] says that constants) 108 344.67 T
+2 F
+(S_IEXEC) 284.44 344.67 T
+3 F
+(,) 343.21 344.67 T
+2 F
+(S_IWRITE) 350.21 344.67 T
+3 F
+( &) 417.37 344.67 T
+2 F
+(S_IEXEC) 435.25 344.67 T
+3 F
+(, used) 494.02 344.67 T
+(by) 108 328.67 T
+2 F
+(ls.c) 125.49 328.67 T
+3 F
+(, have been withdrawn and replaced by) 159.07 328.67 T
+2 F
+(S_IRUSR) 381.33 328.67 T
+3 F
+(,) 440.09 328.67 T
+2 F
+(S_IWUSR) 447.09 328.67 T
+3 F
+( &) 505.86 328.67 T
+2 F
+-0.93 (S_IXUSR) 108 312.67 P
+3 F
+-0.39 ( respectively) 166.77 312.67 P
+-0.39 (. However) 236.58 312.67 P
+-0.39 (, OSF/1 still provides these de\336nitions in its) 293.91 312.67 P
+(header \336les.) 108 296.67 T
+2 F
+(ls.c) 108 268.67 T
+3 F
+( also uses a feature that has been declared obsolete by XPG/3 and) 141.58 268.67 T
+(withdrawn from XPG/4: The) 108 252.67 T
+2 F
+(S_IVTX) 273.56 252.67 T
+3 F
+( mode of a \336le. This was used to) 323.93 252.67 T
+-0.4 (indicate that an executable had to be kept as long as possible in swap space in) 108 236.67 P
+(order to have a faster start-up during the next invocation.) 108 220.67 T
+(The obsolete features have been added to the) 108 192.67 T
+2 F
+(osc12) 362.9 192.67 T
+3 F
+( environment.) 404.88 192.67 T
+4 F
+(i.e.) 486.1 192.67 T
+3 F
+( the) 503.2 192.67 T
+(constants) 108 176.67 T
+2 F
+(S_IEXEC) 163.58 176.67 T
+3 F
+(,) 222.35 176.67 T
+2 F
+(S_IWRITE) 229.34 176.67 T
+3 F
+(,) 296.5 176.67 T
+2 F
+(S_IEXEC) 303.5 176.67 T
+3 F
+( &) 362.27 176.67 T
+2 F
+(S_IFVTX) 380.15 176.67 T
+3 F
+(.) 438.92 176.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(14.  If the macro) 108 97.67 T
+2 F
+(_KERNEL) 183.66 97.67 T
+3 F
+( is set, then one gains access to the kernel de\336nitions.) 229.8 97.67 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(ANDFizing the /bin/ls command) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+4 14 Q
+0 X
+(\321 Built-in constants) 108 701.67 T
+3 F
+(There is a built-in constant that is logically part of the API used by) 108 672.67 T
+2 F
+(ls) 484.98 672.67 T
+3 F
+( but) 501.77 672.67 T
+(which have not been placed in any API: The size, in numbers of bytes, of a) 108 656.67 T
+-0.14 (user login- or group-name.) 108 640.67 P
+2 F
+-0.34 (ls.c) 260.92 640.67 P
+3 F
+-0.14 ( had a plain constant \050) 294.51 640.67 P
+4 F
+-0.14 (i.e.) 416.98 640.67 P
+3 F
+-0.14 ( 16\051 assuming that) 434.08 640.67 P
+-0.38 (user names will not be longer than 15 bytes) 108 624.67 P
+3 11 Q
+-0.3 (15) 348.24 630.27 P
+3 14 Q
+-0.38 (. The typical usage for Unix is 8) 359.23 624.67 P
+(bytes.) 108 608.67 T
+-0.19 (This plain constant have been changed into a constant) 108 580.67 P
+2 F
+-0.47 (LOG_GRP_MAX) 411.31 580.67 P
+3 F
+-0.19 ( set to) 503.66 580.67 P
+(15 at the beginning of the \336le.) 108 564.67 T
+-0.52 (As OSF/1 does not even provide such a constant in its headers, it has not been) 108 536.67 P
+(moved to an OSF/1 header) 108 520.67 T
+(. It is worth noting that this will be a limitation of) 257.24 520.67 T
+-0.57 (the ANDFized) 108 504.67 P
+2 F
+-1.38 (ls) 192.35 504.67 P
+3 F
+-0.57 (.) 209.14 504.67 P
+4 F
+-0.57 (i.e.) 215.56 504.67 P
+3 F
+-0.57 ( it would install properly but would not run properly on) 232.66 504.67 P
+(a platform having login names up to, say) 108 488.67 T
+(, 24 characters.) 335.61 488.67 T
+(However) 108 460.67 T
+(, this constant is a candidate to be moved into a standard header as) 158.72 460.67 T
+(soon as it is supplied by a future API.) 108 444.67 T
+4 F
+(\321 List of messages issued by) 108 392.67 T
+2 F
+(/bin/ls) 274.36 392.67 T
+3 F
+(T) 108 363.67 T
+(o run properly into an internationalized environment,) 115.57 363.67 T
+2 F
+(ls.c) 416.36 363.67 T
+3 F
+( does not) 449.94 363.67 T
+(provide its error messages directly in the source code but accesses them at) 108 347.67 T
+(run time in a locale-speci\336c \336le. They are referenced by means of message) 108 331.67 T
+(numbers found in the) 108 315.67 T
+2 F
+(\323ls_msg.h\323) 230.81 315.67 T
+3 F
+( header) 314.76 315.67 T
+(.) 354.78 315.67 T
+(The point is: are those constants de\336ning messages part of) 108 287.67 T
+2 F
+(/bin/ls) 437.56 287.67 T
+3 F
+( API?) 496.33 287.67 T
+(A scenario for distributing) 108 259.67 T
+2 F
+(/bin/ls) 259.57 259.67 T
+3 F
+( in a both computer) 318.33 259.67 T
+(-language- and) 426.87 259.67 T
+(natural-language-neutral format, would be) 108 243.67 T
+(\245) 118.8 219.67 T
+(The executable) 129.6 219.67 T
+2 F
+(/bin/ls) 218.18 219.67 T
+3 F
+( as an ANDF package, and) 276.95 219.67 T
+(\245) 118.8 195.67 T
+(One message \336le for each supported natural language. The choice of the) 129.6 195.67 T
+(right message \336le would be an installation parameter) 129.6 179.67 T
+(.) 424.57 179.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(15.  16 includes the trailing null char) 108 97.67 T
+(.) 269.12 97.67 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Status) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+3 14 Q
+0 X
+(In such a scenario, the coherency between message numbers and their actual) 108 701.67 T
+-0.34 (string counterparts are part of) 108 685.67 P
+2 F
+-0.81 (/bin/ls) 275.34 685.67 P
+3 F
+-0.34 ( coherency as a whole, and therefore) 334.11 685.67 P
+(are not related to any API.) 108 669.67 T
+4 F
+(\321 V) 108 617.67 T
+(isibility of names) 131.45 617.67 T
+3 F
+(As) 108 588.67 T
+2 F
+(ls) 127.04 588.67 T
+3 F
+( is made of only one C module) 143.83 588.67 T
+2 F
+(ls.c) 319.51 588.67 T
+3 F
+(, all global variables have been) 353.09 588.67 T
+(declared) 108 572.67 T
+2 F
+(static) 158.89 572.67 T
+3 F
+(. As the C producer does not keep the name of) 209.26 572.67 T
+2 F
+(static) 471.95 572.67 T
+3 F
+(variables, their actual names are not provided in the \324) 108 556.67 T
+2 F
+(.j) 405.66 556.67 T
+3 F
+(\325 \336le.) 422.45 556.67 T
+108 496.98 540 500 C
+90 498.49 558 498.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. Status) 108 505.33 T
+3 14 Q
+(The current status is as follows:) 108 473.64 T
+(\245) 118.8 449.64 T
+(All changes to the source code mentioned in this paper have been) 129.6 449.64 T
+(incorporated into) 129.6 433.64 T
+2 F
+(ls.c) 229.09 433.64 T
+3 F
+(.) 262.67 433.64 T
+(\245) 118.8 409.64 T
+-0.88 (A new ANDF API for OSF/1, named) 129.6 409.64 P
+2 F
+-2.11 (osc12) 335.64 409.64 P
+3 F
+-0.88 (, based on DRA) 377.62 409.64 P
+-0.88 (\325) 462.81 409.64 P
+-0.88 (s) 466.7 409.64 P
+2 F
+-2.11 (xpg4) 474.76 409.64 P
+3 F
+-0.88 ( have) 508.34 409.64 P
+(been created according to this paper) 129.6 393.64 T
+(. This environment has successfully) 330.49 393.64 T
+(generated ANDF headers and a token library for a i386 platform.) 129.6 377.64 T
+(The sizes of the various \336les compare as follows) 108 349.64 T
+3 11 Q
+(16) 380.02 355.24 T
+3 14 Q
+(:) 391.01 349.64 T
+(The ANDF generated executable is 10% smaller than the) 108 225.64 T
+2 F
+(cc) 430.92 225.64 T
+3 F
+( generated one.) 447.7 225.64 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 11 Q
+0 X
+0 K
+(16.  OSF/1 native) 108 97.67 T
+2 F
+(cc) 188.27 97.67 T
+3 F
+( is derived from) 201.45 97.67 T
+2 F
+(gcc) 274.07 97.67 T
+3 F
+(.) 293.85 97.67 T
+0 12 Q
+(File) 242.34 316.98 T
+(ANDF) 307.35 316.98 T
+2 F
+(cc) 376.48 316.98 T
+0 F
+(/i386) 390.87 316.98 T
+3 F
+(Object) 236.01 285.98 T
+2 F
+(ls.j) 309.61 292.98 T
+3 F
+(20014) 309.01 278.98 T
+2 F
+(ls.o) 381.61 292.98 T
+3 F
+(29015) 381.01 278.98 T
+(Executable) 225.36 256.98 T
+(30563) 309.01 256.98 T
+(33682) 381.01 256.98 T
+216 332.73 216 249.23 2 L
+V
+0.5 H
+0 Z
+N
+288 333.23 288 248.73 2 L
+V
+N
+360 333.23 360 248.73 2 L
+V
+N
+432 332.73 432 249.23 2 L
+V
+N
+215.75 332.98 432.25 332.98 2 L
+V
+N
+216.25 308.23 431.75 308.23 2 L
+V
+N
+216.25 305.73 431.75 305.73 2 L
+V
+N
+215.75 270.98 432.25 270.98 2 L
+V
+N
+215.75 248.98 432.25 248.98 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Futur) 108 736.84 T
+(e work) 127.85 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(14 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(6. Future work) 108 700.33 T
+3 14 Q
+(Future work includes:) 108 668.64 T
+(\245) 118.8 644.64 T
+(Building of an installer for a OSF/1 mips platform based on the Gandf) 129.6 644.64 T
+-0.03 (experiment carried out by Richard L. Ford at OSF-RI in Cambridge \050See) 129.6 628.64 P
+-0.51 ([OSF-RF-II-93] for details\051. This installer will allow a second installation) 129.6 612.64 P
+(of) 129.6 596.64 T
+2 F
+(/bin/ls) 144.75 596.64 T
+3 F
+(.) 203.52 596.64 T
+(\245) 118.8 572.64 T
+(ANDFization of other OSF/1 Commands.) 129.6 572.64 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Futur) 108 736.84 T
+(e work) 127.85 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(15 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(7. Bibliography) 108 700.33 T
+108 652.95 540 655.98 C
+90 654.46 558 654.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(On operating systems) 108 660.64 T
+3 F
+([ANSI-C]) 108 629.62 T
+(Programming languages - C, from ISO.) 216 629.62 T
+3 10 Q
+(ISO/IEC 9899;) 216 604.29 T
+3 14 Q
+([POSIX-IF]) 108 577.62 T
+(Information technology - Portable Operating System) 216 577.62 T
+(Interface \050POSIX\051 - Part 1: System Application Program) 216 561.62 T
+(Interface \050API\051 [C language], from ISO.) 216 545.62 T
+3 10 Q
+(ISO/IEC 9945-1; IEEE Std 1003.1.) 216 520.29 T
+3 14 Q
+([POSIX-SU]) 108 493.62 T
+(Information technology - Portable Operating System) 216 493.62 T
+(Interface \050POSIX\051 - Part 2: Shell and Utilities, from ISO.) 216 477.62 T
+3 10 Q
+(ISO/IEC 9945-2; IEEE Std 1003.2-Draft.) 216 452.29 T
+3 14 Q
+([XPG/3-IF]) 108 425.62 T
+(CAE Speci\336cation - System Interface and Headers,) 216 425.62 T
+(Issue) 216 409.62 T
+(3, from X/Open.) 248.25 409.62 T
+3 10 Q
+(ISBN: 0-13-685843-0. Prentice-Hall.) 216 384.29 T
+3 14 Q
+([XPG/4-IF]) 108 357.62 T
+(CAE Speci\336cation - System Interface and Headers,) 216 357.62 T
+(Issue) 216 341.62 T
+(4, from X/Open.) 248.25 341.62 T
+3 10 Q
+(X/Open Document number: C202; ISBN: 1-872630-47-2.) 216 316.29 T
+3 14 Q
+([XPG/4-CU]) 108 289.62 T
+(CAE Speci\336cation - Commands and Utilities - Issue) 216 289.62 T
+(4,) 512.16 289.62 T
+(from X/Open.) 216 273.62 T
+3 10 Q
+(X/Open Document number: C203; ISBN: 1-872630-48-0.) 216 248.29 T
+3 14 Q
+([SVID-3]) 108 221.62 T
+(System V - Interface de\336nition - Issue 3, from A) 216 221.62 T
+(T&T) 486.47 221.62 T
+(.) 513.42 221.62 T
+([AES]) 108 193.62 T
+(Application Environment Speci\336cation - Operating) 216 193.62 T
+(System - Programming Interfaces V) 216 177.62 T
+(olume - Revision A,) 416.27 177.62 T
+(from OSF) 216 161.62 T
+(.) 271.24 161.62 T
+3 10 Q
+(ISBN: 0-13-043522-48-8; Prentice-Hall.) 216 136.29 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(ANDFizing OSF/1 R1.2 commands) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Futur) 108 736.84 T
+(e work) 127.85 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(16 of 16) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 693.98 540 697 C
+90 695.49 558 695.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(On the ANDF technology) 108 701.67 T
+3 F
+([DRA-XII-92]) 108 670.64 T
+(The TDF speci\336cation - Issue 2.0 Revision 1 - December) 216 670.64 T
+(1992.) 216 654.64 T
+3 10 Q
+(The Defence Research Agency) 216 629.31 T
+(, St. Andrews Road, Malvern, W) 339.39 629.31 T
+(orcestershire,) 469.89 629.31 T
+(WR14 3PS, United Kingdom.) 216 617.31 T
+3 14 Q
+([OSF-SM-I-93]) 108 590.64 T
+(Porting with ANDF by Stavros Macrakis, from OSF) 216 590.64 T
+(.) 507.94 590.64 T
+3 10 Q
+(6) 216 565.31 T
+3 8 Q
+(th) 221 569.31 T
+3 10 Q
+( article of OSF\325) 227.22 565.31 T
+(s ANDF Collected papers, V) 289.12 565.31 T
+(ol. 1, January 1993.) 403.03 565.31 T
+3 14 Q
+([OSF-RF-II-93]) 108 538.64 T
+(GANDF: status and design by Richard L. Ford, from) 216 538.64 T
+(OSF) 216 522.64 T
+(.) 240.54 522.64 T
+3 10 Q
+(2) 216 497.31 T
+3 8 Q
+(nd) 221 501.31 T
+3 10 Q
+( article of OSF\325) 228.99 497.31 T
+(s ANDF Collected papers, V) 290.9 497.31 T
+(ol. 2, March 1993.) 404.81 497.31 T
+108 90 540 711 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+3 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 711 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "16" 17
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 16 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Courier
+%%+ Times-Roman
+%%+ Times-Italic

@@ -1,0 +1,2959 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 16 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(6/29/93 05:04 pm macrakis@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(1 of 18) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (From UNCOL to ANDF:) 210.46 695 S
+-1.2 (Progress in Standard Intermediate Languages) 121.22 665 S
+0 12 Q
+(Stavr) 278.97 571 T
+(os Macrakis) 306.73 571 T
+(Open Softwar) 254.47 555 T
+(e Foundation) 325.88 555 T
+108 421.48 540 427 C
+108 423.79 459 423.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 432.33 T
+2 14 Q
+(ANDF is an architecture- and language- neutral distribution format) 108 398.14 T
+(resembling a compiler intermediate language. Architecture- and language-) 108 382.14 T
+(neutral intermediate languages were \336rst discussed in the UNCOL project) 108 366.14 T
+(of 1958-1962. UNCOL was never fully de\336ned nor implemented. This) 108 350.14 T
+(paper takes a look at the history of UNCOL and shows why ANDF can) 108 334.14 T
+(succeed where UNCOL failed. The paper presupposes an understanding of) 108 318.14 T
+(comparative programming language semantics and implementation, and is) 108 302.14 T
+(addressed to programming language implementors.) 108 286.14 T
+(The UNCOL section describes the history and nature of UNCOL. UNCOL) 108 258.14 T
+(was a very ambitious project for its day) 108 242.14 T
+(, and would have required) 328.21 242.14 T
+(innovations in many areas. But later work on compilers and intermediate) 108 226.14 T
+(languages in fact ful\336lled many of the promises of the UNCOL work. Those) 108 210.14 T
+(innovations, together with the widespread use of portable software and open) 108 194.14 T
+(systems made a universal distribution format economically worthwhile. But) 108 178.14 T
+(the technical groundwork had been laid by the compiler community) 108 162.14 T
+(.) 486.77 162.14 T
+(The Fortran, C, and Lisp sections discuss a dif) 108 134.14 T
+(ferent approach to a universal) 367.36 134.14 T
+(language\321the use of existing programming languages. They have been) 108 118.14 T
+(used as an intermediate language for Ada, Modula-3, and other compilers.) 108 102.14 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(UNCOL) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(An examination of these compilers shows the strengths and weaknesses of) 108 710.67 T
+(this approach.) 108 694.67 T
+(The \336nal section discusses the relationship between portability and a) 108 666.67 T
+(universal distribution format: ANDF cannot make programs portable; it) 108 650.67 T
+(provides the mechanisms necessary to support portable programs.) 108 634.67 T
+108 572.48 540 578 C
+108 574.79 459 574.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. UNCOL) 108 583.33 T
+0 14 Q
+(What was UNCOL?) 108 525.14 T
+2 F
+(UNCOL, a) 108 496.14 T
+0 F
+(Un) 172.9 496.14 T
+2 F
+(iversal) 190.78 496.14 T
+0 F
+(C) 231.58 496.14 T
+2 F
+(omputer) 241.68 496.14 T
+(-) 288.04 496.14 T
+0 F
+(O) 292.7 496.14 T
+2 F
+(riented) 303.58 496.14 T
+0 F
+(L) 345.94 496.14 T
+2 F
+(anguage, is the general name) 355.27 496.14 T
+(for a group of proposals for a universal intermediate language for compilers.) 108 480.14 T
+(UNCOL) 108 452.14 T
+(\325) 154.9 452.14 T
+(s goal was quick and economic production of compilers for a full) 158.79 452.14 T
+(range of languages on new machine architectures. Steel presents the) 108 436.14 T
+(economic justi\336cation clearly:) 108 420.14 T
+2 10 Q
+(Th[e] capital investment in a translator [) 126 399.81 T
+3 F
+(i.e.) 286.99 399.81 T
+2 F
+( compiler] would be well advised if our concern were) 299.2 399.81 T
+(for a single machine and a single problem oriented language\311. In our \336rm insistence on many) 126 387.81 T
+(machines and many languages, however) 126 375.81 T
+(, the requisite investment is increased multiplicatively\311.) 286.86 375.81 T
+(A primary objective of the ef) 126 363.81 T
+(fort whose direction is outlined in the following pages is a reduction) 242.12 363.81 T
+(in the time and money required to live in this changing environment.) 126 351.81 T
+(\311if one is presented with M problem languages and N machine languages, M) 126 332.81 T
+(+) 440.78 332.81 T
+(N translation pro-) 448.91 332.81 T
+(grams are required in the UNCOL scheme of things, while M) 126 320.81 T
+4 F
+(\264) 374.15 320.81 T
+2 F
+( N translation programs are neces-) 379.64 320.81 T
+(sary in the traditional mode\311. [Steel61, p. 371]) 126 308.81 T
+2 14 Q
+(UNCOL, then, was a means to an end: compiler production. UNCOL was) 108 282.14 T
+(never intended to be a mechanism for porting programs; indeed the very) 108 266.14 T
+(notion of a portable program was hardly mentioned in the UNCOL) 108 250.14 T
+(literature!) 108 234.14 T
+(According to [Share58], the concept of a universal intermediate language) 108 206.14 T
+(had \322been discussed by many independent persons as long ago as 1954. It) 108 190.14 T
+(might not be dif) 108 174.14 T
+(\336cult to prove that \324this was well-known to Babbage,\325 so no) 197.54 174.14 T
+(ef) 108 158.14 T
+(fort has been made to give credit to the originator) 118.62 158.14 T
+(, if indeed there was a) 395.14 158.14 T
+(unique originator) 108 142.14 T
+(.\323 The most usual bibliographic reference is to Steel\325) 204 142.14 T
+(s) 498.96 142.14 T
+(papers [Steel60, 61] and the [Share58] report.) 108 126.14 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(UNCOL) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(V) 108 710.67 T
+(arious UNCOLs were proposed, but none in detail. Some concepts were) 116.55 710.67 T
+(utopian:) 108 694.67 T
+2 10 Q
+([the data description] language includes the \336rst order predicate calculus with identity\311. In such) 126 674.33 T
+(languages non-constructable [) 126 662.33 T
+3 F
+(sic) 245.9 662.33 T
+2 F
+(] items occur\311. In order to circumvent trouble from this source,) 257.01 662.33 T
+(a set of rules for generator writers must be given which limits the complexity and character of the) 126 650.33 T
+(de\336nitions; rules which the careful framer of de\336nitions will follow instinctively) 126 638.33 T
+(. [Steel61, p. 374]) 447.37 638.33 T
+2 14 Q
+(UNCOL was only one approach proposed to solve the compiler) 108 611.67 T
+(construction problem. An alternative was the compiler) 108 595.67 T
+(-compiler) 412.78 595.67 T
+(, of which) 466.62 595.67 T
+(Steel says:) 108 579.67 T
+2 10 Q
+(A single program is written,) 126 559.33 T
+3 F
+(exactly once) 240.93 559.33 T
+2 F
+(, which takes as input descriptions of a problem oriented) 290.6 559.33 T
+(language and a machine language and then proceeds to produce as output a compiler that trans-) 126 547.33 T
+(lates the given problem language statements into the given machine language. The trouble with) 126 535.33 T
+(this approach is that nobody has even the vaguest idea about how to do it despite occasional state-) 126 523.33 T
+(ments to the contrary) 126 511.33 T
+(. [Steel60, p. 20]) 210.01 511.33 T
+(The compiler) 126 492.33 T
+(-compiler is a more digni\336ed solution\311. [It] will be a program that accepts as input) 179.37 492.33 T
+(a description of a problem oriented language, a description of a compilation machine and a de-) 126 480.33 T
+(scription of an object machine and produces as output a program which runs on the \336rst machine) 126 468.33 T
+(and translates the problem language into the language of the second machine. This is all very sim-) 126 456.33 T
+(ple conceptually) 126 444.33 T
+(. The trouble is that nobody knows how to do it. One of the hoped-for byproducts) 191.13 444.33 T
+(of the UNCOL ef) 126 432.33 T
+(fort is suf) 196.04 432.33 T
+(\336cient insight into the mechanisms of translation to permit a beginning) 234.17 432.33 T
+(on [the compiler) 126 420.33 T
+(-compiler]. Until then UNCOL will have to do. [Steel61, p. 344]) 191.86 420.33 T
+2 14 Q
+(But Steel\325) 108 393.67 T
+(s prediction was incorrect. In fact, progress on intermediate) 163.59 393.67 T
+(languages and on compiler) 108 377.67 T
+(-compilers has gone hand in hand.) 258.11 377.67 T
+0 F
+(Computer T) 108 325.67 T
+(echnology in 1958) 180.94 325.67 T
+2 F
+(A striking feature of the UNCOL papers is the number of innovations that) 108 296.67 T
+(would have been needed to make it work.) 108 280.67 T
+(Since there was no standard character code, UNCOL would have had to) 108 252.67 T
+(de\336ne one. One proposal included over 500 characters thought useful for) 108 236.67 T
+(mathematical notation \050including,) 108 220.67 T
+3 F
+(e.g.) 300.77 220.67 T
+2 F
+(, black-letter subscripts\051. On the other) 320.98 220.67 T
+(hand, no thought was given to national language support.) 108 204.67 T
+(Bootstrapping was a novel technique. Many critics of UNCOL could not) 108 176.67 T
+(understand how it would be possible to bring an UNCOL compiler up on a) 108 160.67 T
+(new machine. Thus, much of the text of UNCOL papers describes) 108 144.67 T
+(bootstrapping and defends its feasibility) 108 128.67 T
+(. [Steel62]) 330.95 128.67 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(UNCOL) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Indeed, the very notion of an intermediate language for compilers \050as) 108 710.67 T
+(opposed to) 108 694.67 T
+3 F
+(ad hoc) 172.52 694.67 T
+2 F
+( data formats to pass information between compiler) 210.21 694.67 T
+(passes\051 was rather novel.) 108 678.67 T
+(At the same time, programming language technology was in its infancy) 108 650.67 T
+(.) 506.99 650.67 T
+(Concepts that we now take for granted were novel or even non-existent,) 108 634.67 T
+(such as records, pointer types, and for that matter data types in general.) 108 618.67 T
+0 F
+(Developments in Compiler T) 108 566.67 T
+(echnology) 278.89 566.67 T
+2 F
+(Compiler technology has been an active area of research from the 1960\325) 108 537.67 T
+(s to) 510.95 537.67 T
+(the present. It is useful to review the chronology of developments to put) 108 521.67 T
+(universal intermediate languages into context.) 108 505.67 T
+2 12 Q
+(late 1950\325) 108 479 T
+(Inventon of regular languages and \336nite-state automata\321basis for lexicall) 180 479 T
+(analysis) 180 465 T
+3.61 (Invention of context-free languages, pushdown automata, and Backus) 180 445 P
+(form\321basis for syntactic analysis.) 176.9 431 T
+(1960\325) 108 405 T
+(s:) 135.32 405 T
+(Development of lexing and parsing algorithms.) 180 405 T
+(Elaboration of ef) 180 385 T
+(\336cient run-time structures for Algol.) 261.05 385 T
+(1970\325) 108 359 T
+(s:) 135.32 359 T
+(Development of theory of semantics) 180 359 T
+(First table-driven code generators.) 180 333 T
+(Broader use of ILs.) 180 313 T
+(First compiler) 180 293 T
+(-compilers.) 247.39 293 T
+(1980\325) 108 267 T
+(s:) 135.32 267 T
+(Application of semantic theory to front-end construction \050experimental\051.) 180 267 T
+2 14 Q
+(In the open literature, compiler intermediate languages are presented as) 108 239.67 T
+(novel well into the 1970\325) 108 223.67 T
+(s. This is misleading, since many proprietary) 247.92 223.67 T
+(compilers used this technique. But it does show that ILs were not fully) 108 207.67 T
+(assimilated into the computer science culture.) 108 191.67 T
+(Automatic generation of back ends for compilers began in the 1970\325) 108 163.67 T
+(s and is) 489.61 163.67 T
+(now the dominant mode of production of compiler back ends.) 108 147.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(UNCOL) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Front ends are currently not as automated. Although lexical and syntax) 108 710.67 T
+(analysers are routinely generated from formal speci\336cations \050regular) 108 694.67 T
+(expressions and BNF\051, semantics is usually treated by explicit program.) 108 678.67 T
+(But even for semantics, innovations of the 1970\325) 108 650.67 T
+(s and 1980\325) 380.05 650.67 T
+(s now make it) 444.57 650.67 T
+(possible to produce a full compiler) 108 634.67 T
+(-compiler: given the syntax \050in BNF\051 and) 302.42 634.67 T
+(semantics \050in some denotational formalism\051 of the language on the one) 108 618.67 T
+(hand, and the machine description on the other) 108 602.67 T
+(, a compiler can be produced) 369.36 602.67 T
+(completely automatically) 108 586.67 T
+(. However) 248.95 586.67 T
+(, runtime performance is currently poor) 306.66 586.67 T
+(in this fully automatic denotational approach.) 108 570.67 T
+(Compiler) 108 542.67 T
+(-compilers are routinely used today) 160.58 542.67 T
+2 11 Q
+(1) 358.77 548.27 T
+2 14 Q
+(. Their intermediate) 364.26 542.67 T
+(languages, though not standard, are constant for a particular compiler) 108 526.67 T
+(-) 495.92 526.67 T
+(compiler) 108 510.67 T
+(, with minor variants for new machines or languages.) 157.18 510.67 T
+(These ILs meet the primary requirement for an UNCOL \050to make compiler) 108 482.67 T
+(writing easier\051, but not all the requirements for ANDF) 108 466.67 T
+(. A design process) 410.39 466.67 T
+(driven by the speci\336c requirements of ANDF would incorporate IL) 108 450.67 T
+(portability and machine and architecture neutrality from the beginning. This) 108 434.67 T
+(is precisely what the UK Defence Research Agency has done with TDF) 108 418.67 T
+(, the) 508.28 418.67 T
+(technology selected by OSF as the basis of ANDF) 108 402.67 T
+(. Thus the danger of) 388.25 402.67 T
+(continual incremental modi\336cations for new languages and machines is) 108 386.67 T
+(averted.) 108 370.67 T
+0 F
+(Using existing languages for distribution) 108 290.67 T
+2 F
+(A dif) 108 261.67 T
+(ferent approach to intermediate languages for distribution is the use of) 136.89 261.67 T
+(existing programming languages.) 108 245.67 T
+(The advantage is that they already have compilers on many machines, and if) 108 217.67 T
+(the source language is the same as the chosen distribution language, then) 108 201.67 T
+(the front end becomes trivial.) 108 185.67 T
+(However) 108 157.67 T
+(, there are disadvantages both on the producer \050front-end or) 158.72 157.67 T
+(preprocessor\051 and installer \050back-end\051 sides.) 108 141.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(1.  although the term \324compiler) 108 97.67 T
+(-compiler) 244.48 97.67 T
+(\325 is outmoded) 287.6 97.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Fortran) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The front end must translate source language semantics into the) 108 710.67 T
+(intermediate language. Sometimes, this is straightforward. But more often,) 108 694.67 T
+(there are hidden complications. For instance, languages\325 treatment of loop) 108 678.67 T
+(termination conditions may be dif) 108 662.67 T
+(ferent. More subtly) 297.41 662.67 T
+(, languages\325 treatment) 404.15 662.67 T
+(of variable values after error conditions may be dif) 108 646.67 T
+(ferent. Often, a language) 392.18 646.67 T
+(feature available in the source language is not available in the tar) 108 630.67 T
+(get, and) 471.07 630.67 T
+(must thus be emulated. Such an emulation may mean premature) 108 614.67 T
+(implementation decisions. Also, machine-dependent implementation) 108 598.67 T
+(techniques not used by the IL) 108 582.67 T
+(\325) 271.88 582.67 T
+(s compiler are not available to the source) 275.77 582.67 T
+(language translator) 108 566.67 T
+(. These complications make producer design more) 214.09 566.67 T
+(dif) 108 550.67 T
+(\336cult, reduce the quality of the installed code, and favor the particular) 123.29 550.67 T
+(language over others.) 108 534.67 T
+(The back end must translate the intermediate language into machine) 108 506.67 T
+(language. For the result to be predictable, the intermediate language must be) 108 490.67 T
+(fully speci\336ed in a portable way) 108 474.67 T
+(. This means not only specifying the) 287.02 474.67 T
+(semantics independently of the machine, but also providing a complete and) 108 458.67 T
+(portable set of environment inquiries, which can be used either at) 108 442.67 T
+(installation time or at runtime. Full speci\336cation and complete environment) 108 426.67 T
+(inquiries are found in few languages.) 108 410.67 T
+(Many compilers do not handle program-generated code well. Program-) 108 382.67 T
+(generated code often contains peculiar constructs and often exceeds) 108 366.67 T
+(compilers\325 capacity limits. For that matter) 108 350.67 T
+(, compilers are tuned to provide) 342.96 350.67 T
+(good code for typical hand-written programs, and not necessarily for) 108 334.67 T
+(translations of programs written in other languages.) 108 318.67 T
+(Another important objection to using existing languages is the problem of) 108 290.67 T
+(reverse engineering. If protection of proprietary programming is required,) 108 274.67 T
+(the front end is no longer trivial even if the source language and the) 108 258.67 T
+(intermediate language are the same, since it must obscure or \324shroud\325 the) 108 242.67 T
+(source code.) 108 226.67 T
+108 164.48 540 170 C
+108 166.79 459 166.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. Fortran) 108 175.33 T
+2 14 Q
+(Fortran has often been used in the past as an intermediate language because) 108 141.14 T
+(of its simple semantics, relatively good standardization, and wide) 108 125.14 T
+(availability) 108 109.14 T
+(. Nowadays it would usually not be considered because of its) 170.06 109.14 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(C) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(lack of such fundamental features as records and pointers and weak support) 108 710.67 T
+(for character manipulation.) 108 694.67 T
+(But writing portable Fortran is dif) 108 666.67 T
+(\336cult. Indeed, such major producers of) 297.81 666.67 T
+(portable Fortran as IMSL and NAG have extensive software toolkits to) 108 650.67 T
+(support the process \050cf. [Boyle77]\051. Depending on such elaborate) 108 634.67 T
+(preprocessing defeats the purpose of a standard intermediate language.) 108 618.67 T
+108 528.48 540 534 C
+108 530.79 459 530.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. C) 108 539.33 T
+0 14 Q
+(C as an Intermediate Language) 108 481.14 T
+2 F
+(Many language implementations generate C as an IL, both for C extensions) 108 452.14 T
+(\050) 108 436.14 T
+3 F
+(e.g.) 112.66 436.14 T
+2 F
+( C++\051 and other languages \050Ada [Meridian], Cedar) 132.86 436.14 T
+(, Eif) 416.98 436.14 T
+(fel, Modula-3) 440.82 436.14 T
+-2.8 (,) 517.77 436.14 S
+2 11 Q
+(1) 518.46 441.74 T
+2 14 Q
+(Pascal [Bothe89], Sather [Lim91], Standard ML [T) 108 420.14 T
+(arditi91]\051.) 393.82 420.14 T
+(C is widely available and generally compiles into ef) 108 392.14 T
+(\336cient code. Moreover) 398.44 392.14 T
+(,) 524.94 392.14 T
+(C\325) 108 376.14 T
+(s low-level pointer constructs and weak typing allow easy emulation of) 121.22 376.14 T
+(many other languages\325 constructs \050) 108 360.14 T
+3 F
+(e.g.) 303.85 360.14 T
+2 F
+( passing parameters by reference\051.) 324.05 360.14 T
+(C is a particularly appropriate intermediate language for prototyping \050in the) 108 332.14 T
+(absence of a standard intermediate language\051. In prototype implementations,) 108 316.14 T
+(portability and standardization are often not issues. But experimentation) 108 300.14 T
+(shows that good ef) 108 284.14 T
+(\336ciency requires careful choice of idiom in C to translate) 213.07 284.14 T
+(source language features.) 108 268.14 T
+2 11 Q
+(2) 249.81 273.74 T
+0 14 Q
+(Disadvantages of C as IL) 108 216.14 T
+2 F
+(For an intermediate language, many areas of C semantics are) 108 187.14 T
+(implementation-dependent, that is, underde\336ned. For instance, there is no) 108 171.14 T
+108 144 540 164.09 C
+108 151.99 239.98 151.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.28 (1.) 108 136.67 P
+3 F
+-0.28 (cf.) 121.18 136.67 P
+2 F
+-0.28 ( the discussion about the use of C as an intermediate language for Modula-3 compilers on the) 131.86 136.67 P
+-0.61 (comp.compilers newsgroup. David Chase\325) 118.8 124.67 P
+-0.61 (s remarks <1990Aug14.163258.2094@esegue.segue.-) 303.4 124.67 P
+(boston.ma.us> are particularly pertinent.) 118.8 112.67 T
+(2.  The Sather work shows this quite clearly) 108 97.67 T
+(.) 300.44 97.67 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(C) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(way of specifying integer or \337oating-point precision, nor for that matter of) 108 710.67 T
+(querying them.) 108 694.67 T
+(Other areas are overde\336ned; for instance, parameter passage is always by) 108 666.67 T
+(value, although reference passage or copy-in/copy-out may be more) 108 650.67 T
+(appropriate on some architectures. It is possible to implement these other) 108 634.67 T
+(mechanisms explicitly) 108 618.67 T
+(, but that precludes the installer from choosing an) 232.63 618.67 T
+(implementation strategy as a function of the tar) 108 602.67 T
+(get architecture.) 372.4 602.67 T
+(C\325) 108 574.67 T
+(s data de\336nition mechanisms are weak. There is no way) 121.22 574.67 T
+(, for instance, to) 432.75 574.67 T
+(declare a variant record with discriminant nor a variable-size array) 108 558.67 T
+(. They) 479.71 558.67 T
+(can of course be emulated, but this means committing to a particular) 108 542.67 T
+(implementation which may not be appropriate for the tar) 108 526.67 T
+(get machine.) 424.86 526.67 T
+(Many constructs needed for other languages are missing from C. Lexical) 108 498.67 T
+(scope is missing. Exceptions are missing. Safe pointers \050for garbage) 108 482.67 T
+(collection\051 are missing. All of these can be emulated in C, but only by) 108 466.67 T
+(committing to a particular runtime model.) 108 450.67 T
+2 11 Q
+(1) 342.75 456.27 T
+2 14 Q
+( Such overspeci\336cation reduces) 348.24 450.67 T
+-0.04 (ef) 108 434.67 P
+-0.04 (\336ciency) 118.62 434.67 P
+-0.04 (. Also, invariants preserved by the emulation are unknown to the C) 162.01 434.67 P
+(compiler and thus cannot bene\336t optimization.) 108 418.67 T
+(For all of the above reasons, although C has been useful for prototyping) 108 390.67 T
+(extensions to itself \050C++\051 and for producing code rapidly for other) 108 374.67 T
+(languages, C is not an ideal intermediate language.) 108 358.67 T
+0 F
+(Discussion: C as a Distribution Format) 108 306.67 T
+2 F
+(As an intermediate language for languages other than itself, C is not very) 108 277.67 T
+(strong. C does have a speci\336c advantages as a distribution format, however:) 108 261.67 T
+(if source code is distributed, the mechanisms for pre-processing and) 108 245.67 T
+(machine-dependent static quantities are handled with no additional ef) 108 229.67 T
+(fort.) 496.36 229.67 T
+(Still, many of C\325) 108 201.67 T
+(s disadvantages as an IL carry over to C as a distribution) 201.3 201.67 T
+(format.) 108 185.67 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(1.  Consider the programming conventions required to support safe pointers in GNU Emacs Lisp.) 108 97.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(How about Lisp?) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(In addition, the complete semantics of a C program are not speci\336ed by the) 108 710.67 T
+(C language; parameters to linkers and loaders may change symbol) 108 694.67 T
+(interpretations.) 108 678.67 T
+(In principle, many of these objections could be overcome by re-engineering) 108 650.67 T
+(of compilers, careful de\336nition of standard special-purpose datatypes) 108 634.67 T
+(\050int_12, int_13, \311\051, standardization of linkers, and more \337exible) 108 618.67 T
+(optimizers. But if standard C compilers cannot be used, why use the) 108 602.67 T
+(standard C language for a purpose for which it was not intended?) 108 586.67 T
+108 524.48 540 530 C
+108 526.79 459 526.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. How about Lisp?) 108 535.33 T
+2 14 Q
+(Sometimes Lisp is suggested as a universal intermediate language. Indeed,) 108 501.14 T
+(ANDF has some super\336cial resemblances to Lisp.) 108 485.14 T
+0 F
+(Which one?) 108 433.14 T
+2 F
+(There are apparently three dif) 108 404.14 T
+(ferent things meant when people speak of) 274.03 404.14 T
+(using Lisp as an intermediate language:) 108 388.14 T
+2 13 Q
+(\245) 122.4 364.81 T
+(Using a fully parenthesized notation.) 136.8 364.81 T
+(\245) 122.4 341.81 T
+(Using traditional dialects of Lisp.) 136.8 341.81 T
+(\245) 122.4 318.81 T
+(Using Scheme as an object-oriented language.) 136.8 318.81 T
+0 14 Q
+(Fully par) 108 267.14 T
+(enthesized notation) 163.34 267.14 T
+2 F
+(The major classes of intermediate languages are linear \050triples, quadruples,) 108 238.14 T
+(tuples\051, tree-structured, and graph-structured. In all cases, a key decision is) 108 222.14 T
+(the actual operators used and their exact semantics.) 108 206.14 T
+(ANDF is in fact a tree-structured language. Its operators have been carefully) 108 178.14 T
+(chosen to be architecture- and language- neutral.) 108 162.14 T
+(Lisp is tree-structured as well, but its particular set of operations is speci\336c) 108 134.14 T
+(to Lisp semantics. Replacing the operators with another set of operators) 108 118.14 T
+(would result in a dif) 108 102.14 T
+(ferent tree-structured language, not Lisp.) 220.46 102.14 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Portability and Distribution) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+(Using traditional dialects of Lisp) 108 710.67 T
+2 F
+(Lisp, as a programming language developed for human use, shares several) 108 681.67 T
+(of C\325) 108 665.67 T
+(s shortcomings as an intermediate language, in particular) 136.38 665.67 T
+(underspeci\336cation \050implementation-dependence\051 for some constructs, and) 108 649.67 T
+(overspeci\336cation for others.) 108 633.67 T
+(An example of underspeci\336cation is the lack of a machine-independent way) 108 605.67 T
+(of specifying the range of integers. As for overspeci\336cation, Lisp parameter) 108 589.67 T
+(passing is by value for certain primitive types and by sharing for composite) 108 573.67 T
+(types. Other languages may require dif) 108 557.67 T
+(ferent semantics. On a more practical) 325.36 557.67 T
+(level, no commercial Lisp compiler allocates composite objects \050records,) 108 541.67 T
+(arrays\051 on the stack.) 108 525.67 T
+(So using an existing dialect of Lisp would require radical reworking both of) 108 497.67 T
+(the language and of its compilers.) 108 481.67 T
+0 F
+(Scheme-like object orientation) 108 429.67 T
+2 F
+(Scheme used as an object-oriented language has several good properties: it) 108 400.67 T
+(is well-de\336ned, it is abstract and thus uncommitted to a particular) 108 384.67 T
+(implementation style, it has very general control structure.) 108 368.67 T
+(However) 108 340.67 T
+(, it has two fatal \337aws: lack of concrete data typing facilities and) 158.72 340.67 T
+(requirement for garbage collection. Also, none of its implementations are as) 108 324.67 T
+(ef) 108 308.67 T
+(\336cient as implementations of traditional sequential programming) 118.62 308.67 T
+(languages.) 108 292.67 T
+108 230.48 540 236 C
+108 232.79 459 232.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(6. Portability and Distribution) 108 241.33 T
+2 14 Q
+(Portability is best designed into a software product, and not added on later) 108 207.14 T
+(.) 522.68 207.14 T
+(Sometimes ANDF is thought of as a portability tool which will) 108 191.14 T
+(mechanically turn a non-portable program into a portable one. If ANDF) 108 175.14 T
+(claimed this, it would be justly criticized for trying to solve an unsolvable) 108 159.14 T
+(problem.) 108 143.14 T
+(But ANDF is a distribution format for portable software. ANDF is not a tool) 108 115.14 T
+(for making non-portable software into portable software, but a tool for) 108 99.14 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Portability and Distribution) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+3 14 Q
+0 X
+(distributing) 108 710.67 T
+2 F
+( portable software, which must thus provide) 173.32 710.67 T
+3 F
+(mechanisms) 422.81 710.67 T
+2 F
+( needed) 491.21 710.67 T
+(by portable software.) 108 694.67 T
+0 F
+(Barriers to portability) 108 642.67 T
+2 F
+(Portable software is de\336ned as software that can easily be moved from one) 108 613.67 T
+(execution environment to another) 108 597.67 T
+(. Software can be portable as source or as) 295.71 597.67 T
+(binary of some kind \050object, load module, etc.\051.) 108 581.67 T
+(At the source level, portability can be blocked by language incompatibility) 108 553.67 T
+(\050supersets and subsets\051, compiler incompatibility \050bugs or extensions\051, non-) 108 537.67 T
+(portable assumptions about the runtime environment \050) 108 521.67 T
+3 F
+(e.g.) 411.14 521.67 T
+2 F
+( precision of) 431.35 521.67 T
+(numbers\051, or use of unavailable or incompatible interfaces.) 108 505.67 T
+(Language and compiler incompatibility is usually solved by writing in a) 108 477.67 T
+(subset of the language known to be correctly implemented by a wide range) 108 461.67 T
+(of compilers. This subset is typically more restrictive than the of) 108 445.67 T
+(\336cial) 468.79 445.67 T
+(standard, and is determined empirically \050!\051. Sometimes conditional) 108 429.67 T
+(compilation is used to avoid compilers\325 weak spots.) 108 413.67 T
+(Environment assumptions are treated by parameterizing the software) 108 385.67 T
+(\050preferably at compile time\051, often using macros. Many languages do not) 108 369.67 T
+(provide standard environment queries, so programs must be explicitly) 108 353.67 T
+(parameterized by installation machine or determine environmental) 108 337.67 T
+(parameters through) 108 321.67 T
+3 F
+(ad hoc) 219.91 321.67 T
+2 F
+( mechanisms.) 257.61 321.67 T
+(A) 108 293.67 T
+(vailability of interfaces can be dealt with either by restricting oneself to) 117.07 293.67 T
+(the least common denominator interfaces or by providing a platform-) 108 277.67 T
+(dependent layer which translates to native mechanisms. When it is not the) 108 261.67 T
+(interface that varies, but the functionality itself \050) 108 245.67 T
+3 F
+(e.g.) 378.47 245.67 T
+2 F
+( shared memory or) 398.68 245.67 T
+(threads\051, software must sometimes be extensively parameterized or even) 108 229.67 T
+(redesigned.) 108 213.67 T
+(At the binary level, software is of course only portable among machines of) 108 185.67 T
+(the same instruction set architecture. Moreover) 108 169.67 T
+(, the object or load format) 370.9 169.67 T
+(must be compatible, as must all system interfaces, including device registers) 108 153.67 T
+(\050when accessible to the software\051,) 108 137.67 T
+3 F
+(etc.) 301.5 137.67 T
+2 F
+( When these interfaces are ill-de\336ned,) 321.31 137.67 T
+(binary compatibility can be a major restraint on architectural innovation, as) 108 121.67 T
+(witness MS-DOS.) 108 105.67 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Portability and Distribution) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(When software is distributed as a linkable module, global names must be) 108 710.67 T
+(guaranteed to be unambiguous. This can be a particular problem when) 108 694.67 T
+(several lar) 108 678.67 T
+(ge systems are linked together) 165.63 678.67 T
+(.) 334.3 678.67 T
+0 F
+(ANDF support for portability) 108 626.67 T
+2 F
+(A distribution format such as ANDF cannot make software portable. ANDF) 108 597.67 T
+(provides the) 108 581.67 T
+3 F
+(mechanisms) 180.28 581.67 T
+2 F
+( needed for writing and distributing portable) 248.68 581.67 T
+(software.) 108 565.67 T
+(Language and compiler incompatibility are avoided by using the same) 108 537.67 T
+(translator \050front-end\051 for all machines. This has the important side-ef) 108 521.67 T
+(fect of) 493.24 521.67 T
+(allowing software implementors to use the full power of their programming) 108 505.67 T
+(language, rather than restricting themselves to the subset known to be) 108 489.67 T
+(correctly implemented by all compilers. Back-end validation is of course a) 108 473.67 T
+(critical link in this chain, but since the intermediate language is better) 108 457.67 T
+(-) 497.13 457.67 T
+(de\336ned than most programming languages, this is feasible.) 108 441.67 T
+(ANDF provides a full set of environment inquiries to support compile- and) 108 413.67 T
+(run-time parameterization. ANDF also provides explicit speci\336cation of) 108 397.67 T
+(numerical precision.) 108 381.67 T
+(ANDF provides install-time conditions and parameterization of both) 108 353.67 T
+(executable code and of data de\336nitions, thus supporting explicit) 108 337.67 T
+(parameterization when necessary) 108 321.67 T
+(.) 292.81 321.67 T
+(ANDF\325) 108 293.67 T
+(s modular structure also allows for tar) 149.98 293.67 T
+(get-speci\336c libraries of code,) 361.9 293.67 T
+(data de\336nitions, and macros which can present a standard interface for) 108 277.67 T
+(varied low-level interfaces. Of course, ANDF cannot create new) 108 261.67 T
+(functionality where it does not exist, but it can conditionally use dif) 108 245.67 T
+(ferent) 486.3 245.67 T
+(mechanisms in dif) 108 229.67 T
+(ferent environments.) 210.35 229.67 T
+(ANDF completely eliminates the problems associated with distribution of) 108 201.67 T
+(programs in binary) 108 185.67 T
+(. Naturally) 213.57 185.67 T
+(, it is independent of instruction-set and load-) 272.51 185.67 T
+(format. But it also guarantees uniqueness of names for library entry points.) 108 169.67 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+108 698.48 540 704 C
+108 700.79 459 700.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(7. Conclusion) 108 709.33 T
+2 14 Q
+(A universal intermediate language has been a dream for many years.) 108 675.14 T
+(UNCOL was an ambitious ef) 108 647.14 T
+(fort for the early 1960\325) 270.97 647.14 T
+(s. An attempt to solve) 398.42 647.14 T
+(the compiler) 108 631.14 T
+(-writing problem, it ultimately failed because language and) 178.06 631.14 T
+(compiler technology were not yet mature.) 108 615.14 T
+(In the 1970\325) 108 587.14 T
+(s, compiler) 175.62 587.14 T
+(-compilers ultimately contributed to solving the) 237.53 587.14 T
+(problem that UNCOL set itself: the economical production of compilers for) 108 571.14 T
+(new languages and new machines. Although their intermediate languages) 108 555.14 T
+(were fairly invariant by language and machine, this was not their principal) 108 539.14 T
+(goal.) 108 523.14 T
+(W) 108 495.14 T
+(ith the growth of open systems, distribution of portable programs became) 120.65 495.14 T
+(more important. Neither UNCOL nor compiler) 108 479.14 T
+(-compiler technology had) 370.43 479.14 T
+(addressed this issue. But a standard intermediate language would permit) 108 463.14 T
+(true open systems, where programmers could choose their language) 108 447.14 T
+(independently of the implementation platform, and hardware vendors could) 108 431.14 T
+(choose their hardware implementation independently of the installed base of) 108 415.14 T
+(program binaries.) 108 399.14 T
+(Programming languages solved part of the problem: Fortran and C were) 108 371.14 T
+(often used as intermediate languages. But they did not solve it all: neither) 108 355.14 T
+(was really suitable as an intermediate language.) 108 339.14 T
+(A closer analysis of the speci\336c needs of portable programs showed that) 108 311.14 T
+(particular mechanisms were essential. By designing an intermediate) 108 295.14 T
+(language from scratch which took account of these requirements, ANDF) 108 279.14 T
+(succeeds as a universal intermediate language.) 108 263.14 T
+(UNCOL was the \336rst step in three decades\325 work in software portability and) 108 235.14 T
+(compiler design whose culmination is ANDF) 108 219.14 T
+(.) 360.67 219.14 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(14 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+108 698.48 540 704 C
+108 700.79 459 700.79 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(8. Bibliography) 108 709.33 T
+0 14 Q
+(UNCOL) 108 651.14 T
+2 12 Q
+([Conway58]) 108 623.48 T
+(Melvin E. Conway) 216 623.48 T
+(, \322Proposal for an UNCOL,\323) 306.17 623.48 T
+3 F
+(Commun. ACM) 446.39 623.48 T
+2 F
+(1:3:5 \0501958\051.) 216 609.48 T
+2 10 Q
+(Suggests using a single-address model for UNCOL. Sketchy) 216 584.81 T
+(.) 457.42 584.81 T
+2 12 Q
+([Sammet69]) 108 559.48 T
+(Jean E. Sammet,) 216 559.48 T
+3 F
+(Pr) 298.95 559.48 T
+(ogramming Languages: History and Funda-) 310.5 559.48 T
+(mentals,) 216 545.48 T
+2 F
+(Prentice-Hall, 1969. Chapter X.2: UNCOL \050Signi\336cant) 259.31 545.48 T
+(Unimplemented Concepts\051, p.) 216 531.48 T
+(708.) 362.91 531.48 T
+([Share58]) 108 505.48 T
+(Share Ad-Hoc Committee on Universal Languages \050J. Strong, J.) 216 505.48 T
+(Olsztyn, J. W) 216 491.48 T
+(egstein, O. Mock, A. T) 280.33 491.48 T
+(ritter) 390.5 491.48 T
+(, T) 413.34 491.48 T
+(. Steel\051, \322The Problem) 425.78 491.48 T
+(of Programming Communication with Changing Machines,\323) 216 477.48 T
+3 F
+(Com-) 510.16 477.48 T
+(mun. ACM) 216 463.48 T
+0 F
+(1) 270.97 463.48 T
+2 F
+(:8:12 \050August 1958\051 and) 276.96 463.48 T
+0 F
+(1) 397.56 463.48 T
+2 F
+(:9:9 \050September 1958\051.) 403.55 463.48 T
+2 10 Q
+(Describes the requirements for UNCOL, the general concept, and the idea of) 216 438.81 T
+(bootstrapping. No proposal for the language itself.) 216 426.81 T
+2 12 Q
+([Steel60]) 108 401.48 T
+(T) 216 401.48 T
+(. B. Steel, Jr) 222.44 401.48 T
+(., \322UNCOL: Universal Computer Oriented Language) 280.42 401.48 T
+(Revisited,\323) 216 387.48 T
+3 F
+(Datamation) 272.63 387.48 T
+2 F
+( \050January/February 1960\051, p. 18.) 329.94 387.48 T
+2 10 Q
+(Presents the UNCOL concept, but no technical details.) 216 362.81 T
+2 12 Q
+([Steel61]) 108 337.48 T
+(T) 216 337.48 T
+(.B. Steel, Jr) 222.44 337.48 T
+(., \322A First V) 277.42 337.48 T
+(ersion of UNCOL,\323) 335.72 337.48 T
+3 F
+(Pr) 433.64 337.48 T
+(oc. W) 445.19 337.48 T
+(estern Joint) 471.4 337.48 T
+(Computer Confer) 216 323.48 T
+(ence) 299.85 323.48 T
+0 F
+(19) 324.82 323.48 T
+2 F
+( \050Los Angeles, May 9-1) 336.81 323.48 T
+(1, 1961\051, p. 371.) 450.61 323.48 T
+2 10 Q
+(Proposes an elaborate character set, the \336rst-order predicate calculus for a kind) 216 298.81 T
+(of syntactic data description, a notation for indirect addressing and indexing, a) 216 286.81 T
+(set of machine-level primitives, and a vague description of macros and declara-) 216 274.81 T
+(tives.) 216 262.81 T
+2 12 Q
+([Steel61AP]) 108 237.48 T
+-0.08 (T) 216 237.48 P
+-0.08 (. B. Steel, Jr) 222.44 237.48 P
+-0.08 (., \322UNCOL: The Myth and the Fact,\323) 280.18 237.48 P
+3 F
+-0.08 (Ann. Rev) 462.18 237.48 P
+-0.08 (. in Au-) 504.51 237.48 P
+(tomatic Pr) 216 223.48 T
+(ogramming) 266.53 223.48 T
+0 F
+(2) 324.83 223.48 T
+2 F
+( \0501961\051, p. 325.) 330.83 223.48 T
+2 10 Q
+(Discusses primarily the economics of UNCOL and the concept of bootstrapping.) 216 198.81 T
+0 14 Q
+(Intermediate Languages) 108 148.14 T
+2 12 Q
+([Brosgol80]) 108 120.48 T
+(Benjamin M. Brosgol, \322TCOL) 216 120.48 T
+2 10 Q
+(Ada) 362.92 117.48 T
+2 12 Q
+( and the \324Middle End\325 of the) 379.57 120.48 T
+(PQCC Ada Compiler) 216 106.48 T
+(,\323 Proc. ACM-Sigplan Symposium on the) 318.14 106.48 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(15 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 12 Q
+0 X
+(Ada Programming Language \050Boston, December 9-1) 216 712 T
+(1, 1980\051 in) 470.03 712 T
+3 F
+(Sigplan Notices) 216 698 T
+0 F
+(15) 294.63 698 T
+2 F
+(:1) 306.62 698 T
+(1:101 \050November 1980\051.) 315.51 698 T
+([Brown72]) 108 672 T
+(P) 216 672 T
+(. J. Brown, \322Levels of Language for Portable Software,\323) 221.34 672 T
+3 F
+(Com-) 494.79 672 T
+(mun. ACM) 216 658 T
+0 F
+(15) 270.97 658 T
+2 F
+(:12:1059 \050December 1972\051.) 282.96 658 T
+2 10 Q
+(High and low level macro languages as intermediate languages.) 216 633.33 T
+2 12 Q
+([Chow83]) 108 608 T
+(Frederick C. Chow and Mahadevan Ganapathi, \322Intermediate Lan-) 216 608 T
+(guages in Compiler Construction\321A Bibliography) 216 594 T
+(,\323) 461.08 594 T
+3 F
+(Sigplan No-) 472.41 594 T
+(tices) 216 580 T
+0 F
+(18) 240.98 580 T
+2 F
+(:1) 252.98 580 T
+(1:21 \050November 1983\051.) 261.86 580 T
+2 10 Q
+(See also [Ottenstein84].) 216 555.33 T
+2 12 Q
+([Coleman73]) 108 530 T
+(S. S. Coleman, P) 216 530 T
+(. C. Poole, and W) 295.97 530 T
+(. M. W) 379.82 530 T
+(aite, \322The Mobile Pro-) 412.84 530 T
+-0.05 (gramming System, Janus,\323) 216 516 P
+3 F
+-0.05 (Softwar) 347.44 516 P
+-0.05 (e\321Practice and Experience) 384.32 516 P
+0 F
+-0.05 (5) 521.72 516 P
+2 F
+-0.05 (:5) 527.72 516 P
+(\0501974\051.) 216 502 T
+([Ganapathi84]) 108 476 T
+(Mahadevan Ganapathi and Charles N. Fischer) 216 476 T
+(, \322Attributed Linear) 436.68 476 T
+(Intermediate Representations for Retar) 216 462 T
+(getable Code Generators,\323) 401.97 462 T
+3 F
+(Softwar) 216 448 T
+(e\321Practice and Experience) 252.88 448 T
+0 F
+(14) 390.43 448 T
+2 F
+(:4:347 \050April 1984\051.) 402.43 448 T
+([Griswold77]) 108 422 T
+(Ralph E. Griswold, \322An Alternative to SIL,\323 in [Brown77], p. 291.) 216 422 T
+([Haddon78]) 108 396 T
+(B. K. Haddon and W) 216 396 T
+(. M. W) 316.16 396 T
+(aite, \322Experience with the Universal) 349.17 396 T
+(Intermediate Language Janus,\323) 216 382 T
+3 F
+(Softwar) 367.87 382 T
+(e\321Practice and Experi-) 404.75 382 T
+(ence) 216 368 T
+0 F
+(8) 240.97 368 T
+2 F
+(:601 \0501978\051.) 246.97 368 T
+([Kornerup80]) 108 342 T
+(Peter Kornerup, Bent Bruun Kristensen, and Ole Lehrmann Mads-) 216 342 T
+(en, \322Interpretation and Code Generation Based on Intermediate) 216 328 T
+(Languages,\323) 216 314 T
+3 F
+(Softwar) 279.28 314 T
+(e\321Practice and Experience) 316.16 314 T
+0 F
+(10) 453.71 314 T
+2 F
+(:635 \0501980\051.) 465.7 314 T
+([Lamb87]) 108 288 T
+(David Alex Lamb, \322IDL: Sharing Intermediate Representations,\323) 216 288 T
+3 F
+(ACM T) 216 274 T
+(rans. Pr) 250.32 274 T
+(og. Lang. and Sys.) 289.2 274 T
+0 F
+(9) 380.81 274 T
+2 F
+(:3:297 \050July 1987\051.) 386.81 274 T
+2 10 Q
+(A formalism for describing data structures. Has been used to describe intermedi-) 216 249.33 T
+(ate languages \050) 216 237.33 T
+3 F
+(cf.) 275.95 237.33 T
+2 F
+( TCOL.Ada\051.) 285.66 237.33 T
+2 12 Q
+([Nelson79]) 108 212 T
+(Philip A. Nelson, \322A Comparison of P) 216 212 T
+(ASCAL Intermediate Lan-) 399.46 212 T
+(guages,\323 Proc. Sigplan Symposium on Compiler Construction) 216 198 T
+(\050Denver) 216 184 T
+(, August 6-10, 1979\051 in) 254.81 184 T
+3 F
+(Sigplan Notices) 369.74 184 T
+0 F
+(14) 448.37 184 T
+2 F
+(:8:208.) 460.37 184 T
+([Ottenstein84]) 108 158 T
+(Karl J. Ottenstein, \322Intermediate Program Representations in Com-) 216 158 T
+(piler Construction: A Supplemental Bibliography) 216 144 T
+(,\323) 452.43 144 T
+3 F
+(Sigplan Notic-) 463.75 144 T
+(es) 216 130 T
+0 F
+(19) 228.99 130 T
+2 F
+(:7:25 \050July 1984\051.) 240.98 130 T
+2 10 Q
+(A supplement to [Chow83].) 216 105.33 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(16 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 12 Q
+0 X
+([T) 108 712 T
+(eller80]) 118.48 712 T
+(J. T) 216 712 T
+(eller) 233.15 712 T
+(, \322Intermediate Languages,\323 unnumbered Siemens techni-) 253.98 712 T
+(cal report \050November 1980\051.) 216 698 T
+([W) 108 672 T
+(aite76]) 122.36 672 T
+(W) 216 672 T
+(.M. W) 226.22 672 T
+(aite,) 256.24 672 T
+(\322Intermediate Languages: Current Status,\323) 279.55 672 T
+(Portabili-) 487.06 672 T
+(ty of Numerical Software \050Oak Brook, 1976\051 in) 216 658 T
+3 F
+(Lectur) 447.5 658 T
+(e Notes in) 478.37 658 T
+(Computer Science) 216 644 T
+0 F
+(57) 306.6 644 T
+2 F
+(: 269.) 318.59 644 T
+0 14 Q
+(Portable Compilers) 108 592.67 T
+2 12 Q
+([Elsworth78]) 108 565 T
+(E. F) 216 565 T
+(. Elsworth, \322Compilation via an Intermediate Language,\323) 235.03 565 T
+3 F
+(Com-) 512.84 565 T
+(puter J.) 216 551 T
+0 F
+(22) 255.64 551 T
+2 F
+(:3:226 \0501978\051.) 267.63 551 T
+([Hennessy86]) 108 525 T
+(John Hennessy and Mahadevan Ganapathi, \322Advances in Compil-) 216 525 T
+(er T) 216 511 T
+(echnology) 234.81 511 T
+(,\323) 283.99 511 T
+3 F
+(Ann. Rev) 295.31 511 T
+(. Computer Science) 337.72 511 T
+0 F
+(1) 434.32 511 T
+2 F
+(:83 \0501986\051, p. 83.) 440.31 511 T
+([Johnson78]) 108 485 T
+(S. C. Johnson, \322A Portable Compiler: Theory and Practice,\323) 216 485 T
+3 F
+(Pr) 507.48 485 T
+(oc.) 519.03 485 T
+(Fifth Annual ACM Symposium on Principles of Pr) 216 471 T
+(ogramming Lan-) 457.09 471 T
+(guages) 216 457 T
+2 F
+( \050T) 249.98 457 T
+(ucson, January 23-25, 1978\051.) 263.88 457 T
+2 10 Q
+(The Portable C Compiler \050pcc\051.) 216 432.33 T
+2 12 Q
+([Lecarme78]) 108 407 T
+(Olivier Lecarme and Marie-Claude Peyrolle-Thomas, \322Self-com-) 216 407 T
+(piling Compilers: An Appraisal of their Implementation and Porta-) 216 393 T
+(bility) 216 379 T
+(,\323) 240.55 379 T
+3 F
+(Softwar) 251.87 379 T
+(e\321Practice and Experience) 288.75 379 T
+0 F
+(8) 426.3 379 T
+2 F
+(:149 \0501978\051.) 432.3 379 T
+([Leverett80]) 108 353 T
+(Bruce W) 216 353 T
+(. Leverett) 257.86 353 T
+3 F
+(et al.) 306.81 353 T
+2 F
+(, \322An Overview of the Production-Quality) 330.8 353 T
+(Compiler) 216 339 T
+(-Compiler Project,\323) 261.07 339 T
+3 F
+(Computer \050IEEE\051) 358.67 339 T
+2 F
+( \050August 1980\051, p.) 443.61 339 T
+(38.) 216 325 T
+([Richards71]) 108 299 T
+(M. Richards, \322The Portability of the BCPL Compiler) 216 299 T
+(,\323) 470.38 299 T
+3 F
+(Softwar) 481.7 299 T
+(e\321) 518.58 299 T
+(Practice and Experience) 216 285 T
+0 F
+(1) 337.57 285 T
+2 F
+(:135 \0501971\051.) 343.56 285 T
+([Richards77]) 108 259 T
+(M. Richards, \322The Implementation of BCPL,\323 in [Brown77], p.) 216 259 T
+(192.) 216 245 T
+([T) 108 219 T
+(anenbaum83]) 118.48 219 T
+( Andrew S. T) 216 219 T
+(anenbaum, Hans van Staveren, E.G. Keizer) 279.78 219 T
+(, and Jo-) 487.46 219 T
+-0.05 (han W) 216 205 P
+-0.05 (. Stevenson, \322A Practical T) 246.49 205 P
+-0.05 (ool Kit for Making Portable Com-) 376.02 205 P
+(pilers,\323) 216 191 T
+3 F
+(Commun. ACM) 253.97 191 T
+0 F
+(26) 331.59 191 T
+2 F
+(:9:654 \050September 1983\051.) 343.59 191 T
+2 10 Q
+(The Amsterdam Compiler Kit: perhaps the best-known compiler) 216 166.33 T
+(-compiler) 474.24 166.33 T
+(.) 512.55 166.33 T
+2 12 Q
+([W) 108 141 T
+(aite77T]) 122.36 141 T
+(W) 216 141 T
+(. M. W) 226.22 141 T
+(aite, \322Theory) 259.24 141 T
+(,\323 in [Brown77], p. 7.) 321.73 141 T
+([W) 108 115 T
+(aite77J]) 122.36 115 T
+(W) 216 115 T
+(. M. W) 226.22 115 T
+(aite, \322Janus,\323 in [Brown77], p. 277.) 259.24 115 T
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(17 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 12 Q
+0 X
+([W) 108 712 T
+(irth71]) 122.84 712 T
+(N. W) 216 712 T
+(irth, \322The Design of a Pascal Compiler) 241.5 712 T
+(,\323) 427.89 712 T
+3 F
+(Softwar) 439.21 712 T
+(e\321Practice) 476.09 712 T
+(and Experience) 216 698 T
+0 F
+(1) 293.93 698 T
+2 F
+(:309 \0501971\051.) 299.93 698 T
+0 14 Q
+(Portability) 108 646.67 T
+2 12 Q
+([Boyle77]) 108 619 T
+(James M. Boyle, \322Mathematical Software T) 216 619 T
+(ransportability Sys-) 427.1 619 T
+(tems\321Have the V) 216 605 T
+(ariations a Theme?,\323 in [Brown77], p. 357.) 303.94 605 T
+([Brown77]) 108 579 T
+(P) 216 579 T
+(.J. Brown, ed.,) 221.34 579 T
+3 F
+(Softwar) 293.96 579 T
+(e Portability: An Advanced Course) 330.84 579 T
+2 F
+(, Cam-) 499.39 579 T
+(bridge University Press \0501977\051, p. 357.) 216 565 T
+([Brown77B]) 108 539 T
+(P) 216 539 T
+(. J. Brown, \322Basic Implementation Concepts,\323 in [Brown77], p.) 221.34 539 T
+(20.) 216 525 T
+([Newey72]) 108 499 T
+(M. C. Newey) 216 499 T
+(, P) 279.84 499 T
+(. C. Poole, and W) 291.17 499 T
+(. M. W) 375.02 499 T
+(aite, \322Abstract Machine) 408.04 499 T
+(Modelling to Produce Portable Software\321A Review and Evalua-) 216 485 T
+(tion,\323) 216 471 T
+3 F
+(Softwar) 245.98 471 T
+(e\321Practice and Experience) 282.86 471 T
+0 F
+(2) 420.42 471 T
+2 F
+(: 107 \0501972\051.) 426.41 471 T
+([W) 108 445 T
+(aite75]) 122.36 445 T
+(W) 216 445 T
+(. M. W) 226.22 445 T
+(aite, \322Hints on Distributing Portable Software,\323) 259.24 445 T
+3 F
+(Soft-) 490.42 445 T
+(war) 216 431 T
+(e\321Practice and Experience) 234.22 431 T
+0 F
+(5) 371.77 431 T
+2 F
+(: 295 \0501975\051.) 377.77 431 T
+2 10 Q
+(Mostly about distribution media and character codes.) 216 406.33 T
+0 14 Q
+(C as an Intermediate Language) 108 355.67 T
+2 12 Q
+([Bothe89]) 108 328 T
+(Klaus Bothe, Christian Horn, \322\206bersetzung zwischen h\232heren Pro-) 216 328 T
+(grammiersprachen: eine L\232sung des UNCOL-Problems?,\323) 216 314 T
+3 F
+(An-) 499.79 314 T
+(gewandte Informatik) 216 300 T
+2 F
+( \050September 1989\051, p. 283.) 315.61 300 T
+2 10 Q
+(Proposes C as UNCOL.) 216 275.33 T
+2 12 Q
+([Lim91]) 108 250 T
+(Chu-Cheow Lim, Andreas Stolcke, \322Sather Language Design and) 216 250 T
+-0.07 (Performance Evaluation,\323 Computer Science Division, U.C. Berke-) 216 236 P
+(ley TR-91-034 \050May 1991\051.) 216 222 T
+2 10 Q
+(Implementation of an object-oriented language via a C intermediate language.) 216 197.33 T
+(Sather programs pay a small penalty compared to C source programs, but it is) 216 185.33 T
+(not clear how much of this is due to Sather) 216 173.33 T
+(\325) 387.65 173.33 T
+(s features and how much to going) 390.42 173.33 T
+(through C.) 216 161.33 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 423 63 R
+7 X
+V
+0 10 Q
+0 X
+(From UNCOL to ANDF: Progress in Standard Intermediate Languages) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Bibliography) 108 736.84 T
+459 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(18 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 12 Q
+0 X
+([T) 108 712 T
+(arditi91]) 118.48 712 T
+(David T) 216 712 T
+(arditi, Anurag Acharya, Peter Lee, \322No Assembly Re-) 254.8 712 T
+(quired: Compiling Standard ML to C,\323 Unpublished technical re-) 216 698 T
+(port, School of Computer Science, Carnegie-Mellon University) 216 684 T
+(.) 519.68 684 T
+2 10 Q
+(Using C as an intermediate language, ML is successfully implemented with a) 216 659.33 T
+(factor of 2 loss in speed, while preserving portability and true tail-recursion.) 216 647.33 T
+0 14 Q
+(For further information please contact:) 216 604.77 T
+(Stavr) 216 572.77 T
+(os Macrakis) 248.39 572.77 T
+(macrakis@osf.org) 216 556.77 T
+(\050617\051 621-7356) 216 540.77 T
+108 90 540 720 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "18" 19
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 18 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Symbol

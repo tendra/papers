@@ -1,0 +1,2711 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 9 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(6/29/93 04:37 pm richford@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(1 of 18) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (GANDF:Status and Design) 201.85 695 S
+0 12 Q
+(Richard L. Ford) 281.86 661 T
+(Open Softwar) 206.29 633 T
+(e Foundation Resear) 277.69 633 T
+(ch Institute) 383.42 633 T
+(April 7, 1993) 290.85 605 T
+(GANDF is an experimental ANDF installer component,) 180 569 T
+(based on the GCC back-end technology) 180 555 T
+(. Details of the) 381.57 555 T
+(design of GANDF and its curr) 180 541 T
+(ent status ar) 334.03 541 T
+(e pr) 397.11 541 T
+(esented.) 417.21 541 T
+108 467.98 540 471 C
+90 469.49 558 469.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 476.33 T
+2 14 Q
+(ANDF is an architecture- and language- neutral distribution format being) 108 438.64 T
+(developed by OSF and other collaborators around the world. It is based on) 108 422.64 T
+(the TDF technology provided by the Defence Research Agency \050DRA\051 of) 108 406.64 T
+(the UK Ministry of Defense.) 108 390.64 T
+(GANDF is an experimental ANDF translator being implemented at the) 108 362.64 T
+(Open Software Foundation \050OSF\051 Research Institute \050RI\051, based on the) 108 346.64 T
+(back-end technology of the Gnu C Compiler\050gcc\051, produced by the Free) 108 330.64 T
+(Software Foundation, along with some support routines from the DRA) 108 314.64 T
+(technology) 108 298.64 T
+(.) 169.27 298.64 T
+(The primary objective of GANDF is to show that ANDF installers can be) 108 270.64 T
+(successfully built by interfacing ANDF to existing compiler back ends.) 108 254.64 T
+(Thus system vendors can make use of ANDF while still preserving their) 108 238.64 T
+(compiler investments. Secondary objectives are to increase the availability) 108 222.64 T
+(of ANDF installers and to help educate others in the technology needed to) 108 206.64 T
+(write ANDF tools.) 108 190.64 T
+(An ANDF installer is considered \322successful\323 if it produces code that is) 108 162.64 T
+(correct and that has ef) 108 146.64 T
+(\336ciency that is close \050within 5%\051 to that produced by) 231.3 146.64 T
+(the best non-ANDF technology) 108 130.64 T
+(. The installers that DRA has developed) 283.14 130.64 T
+(\050tar) 108 114.64 T
+(getted to the Intel 386, Motorola 68k, MIPS, and SP) 127.17 114.64 T
+(ARC\051 achieve this) 418.17 114.64 T
+(level of ef) 108 98.64 T
+(\336ciency \050for selected benchmarks\051 when used in conjunction with) 164.47 98.64 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Status) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(the DRA C producer) 108 710.67 T
+(. One question to be answered by the GANDF) 223.42 710.67 T
+(experiment is whether similar ef) 108 694.67 T
+(\336ciency can be achieved by an installer that) 288.84 694.67 T
+(does not have detailed knowledge of the strategy of the ANDF producer) 108 678.67 T
+(. In) 510.98 678.67 T
+(other words, does the ANDF itself carry enough information for generation) 108 662.67 T
+(of ef) 108 646.67 T
+(\336cient code, or must one also know something about the patterns of) 133.77 646.67 T
+(ANDF that the producer will produce?) 108 630.67 T
+(More speci\336cally) 108 602.67 T
+(, we would like to see whether an ANDF installer based on) 204.63 602.67 T
+(a particular back-end technology \050e.g. the GCC back end\051 can achieve) 108 586.67 T
+(parity with a C compiler based on that same back end. Similar questions) 108 570.67 T
+(should be investigated for other languages \050e.g. Fortran, Cobol\051 when) 108 554.67 T
+(producers for those languages become available.) 108 538.67 T
+(The reader is referred to the paper \322GANDF: A GCC-based ANDF) 108 510.67 T
+(T) 108 494.67 T
+(ranslator\323 for further background information on GANDF) 116.06 494.67 T
+(.) 439.8 494.67 T
+108 444.98 540 448 C
+90 446.49 558 446.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. Status) 108 453.33 T
+2 14 Q
+(GANDF is still under development. Currently it supports 75 of the 87) 108 415.64 T
+(ANDF expression operators. This subset is suf) 108 399.64 T
+(\336cient to support ANSI C.) 368.52 399.64 T
+(Implementation of this subset was completed recently and there still are a) 108 383.64 T
+(few bugs left. Here is a summary of work still remaining to complete the) 108 367.64 T
+(GANDF project:) 108 351.64 T
+2 13 Q
+(\245) 122.4 328.31 T
+(Implement Pointers to bitstrings) 136.8 328.31 T
+(\245) 122.4 305.31 T
+(Support Debugging \050-g\051) 136.8 305.31 T
+(\245) 122.4 282.31 T
+(Implement local label constructs) 136.8 282.31 T
+(\245) 122.4 259.31 T
+(Support error treatments) 136.8 259.31 T
+(\245) 122.4 236.31 T
+(Implement long_jump.) 136.8 236.31 T
+(\245) 122.4 213.31 T
+(Implement \322visible\323 attribute of variables, environments, and variable) 136.8 213.31 T
+(access using environments) 136.8 198.31 T
+(\245) 122.4 175.31 T
+(Implement local allocation constructs) 136.8 175.31 T
+(\245) 122.4 152.31 T
+(Implement \322round_as_state\323 ar) 136.8 152.31 T
+(gument of the round construct) 298.84 152.31 T
+(\245) 122.4 129.31 T
+(Our GANDF work thus far revealed one feature of ANDF that could not be) 136.8 129.31 T
+(implemented while conforming to the C ABIs on the platforms that GANDF) 136.8 114.31 T
+(is presently tar) 136.8 99.31 T
+(geted to. That is the feature of ANDF which allowed a single) 213.02 99.31 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Status) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(procedure to return more than one type of result, depending on which return) 136.8 711.33 T
+(statement was executed. This feature, which is not needed to implement C or) 136.8 696.33 T
+(any other language we know of, has been removed from the latest ANDF) 136.8 681.33 T
+(draft \050not yet published\051.) 136.8 666.33 T
+(\245) 122.4 643.33 T
+(Recognize when a procedure has a variable number of ar) 136.8 643.33 T
+(guments. Currently) 431.88 643.33 T
+(we always assume this is the case, but that assumption requires a more) 136.8 628.33 T
+(costly entry and exit sequence than is necessary in the common case.) 136.8 613.33 T
+(\245) 122.4 590.33 T
+(Put out GCC loop notes. Loop notes are marks in GCC\325) 136.8 590.33 T
+(s R) 426.45 590.33 T
+(TL code that let it) 442.63 590.33 T
+(know where the beginning and ending of the loop are. The thing that) 136.8 575.33 T
+(prevents doing this from being straightforward is that the not all of the code) 136.8 560.33 T
+(in the body of an ANDF repeat operator is necessarily really in the loop. For) 136.8 545.33 T
+(example, the body of a repeat construct could include a branch of a labelled) 136.8 530.33 T
+(construct which does some calculation and then exits the loop. This) 136.8 515.33 T
+(problems should probably be solved by breaking the ANDF code into basic) 136.8 500.33 T
+(blocks \336rst and detecting the presence of loops. Currently) 136.8 485.33 T
+(, because of the) 435.65 485.33 T
+(absence of these marks, GANDF is not doing any loop optimizations.) 136.8 470.33 T
+(\245) 122.4 447.33 T
+(W) 136.8 447.33 T
+(e can\325) 148.02 447.33 T
+(t think of any real reasons why GANDF code should be any worse) 179.15 447.33 T
+(than GCC code. After the obvious impediments to good code \050mentioned) 136.8 432.33 T
+(above\051 are removed, if GANDF still produces poorer code than GCC, then) 136.8 417.33 T
+(we will have to study why) 136.8 402.33 T
+(. One possibility is that there are \322implicit) 272.65 402.33 T
+(contracts\323 between the GCC front end and back end, or between the DRA) 136.8 387.33 T
+(producers and installers.An example of this would be an installer which only) 136.8 372.33 T
+(optimized certain ANDF patterns and an associated producer which made) 136.8 357.33 T
+(sure to produce those patterns. If the installer then was used to install ANDF) 136.8 342.33 T
+(from another producer which did not take pains to produce those patterns,) 136.8 327.33 T
+(the code produced might be poor) 136.8 312.33 T
+(. Alternately) 307.39 312.33 T
+(, if an installer did not know) 371.46 312.33 T
+(what special patters were being produced by an producer) 136.8 297.33 T
+(, it might not be) 431.97 297.33 T
+(able to optimize as well as one that did. One solution to this is to make the) 136.8 282.33 T
+(implicit contracts more explicit. That is what things like GCC\325) 136.8 267.33 T
+(s loop notes) 461.43 267.33 T
+(are. Perhaps ANDF will also need some way of adding annotations \050the) 136.8 252.33 T
+(token mechanism would be one possibility\051. Or maybe ANDF might need to) 136.8 237.33 T
+(be enhanced in some other ways to avoid the performance penalty) 136.8 222.33 T
+(.) 479.26 222.33 T
+2 14 Q
+(GANDF has been con\336gured and tested on these seven platforms:) 108 194.67 T
+2 13 Q
+(\245) 122.4 171.33 T
+(HP P) 136.8 171.33 T
+(A-RISC 1.1/HPUX) 162.67 171.33 T
+(\245) 122.4 148.33 T
+(IBM RS-6000/AIX) 136.8 148.33 T
+(\245) 122.4 125.33 T
+(DEC ALPHA/OSF1) 136.8 125.33 T
+(\245) 122.4 102.33 T
+(Intel 386/OSF1) 136.8 102.33 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Status) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(\245) 122.4 711.33 T
+(Intel 386/SCO 3.2.1) 136.8 711.33 T
+(\245) 122.4 688.33 T
+(MIPS/Ultrix) 136.8 688.33 T
+(\245) 122.4 665.33 T
+(SP) 136.8 665.33 T
+(ARC/SUNOS) 150.04 665.33 T
+2 14 Q
+(As an example of how easy it is to con\336gure GANDF for a new tar) 108 631.67 T
+(get \050that) 483.13 631.67 T
+(is supported by GCC\051, Andy Johnson got GANDF working on three of the) 108 615.67 T
+(above platforms in a single week.) 108 599.67 T
+0 F
+(GANDF Sour) 108 565.67 T
+(ce Size Statistics) 189.76 565.67 T
+2 F
+(T) 108 530.67 T
+(o give some idea of the size of the components of GANDF) 115.57 530.67 T
+(, here are the) 443.61 530.67 T
+(number of lines of source code, including comments, for them:) 108 514.67 T
+2 13 Q
+(\245) 122.4 491.33 T
+(GCC component: 432k lines, of which 285k lines are tar) 136.8 491.33 T
+(get independent) 430.15 491.33 T
+(code and 147k lines are tar) 136.8 476.33 T
+(get dependent \050machine descriptions or) 276.12 476.33 T
+(con\336guration \336les\051. This includes only the part of GCC that GANDF is) 136.8 461.33 T
+(actually using, and does not include \336les automatically generated from the) 136.8 446.33 T
+(machine descriptions.) 136.8 431.33 T
+(\245) 122.4 408.33 T
+(DRA component: 24k lines. This is just the part used by GANDF) 136.8 408.33 T
+(.) 475.53 408.33 T
+(\245) 122.4 385.33 T
+(OSF component: 6k lines. When GANDF is completed this is likely to be) 136.8 385.33 T
+(more like 8k lines.) 136.8 370.33 T
+2 14 Q
+(A complete installer will also require a token binder) 108 336.67 T
+(. The current token) 398.69 336.67 T
+(binder) 108 320.67 T
+(, tld, is about 7k lines of source.) 143.19 320.67 T
+0 F
+(Effort Expended So Far) 108 286.67 T
+2 F
+(The GANDF project was started August 18, 1992 so it has been about 7) 108 251.67 T
+(months since it was started. However) 108 235.67 T
+(, GANDF has not been a full-time task) 316.51 235.67 T
+(during that time period \050my guess is about half time\051. The following \336gures) 108 219.67 T
+(are an estimate. More precise \336gures will be available at a later time. About) 108 203.67 T
+(600 total hours have been spent. Estimated percentages of time spent are as) 108 187.67 T
+(follows:) 108 171.67 T
+2 13 Q
+(\245) 122.4 148.33 T
+(30% studying GCC, validating GCC revisions by bootstrapping it on various) 136.8 148.33 T
+(platforms, building GAS and GDB.) 136.8 133.33 T
+(\245) 122.4 110.33 T
+(10% studying DRA installers) 136.8 110.33 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Status) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(\245) 122.4 711.33 T
+(5% building the DRA tools on various platforms, including creating the) 136.8 711.33 T
+(tar) 136.8 696.33 T
+(get-dependent token de\336nition libraries) 150.27 696.33 T
+(\245) 122.4 673.33 T
+(5% studying the instruction set architectures of tar) 136.8 673.33 T
+(get machines.) 398.04 673.33 T
+(\245) 122.4 650.33 T
+(50% actual time spent designing, coding and testing the OSF component of) 136.8 650.33 T
+(GANDF) 136.8 635.33 T
+(.) 180.48 635.33 T
+2 14 Q
+(As can be seen, only about 300 hours of time was spent on the actual) 108 601.67 T
+(designing and coding of the OSF part of GANDF) 108 585.67 T
+(. Much of the time was) 383.59 585.67 T
+(spent getting familiar with the tar) 108 569.67 T
+(get back-end technology) 294.68 569.67 T
+(. If someone) 431.33 569.67 T
+(already familiar with a compiler back-end technology were to take GANDF) 108 553.67 T
+(and adapt it to their back end, it should take less than this amount of time, at) 108 537.67 T
+(least to get to an equivalent stage of development \050GANDF is not \336nished) 108 521.67 T
+(yet\051.) 108 505.67 T
+0 F
+(GANDF T) 108 471.67 T
+(est Results) 169.29 471.67 T
+2 F
+(GANDF was tested using these test programs:) 108 442.67 T
+2 13 Q
+(\245) 122.4 419.33 T
+(As a preliminary to more complete testing, I used the Plum-Hall Sampler) 136.8 419.33 T
+(tests. This is a collection of 79 simple tests of a variety of ANSI C features. I) 136.8 404.33 T
+(used passing of the sampler as a prerequisite to attempting to run the) 136.8 389.33 T
+(following tests.) 136.8 374.33 T
+(\245) 122.4 351.33 T
+(Plum-Hall V) 136.8 351.33 T
+(ersion 3 ANSI C conformance suite. W) 202.09 351.33 T
+(e did not run the library) 405.53 351.33 T
+(tests because many of the systems do not support the full ANSI C library) 136.8 336.33 T
+(.) 515.02 336.33 T
+(\245) 122.4 313.33 T
+(Benchmarks: W) 136.8 313.33 T
+(e use the integer SPEC benchmarks \050gcc, espresso, li, and) 219.79 313.33 T
+(eqntott\051 and the dhrystone benchmark.) 136.8 298.33 T
+(\245) 122.4 275.33 T
+(The XFIG Drawing Program) 136.8 275.33 T
+(\245) 122.4 252.33 T
+(The Informix WINGZ spreadsheet.) 136.8 252.33 T
+2 14 Q
+(One point that should be made regarding these results is that all of the) 108 224.67 T
+(versions of GCC that have been used are advanced experimental versions,) 108 208.67 T
+(not production versions. Thus it should come as no surprise that these) 108 192.67 T
+(versions are not completely stable.) 108 176.67 T
+(The ports to the Alpha and MIPS platforms are still in a preliminary stage) 108 148.67 T
+(and although they are passing a signi\336cant number of individual test points,) 108 132.67 T
+(they have not yet been able to execute these tests without failing some test) 108 116.67 T
+(points.) 108 100.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Status) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The problems with the Alpha port are due to the immaturity of the GCC) 108 710.67 T
+(port to the Alpha. W) 108 694.67 T
+(e have used two versions of GCC for the Alpha port.) 222.3 694.67 T
+(Using GCC 2.3.1 the Alpha was able to pass 71 of the 79 Plum Hall) 108 678.67 T
+(Sampler tests. One problem with GCC 2.3.1 was that its method of handling) 108 662.67 T
+(variable numbers of ar) 108 646.67 T
+(guments was not consistent with the native compiler) 234.03 646.67 T
+(,) 526.9 646.67 T
+(so calls to library routines with va_list ar) 108 630.67 T
+(guments \050like vsprintf\051 do not) 336.66 630.67 T
+(work. I then upgraded to GCC 2.3.3+-alpha, a version of GCC 2.3.3 which) 108 614.67 T
+(has additional \336xes for the alpha. This version of GCC does handle variable) 108 598.67 T
+(numbers of ar) 108 582.67 T
+(guments in a compatible way) 185.46 582.67 T
+(. Unfortunately) 348.56 582.67 T
+(, this version of) 433.14 582.67 T
+(GCC requires V) 108 566.67 T
+(ersion 1.2 of the Alpha OSF/1 system software which we) 197.38 566.67 T
+(have not received. Thus this port is currently on hold.) 108 550.67 T
+(W) 108 522.67 T
+(e haven\325) 120.09 522.67 T
+(t really investigated the problems on the MIPS yet, but it appears) 167.62 522.67 T
+(that it is probably a simple con\336guration problem, because some of the tests) 108 506.67 T
+(are giving unaligned address traps.) 108 490.67 T
+(The following test results apply to the remaining platforms \050other than the) 108 462.67 T
+(Alpha and the MIPS\051.) 108 446.67 T
+(GANDF has passed the Plum-Hall V) 108 418.67 T
+(ersion 3 ANSI C conformance suite,) 313.59 418.67 T
+(without optimization, on all of remaining platforms. When optimization is) 108 402.67 T
+(enabled the remaining platforms all still pass the Plum Hall tests except for) 108 386.67 T
+(the RS/6000 which fails one of the expression tests \050this is not due to a) 108 370.67 T
+(problem in the ANDF to GCC translation, but the exposing of a latent GCC) 108 354.67 T
+(back-end bug\051.) 108 338.67 T
+(The Benchmark programs have successfully run on all of the platforms that) 108 310.67 T
+(can run the Plum Hall tests successfully) 108 294.67 T
+(, except that on the RS/6000 a few) 330.17 294.67 T
+(workarounds are necessary to get the gcc benchmark to run, and on the) 108 278.67 T
+(SP) 108 262.67 T
+(ARC even with the workarounds the gcc benchmark is not giving correct) 122.27 262.67 T
+(results. On the platforms where the Benchmarks ran successfully with the) 108 246.67 T
+(optimizer enabled, the GANDF code is running about 20% slower than the) 108 230.67 T
+(GCC code \050using the same GCC on which GANDF is based\051. W) 108 214.67 T
+(e believe) 469.09 214.67 T
+(that the reason that GANDF code is slower than GCC is lar) 108 198.67 T
+(gely due to the) 440.02 198.67 T
+(factors alluded to above, namely always assuming a variable number of) 108 182.67 T
+(ar) 108 166.67 T
+(guments, and the lack of loop notes. However) 118.62 166.67 T
+(, we will have to wait until) 374.93 166.67 T
+(we have solved those problems before we can say for sure.) 108 150.67 T
+(The XFIG Drawing program has successfully executed, without) 108 122.67 T
+(optimizations, on all of the platforms except the Alpha \050which we did not) 108 106.67 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(attempt\051. When the optimizer is turned on, only the SP) 108 710.67 T
+(ARC and Intel) 412.58 710.67 T
+(386/OSF1 platforms are still able to successfully execute XFIG.) 108 694.67 T
+(The WINGZ spreadsheet is only executing successfully on the two i386) 108 666.67 T
+(platforms. On the others WINGZ is able to start up \050usually\051, but does not) 108 650.67 T
+(execute correctly) 108 634.67 T
+(. Clearly GANDF still has a few bugs that need \336xing.) 203.05 634.67 T
+(However) 108 618.67 T
+(, we do not know whether these bugs are in GANDF proper \050i.e.) 158.72 618.67 T
+(the OSF component\051, or in either the DRA or GCC components. Since our) 108 602.67 T
+(WINGZ source license is only on a single platform, we cannot try building) 108 586.67 T
+(it with GCC on the other platforms.) 108 570.67 T
+108 526.98 540 530 C
+90 528.49 558 528.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. DESIGN) 108 535.33 T
+0 14 Q
+(Overall Structur) 108 497.64 T
+(e) 207.62 497.64 T
+2 F
+(GANDF reads the ANDF form of a program \050or program fragment\051 and) 108 468.64 T
+(produces the assembly language form of that program. GANDF is) 108 452.64 T
+(comprised of the DRA component, the GCC component, and the OSF) 108 436.64 T
+(component. GANDF does its work in the following \050logical\051 phases. W) 108 420.64 T
+(e) 507.17 420.64 T
+(mark each phase with the component responsible for that phase.) 108 404.64 T
+2 13 Q
+(\245) 122.4 381.31 T
+(T) 136.8 381.31 T
+(op level control and option processing \050GCC\051) 143.82 381.31 T
+(\245) 122.4 358.31 T
+(While Decoding ANDF) 136.8 358.31 T
+(, also do constant folding, expansion of tokens,) 259.82 358.31 T
+(expansion of conditional compilation constructs \050e.g. exp_cond\051, and other) 136.8 343.31 T
+(optimizations to be done while reading the ANDF) 136.8 328.31 T
+(. The result of this phase is) 395.8 328.31 T
+(an internal representation of the ANDF for the program. \050DRA\051) 136.8 313.31 T
+(\245) 122.4 290.31 T
+(T) 136.8 290.31 T
+(ranslate the internal form of ANDF into the GCC abstract syntax tree form.) 144.28 290.31 T
+(\050OSF\051) 136.8 275.31 T
+(\245) 122.4 252.31 T
+(T) 136.8 252.31 T
+(ranslate the GCC abstract syntax tree form. into the GCC R) 144.28 252.31 T
+(TL \050register) 452.59 252.31 T
+(transfer list\051 form. \050GCC\051) 136.8 237.31 T
+(\245) 122.4 214.31 T
+-0.12 (Optimize the GCC R) 136.8 214.31 P
+-0.12 (TL form, then convert it into assembly language. \050GCC\051) 244.96 214.31 P
+2 14 Q
+(There currently is no publicly available documentation of the DRA) 108 186.64 T
+(component, but it is mostly straightforward once one understands the) 108 170.64 T
+(internal representation it uses for ANDF) 108 154.64 T
+(. DRA does have documents) 332.66 154.64 T
+(describing their installers. The DRA component of GANDF is a tar) 108 138.64 T
+(get-) 484.32 138.64 T
+(independent subset of the DRA code for their installers.) 108 122.64 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The GCC component uses all of the parts of the GNU C compiler except the) 108 710.67 T
+(C lexer and parser) 108 694.67 T
+(. The internals of GCC are described in the) 209.42 694.67 T
+(documentation the accompanies GCC. GANDF is currently using variants) 108 678.67 T
+(of GCC, version 2.3.3 [we are using variants in order to get some of the) 108 662.67 T
+(latest work done by the University of Utah for the P) 108 646.67 T
+(A-RISC, and by Richard) 397.4 646.67 T
+(Kenner of NYU for the DEC Alpha].) 108 630.67 T
+(This rest of this section will concentrate on the design of the OSF) 108 602.67 T
+(component.) 108 586.67 T
+0 F
+(ANDF Internal Repr) 108 552.67 T
+(esentation) 232.88 552.67 T
+2 F
+(GANDF uses the internal representation for ANDF that is produced by the) 108 517.67 T
+(DRA component. This mostly consists of expression nodes \050the C typedef) 108 501.67 T
+(\322exp\323 is a pointer to such a node\051, but there are also declaration nodes) 108 485.67 T
+(\050typedef \322dec\323 points to such\051 which are only used to provide extra) 108 469.67 T
+(information \050e.g. external name, if any\051 for top-level expressions. There is a) 108 453.67 T
+(declaration node for each top-level tag that is either declared or de\336ned.) 108 437.67 T
+(The ANDF declaration nodes of the top level tags form a linked list whose) 108 409.67 T
+(head is pointed to by variable \322top_def\323. Each such declaration has a) 108 393.67 T
+(pointer to an exp node which forms the root of the exp tree representing the) 108 377.67 T
+(de\336nition or declaration. Thus one traverses the ANDF internal) 108 361.67 T
+(representation by traversing the list of declaration nodes and for each) 108 345.67 T
+(calling a recursive routine to walk the corresponding ANDF expression tree.) 108 329.67 T
+(Each ANDF exp node has a code \050called a \322tag\323 internally) 108 301.67 T
+(, and not to be) 434.26 301.67 T
+(confused with ANDF T) 108 285.67 T
+(AGs\051 that is used to tell what ANDF operator it) 239.4 285.67 T
+(represents. Most \336elds of an exp node are accessed via a C macro. For) 108 269.67 T
+(example, name\050e\051 will get the code \050tag\051 telling what kind of expression) 108 253.67 T
+(node e is. There is a mostly one-to-one correspondence between these codes) 108 237.67 T
+(and the ANDF expression constructs. However) 108 221.67 T
+(, some codes represent more) 371.68 221.67 T
+(than one kind of ANDF construct. For example, the ident_tag code is used) 108 205.67 T
+(to represent the variable and the identify constructs, as well as the formal) 108 189.67 T
+(parameters of a procedure. Such an exp node has an \322is_var\323 bit which will) 108 173.67 T
+(be true for variable constructs or parameters, and an \322is_param\323 bit which) 108 157.67 T
+(will be true for formal parameters. On the other hand, there are some codes) 108 141.67 T
+(that represent some special cases of a more general ANDF operator) 108 125.67 T
+(.) 484.91 125.67 T
+(Handling these as special cases makes it easier to produce good code. For) 108 109.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 18) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(example, ref) 108 710.67 T
+(f_tag is a special case of the add_ptr construct when the of) 177.68 710.67 T
+(fset) 505 710.67 T
+(ar) 108 694.67 T
+(gument is a constant.) 118.62 694.67 T
+(\322Son\323 and \322brother\323 \336elds of exp nodes are used to form exp trees. son\050f\051 is) 108 666.67 T
+(the \336rst son of exp node f, bro\050son\050f\051\051 is f) 108 650.67 T
+(\325) 341.15 650.67 T
+(s second son, and so on. There) 345.04 650.67 T
+(also is a \322last\323 \336eld. last\050s\051 is true if s is the last son of its father) 108 634.67 T
+(. In that) 463.61 634.67 T
+(case, bro\050s\051 points back up to the father rather than really being a brother) 108 618.67 T
+(\336eld \050this had me really confused until I \336gured it out\051. Sharing the same) 108 602.67 T
+(\336eld for both brother and father helps to keep the representation more) 108 586.67 T
+(compact.) 108 570.67 T
+(In some cases there are nodes, e, such that name\050e\051 is 0, rather than having a) 108 542.67 T
+(normal code. These are used to represent certain ANDF EXP lists, for) 108 526.67 T
+(example, the \322statements\323 ar) 108 510.67 T
+(gument of the sequence construct is such a) 268.62 510.67 T
+(node and its children are the individual statements.) 108 494.67 T
+(There is one case where the son \336eld does not really represent a son, namely) 108 466.67 T
+(for the obtain_tag construct \050internal code of name_tag\051. In this case son\050e\051) 108 450.67 T
+(points to the exp representing the introduction of the tag. Thus when) 108 434.67 T
+(recursively traversing an ANDF exp tree one must be careful not to recurse) 108 418.67 T
+(on the operand of the obtain_tag construct.) 108 402.67 T
+(Not all ANDF operands are represented using pointers to other exp nodes.) 108 374.67 T
+(Some operands are guaranteed to be constants at install time so they are) 108 358.67 T
+(represented as integers within the exp node. In fact, most of the \336elds of exp) 108 342.67 T
+(nodes are declared as unions so that they can hold either pointers of some) 108 326.67 T
+(sort \050exp or dec or to a character string or to diagnostic information\051, or) 108 310.67 T
+(integers or \337oating point numbers. Macros are used to make accessing a) 108 294.67 T
+(\336eld as a particular type convenient.) 108 278.67 T
+(One important \336eld in each exp node tells its shape. Actually ANDF shapes) 108 250.67 T
+(are also represented by exp nodes, but they have their own independent set) 108 234.67 T
+(of \322shape codes\323 so one must know when looking at an exp node whether it) 108 218.67 T
+(represents a shape or a \322normal\323 expression. In the external ANDF form) 108 202.67 T
+(most EXP nodes do not have their shape speci\336ed explicitly) 108 186.67 T
+(. The shape \336eld) 443.27 186.67 T
+(in the internal form is produced as part of the \322static semantic analysis\323 that) 108 170.67 T
+(is done by the DRA component code as the ANDF is being decoded. The) 108 154.67 T
+(shape of an exp node is deduced from the shape of its operands and, in some) 108 138.67 T
+(cases, from an explicit shape operand that tells what shape it should have) 108 122.67 T
+(\050e.g. the change_variety construct\051.) 108 106.67 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+(GCC Abstract T) 108 710.67 T
+(r) 206.45 710.67 T
+(ee Repr) 212.41 710.67 T
+(esentation) 258.39 710.67 T
+2 F
+(The output of the OSF component of GANDF is the GCC abstract tree) 108 675.67 T
+(representation \050also called expression trees, or just trees for short\051.) 108 659.67 T
+(Alternately) 108 643.67 T
+(, GANDF could have chosen to produce the GCC R) 170.04 643.67 T
+(TL) 459.89 643.67 T
+(representation directly) 108 627.67 T
+(. However) 232.6 627.67 T
+(, going to the TREEs has the advantage that) 290.32 627.67 T
+(it is tar) 108 611.67 T
+(get independent \050mostly\051 and simpler than the R) 146.62 611.67 T
+(TL. For full details) 415.89 611.67 T
+(of the GCC TREE representation, the sources of GCC should be consulted,) 108 595.67 T
+(in particular the \336les tree.def and tree.h. I will here just give a brief) 108 579.67 T
+(description of its main features. The GCC representation actually includes) 108 563.67 T
+(more than tree nodes \050e.g. the binding level stacks\051, but I will ignore most) 108 547.67 T
+(of those other details in this paper) 108 531.67 T
+(.) 296.88 531.67 T
+(The tree structure is a collection of tree nodes which are linked together by) 108 503.67 T
+(means of pointer \336elds in the nodes. Each node is a variant structure.) 108 487.67 T
+(Sometimes the \336elds of the node structures have more than one use,) 108 471.67 T
+(depending on the setting of other \336elds. Generally C macros are used to) 108 455.67 T
+(access information in the tree nodes, and if a component of a node is used in) 108 439.67 T
+(more than one way) 108 423.67 T
+(, there will usually be a distinct C macro for each. For) 213.95 423.67 T
+(example TREE_CODE\050e\051 is the expression used to reference the \336eld) 108 407.67 T
+(which tells which kind of tree node is pointed to by e. There are 122) 108 391.67 T
+(dif) 108 375.67 T
+(ferent tree codes in GCC 2.3.3 The tree codes are classi\336ed into one of 1) 123.29 375.67 T
+(1) 529.24 375.67 T
+(tree code types. A character is used to denote each tree code type. I\325ll now) 108 359.67 T
+(describe the tree code types and list their tree codes. In most cases the) 108 343.67 T
+(meaning of a tree code is evident from its name.) 108 327.67 T
+2 13 Q
+(\245) 122.4 304.33 T
+(\322d\323, declarations: FUNCTION_DECL, LABEL_DECL,) 136.8 304.33 T
+(CONST_DECL,TYPE_DECL, V) 136.8 289.33 T
+(AR_DECL,) 310.06 289.33 T
+(P) 136.8 274.33 T
+(ARM_DECL,RESUL) 142.82 274.33 T
+(T_DECL, FIELD_DECL. The declaration nodes are) 255.98 274.33 T
+(used not only to represent the information in a declaration, but also to) 136.8 259.33 T
+(represent a reference to the declared item. Thus the operands of the) 136.8 244.33 T
+(PLUS_EXPR node for \322I+J\323 would be pointers to the V) 136.8 229.33 T
+(AR_DECL nodes) 426.29 229.33 T
+(representing the declarations of I and J.) 136.8 214.33 T
+(\245) 122.4 191.33 T
+(\322t\323, types: VOID_TYPE, INTEGER_TYPE, REAL_TYPE,) 136.8 191.33 T
+(COMPLEX_TYPE, ENUMERAL_TYPE, BOOLEAN_TYPE,) 136.8 176.33 T
+(CHAR_TYPE, POINTER_TYPE, OFFSET_TYPE, REFERENCE_TYPE,) 136.8 161.33 T
+(METHOD_TYPE, FILE_TYPE, ARRA) 136.8 146.33 T
+(Y_TYPE, SET_TYPE,) 345.52 146.33 T
+(STRING_TYPE, RECORD_TYPE, UNION_TYPE, FUNCTION_TYPE,) 136.8 131.33 T
+(LANG_TYPE.) 136.8 116.33 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(\245) 122.4 711.33 T
+(\322c\323, constants: INTEGER_CST) 136.8 711.33 T
+(, REAL_CST) 300.66 711.33 T
+(, COMPLEX_CST) 370.4 711.33 T
+(,) 468.29 711.33 T
+(STRING_CST) 136.8 696.33 T
+(.) 213.04 696.33 T
+(\245) 122.4 673.33 T
+(\322r\323, memory references: COMPONENT_REF) 136.8 673.33 T
+(, BIT_FIELD_REF) 375.94 673.33 T
+(,) 475.9 673.33 T
+(INDIRECT_REF) 136.8 658.33 T
+(, OFFSET_REF) 226.66 658.33 T
+(, BUFFER_REF) 309.32 658.33 T
+(, ARRA) 394.15 658.33 T
+(Y_REF) 435.52 658.33 T
+(.) 474.17 658.33 T
+(\245) 122.4 635.33 T
+(\3221\323, unary expression operators: FIX_TRUNC_EXPR, FIX_CEIL_EXPR,) 136.8 635.33 T
+(FIX_FLOOR_EXPR, FIX_ROUND_EXPR, FLOA) 136.8 620.33 T
+(T_EXPR,) 405.17 620.33 T
+(NEGA) 136.8 605.33 T
+(TE_EXPR, ABS_EXPR, FFS_EXPR, BIT_NOT_EXPR,) 171.42 605.33 T
+(CARD_EXPR, CONVER) 136.8 590.33 T
+(T_EXPR, NOP_EXPR, NON_L) 271.65 590.33 T
+(V) 439.27 590.33 T
+(ALUE_EXPR,) 446.96 590.33 T
+(CONJ_EXPR, REALP) 136.8 575.33 T
+(AR) 255.37 575.33 T
+(T_EXPR, IMAGP) 272.62 575.33 T
+(AR) 367.38 575.33 T
+(T_EXPR) 384.64 575.33 T
+(\245) 122.4 552.33 T
+(\3222\323, binary expression operators:PLUS_EXPR, MINUS_EXPR,) 136.8 552.33 T
+(MUL) 136.8 537.33 T
+(T_EXPR, TRUNC_DIV_EXPR, CEIL_DIV_EXPR,) 164.46 537.33 T
+(FLOOR_DIV_EXPR, ROUND_DIV_EXPR, TRUNC_MOD_EXPR,) 136.8 522.33 T
+(CEIL_MOD_EXPR, FLOOR_MOD_EXPR, ROUND_MOD_EXPR,) 136.8 507.33 T
+(RDIV_EXPR, EXACT_DIV_EXPR, EXPON_EXPR, MIN_EXPR,) 136.8 492.33 T
+(MAX_EXPR, LSHIFT_EXPR, RSHIFT_EXPR, LROT) 136.8 477.33 T
+(A) 427.23 477.33 T
+(TE_EXPR,) 435.16 477.33 T
+(RROT) 136.8 462.33 T
+(A) 170.39 462.33 T
+(TE_EXPR, BIT_IOR_EXPR, BIT_XOR_EXPR, BIT_AND_EXPR,) 178.33 462.33 T
+(BIT_ANDTC_EXPR, TRUTH_AND_EXPR, TRUTH_OR_EXPR,) 136.8 447.33 T
+(IN_EXPR, RANGE_EXPR, COMPLEX_EXPR) 136.8 432.33 T
+(\245) 122.4 409.33 T
+(\322<\323 comparison operators: L) 136.8 409.33 T
+(T_EXPR, LE_EXPR, GT_EXPR, GE_EXPR,) 284.65 409.33 T
+(EQ_EXPR, NE_EXPR, SET_LE_EXPR) 136.8 394.33 T
+(\245) 122.4 371.33 T
+(\322e\323, other expressions: CONSTRUCT) 136.8 371.33 T
+(OR, COMPOUND_EXPR,) 334.93 371.33 T
+(MODIFY_EXPR, INIT_EXPR, T) 136.8 356.33 T
+(ARGET_EXPR, COND_EXPR,) 313.22 356.33 T
+(BIND_EXPR, CALL_EXPR, METHOD_CALL_EXPR,) 136.8 341.33 T
+(WITH_CLEANUP_EXPR, TRUTH_ANDIF_EXPR,) 136.8 326.33 T
+(TRUTH_ORIF_EXPR, TRUTH_NOT_EXPR, SA) 136.8 311.33 T
+(VE_EXPR, R) 399.88 311.33 T
+(TL_EXPR,) 471.25 311.33 T
+(ADDR_EXPR, REFERENCE_EXPR, ENTR) 136.8 296.33 T
+(Y_V) 373.44 296.33 T
+(ALUE_EXPR,) 397.01 296.33 T
+(PREDECREMENT_EXPR, PREINCREMENT_EXPR,) 136.8 281.33 T
+(POSTDECREMENT_EXPR, POSTINCREMENT_EXPR) 136.8 266.33 T
+(\245) 122.4 243.33 T
+(\322s\323, expressions with side ef) 136.8 243.33 T
+(fects: LABEL_EXPR, GOT) 284.07 243.33 T
+(O_EXPR,) 429.9 243.33 T
+(RETURN_EXPR, EXIT_EXPR, LOOP_EXPR) 136.8 228.33 T
+(\245) 122.4 205.33 T
+(\322b\323, blocks: BLOCK) 136.8 205.33 T
+(\245) 122.4 182.33 T
+(\322x\323, codes \336tting no category: ERROR_MARK, IDENTIFIER_NODE,) 136.8 182.33 T
+(OP_IDENTIFIER, TREE_LIST) 136.8 167.33 T
+(, TREE_VEC) 303.19 167.33 T
+0 14 Q
+(OSF Component Phases) 108 133.67 T
+2 F
+(The OSF component itself operators in three phases:) 108 98.67 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(\245) 122.4 711.33 T
+(An information collection pass. This pass is not yet implemented.) 136.8 711.33 T
+(\245) 122.4 688.33 T
+(An edit-declare pass. This pass would do ANDF to ANDF transformations) 136.8 688.33 T
+(\050it doesn\325) 136.8 673.33 T
+(t do any of these yet\051 and makes GCC tree declarations for the top) 185.98 673.33 T
+(level tags \050i.e. variables and procedures\051 so that they will be declared when) 136.8 658.33 T
+(needed in the third phase.) 136.8 643.33 T
+(\245) 122.4 620.33 T
+(A translation phase which does that actual translation from ANDF to GCC) 136.8 620.33 T
+(trees.) 136.8 605.33 T
+2 14 Q
+(Currently the edit-declare phase and the translate phase are both) 108 571.67 T
+(implemented by a single procedure, andf_to_tree, which analyzes an ANDF) 108 555.67 T
+(expression and returns a representation of it in terms of GCC trees. During) 108 539.67 T
+(the edit-declare phase, andf_to_tree does not recurse and ignores variable) 108 523.67 T
+(initializations, thus it only does declaration processing. Then during the) 108 507.67 T
+(translation phase it fully recurses, thus producing the GCC tree) 108 491.67 T
+(representations of the executable code and variable initializations.) 108 475.67 T
+0 F
+(T) 108 441.67 T
+(ranslation of Shapes) 116.3 441.67 T
+2 F
+(A basic part of translating an ANDF expression is \336nding the GCC data) 108 406.67 T
+(type that corresponds to the expression\325) 108 390.67 T
+(s ANDF shape. This translation is) 329.9 390.67 T
+(performed by routine andf_shape_to_tree. Every ANDF exp node \050whether) 108 374.67 T
+(a shape or \322normal\323\051 has two \336elds that can be used to save information) 108 358.67 T
+(about the translation of the node. Thus a node only needs to be translated) 108 342.67 T
+(once. If it is referenced several times, its \336rst translation will be reused on) 108 326.67 T
+(subsequent times. For shapes, the saved translation information is a pointer) 108 310.67 T
+(to the GCC tree for the type representing the shape.) 108 294.67 T
+(Here are the GCC types used to represent ANDF shapes:) 108 266.67 T
+2 13 Q
+(\245) 122.4 243.33 T
+(bottom and top are represented by void_type_node, corresponding to the C) 136.8 243.33 T
+(type void.) 136.8 228.33 T
+(\245) 122.4 205.33 T
+(GCC has signed and unsigned integer types with sizes powers of 2 up to the) 136.8 205.33 T
+(lar) 136.8 190.33 T
+(gest supported size. GCC supports long long, so on 32 bit platforms it) 150.27 190.33 T
+(supports up to 64 bit integers and on 64 bit platforms, up to 128 bit integers.) 136.8 175.33 T
+(The ANDF integer variety shapes map to the smallest of these that will hold) 136.8 160.33 T
+(its range of values.) 136.8 145.33 T
+(\245) 122.4 122.33 T
+(GCC supports \337oat, double and long double types \050the latter two are not) 136.8 122.33 T
+(necessarily distinct\051. These are used to represent the ANDF \337oating varieties.) 136.8 107.33 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(\245) 122.4 711.33 T
+(ANDF bit \336elds usually cannot be represented as a simple GCC type \050see) 136.8 711.33 T
+(explanation later\051, but under some circumstances they are represented using) 136.8 696.33 T
+(GCC structures.) 136.8 681.33 T
+(\245) 122.4 658.33 T
+(The ANDF proc shape is represented using a function type returning void) 136.8 658.33 T
+(without any information about it ar) 136.8 643.33 T
+(guments. This is necessary because) 318.71 643.33 T
+(ANDF does not provide any of that information with its proc shape. Later) 136.8 628.33 T
+(,) 519.66 628.33 T
+(variables of shape proc \050corresponding to C pointers to functions\051 must be) 136.8 613.33 T
+(cast to function types with the correct return type and ar) 136.8 598.33 T
+(guments, in order to) 427.23 598.33 T
+(be processed correctly by the GCC back end.) 136.8 583.33 T
+(\245) 122.4 560.33 T
+(All ANDF pointer shapes\050except pointers to bitstrings which are not yet) 136.8 560.33 T
+(implemented\051 are represented as pointers to char) 136.8 545.33 T
+(. This is necessary so that) 388.51 545.33 T
+(pointer arithmetic will be done correctly) 136.8 530.33 T
+(, since the ANDF of) 345.49 530.33 T
+(fsets already) 450.2 530.33 T
+(take into account the size of the items that the pointer points to.) 136.8 515.33 T
+(\245) 122.4 492.33 T
+(Of) 136.8 492.33 T
+(fsets are represented as signed integers of the same size as pointers. It is) 150.27 492.33 T
+(necessary that they be signed since ANDF of) 136.8 477.33 T
+(fsets can be negative. Currently) 370.61 477.33 T
+(bit-resolution of) 136.8 462.33 T
+(fsets are not implemented \050except for constant bit of) 220.61 462.33 T
+(fsets) 491.57 462.33 T
+(which are handled specially) 136.8 447.33 T
+(, see below\051, only byte-resolution of) 280.56 447.33 T
+(fsets. One) 468.22 447.33 T
+(issue that will need to be resolved for bit-resolution of) 136.8 432.33 T
+(fsets is whether to use) 418.24 432.33 T
+(double-sized of) 136.8 417.33 T
+(fsets for them or just to use the same size. In the former case,) 216.98 417.33 T
+(bit resolution of) 136.8 402.33 T
+(fsets could cover the whole address space, whereas in the) 219.53 402.33 T
+(latter case only 1/16 of the space could be covered \0501/2 because they are) 136.8 387.33 T
+(signed and 1/8 because 3 bits are needed to give bit within the byte\051.) 136.8 372.33 T
+(\245) 122.4 349.33 T
+(In ANDF) 136.8 349.33 T
+(, sizes are represented by of) 185.17 349.33 T
+(fsets. However) 329.16 349.33 T
+(, internally in the DRA) 406.53 349.33 T
+(representation there is a separate \322size\323 shape. I don\325) 136.8 334.33 T
+(t recall where it came) 411.68 334.33 T
+(from, but I represent it using an unsigned integer represented in a native) 136.8 319.33 T
+(\322word\323.) 136.8 304.33 T
+(\245) 122.4 281.33 T
+(ANDF has a \322compound\323 shape which is used to represent \336xed-sized) 136.8 281.33 T
+(aggregates such as structures and unions. However) 136.8 266.33 T
+(, unlike languages like C,) 400.61 266.33 T
+(ANDF does not tell what \336elds are in the \322compound\323, only its size and by) 136.8 251.33 T
+(implication its alignment. Since we don\325) 136.8 236.33 T
+(t have information about the) 347.21 236.33 T
+(components, one might think that these should be represented as arrays of) 136.8 221.33 T
+(bytes. However) 136.8 206.33 T
+(, owing to its C heritage, GCC does not treat arrays quite as) 217.78 206.33 T
+(\336rst class citizens. For example, it does not allow arrays as function return) 136.8 191.33 T
+(types. For this reason, we represent compound shapes using C structures) 136.8 176.33 T
+(which have a single component which is a byte array of the appropriate size.) 136.8 161.33 T
+(Y) 136.8 146.33 T
+(ou might think that there would be dif) 144.88 146.33 T
+(\336culty later when it is necessary to) 341.94 146.33 T
+(select a component from such a structure \050these arise from explicit pointer) 136.8 131.33 T
+(arithmetic in ANDF\051. How that problem is solved is discussed later) 136.8 116.33 T
+(.) 486.3 116.33 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(14 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(\245) 122.4 711.33 T
+(The ANDF NOF shapes are not represented as arrays, as one might expect,) 136.8 711.33 T
+(because of GCC\325) 136.8 696.33 T
+(s de\336ciencies in handling arrays \050as mentioned above\051.) 225.51 696.33 T
+(Instead structures are used for these also. An additional problem I) 136.8 681.33 T
+(encountered when I initially tried to use arrays was that the DRA code was) 136.8 666.33 T
+(digesting the NOF shapes so much \050it reduces an NOF to its alignment and) 136.8 651.33 T
+(size\051 that is was not possible to come up with appropriate array types. This) 136.8 636.33 T
+(is a problem that would not have arisen if an internal representation for) 136.8 621.33 T
+(shapes had been chosen that more closely mirrored the original ANDF) 136.8 606.33 T
+(.) 502.17 606.33 T
+(\245) 122.4 583.33 T
+(The local label shape is not currently supported. However) 136.8 583.33 T
+(, GCC allows label) 436.68 583.33 T
+(variables, so when these are supported I will use whatever type GCC uses) 136.8 568.33 T
+(for its label variables.) 136.8 553.33 T
+0 14 Q
+(T) 108 519.67 T
+(ranslation of ANDF expr) 116.3 519.67 T
+(essions) 264.9 519.67 T
+2 F
+(The andf_to_tree function is the main recursive procedure for translating) 108 484.67 T
+(ANDF exp nodes into GCC trees. Actually) 108 468.67 T
+(, andf_to_tree\325) 347.66 468.67 T
+(s return type,) 429.26 468.67 T
+(gandf_trans, is more complex than just a GCC tree node. The reason for this) 108 452.67 T
+(is that not all ANDF nodes can ef) 108 436.67 T
+(\336ciently be represented as simple GCC) 295.45 436.67 T
+(trees. gandf_trans is a typedef that is a pointer to a gandf_trans_node) 108 420.67 T
+(structure. These structures are dynamically allocated, as needed, to) 108 404.67 T
+(represent the results of translating an ANDF expression. The gandf_trans) 108 388.67 T
+(type has the following purposes:) 108 372.67 T
+2 13 Q
+(\245) 122.4 349.33 T
+(In the simplest case, its base_tree component will point to the GCC tree) 136.8 349.33 T
+(representing the translation of the expression.) 136.8 334.33 T
+(\245) 122.4 311.33 T
+(For pointer \050address\051 expressions, it can hold the base address, run-time) 136.8 311.33 T
+(of) 136.8 296.33 T
+(fsets \050with a constant factor\051 and a constant bit of) 147.38 296.33 T
+(fset as separate) 403.56 296.33 T
+(components of the translated value. This allows constant parts of addresses) 136.8 281.33 T
+(to be combined at compile time instead of at run-time.) 136.8 266.33 T
+(\245) 122.4 243.33 T
+(T) 136.8 243.33 T
+(o handle of) 143.82 243.33 T
+(fset expressions ef) 202.01 243.33 T
+(\336ciently) 297.7 243.33 T
+(. As with pointer expression, of) 339.42 243.33 T
+(fset) 502.57 243.33 T
+(expressions can be handled more ef) 136.8 228.33 T
+(\336ciently by constant on non-constant) 321.55 228.33 T
+(components to the of) 136.8 213.33 T
+(fsets.) 245.85 213.33 T
+(\245) 122.4 190.33 T
+(T) 136.8 190.33 T
+(o handle bitstring results, which also need to have information about the) 143.82 190.33 T
+(wide of the bitstring and whether it is signed or not. Also ANDF bitstrings) 136.8 175.33 T
+(can result either from a memory reference or by converting an integer) 136.8 160.33 T
+(expression to a bitstring. In both of these cases, the GCC code cannot be) 136.8 145.33 T
+(produced until it is seen what context the bitstring will be used in. Thus the) 136.8 130.33 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(15 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 13 Q
+0 X
+(gandf_trans result for a bitstring just captures the information about how the) 136.8 711.33 T
+(bitstring was created and it is then processed further when the bitstring is) 136.8 696.33 T
+(used.) 136.8 681.33 T
+2 14 Q
+(T) 108 647.67 T
+(ime does not permit giving the complete details of the translation of the) 116.06 647.67 T
+(ANDF operators, at this time, so the remainder of this section will just) 108 631.67 T
+(touch on the high-lights.) 108 615.67 T
+(The array andf_tree_code is used to map ANDF codes to GCC tree codes) 108 587.67 T
+(for the 38 ANDF operators which have a straightforward translation into) 108 571.67 T
+(GCC codes \050this are mostly unary and binary expressions\051.) 108 555.67 T
+(A utility routine, andf_proc_to_tree, is used to set up a GCC function) 108 527.67 T
+(de\336nition tree.) 108 511.67 T
+(ANDF uses explicit pointer arithmetic to get the address of array elements) 108 483.67 T
+(and structure components, then uses the contents construct to reference the) 108 467.67 T
+(data item at that address. When such a pointer value is at an variable of) 108 451.67 T
+(fset) 506.05 451.67 T
+(from the base address, GANDF uses explicit pointer arithmetic and the) 108 435.67 T
+(INDIRECT_REF \050like C\325) 108 419.67 T
+(s * operator\051 operator to reference the data. When) 251.81 419.67 T
+(the of) 108 403.67 T
+(fset relative to the base address is constant \050such as would be the case) 140 403.67 T
+(for a component of a C structure\051, GANDF uses a COMPONENT_REF) 108 387.67 T
+(.) 509.1 387.67 T
+(One problem that had to be faced here was whether it was going to be) 108 371.67 T
+(necessary to create dummy structure types with components at the) 108 355.67 T
+(appropriate of) 108 339.67 T
+(fsets in order to make use of the COMPONENT_REF) 186.62 339.67 T
+(operator) 108 323.67 T
+(. As it turned out, we do need to have a \336eld declared with the) 153.85 323.67 T
+(appropriate type and of) 108 307.67 T
+(fset, but it is not necessary that it be declared in the) 237.92 307.67 T
+(structure type you are accessing. Thus GANDF uses a hash table to keep) 108 291.67 T
+(track of \336elds that it has declared with each type and bit of) 108 275.67 T
+(fset \050and width, if) 435.73 275.67 T
+(it was a bitstring\051. Another place where there might have been a problem) 108 259.67 T
+(was in initializing such structures. As it turned out, even then it was not) 108 243.67 T
+(necessary to create full structures with \336elds at the proper of) 108 227.67 T
+(fsets. GCC has) 445.82 227.67 T
+(a facility where initial values of structure can be labeled with the component) 108 211.67 T
+(that they are to initialize. GANDF was able to make constructors with such) 108 195.67 T
+(explicit labels. In that case, GCC does not bother to check that the \336elds) 108 179.67 T
+(being selected are actually part of the structure being initialized. However) 108 163.67 T
+(, it) 521.28 163.67 T
+(might be that some other compiler back ends will be more rigid than GCC.) 108 147.67 T
+(In that case, it might be necessary to do a more thorough analysis of ANDF) 108 131.67 T
+(memory reference patterns, in order to try to recover some of the data) 108 115.67 T
+(structure information that is lost in ANDF) 108 99.67 T
+(.) 342.41 99.67 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(DESIGN) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(16 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(As alluded to above, pointer) 108 710.67 T
+(, of) 265.61 710.67 T
+(fset, and bitstring constructs do not return a) 284.01 710.67 T
+(single GCC tree result, but rather a structure used to accumulate \050at install) 108 694.67 T
+(time\051 such expressions. When it is necessary to reduce such a result to a) 108 678.67 T
+(single GCC tree expression, the trans_tval routine is used to combine the) 108 662.67 T
+(various components into a single tree.) 108 646.67 T
+(For the conditional construct, the result is either \336rst expression, if it) 108 618.67 T
+(terminates normally) 108 602.67 T
+(, or the alt expression otherwise. When the shape being) 219.41 602.67 T
+(returned is T) 108 586.67 T
+(OP \050i.e. actually no meaningful result\051, this can be) 179.25 586.67 T
+(implemented using \337ow of control operators. However) 108 570.67 T
+(, when a meaningful) 414.84 570.67 T
+(result is being returned, it is necessary that a temporary variable of the) 108 554.67 T
+(appropriate shape be created and passed to the subsidiary expressions.) 108 538.67 T
+(When andf_to_tree is called with such a suggested tar) 108 522.67 T
+(get, it assigns the) 409.3 522.67 T
+(result of translating the expression into the tar) 108 506.67 T
+(get. Similar techniques are) 364.63 506.67 T
+(used to translate the repeat, labelled, and sequence constructs when they) 108 490.67 T
+(return a meaningful result.) 108 474.67 T
+(The work that andf_to_tree does is factored into two parts. First there is a) 108 446.67 T
+(switch statement that is used to preprocess the ar) 108 430.67 T
+(guments to the expression) 380.56 430.67 T
+(according to one of these schemes:) 108 414.67 T
+2 13 Q
+(\245) 122.4 391.33 T
+(All of the ar) 136.8 391.33 T
+(guments are translated \050by recursive calls to andf_to_tree\051 and) 199.67 391.33 T
+(the results of their translation saved in handy local variables \050t1, t2, etc.\051) 136.8 376.33 T
+(while the untranslated ar) 136.8 361.33 T
+(guments are saved in local variables \050e1, e2, etc.\051.) 264.59 361.33 T
+(This scheme e is used for things like binary operators which always must) 136.8 346.33 T
+(have their ar) 136.8 331.33 T
+(guments evaluated before they can be evaluated.) 201.47 331.33 T
+(\245) 122.4 308.33 T
+(The untranslated ar) 136.8 308.33 T
+(guments are saved in local variables \050e1, e2, etc.\051, but the) 236.81 308.33 T
+(ar) 136.8 293.33 T
+(guments are not translated yet, because they must be translated in a) 146.66 293.33 T
+(speci\336c order) 136.8 278.33 T
+(. This scheme is used for \337ow of control constructs like) 206.4 278.33 T
+(sequence, conditional, and repeat, as well as some other others that need) 136.8 263.33 T
+(special processing.) 136.8 248.33 T
+(\245) 122.4 225.33 T
+(The obtain_tag construct is handled specially) 136.8 225.33 T
+(. I mentioned before that each) 370.74 225.33 T
+(exp node could save up to two translated results. Ordinary expressions save) 136.8 210.33 T
+(only one, but declarative constructs like identify and variable need to save) 136.8 195.33 T
+(two results: the tree node of the declaration of the tag that they introduced,) 136.8 180.33 T
+(and the result of translating the body of the construct. In the case of) 136.8 165.33 T
+(obtain_tag, its operand is a pointer to the variable or identify construct that) 136.8 150.33 T
+(introduced the tag being referenced. This scheme will fetch the declaration) 136.8 135.33 T
+(translation into local variable t1.) 136.8 120.33 T
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusions) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(17 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(After the above switch statement has done some standard processing of the) 108 710.67 T
+(operands of the expression, there is another switch statement which) 108 694.67 T
+(completes the processing for each expression.) 108 678.67 T
+(The operations on pointer) 108 650.67 T
+(, of) 251.62 650.67 T
+(fset, or bitstring operands are characterized by) 270.02 650.67 T
+(sometimes lengthy case analysis on the translations of their operands \050e.g.) 108 634.67 T
+(does operand 1 have a constant bit of) 108 618.67 T
+(fset, does operand 2 have a run-time) 315.65 618.67 T
+(of) 108 602.67 T
+(fset, etc.\051) 119.4 602.67 T
+(For a number of ANDF constructs that return aggregate results \050e.g.) 108 574.67 T
+(concat_nof\051, the GCC CONSTRUCT) 108 558.67 T
+(OR operator was indispensable. This) 317.62 558.67 T
+(operator allows one to build a structure value in which the components have) 108 542.67 T
+(the speci\336ed expressions as values. Any back end wishing to translate) 108 526.67 T
+(ANDF would do well to make sure it has such a powerful building block to) 108 510.67 T
+(use.) 108 494.67 T
+(One unexpected thing I discovered was that a number of the operations) 108 466.67 T
+(which are binary in the external ANDF are extended in the internal) 108 450.67 T
+(representation to be n-ary) 108 434.67 T
+(. My initial implementation of these only looked at) 250.47 434.67 T
+(the \336rst two operands. In the cases where the DRA decoding code had made) 108 418.67 T
+(some of these n-ary) 108 402.67 T
+(, I was losing part of the computation. Of course it was) 217.06 402.67 T
+(relatively easy to handle these as n-ary once I knew that it was necessary) 108 386.67 T
+(.) 514.7 386.67 T
+(DRA suggests that the make_value construct not result in any code.) 108 358.67 T
+(However) 108 342.67 T
+(, I found dif) 158.72 342.67 T
+(\336culty in doing this because the make_value was used) 225.31 342.67 T
+(in contexts where some value for it was needed \050e.g. it was the de\336nition of) 108 326.67 T
+(an identify whose tag is referenced\051. Perhaps a better analysis of the ANDF) 108 310.67 T
+(could eliminate such references to unde\336ned values, but for now I\325m) 108 294.67 T
+(supplying a zero value for make_value.) 108 278.67 T
+(For the identify construct, I use GCC\325) 108 250.67 T
+(s save_expr tree code. This operation) 319.82 250.67 T
+(is such that even if there are multiple reference to the tree node, the) 108 234.67 T
+(expression will only be evaluated once. Subsequent references will get the) 108 218.67 T
+(value from the \336rst evaluation \050which will have been saved somewhere\051.) 108 202.67 T
+108 152.98 540 156 C
+90 154.49 558 154.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. Conclusions) 108 161.33 T
+2 14 Q
+(The GANDF experiment is not yet complete, but our results so far are) 108 123.64 T
+(encouraging. Final conclusions must await the completion of the) 108 107.64 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(GANDF:Status and Design) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusions) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(18 of 18) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(experiment, but we believe the results so far show that interfacing ANDF to) 108 710.67 T
+(an existing compiler back end is practical and relatively easy to do, and that) 108 694.67 T
+(the result will probably produce code with quality comparable to that of a) 108 678.67 T
+(native compiler based on the same back end. In addition, for a retar) 108 662.67 T
+(getable) 484.67 662.67 T
+(back end like GCC, the additional ef) 108 646.67 T
+(fort to get additional ANDF installer) 312.55 646.67 T
+(tar) 108 630.67 T
+(gets is quite small.) 122.51 630.67 T
+0 F
+(For further information please contact:) 216 602.67 T
+(Richard Ford) 216 570.67 T
+(richford@osf.org) 216 554.67 T
+(\050617\051 621-7392) 216 538.67 T
+108 90 540 720 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "18" 19
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 18 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman

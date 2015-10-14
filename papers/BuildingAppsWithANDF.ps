@@ -1,0 +1,3886 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 20 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-BoldItalic FMFONTDEFINE
+3 0 /Courier FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+5 0 /Courier-Oblique FMFONTDEFINE
+6 0 /Helvetica-Narrow FMFONTDEFINE
+7 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(7/12/93 12:48 pm) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+1 12 Q
+0 X
+(1 of 18) 506.02 55 T
+108 90 540 711 R
+7 X
+V
+2 24 Q
+0 X
+-1.2 (Building applications using ANDF) 170.24 695 S
+1 12 Q
+(Stavr) 278.97 601 T
+(os Macrakis) 306.73 601 T
+1 14 Q
+(An ANDF-based application is built in two) 180 511.67 T
+(main steps: building target-independent) 180 495.67 T
+(modules, and building target-dependent load) 180 479.67 T
+(\336les fr) 180 463.67 T
+(om them and target-dependent modules.) 217.44 463.67 T
+(This paper shows how) 180 447.67 T
+(.) 311.79 447.67 T
+108 387.98 540 391 C
+90 389.49 558 389.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(1. Introduction) 108 396.33 T
+0 14 Q
+2.72 (The standard C compiler) 108 364.64 P
+3 F
+5.99 -0.7 (cc) 261.12 364.64 B
+0 F
+2.72 ( translates a set of C source modules into a) 276.51 364.64 P
+(runnable program.) 108 348.64 T
+2.4 (The ANDF C compiler) 108 320.64 P
+3 F
+5.27 -0.7 (tcc) 250.5 320.64 B
+0 F
+2.4 ( consists of two parts. The C producer) 273.58 320.64 P
+3 F
+5.27 -0.7 (tdfc) 509.22 320.64 B
+0 F
+3.12 (translates portable C source modules) 108 304.64 P
+0 11 Q
+2.45 (1) 326.45 310.24 P
+0 14 Q
+3.12 ( into ANDF) 331.95 304.64 P
+0 11 Q
+2.45 (2) 405.05 310.24 P
+0 14 Q
+3.12 (; the ANDF installers) 410.54 304.64 P
+4 F
+(x) 108 288.64 T
+3 F
+-0.7 (trans) 114.21 288.64 S
+0 F
+( translate ANDF into a runnable program.) 152.69 288.64 T
+4.02 (In both cases, the compilation depends on system libraries. But unlike) 108 260.64 P
+7.7 (traditional C, ANDF C permits specifying fully abstract interfaces) 108 244.64 P
+(separately from their machine-dependent instantiations.) 108 228.64 T
+4.12 (A distributable ANDF module is built by an ANDF producer with an) 108 200.64 P
+1.33 (abstract environment such as POSIX. A runnable application is built by an) 108 184.64 P
+4.26 (installer from the distributable module and the concrete system library) 108 168.64 P
+(interfaces and implementations which instantiate that abstract environment.) 108 152.64 T
+108 120 540 140.09 C
+108 127.99 239.98 127.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 11 Q
+0 X
+0 K
+(1.  See the paper) 108 112.67 T
+4 F
+(Porting to ANDF) 183.66 112.67 T
+0 F
+( for a discussion of portable programming issues.) 259.96 112.67 T
+(2.  See the paper) 108 97.67 T
+4 F
+(The Structur) 183.66 97.67 T
+(e of ANDF) 238.5 97.67 T
+0 F
+( for a discussion of the internal form of ANDF) 286.1 97.67 T
+(.) 489.96 97.67 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Basic use of tcc) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(2 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+4.96 (This paper shows how to use ANDF tools to build applications. W) 108 710.67 P
+4.96 (e) 533.79 710.67 P
+4.39 (concentrate on the common, important cases: many other facilities are) 108 694.67 P
+(documented in the) 108 678.67 T
+3 F
+-0.7 (man) 214.87 678.67 S
+0 F
+( pages.) 237.96 678.67 T
+108 618.98 540 622 C
+90 620.49 558 620.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(2. Basic use of) 108 627.33 T
+3 14 Q
+-0.7 (tcc) 207.95 627.33 S
+3.89 -0.7 (tcc) 108 595.64 B
+0 F
+1.77 ( is the driver for the ANDF tools. It can be thought of as an ordinary) 131.09 595.64 P
+1.01 (compiler which happens to use ANDF as its intermediate language. In fact,) 108 579.64 P
+3 F
+10.24 -0.7 (tcc) 108 563.64 B
+0 F
+4.65 ( can be used as a plug-compatible replacement for the native) 131.09 563.64 P
+3 F
+10.24 -0.7 (cc) 524.61 563.64 B
+0 F
+(compiler:) 108 547.64 T
+3 13.5 Q
+-0.68 (> tcc -Ysystem prog.c) 144 519.98 S
+-0.68 (> a.out) 144 504.48 S
+0 12 Q
+(-Ysystem specifies that the system\325s own header files will be used to define) 165.6 483.98 T
+(the programming environment.) 165.6 470.48 T
+0 14 Q
+(More interestingly) 108 443.64 T
+(,) 210.86 443.64 T
+3 F
+-0.7 (tcc) 217.85 443.64 S
+0 F
+( can stop after producing the ANDF form:) 240.94 443.64 T
+3 13.5 Q
+-0.68 (> tcc -Ysystem -Fj prog.c) 144 415.98 S
+3 14 Q
+-0.7 (-Fj) 165.6 395.48 S
+0 12 Q
+( stops the compilation process after producing the) 188.69 395.48 T
+3 14 Q
+-0.7 (.j) 430.52 395.48 S
+0 12 Q
+( file) 445.91 395.48 T
+0 14 Q
+3.23 (This produces the machine-independent \336le) 108 368.64 P
+3 F
+7.11 -0.7 (prog.j) 372.48 368.64 B
+0 F
+3.23 (, which can then be) 418.66 368.64 P
+(translated to a runnable program:) 108 352.64 T
+3 13.5 Q
+-0.68 (> tcc prog.j) 144 324.98 S
+0 14 Q
+2.47 (\050Like) 108 297.14 P
+3 F
+5.43 -0.7 (cc) 144.27 297.14 B
+0 F
+2.47 (,) 159.67 297.14 P
+3 F
+5.43 -0.7 (tcc) 169.13 297.14 B
+0 F
+2.47 ( uses the \336le type as encoded in the \336lename extension to) 192.22 297.14 P
+(determine the appropriate operation.) 108 281.14 T
+0 11 Q
+(3) 311.62 286.74 T
+0 14 Q
+(\051) 317.11 281.14 T
+4.76 (Compiling with the) 108 253.14 P
+3 F
+10.46 -0.7 (-Ysystem) 234.61 253.14 B
+0 F
+4.76 ( \337ag abstracts from the host machine\325) 296.17 253.14 P
+4.76 (s) 534.56 253.14 P
+1.26 (instruction set, but not the programming environment de\336ned by its header) 108 237.14 P
+(\336les, so in general the) 108 221.14 T
+3 F
+-0.7 (.j) 233.92 221.14 S
+0 F
+(\325) 249.31 221.14 T
+(s will not be installable on other platforms.) 253.2 221.14 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 11 Q
+0 X
+0 K
+(3.  See \322File types\323 \050p.) 108 97.67 T
+(3\051 for more details.) 210.52 97.67 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Envir) 108 736.84 T
+(onments) 127.4 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(3 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(3. Environments) 108 709.33 T
+0 14 Q
+0.58 (Ordinary C compilers implicitly use the environment of the host machine as) 108 677.64 P
+7.55 (the environment for the program. This is true not only for data) 108 661.64 P
+(representations and instruction set, but also for system libraries.) 108 645.64 T
+0 11 Q
+(4) 464.76 651.24 T
+0 14 Q
+1.96 (The) 108 617.64 P
+3 F
+4.32 -0.7 (tcc) 135.22 617.64 B
+0 F
+1.96 ( compiler allows explicit choice of the environment using the) 158.31 617.64 P
+3 F
+4.32 -0.7 (-Y) 524.61 617.64 B
+0 F
+(\337ag. Currently supported standard environments include:) 108 601.64 T
+3 F
+-0.7 (ansi) 129.6 577.64 S
+0 F
+(Strict ANSI C, including the ANSI C library) 216 577.64 T
+(. This is the) 464.61 577.64 T
+(default. Note that the ANSI C library provides only) 216 561.64 T
+(minimal \336le primitives, and no directory primitives, in) 216 545.64 T
+(order to be independent of the operating system.) 216 529.64 T
+3 F
+-0.7 (posix) 129.6 505.64 S
+0 F
+(The environment de\336ned by POSIX P1003.1, a superset) 216 505.64 T
+(of the) 216 489.64 T
+3 F
+-0.7 (ansi) 251.75 489.64 S
+0 F
+( environment.) 282.53 489.64 T
+3 F
+-0.7 (xpg3) 129.6 465.64 S
+0 F
+(The environment de\336ned by the X/Open Portability) 216 465.64 T
+(Guide, version 3, a superset of the) 216 449.64 T
+3 F
+-0.7 (posix) 410.69 449.64 S
+0 F
+( environment.) 449.17 449.64 T
+2.77 (Besides environments de\336ned by standards,) 108 421.64 P
+3 F
+6.09 -0.7 (tcc) 370.58 421.64 B
+0 F
+2.77 ( also supports the native) 393.67 421.64 P
+(environment:) 108 405.64 T
+3 F
+-0.7 (system) 129.6 381.64 S
+0 F
+(The local \050native\051 environment.) 216 381.64 T
+6.28 (Although the system environment may be a superset of a standard) 108 353.64 P
+3 (environment, it also allows the application to depend on implementation) 108 337.64 P
+4.05 (choices, extensions, or even errors in the interface. Thus, it should be) 108 321.64 P
+(avoided when developing portable programs.) 108 305.64 T
+2.76 (A portable application compiled in a given) 108 277.64 P
+4 F
+2.76 (standar) 370.2 277.64 P
+2.76 (d) 412.44 277.64 P
+0 F
+2.76 ( environment should) 419.44 277.64 P
+(install correctly on all platforms supporting that environment.) 108 261.64 T
+0 11 Q
+(5) 453.12 267.24 T
+0 14 Q
+0.98 (An ANDF environment de\336nes available library interfaces and the minimal) 108 233.64 P
+13.39 (acceptable run-time environment \050) 108 217.64 P
+4 F
+13.39 (e.g.) 341.29 217.64 P
+0 F
+13.39 ( integer range\051. Standard) 361.5 217.64 P
+3.29 (environments are de\336ned abstractly) 108 201.64 P
+3.29 (, which means that dif) 316.31 201.64 P
+3.29 (ferent concrete) 453.19 201.64 P
+(realizations are possible.) 108 185.64 T
+108 132 540 152.09 C
+108 139.99 239.98 139.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 11 Q
+0 X
+0 K
+-0.79 (4.  Most compilers provide some mechanism for overriding the default include and load paths which) 108 124.67 P
+(de\336ne the environment.) 118.8 112.67 T
+(5.  See our paper on environment validation \050forthcoming\051.) 108 97.67 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Concr) 108 736.84 T
+(ete and abstract interfaces) 129.17 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(4 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(4. Concrete and abstract interfaces) 108 709.33 T
+0 14 Q
+2.51 (ANDF de\336nes interfaces abstractly) 108 677.64 P
+2.51 (, and speci\336es their concrete form and) 311.63 677.64 P
+1.12 (implementation separately) 108 661.64 P
+1.12 (. C supports separating the concrete interface and) 256.28 661.64 P
+3.42 (the implementation for most entities) 108 645.64 P
+3.42 (\050prototype declarations and external) 328.07 645.64 P
+1.29 (variables\051, but not all \050notably macros\051. And C provides no mechanism for) 108 629.64 P
+(separating the abstract interface and the concrete interface.) 108 613.64 T
+1.66 (For instance, many \336le operations in ANSI C require an ar) 108 585.64 P
+1.66 (gument of type) 451.95 585.64 P
+3 F
+-0.7 (FILE.) 108 569.64 S
+0 F
+(C header \336les de\336ne) 154.17 569.64 T
+3 F
+-0.7 (FILE) 272.31 569.64 S
+0 F
+( as,) 303.09 569.64 T
+4 F
+(e.g.) 325.24 569.64 T
+0 F
+(:) 345.45 569.64 T
+3 13.5 Q
+-0.68 (typedef) 144 541.98 S
+5 F
+-0.68 (struct {) 180 526.48 S
+-0.68 (unsigned char *_ptr;) 198 510.98 S
+6 12 Q
+(/* accessible to all users of FILE */) 360 510.98 T
+5 13.5 Q
+-0.68 (int _cnt;) 198 495.48 S
+6 12 Q
+(/* accessible to all users of FILE */) 360 495.48 T
+7 14 Q
+(\274) 198 479.64 T
+5 13.5 Q
+-0.68 (}) 216 463.98 S
+3 F
+-0.68 (FILE;) 180 448.48 S
+0 14 Q
+0.29 (That) 108 420.64 P
+3 F
+0.65 -0.7 (FILE) 137.44 420.64 B
+0 F
+0.29 ( is a type \050) 168.22 420.64 P
+3 F
+0.65 -0.7 (typedef) 227.69 420.64 B
+7 F
+0.29 ( \274) 281.56 420.64 P
+3 F
+0.65 -0.7 (FILE) 303.14 420.64 B
+0 F
+0.29 (;\051 is an important part of the abstract) 333.92 420.64 P
+0.8 (interface; the fact that it is a structure with certain \336elds \050the italicized text\051) 108 404.64 P
+0.56 (is part of the concrete interface, and should not be visible to the application,) 108 388.64 P
+2.31 (since it may well vary from implementation to implementation. Although) 108 372.64 P
+1.28 (convention dictates that \336elds beginning with \322) 108 356.64 P
+3 F
+2.81 -0.7 (_) 379.94 356.64 B
+0 F
+1.28 (\323 are private, the language) 387.64 356.64 P
+(and environment provide no support for this distinction.) 108 340.64 T
+1.24 (Newer programming languages support this distinction in the language and) 108 312.64 P
+0.98 (environment. For instance, Ada divides package speci\336cations into a public) 108 296.64 P
+(part \050abstract interface\051, and a private part \050concrete interface\051:) 108 280.64 T
+3 13.5 Q
+-0.68 (package stdio is) 144 252.98 S
+-0.68 (type FILE is private; ...) 162 237.48 S
+-0.68 (private) 144 221.98 S
+-0.68 (type FILE is) 162 206.48 S
+-0.68 (record) 180 190.98 S
+-0.68 (ptr : int;) 198 175.48 S
+-0.68 (\321) 324 175.48 S
+6 12 Q
+-0.6 (Not visible outside package) 338.84 175.48 S
+3 13.5 Q
+-0.68 (cnt : int;) 198 159.98 S
+-0.68 (\321) 324 159.98 S
+6 12 Q
+-0.6 (Not visible outside package) 338.84 159.98 S
+3 13.5 Q
+-0.68 (...) 198 144.48 S
+-0.68 (end record;) 180 128.98 S
+-0.68 (end stdio;) 144 113.48 S
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Building and dependencies) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(5 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+0 14 Q
+0 X
+2.29 (ANDF C goes beyond this, and provides a pragma extension to C which) 108 710.67 P
+3.66 (allows specifying the abstract and the concrete interfaces in completely) 108 694.67 P
+0.61 (dif) 108 678.67 P
+0.61 (ferent places. It de\336nes) 123.29 678.67 P
+3 F
+1.35 -0.7 (FILE) 259.02 678.67 B
+0 F
+0.61 ( as an abstract type in the producer) 289.8 678.67 P
+0.61 (\325) 489.27 678.67 P
+0.61 (s header) 493.16 678.67 P
+7.05 (\336les \050similar to the public part of a speci\336cation\051, and defers its) 108 662.67 P
+0.72 (implementation to the installer) 108 646.67 P
+0.72 (\325) 282.09 646.67 P
+0.72 (s header \336les \050similar to the private part of a) 285.98 646.67 P
+(package speci\336cation\051.) 108 630.67 T
+0 11 Q
+(6) 236.23 636.27 T
+108 570.98 540 574 C
+90 572.49 558 572.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(5. Building and dependencies) 108 579.33 T
+0 14 Q
+1.74 (An application must refer to the abstract interface when it is translated by) 108 547.64 P
+0.67 (the producer) 108 531.64 P
+0.67 (, the concrete interface when it is compiled by the installer) 178.43 531.64 P
+0.67 (, and) 512.13 531.64 P
+(the implementation when it is linked.) 108 515.64 T
+0.31 (In C, modules are referred to by \336lenames in) 108 487.64 P
+3 F
+0.69 -0.7 (include) 364.95 487.64 B
+0 F
+0.31 ( statements.) 418.82 487.64 P
+3 F
+0.69 -0.7 (tcc) 489.01 487.64 B
+0 F
+0.31 ( uses) 512.09 487.64 P
+1.63 (the environment/\336lename pair to identify a particular abstract interface. At) 108 471.64 P
+1.54 (installation, the package must link to particular concrete interfaces. This is) 108 455.64 P
+1.98 (done by) 108 439.64 P
+3 F
+4.34 -0.7 (tcc) 160.14 439.64 B
+0 F
+1.98 ( using) 183.23 439.64 P
+3 F
+4.34 -0.7 (tld) 224.49 439.64 B
+0 F
+1.98 (. Finally) 247.58 439.64 P
+1.98 (, after translation to .o form, tcc links the) 295.3 439.64 P
+(module to native libraries using) 108 423.64 T
+3 F
+-0.7 (ld) 288.73 423.64 S
+0 F
+(.) 304.12 423.64 T
+108 363.95 540 366.98 C
+90 365.46 558 365.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(6. Using) 108 372.31 T
+3 F
+-0.8 (tcc) 167.09 372.31 S
+2 F
+( for application delivery) 193.47 372.31 T
+0 14 Q
+2.62 (For delivering applications to users, it is desirable to package the tar) 108 340.62 P
+2.62 (get-) 518.24 340.62 P
+0.55 (independent .j \336les into an archive. This is done with the) 108 324.62 P
+3 F
+1.22 -0.7 (-prod) 434.73 324.62 B
+0 F
+0.55 ( \337ag, which) 473.21 324.62 P
+3.76 (creates a single tar) 108 308.62 P
+3.76 (get-independent ANDF archive. Besides linking with) 222.75 308.62 P
+4.08 (platform-dependent token de\336nition libraries, the installation script may) 108 292.62 P
+4.87 (wish to use tar) 108 276.62 P
+4.87 (get-dependent object code \050) 203.58 276.62 P
+3 F
+10.71 -0.7 (.o) 373.22 276.62 B
+0 F
+4.87 (\051, typically derived from) 388.61 276.62 P
+(assembly code.) 108 260.62 T
+0.34 (In order to discourage reverse engineering, it is usually desirable to suppress) 108 232.62 P
+(all identi\336er names. This is done with the -MA \337ag.) 108 216.62 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 11 Q
+0 X
+0 K
+(6.  For more details, see the paper) 108 97.67 T
+4 F
+(Porting to ANDF) 259.34 97.67 T
+0 F
+(.) 334.76 97.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(Using tcc for libraries) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(6 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(7. Using) 108 709.33 T
+3 F
+-0.8 (tcc) 167.09 709.33 S
+2 F
+( for libraries) 193.47 709.33 T
+0 14 Q
+6.83 (Unlike applications writers, library writers need to provide external) 108 677.64 P
+3.38 (interfaces which can be linked to at installation time, just like standard) 108 661.64 P
+0.76 (environments. These should be abstract interfaces, and can be de\336ned using) 108 645.64 P
+(ANDF C\325) 108 629.64 T
+(s abstraction mechanisms.) 162.81 629.64 T
+4.71 (The) 108 601.64 P
+3 F
+10.36 -0.7 (-hlib) 137.97 601.64 B
+0 F
+4.71 ( \337ag of the ANDF linker) 176.44 601.64 P
+3 F
+10.36 -0.7 (tld) 346.17 601.64 B
+0 F
+4.71 ( allows delivering platform-) 369.25 601.64 P
+(independent code with only the required interfaces exposed at install time.) 108 585.64 T
+108 525.95 540 528.98 C
+90 527.46 558 527.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(8. Dialects of C) 108 534.31 T
+3 14 Q
+1.41 -0.7 (tcc) 108 502.62 B
+0 F
+0.64 ( supports various dialects of C. Although we recommend using ANSI C) 131.09 502.62 P
+1.1 (\050the default\051, older code can be compiled using the) 108 486.62 P
+3 F
+2.43 -0.7 (-X) 405.48 486.62 B
+4 F
+1.1 (x) 420.88 486.62 P
+0 F
+1.1 ( \337ags. Finer control) 427.09 486.62 P
+2.42 (is possible with the) 108 470.62 P
+3 F
+5.33 -0.7 (-not_ansi) 228.86 470.62 B
+0 F
+2.42 ( and) 298.12 470.62 P
+3 F
+5.33 -0.7 (-nepc) 330.17 470.62 B
+0 F
+2.42 ( \050no extra portability checks\051) 368.65 470.62 P
+1.27 (\337ags. Even \336ner control of the implementation-de\336ned features of ANSI C) 108 454.62 P
+(is available using specialized pragmas, but this should not be necessary) 108 438.62 T
+(.) 506.21 438.62 T
+1.86 (Since using ANSI C and retaining full portability checking gives a higher) 108 410.62 P
+(level of con\336dence in application portability) 108 394.62 T
+(, we recommend using ANSI C.) 355.43 394.62 T
+108 334.93 540 337.95 C
+90 336.44 558 336.44 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(9. File types) 108 343.29 T
+3 14 Q
+0.87 -0.7 (tcc) 108 311.6 B
+0 F
+0.4 (, like standard C compilers, distinguishes various forms of a program by) 131.09 311.6 P
+1.03 (their \336lename extension. In addition to) 108 295.6 P
+3 F
+2.27 -0.7 (.c) 334.55 295.6 B
+0 F
+1.03 ( \050C source\051,) 349.94 295.6 P
+3 F
+2.27 -0.7 (.h) 422.2 295.6 B
+0 F
+1.03 ( \050header \336les\051,) 437.59 295.6 P
+3 F
+2.27 -0.7 (.i) 524.61 295.6 B
+0 F
+5.76 (\050preprocessed C source\051,) 108 279.59 P
+3 F
+12.67 -0.7 (.o) 267.48 279.59 B
+0 F
+5.76 ( \050object\051,) 282.87 279.59 P
+3 F
+12.67 -0.7 (.a) 348.4 279.59 B
+0 F
+5.76 ( \050object archive\051, and) 363.79 279.59 P
+3 F
+12.67 -0.7 (.out) 509.22 279.59 B
+0 F
+(\050runnable load \336le\051, tcc also de\336nes:) 108 263.59 T
+3 F
+-0.7 (.j) 129.6 239.59 S
+0 F
+(tar) 162 239.59 T
+(get-independent ANDF) 176.51 239.59 T
+3 F
+-0.7 (.ta) 129.6 215.59 S
+0 F
+(archives of tar) 162 215.59 T
+(get-independent ANDF) 241.78 215.59 T
+3 F
+-0.7 (.t) 129.6 191.59 S
+0 F
+(tar) 162 191.59 T
+(get-dependent ANDF) 176.51 191.59 T
+3 F
+-0.7 (.tl) 129.6 167.59 S
+0 F
+(tar) 162 167.59 T
+(get-dependent \050concrete\051 interfaces de\336ned in ANDF) 176.51 167.59 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(7 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(Appendix A.) 108 709.33 T
+3 14 Q
+-0.7 (tcc) 193.74 709.33 S
+2 16 Q
+( man page) 216.83 709.33 T
+1 14 Q
+(Cr) 108 671.64 T
+(own Copyright, 1993) 124.06 671.64 T
+(NAME) 108 637.64 T
+3 12 Q
+-0.6 (tcc) 129.6 614.98 S
+0 F
+(user interface to the TDF system) 216 614.98 T
+1 14 Q
+(SYNOPSIS) 108 581.64 T
+3 12 Q
+-0.6 (tcc) 129.6 558.98 S
+0 F
+( [ options ] \336les) 149.39 558.98 T
+1 14 Q
+(DESCRIPTION) 108 525.64 T
+3 12 Q
+-0.6 (tcc) 108 498.98 S
+0 F
+( is the user interface to the TDF system. It accepts several types of ar) 127.79 498.98 T
+(guments as \336les:) 458.32 498.98 T
+0 11 Q
+(\245) 122.4 477.64 T
+(Ar) 136.8 477.64 T
+(guments whose names end in) 148.19 477.64 T
+3 F
+-0.55 (.c) 279.71 477.64 S
+0 F
+( are understood to be C source \336les.) 291.79 477.64 T
+(\245) 122.4 456.64 T
+(Ar) 136.8 456.64 T
+(guments whose names end in) 148.19 456.64 T
+3 F
+-0.55 (.i) 279.71 456.64 S
+0 F
+( are understood to be preprocessed C source \336les.) 291.79 456.64 T
+(\245) 122.4 435.64 T
+(Ar) 136.8 435.64 T
+(guments whose names end in) 148.19 435.64 T
+3 F
+-0.55 (.j) 279.71 435.64 S
+0 F
+( are understood to be tar) 291.79 435.64 T
+(get independent TDF capsules.) 398.08 435.64 T
+(\245) 122.4 414.64 T
+(Ar) 136.8 414.64 T
+(guments whose names end in) 148.19 414.64 T
+3 F
+-0.55 (.ta) 279.71 414.64 S
+0 F
+( are understood to be archives of tar) 297.84 414.64 T
+(get independent) 455.37 414.64 T
+(TDF capsules.) 136.8 401.64 T
+(\245) 122.4 380.64 T
+(Ar) 136.8 380.64 T
+(guments whose names end in) 148.19 380.64 T
+3 F
+-0.55 (.t) 279.71 380.64 S
+0 F
+( are understood to be tar) 291.79 380.64 T
+(get dependent TDF capsules.) 398.08 380.64 T
+(\245) 122.4 359.64 T
+(Ar) 136.8 359.64 T
+(guments whose names end in) 148.19 359.64 T
+3 F
+-0.55 (.s) 279.71 359.64 S
+0 F
+( are understood to be assembly source \336les.) 291.79 359.64 T
+0 12 Q
+(All other ar) 108 333.98 T
+(guments \050but particularly those whose names end in) 163.07 333.98 T
+3 F
+-0.6 (.o) 415.57 333.98 S
+0 F
+( and) 428.76 333.98 T
+3 F
+-0.6 (.a) 452.08 333.98 S
+0 F
+(\051 are) 465.27 333.98 T
+(understood to be binary object \336les.) 108 319.98 T
+(The compilation process is as follows. Depending on the options given, it may halt at) 108 293.98 T
+(any stage:) 108 279.98 T
+(TDF archives are split into their constituent tar) 108 253.98 T
+(get independent capsules.) 332.64 253.98 T
+(C source \336les \050including preprocessed C source \336les\051 are compiled into tar) 108 227.98 T
+(get) 465.86 227.98 T
+(independent TDF capsules using) 108 213.98 T
+3 F
+-0.6 (tdfc) 267.9 213.98 S
+0 F
+(\0501tdf\051.) 294.28 213.98 T
+(T) 108 187.98 T
+(ar) 114.49 187.98 T
+(get independent TDF capsules are linked, using) 123.59 187.98 T
+3 F
+-0.6 (tld) 354.76 187.98 S
+0 F
+(\0501tdf\051, with the TDF libraries to) 374.55 187.98 T
+(produce tar) 108 173.98 T
+(get dependent TDF capsules.) 162.07 173.98 T
+(T) 108 147.98 T
+(ar) 114.49 147.98 T
+(get dependent TDF capsules are translated into assembly source \336les using one of) 123.59 147.98 T
+3 F
+-0.6 (mipstrans) 108 133.98 S
+0 F
+(\0501tdf\051 \050) 167.37 133.98 T
+4 F
+(q.v) 201.67 133.98 T
+(.) 215.1 133.98 T
+0 F
+(\321things are not quite so simple in this case\051,) 218.1 133.98 T
+3 F
+-0.6 (vaxtrans) 437.3 133.98 S
+0 F
+(\0501tdf\051) 490.07 133.98 T
+4 F
+(etc.) 520.38 133.98 T
+0 F
+(Assembly source \336les are compiled into binary object \336les using) 108 107.98 T
+3 F
+-0.6 (as) 421.14 107.98 S
+0 F
+(\0501\051.) 434.33 107.98 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(8 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+0 F
+0 X
+(Binary object \336les are linked with the precompiled libraries, using) 108 712 T
+3 F
+-0.6 (ld) 428.79 712 S
+0 F
+(\0501\051, to produce a) 441.98 712 T
+(\336nal executable.) 108 698 T
+(W) 108 672 T
+(ith the exception of binary object \336les, intermediate \336les are not preserved unless) 118.84 672 T
+(explicitly instructed.) 108 658 T
+(The standard \336le suf) 108 632 T
+(\336xes,) 206.05 632 T
+3 F
+-0.6 (c) 234.7 632 S
+0 F
+(,) 241.29 632 T
+3 F
+-0.6 (i) 247.29 632 S
+0 F
+(,) 253.89 632 T
+3 F
+-0.6 (j) 259.88 632 S
+0 F
+(,) 266.48 632 T
+3 F
+-0.6 (t) 272.48 632 S
+0 F
+(,) 279.07 632 T
+3 F
+-0.6 (s) 285.07 632 S
+0 F
+(, and) 291.67 632 T
+3 F
+-0.6 (o) 317.98 632 S
+0 F
+(, together with) 324.58 632 T
+3 F
+-0.6 (p) 397.2 632 S
+0 F
+( \050pretty-printed TDF) 403.79 632 T
+(capsule\051, are used to indicate \336le types in some options. Also the various compilation) 108 618 T
+(phases are identi\336ed by letters in some options. These are :) 108 604 T
+(c) 129.6 582 T
+(C to TDF producer) 216 582 T
+(p) 129.6 560 T
+(Preprocessor) 216 560 T
+(L) 129.6 538 T
+(TDF builder \050or linker\051) 216 538 T
+(t) 129.6 516 T
+(TDF translator) 216 516 T
+(a) 129.6 494 T
+(System assembler) 216 494 T
+(l) 129.6 472 T
+(System linker) 216 472 T
+(d) 129.6 450 T
+(TDF pretty-printer) 216 450 T
+1 14 Q
+(OPTIONS) 108 416.67 T
+0 12 Q
+(The following options are supported by) 108 390 T
+3 F
+-0.6 (tcc) 300.54 390 S
+0 F
+(. All options are scanned before input \336les) 320.33 390 T
+(are dealt with.) 108 376 T
+3 F
+-0.6 (-Bstatic) 129.6 354 S
+0 F
+(T) 216 354 T
+(ells the system linker to link statically) 222.49 354 T
+(.) 403.61 354 T
+3 F
+-0.6 (-Bdynamic) 129.6 332 S
+0 F
+(T) 216 332 T
+(ells the system linker to link dynamically) 222.49 332 T
+(.) 419.6 332 T
+3 F
+-0.6 (-D) 129.6 310 S
+4 F
+(string) 142.79 310 T
+0 F
+(Where string is of the form) 216 310 T
+4 F
+(macr) 349.23 310 T
+(o) 373.44 310 T
+0 F
+( or) 379.43 310 T
+4 F
+(macr) 395.42 310 T
+(o) 419.62 310 T
+3 F
+-0.6 (=) 425.62 310 S
+4 F
+(defn) 432.22 310 T
+0 F
+(, is equivalent to) 452.87 310 T
+(inserting the preprocessor directives) 216 296 T
+3 F
+-0.6 (#define) 392.53 296 S
+4 F
+(macr) 445.3 296 T
+(o) 469.5 296 T
+3 F
+-0.6 ( 1) 475.5 296 S
+0 F
+( or) 488.69 296 T
+3 F
+-0.6 (#define) 216 282 S
+4 F
+(macr) 268.77 282 T
+(o) 292.97 282 T
+3 F
+-0.6 ( defn) 298.97 282 S
+0 F
+( at the start of each C source \336le. This is) 331.95 282 T
+(implemented by) 216 268 T
+3 F
+-0.6 (tcc) 296.62 268 S
+0 F
+( writing this directive into a start-up \336le.) 316.41 268 T
+3 F
+-0.6 (-E) 129.6 246 S
+0 F
+(Invokes the C preprocessor only) 216 246 T
+(, putting the result into a \336le with) 370.44 246 T
+(a) 216 232 T
+3 F
+-0.6 (.i) 224.32 232 S
+0 F
+( suf) 237.52 232 T
+(\336x if other options indicate that preprocessed C \336les are to) 254.95 232 T
+(be preserved, or onto the standard output otherwise.) 216 218 T
+3 F
+-0.6 (-F) 129.6 196 S
+4 F
+(letter) 142.79 196 T
+0 F
+(T) 216 196 T
+(ells) 222.49 196 T
+3 F
+-0.6 (tcc) 242.15 196 S
+0 F
+( to stop after producing the \336les indicated by) 261.93 196 T
+4 F
+(letter) 479.46 196 T
+0 F
+(, and) 504.3 196 T
+(to preserve these \336les.) 216 182 T
+4 F
+(letter) 325.58 182 T
+0 F
+( is a single character corresponding to) 350.9 182 T
+(the suf) 216 168 T
+(\336x of the \336les to be preserved.) 248.09 168 T
+3 F
+-0.6 (-I) 129.6 146 S
+4 F
+(string) 142.79 146 T
+0 F
+(T) 216 146 T
+(ells the C to TDF producer to search the directory) 222.49 146 T
+4 F
+(string) 464.31 146 T
+0 F
+( for) 492.3 146 T
+(included \336les. The producer searches the directories in the order) 216 132 T
+(given, followed by the system default directories.) 216 118 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(9 of 18) 506.02 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (-J) 129.6 712 S
+4 F
+(string) 142.79 712 T
+0 F
+(T) 216 712 T
+(ells the TDF builder to search the directory string for TDF) 222.49 712 T
+(libraries. The builder searches the directories in the order given,) 216 698 T
+(followed by the system default directories.) 216 684 T
+3 F
+-0.6 (-L) 129.6 662 S
+4 F
+(string) 142.79 662 T
+0 F
+(T) 216 662 T
+(ells the system linker to search the directory) 222.49 662 T
+4 F
+(string) 437 662 T
+0 F
+( for libraries.) 464.99 662 T
+(It searches the directories in the order given, followed by the) 216 648 T
+(system default directories.) 216 634 T
+3 F
+-0.6 (-M) 129.6 612 S
+0 F
+(Speci\336es that the TDF builder should link all the given tar) 216 612 T
+(get) 494.95 612 T
+(independent TDF capsules into one. This is done between stages 2) 216 598 T
+(and 3 above. The default name for the produced capsule is) 216 584 T
+3 F
+-0.6 (a.j) 499.1 584 S
+0 F
+(.) 518.89 584 T
+3 F
+-0.6 (-MA) 129.6 562 S
+0 F
+(Speci\336es that the TDF builder should link all the given tar) 216 562 T
+(get) 494.95 562 T
+(independent TDF capsules into one and also hides all the de\336ned) 216 548 T
+(tag and token names from the resultant TDF \050except \322main\323\051. This) 216 534 T
+(should only be used to compile complete programs. The default) 216 520 T
+(name for the resulting capsule is) 216 506 T
+3 F
+-0.6 (a.j) 374.55 506 S
+0 F
+(.) 394.34 506 T
+3 F
+-0.6 (-Map_letter_to_letter) 129.6 484 S
+0 F
+(Not documented.) 216 470 T
+3 F
+-0.6 (-O) 129.6 448 S
+0 F
+(This \337ag has no ef) 216 448 T
+(fect other than to cancel any previous) 304.39 448 T
+(diagnostics \337ag and is included only for compatibility with other) 216 434 T
+(compilers. All TDF optimizations are on by default. All) 216 420 T
+(optimizations are believed to be correct, any bug which occurs in) 216 406 T
+(the fully-optimized state is a genuine bug.) 216 392 T
+3 F
+-0.6 (-P) 129.6 370 S
+0 F
+(Invokes the C preprocessor only) 216 370 T
+(, putting the result into a \336le with) 370.44 370 T
+(a) 216 356 T
+3 F
+-0.6 (.i) 224.32 356 S
+0 F
+( suf) 237.52 356 T
+(\336x if other options indicate that preprocessed C \336les are to) 254.95 356 T
+(be preserved, or onto the standard output otherwise.) 216 342 T
+3 F
+-0.6 (-Pa) 129.6 320 S
+0 F
+(Preserves all intermediate \336les.) 216 320 T
+3 F
+-0.6 (-P) 129.6 298 S
+4 F
+(letter) 142.79 298 T
+(...) 166.78 298 T
+0 F
+(T) 216 298 T
+(ells) 222.49 298 T
+3 F
+-0.6 (tcc) 242.15 298 S
+0 F
+( to preserve those \336les indicated by) 261.93 298 T
+4 F
+(letter) 434.15 298 T
+0 F
+(. Each letter is a) 458.81 298 T
+(single character corresponding to the suf) 216 284 T
+(\336x of the \336les to be) 410.63 284 T
+(preserved. The) 216 270 T
+3 F
+-0.6 (tcc) 290.26 270 S
+0 F
+( startup-\336le can be preserved as) 310.05 270 T
+3 F
+-0.6 (tcc_startup.h) 216 256 S
+0 F
+( using) 301.75 256 T
+3 F
+-0.6 (h) 333.74 256 S
+0 F
+(.) 340.33 256 T
+3 F
+-0.6 (-S) 129.6 234 S
+0 F
+(T) 216 234 T
+(ells) 222.49 234 T
+3 F
+-0.6 (tcc) 242.15 234 S
+0 F
+( to stop after producing an assembly source \336le.) 261.93 234 T
+3 F
+-0.6 (-S) 129.6 212 S
+4 F
+(letter) 142.79 212 T
+3 F
+-0.6 (,) 168.11 212 S
+4 F
+(string,...) 174.71 212 T
+0 F
+(The speci\336es that the list of input \336les) 216 212 T
+4 F
+(string) 401.9 212 T
+0 F
+( all have type) 429.89 212 T
+4 F
+(letter) 497.17 212 T
+0 F
+(,) 522.01 212 T
+(where) 216 198 T
+4 F
+(letter) 248.3 198 T
+0 F
+( is a single character giving the normal suf) 273.62 198 T
+(\336x of the) 477.25 198 T
+(\336le type. This gives an alternative method of passing input \336les to) 216 184 T
+3 F
+-0.6 (tcc) 216 170 S
+0 F
+(, one which does not depend on it having to recognise suf) 235.79 170 T
+(\336xes) 511.39 170 T
+(to \336nd the type of a \336le.) 216 156 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(10 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (-U) 129.6 712 S
+4 F
+(string) 142.79 712 T
+0 F
+(Is equivalent to inserting the preprocessor directive) 216 712 T
+3 F
+-0.6 (#undef) 464.82 712 S
+4 F
+(string) 216 698 T
+0 F
+( at the start of each C source \336le. This is implemented by) 243.99 698 T
+3 F
+-0.6 (tcc) 216 684 S
+0 F
+( writing this directive into a start-up \336le. The only macros) 235.79 684 T
+(built into the C to TDF producer are) 216 670 T
+3 F
+-0.6 (__LINE__) 392.55 670 S
+0 F
+( ,) 445.32 670 T
+3 F
+-0.6 (__FILE__) 454.32 670 S
+0 F
+( ,) 507.09 670 T
+3 F
+-0.6 (__DATE__) 216 656 S
+0 F
+( ,) 268.77 656 T
+3 F
+-0.6 (__TIME__) 277.77 656 S
+0 F
+( and) 330.53 656 T
+3 F
+-0.6 (__STDC__) 353.85 656 S
+0 F
+( .) 406.62 656 T
+3 F
+-0.6 (-W) 129.6 634 S
+4 F
+(letter) 142.79 634 T
+3 F
+-0.6 (,) 168.11 634 S
+4 F
+(string,...) 174.71 634 T
+0 F
+(This passes the list of options) 216 620 T
+4 F
+(string) 360.59 620 T
+0 F
+( to the compilation phase) 388.58 620 T
+(indicated by) 216 606 T
+4 F
+(letter) 277.96 606 T
+0 F
+(.) 302.62 606 T
+3 F
+-0.6 (-Xa) 129.6 584 S
+0 F
+(This option speci\336es that the given program is written in ANSI C.) 216 584 T
+(This is default.) 216 570 T
+3 F
+-0.6 (-Xc) 129.6 548 S
+0 F
+(This option speci\336es that the given program is written in \322K&R\323) 216 548 T
+(C.) 216 534 T
+3 F
+-0.6 (-Xt) 129.6 512 S
+0 F
+(This option speci\336es that the given program is written in) 216 512 T
+(\322traditional\323 C.) 216 498 T
+3 F
+-0.6 (-Y) 129.6 476 S
+4 F
+(string) 142.79 476 T
+0 F
+(Speci\336es the environment to use. An environment is a \336le telling) 216 476 T
+3 F
+-0.6 (tcc) 216 462 S
+0 F
+( to modify its defaults. If the full pathname of env is not) 235.79 462 T
+(given, the \336le is searched for along the) 216 448 T
+3 F
+-0.6 (tcc) 404.86 448 S
+0 F
+( environments path) 424.65 448 T
+(which is a list of directories separated by colons. There are certain) 216 434 T
+(standard environments, for example,) 216 420 T
+3 F
+-0.6 (ansi) 394.53 420 S
+0 F
+(, representing the ANSI) 420.92 420 T
+(standard, is the default environment,) 216 406 T
+3 F
+-0.6 (posix) 394.21 406 S
+0 F
+( represents the POSIX) 427.19 406 T
+(standard, and) 216 392 T
+3 F
+-0.6 (xpg3) 282.95 392 S
+0 F
+( the XPG3 standard. The) 309.33 392 T
+3 F
+-0.6 (system) 431.24 392 S
+0 F
+( environment) 470.82 392 T
+(allows) 216 378 T
+3 F
+-0.6 (tcc) 250.31 378 S
+0 F
+( to behave like) 270.1 378 T
+3 F
+-0.6 (cc) 343.38 378 S
+0 F
+(\0501\051, using the system header \336les etc.) 356.57 378 T
+(See) 216 364 T
+3 F
+-0.6 (tcc_env) 236.32 364 S
+0 F
+(\0501tdf\051 for more details about environments.) 282.49 364 T
+3 F
+-0.6 (-b) 129.6 342 S
+0 F
+(Stops the library) 216 342 T
+3 F
+-0.6 (libc.a) 298.29 342 S
+0 F
+( being used by the linker by default.) 337.86 342 T
+3 F
+-0.6 (-c) 129.6 320 S
+0 F
+(T) 216 320 T
+(ells) 222.49 320 T
+3 F
+-0.6 (tcc) 242.15 320 S
+0 F
+( to stop after producing the binary object \336les.) 261.93 320 T
+3 F
+-0.6 (-clean) 129.6 298 S
+0 F
+(By default, if more than once binary object \336le is produced during) 216 298 T
+(the compilation process, they are all preserved. This option) 216 284 T
+(overrides this.) 216 270 T
+3 F
+-0.6 (-dry) 129.6 248 S
+0 F
+(Makes) 216 248 T
+3 F
+-0.6 (tcc) 250.97 248 S
+0 F
+( print information on what system commands it would) 270.76 248 T
+(execute with the given \336les and options \050as in verbose mode\051 but) 216 234 T
+(not actually perform them.) 216 220 T
+3 F
+-0.6 (-disp) 129.6 198 S
+0 F
+(Runs the TDF pretty-printer on all \336les at stage 2 or 3 and then) 216 198 T
+(terminates. The results are put into \336les with) 216 184 T
+3 F
+-0.6 (.p) 432.86 184 S
+0 F
+( suf) 446.06 184 T
+(\336xes.) 463.5 184 T
+3 F
+-0.6 (-disp_t) 129.6 162 S
+0 F
+(Runs the pretty-printer on all \336les at stage 3 and then terminates.) 216 162 T
+(This dif) 216 148 T
+(fers from the previous option in that it displays the TDF) 253.43 148 T
+(after linking with the tar) 216 134 T
+(get-dependent TDF libraries rather than) 332.37 134 T
+(before. The output in put into a \336le with a) 216 120 T
+3 F
+-0.6 (.p) 419.54 120 S
+0 F
+( suf) 432.73 120 T
+(\336x.) 450.17 120 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(11 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (-e) 129.6 712 S
+4 F
+(string) 142.79 712 T
+0 F
+(Is equivalent to inserting the preprocessor directive) 216 712 T
+3 F
+-0.6 (#include) 464.82 712 S
+4 F
+(string) 216 698 T
+0 F
+( at the end of each C source \336le.) 243.99 698 T
+3 F
+-0.6 (-f) 129.6 676 S
+4 F
+(string) 142.79 676 T
+0 F
+(Is equivalent to inserting the preprocessor directive) 216 676 T
+3 F
+-0.6 (#include) 464.82 676 S
+4 F
+(string) 216 662 T
+0 F
+( at the start of each C source \336le.) 243.99 662 T
+3 F
+-0.6 (-g) 129.6 640 S
+0 F
+(T) 216 640 T
+(ells) 222.49 640 T
+3 F
+-0.6 (tcc) 242.15 640 S
+0 F
+( to produce diagnostic information compatible with the) 261.93 640 T
+(system debugger) 216 626 T
+(.) 296.28 626 T
+3 F
+-0.6 (-hide_names) 129.6 604 S
+0 F
+(T) 216 604 T
+(ells) 222.49 604 T
+3 F
+-0.6 (tcc) 242.15 604 S
+0 F
+( to hide capsule names when constructing a TDF archive.) 261.93 604 T
+3 F
+-0.6 (-i) 129.6 582 S
+0 F
+(T) 216 582 T
+(ells) 222.49 582 T
+3 F
+-0.6 (tcc) 242.15 582 S
+0 F
+( to stop after producing the tar) 261.93 582 T
+(get independent TDF) 406.95 582 T
+(capsules.) 216 568 T
+3 F
+-0.6 (-j) 129.6 546 S
+4 F
+(string) 142.79 546 T
+0 F
+(T) 216 546 T
+(ells the TDF builder to use the TDF library) 222.49 546 T
+3 F
+-0.6 (string.tl) 432.02 546 S
+0 F
+(.) 491.39 546 T
+3 F
+-0.6 (-keep_errors) 129.6 524 S
+0 F
+(By default, if an error occurs during the production of a \336le,) 216 524 T
+3 F
+-0.6 (tcc) 507.12 524 S
+0 F
+(will remove it. This option will preserve such \336les.) 216 510 T
+3 F
+-0.6 (-l) 129.6 488 S
+4 F
+(string) 142.79 488 T
+0 F
+(T) 216 488 T
+(ells the system linker to use the library) 222.49 488 T
+3 F
+-0.6 (libstring.a) 411.04 488 S
+0 F
+(.) 483.6 488 T
+3 F
+-0.6 (-make_up_names) 129.6 466 S
+0 F
+(Causes) 216 452 T
+3 F
+-0.6 (tcc) 252.98 452 S
+0 F
+( to make up names for all intermediate \336les rather than) 272.76 452 T
+(forming them from the basenames of the input \336les.) 216 438 T
+3 F
+-0.6 (-no_startup_options) 129.6 416 S
+0 F
+(Not documented.) 216 402 T
+3 F
+-0.6 (-nepc) 129.6 380 S
+0 F
+(T) 216 380 T
+(ells the C to TDF producer to allow certain non-portable) 222.49 380 T
+(constructs through.) 216 366 T
+3 F
+-0.6 (-not_ansi) 129.6 344 S
+0 F
+(T) 216 344 T
+(ells the C to TDF producer to allow certain non-ANSI features) 222.49 344 T
+(through.) 216 330 T
+3 F
+-0.6 (-o) 129.6 308 S
+4 F
+(string) 142.79 308 T
+0 F
+(If a \336nal executable is produced, call it) 216 308 T
+4 F
+(string) 405.52 308 T
+0 F
+( \050the default is) 433.51 308 T
+3 F
+-0.6 (a.out) 216 294 S
+0 F
+(\051. Otherwise, if only one \336le is preserved, call it) 248.98 294 T
+4 F
+(string) 481.15 294 T
+0 F
+(.) 509.14 294 T
+3 F
+-0.6 (-p) 129.6 272 S
+0 F
+(Produces pro\336ling data for use with) 216 272 T
+3 F
+-0.6 (prof) 390.55 272 S
+0 F
+(\0501\051 on those machines) 416.94 272 T
+(for which this command is available.) 216 258 T
+3 F
+-0.6 (-prod) 129.6 236 S
+0 F
+(Speci\336es that) 216 236 T
+3 F
+-0.6 (tcc) 283.3 236 S
+0 F
+( should stop after producing the tar) 303.08 236 T
+(get-) 470.75 236 T
+(independent TDF capsules and combine them into a TDF archive.) 216 222 T
+(The default archive name is) 216 208 T
+3 F
+-0.6 (a.ta) 352.22 208 S
+0 F
+(.) 378.61 208 T
+3 F
+-0.6 (-q) 129.6 186 S
+-0.6 (-quiet) 129.6 170 S
+0 F
+(Speci\336es that) 216 170 T
+3 F
+-0.6 (tcc) 283.3 170 S
+0 F
+( should work silently) 303.08 170 T
+(. This is default.) 403.25 170 T
+3 F
+-0.6 (-show_errors) 129.6 148 S
+0 F
+(Makes) 216 148 T
+3 F
+-0.6 (tcc) 250.97 148 S
+0 F
+( report on the command it was executing when an error) 270.76 148 T
+(occurred.) 216 134 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(12 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (-show_env_path) 129.6 712 S
+0 F
+(Prints the) 216 698 T
+3 F
+-0.6 (tcc) 264.64 698 S
+0 F
+( environments path. This is a list of directories) 284.43 698 T
+(separated by colons. The \336rst element of the list is always the) 216 684 T
+(system default environments directory and the last element is) 216 670 T
+(always the current working directory) 216 656 T
+(. The other elements may be) 392.41 656 T
+(speci\336ed by the user by means of the) 216 642 T
+3 F
+-0.6 (TCC_ENV) 396.54 642 S
+0 F
+( system variable.) 442.71 642 T
+3 F
+-0.6 (-target) 129.6 620 S
+4 F
+(string) 175.77 620 T
+0 F
+(No ef) 216 620 T
+(fect \050allowed for compatibility with) 242.76 620 T
+3 F
+-0.6 (cc) 416.97 620 S
+0 F
+(\0501\051 on some systems\051.) 430.17 620 T
+3 F
+-0.6 (-time) 129.6 598 S
+0 F
+(Makes) 216 598 T
+3 F
+-0.6 (tcc) 250.97 598 S
+0 F
+( print information on what system commands it is) 270.76 598 T
+(executing \050as with verbose mode\051 followed by the time taken for) 216 584 T
+(each.) 216 570 T
+3 F
+-0.6 (-verbose) 129.6 548 S
+0 F
+(Speci\336es that) 216 548 T
+3 F
+-0.6 (tcc) 283.3 548 S
+0 F
+( should work in verbose mode, sending) 303.08 548 T
+(information on what system commands it is executing to the) 216 534 T
+(standard output.) 216 520 T
+3 F
+-0.6 (-version) 129.6 498 S
+0 F
+(Makes) 216 498 T
+3 F
+-0.6 (tcc) 250.97 498 S
+0 F
+( report its version number) 270.76 498 T
+(.) 394.02 498 T
+3 F
+-0.6 (-w) 129.6 476 S
+0 F
+(Suppresses all) 216 476 T
+3 F
+-0.6 (tcc) 287.29 476 S
+0 F
+( warning messages.) 307.08 476 T
+3 F
+-0.6 (-work) 129.6 454 S
+4 F
+(string) 162.58 454 T
+0 F
+(Speci\336es that all preserved intermediate \336les are placed in the) 216 454 T
+(directory) 216 440 T
+4 F
+(string) 262.3 440 T
+0 F
+( rather than where they are placed by default, in) 290.29 440 T
+(the current working directory) 216 426 T
+(.) 356.11 426 T
+3 F
+-0.6 (-wsl) 129.6 404 S
+0 F
+(T) 216 404 T
+(ells the C to TDF producer to make all string literals writable.) 222.49 404 T
+1 14 Q
+(FILES) 108 370.67 T
+4 12 Q
+(\336le) 129.6 348 T
+3 F
+-0.6 (.c) 144.26 348 S
+0 F
+(C source \336le) 216 348 T
+4 F
+(\336le) 129.6 326 T
+3 F
+-0.6 (.i) 144.26 326 S
+0 F
+(Preprocessed C source \336le) 216 326 T
+4 F
+(\336le) 129.6 304 T
+3 F
+-0.6 (.j) 144.26 304 S
+0 F
+(T) 216 304 T
+(ar) 222.49 304 T
+(get independent TDF capsule) 231.59 304 T
+4 F
+(\336le) 129.6 282 T
+3 F
+-0.6 (.t) 144.26 282 S
+0 F
+(T) 216 282 T
+(ar) 222.49 282 T
+(get dependent TDF capsule) 231.59 282 T
+4 F
+(\336le) 129.6 260 T
+3 F
+-0.6 (.s) 144.26 260 S
+0 F
+(Assembly source \336le) 216 260 T
+4 F
+(\336le) 129.6 238 T
+3 F
+-0.6 (.o) 144.26 238 S
+0 F
+(Binary object \336le) 216 238 T
+4 F
+(\336le) 129.6 216 T
+3 F
+-0.6 (.p) 144.26 216 S
+0 F
+(Pretty-printed TDF capsule) 216 216 T
+3 F
+-0.6 (a.out) 129.6 194 S
+0 F
+(Default executable name) 216 194 T
+3 F
+-0.6 (a.ta) 129.6 172 S
+0 F
+(Default TDF archive name) 216 172 T
+3 F
+-0.6 (a.j) 129.6 150 S
+0 F
+(Default output \336le for mer) 216 150 T
+(ge-TDF-capsules option) 342.36 150 T
+3 F
+-0.6 (tcc_startup.h) 129.6 128 S
+0 F
+(Name of preserved tcc start-up \336le) 216 128 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(13 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (/tmp/tcc) 129.6 712 S
+0 F
+(*) 182.37 712 T
+(T) 216 712 T
+(emporary directory \050this may be changed using the TMPDIR) 222.49 712 T
+(system variable, see tempnam\0503\051\051.) 216 698 T
+1 14 Q
+(SEE ALSO) 108 664.67 T
+3 12 Q
+-0.6 (as) 108 638 S
+0 F
+(\0501\051,) 121.19 638 T
+3 F
+-0.6 (cc) 141.17 638 S
+0 F
+(\0501\051,) 154.37 638 T
+3 F
+-0.6 (disp) 174.35 638 S
+0 F
+(\0501tdf\051,) 200.73 638 T
+3 F
+-0.6 (ld) 234.04 638 S
+0 F
+(\0501\051,) 247.23 638 T
+3 F
+-0.6 (prof) 267.21 638 S
+0 F
+(\0501\051,) 293.6 638 T
+3 F
+-0.6 (tcc_env) 313.58 638 S
+0 F
+(\0501tdf\051,) 359.75 638 T
+3 F
+-0.6 (tdf) 393.05 638 S
+0 F
+(\0501tdf\051,) 412.84 638 T
+3 F
+-0.6 (tdfc) 446.15 638 S
+0 F
+(\0501tdf\051,) 472.54 638 T
+3 F
+-0.6 (tld) 108 624 S
+0 F
+(\0501tdf\051,) 127.79 624 T
+3 F
+-0.6 (trans) 161.09 624 S
+0 F
+(\0501tdf\051.) 194.07 624 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(14 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 16 Q
+0 X
+0 K
+(Appendix B. tld man page) 108 709.33 T
+1 14 Q
+(Cr) 108 671.64 T
+(own Copyright, 1993) 124.06 671.64 T
+(NAME) 108 637.64 T
+0 12 Q
+(tld) 129.6 614.98 T
+(TDF linking and library manipulation utility) 216 614.98 T
+1 14 Q
+(SYNT) 108 581.64 T
+(AX) 144.28 581.64 T
+3 12 Q
+-0.6 (tld [-ml] [) 129.6 558.98 S
+4 F
+(switches) 208.75 558.98 T
+3 F
+-0.6 (]...) 249.4 558.98 S
+-0.6 (tld -mc [) 129.6 536.98 S
+4 F
+(switches) 195.56 536.98 T
+3 F
+-0.6 ( ]) 236.21 536.98 S
+-0.6 (tld -mt [-verbose]) 129.6 514.98 S
+4 F
+(library) 254.93 514.98 T
+3 F
+-0.6 (tld -mx [-nc] [-verbose]) 129.6 492.98 S
+4 F
+(library capsule-name) 294.51 492.98 T
+3 F
+-0.6 (...) 397.43 492.98 S
+-0.6 (tld -mv) 129.6 470.98 S
+1 14 Q
+(DESCRIPTION) 108 437.64 T
+0 12 Q
+(The) 108 410.98 T
+3 F
+-0.6 (tld) 129.65 410.98 S
+0 F
+( command is used to create and manipulate TDF libraries, and to link together) 149.44 410.98 T
+(TDF capsules. It has four modes, selected by one of the) 108 396.98 T
+3 F
+-0.6 (-ml) 377.47 396.98 S
+0 F
+( \050link TDF capsules\051,) 397.26 396.98 T
+3 F
+-0.6 (-mc) 502.19 396.98 S
+0 F
+(\050create TDF library\051,) 108 382.98 T
+3 F
+-0.6 (-mt) 211.24 382.98 S
+0 F
+( \050list library contents\051 or) 231.03 382.98 T
+3 F
+-0.6 (-mx) 350.61 382.98 S
+0 F
+(\050extract capsules from library\051) 377 382.98 T
+(switches. The) 108 368.98 T
+3 F
+-0.6 (-mv) 176.95 368.98 S
+0 F
+( switch can be used to \336nd out the version number of) 196.74 368.98 T
+3 F
+-0.6 (tld) 453.9 368.98 S
+0 F
+( being used.) 473.69 368.98 T
+(If provided, these switches must be the \336rst on the command line. If one is not provided,) 108 354.98 T
+(the) 108 340.98 T
+3 F
+-0.6 (-ml) 125.65 340.98 S
+0 F
+( switch is assumed. The dif) 145.44 340.98 T
+(ferent modes are described below) 275.81 340.98 T
+(. In the description,) 436.22 340.98 T
+(tag de\336nitions are referred to as either unique or multiple. A unique de\336nition is a) 108 326.98 T
+(de\336nition where the de\336ned attribute is set; a multiple de\336nition is one where the) 108 312.98 T
+(multiple attribute is set \050) 108 298.98 T
+4 F
+(i.e.) 225.27 298.98 T
+0 F
+( more than one de\336nition is allowed\051. A de\336nition may be) 239.93 298.98 T
+(both multiple and unique \050if both bits are set\051.) 108 284.98 T
+1 14 Q
+(LINKING) 108 251.64 T
+0 12 Q
+(In the default mode,) 108 224.98 T
+3 F
+-0.6 (tld) 207.59 224.98 S
+0 F
+( tries to link together the TDF capsules speci\336ed on the) 227.38 224.98 T
+(command line. This consists of the following stages:) 108 210.98 T
+(1. All of the capsules speci\336ed on the command line are loaded, and their token, tag and) 108 184.98 T
+(other identi\336ers are mapped into a per) 108 170.98 T
+(-identi\336er) 290.29 170.98 T
+(-type namespace. In these common) 337.35 170.98 T
+(namespaces, all external tokens with the same name will be mapped to the same) 108 156.98 T
+(identi\336er) 108 142.98 T
+(. The same is true for external tags. During this process,) 150.65 142.98 T
+3 F
+-0.6 (tld) 421.78 142.98 S
+0 F
+( will report errors) 441.57 142.98 T
+(about any attempt to link together more than one capsule providing a de\336nition for any) 108 128.98 T
+(token or tag \050in the case of tags, the capsules will link successfully as long as no more) 108 114.98 T
+(than one of them is a unique de\336nition\051.) 108 100.98 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(15 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+0 F
+0 X
+(2. If any libraries were speci\336ed on the command line and there are tokens or tags which) 108 712 T
+(are used but not de\336ned in the capsules, then the libraries are scanned to see if they can) 108 698 T
+(provide the required de\336nitions. Any cap- sules that provide necessary de\336nitions are) 108 684 T
+(loaded. There must only be one de\336nition for each token or tag in all of the libraries \050in) 108 670 T
+(the case of a tag, this may be either one non-unique de\336nition, or one unique de\336nition) 108 656 T
+(with zero or more non-unique de\336nitions; if a unique de\336nition exists, then the non-) 108 642 T
+(unique de\336nitions are ignored\051.) 108 628 T
+(3. If any tokens or tags require hiding \050speci\336ed by command line switches\051, then they) 108 602 T
+(are hidden at this point. Hiding means removing the name of the token or tag from the) 108 588 T
+(external name list. It is illegal to hide unde\336ned tokens or tags.) 108 574 T
+(4. A new TDF capsule is created, consisting of all of the input capsules and the) 108 548 T
+(necessary library capsules. Unless speci\336ed with the) 108 534 T
+3 F
+-0.6 (-o) 362.48 534 S
+0 F
+( switch, the output \336le will be) 375.67 534 T
+(called) 108 520 T
+3 F
+-0.6 (tdf-output.t) 139.64 520 S
+0 F
+(.) 218.79 520 T
+1 14 Q
+(Switches) 108 486.67 T
+0 F
+(Tld accepts the following switches in link mode.) 108 458.67 T
+3 12 Q
+-0.6 (-debug) 129.6 436 S
+0 F
+(Produce a diagnostic trace in the \336le) 216 436 T
+3 F
+-0.6 (tld.debug) 393.54 436 S
+0 F
+(.) 452.9 436 T
+3 F
+-0.6 (-Debug) 129.6 414 S
+0 F
+(Append a diagnostic trace to the \336le) 216 414 T
+3 F
+-0.6 (tld.debug) 392.21 414 S
+0 F
+(. This is useful) 451.57 414 T
+(for tracing several links in the build of a lar) 216 400 T
+(ge project.) 423.97 400 T
+3 F
+-0.6 (-etok) 129.6 378 S
+4 F
+(token-name) 165.58 378 T
+0 F
+(Ensure that regardless of any other hiding \337ags the token) 216 364 T
+4 F
+(token-) 492.47 364 T
+(name) 216 350 T
+0 F
+( is not hidden. A token \050or tag\051 name may be either a string) 241.98 350 T
+(or a unique. A unique is written as) 216 336 T
+3 F
+-0.6 ([) 384.22 336 S
+4 F
+(component) 390.82 336 T
+0 10 Q
+(1) 443.44 333 T
+3 12 Q
+-0.6 (.) 448.44 336 S
+4 F
+(component) 455.04 336 T
+0 10 Q
+(2) 507.66 333 T
+3 12 Q
+-0.6 (.) 512.66 336 S
+4 F
+(\311) 519.26 336 T
+(component) 216 322 T
+0 10 Q
+(N) 268.63 319 T
+3 12 Q
+-0.6 (]) 275.84 322 S
+0 F
+(. Each component of a unique is a string. A string) 282.44 322 T
+(consists of any sequence of characters, although some special) 216 308 T
+(characters must be preceded by a backslash character to stop them) 216 294 T
+(being treated specially) 216 280 T
+(. These characters are \324) 323.14 280 T
+3 F
+-0.6 (\134) 434.02 280 S
+0 F
+(\325, \324) 440.61 280 T
+3 F
+-0.6 ([) 454.6 280 S
+0 F
+(\324, \324) 461.19 280 T
+3 F
+-0.6 (]) 475.18 280 S
+0 F
+(\325 and \324) 481.77 280 T
+3 F
+-0.6 (.) 513.08 280 S
+0 F
+(\325.) 519.67 280 T
+(In addition, the following character sequences are treated the same) 216 266 T
+(as they would be in C: \324) 216 252 T
+3 F
+-0.6 (\134n) 330.6 252 S
+0 F
+(\325, \324) 343.79 252 T
+3 F
+-0.6 (\134r) 357.77 252 S
+0 F
+(\325, \324) 371.41 252 T
+3 F
+-0.6 (\134t) 385.39 252 S
+0 F
+(\325, \324) 398.59 252 T
+3 F
+-0.6 (\1340) 412.57 252 S
+0 F
+(\325. Finally) 425.76 252 T
+(, the sequence) 468.96 252 T
+(\324) 216 238 T
+3 F
+-0.6 (\134x) 219.99 238 S
+4 F
+(NN) 233.19 238 T
+0 F
+(\325 represents the character with code) 249.18 238 T
+4 F
+(NN) 422.36 238 T
+0 F
+( in hex.) 438.36 238 T
+3 F
+-0.6 (-etag) 129.6 216 S
+4 F
+(tag-name) 165.58 216 T
+0 F
+(Ensure that regardless of other hiding \337ags the tag) 216 216 T
+4 F
+(tag-name) 460.16 216 T
+0 F
+( is not) 505.46 216 T
+(hidden.) 216 202 T
+3 F
+-0.6 (-hdef) 129.6 180 S
+0 F
+(Hide all tags and tokens that have a de\336nition.) 216 180 T
+3 F
+-0.6 (-hdeftok) 129.6 158 S
+0 F
+(Hide all tokens that have a de\336nition.) 216 158 T
+3 F
+-0.6 (-hdeftag) 129.6 136 S
+0 F
+(Hide all tags that have a de\336nition.) 216 136 T
+3 F
+-0.6 (-htok) 129.6 114 S
+0 F
+( token-name) 162.58 114 T
+(Hide the token named token-name.) 216 100 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(16 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (-htag) 129.6 712 S
+4 F
+(tag-name) 169.18 712 T
+0 F
+(Hide the tag named) 216 698 T
+4 F
+(tag-name) 312.6 698 T
+0 F
+(.) 357.89 698 T
+3 F
+-0.6 (-hlib) 129.6 676 S
+4 F
+(library) 165.58 676 T
+0 F
+(Hide all tags and tokens that are not in the library) 216 676 T
+4 F
+(library) 456.17 676 T
+0 F
+(.) 488.71 676 T
+(Libraries are speci\336ed in the same way as the) 216 662 T
+3 F
+-0.6 (-l) 436.82 662 S
+0 F
+( \337ag, and the) 450.02 662 T
+(same search path is used. Several of these \337ags may be speci\336ed,) 216 648 T
+(in which case all tokens and tags not de\336ned in any of the libraries) 216 634 T
+(are hidden.) 216 620 T
+3 F
+-0.6 (-L) 129.6 598 S
+4 F
+(dir) 142.79 598 T
+(ectory) 156.35 598 T
+0 F
+(Add directory to the library search path. The direc- tories are) 216 598 T
+(searched in the order speci\336ed on the com- mand line.) 216 584 T
+3 F
+-0.6 (-l) 129.6 562 S
+4 F
+(library) 142.79 562 T
+0 F
+(Use TDF library) 216 562 T
+4 F
+(library) 298.27 562 T
+0 F
+( as a source of de\336nitions. If) 331.59 562 T
+4 F
+(library) 470.82 562 T
+0 F
+( is an) 504.14 562 T
+(absolute path name, then no searching is performed. If) 216 548 T
+4 F
+(library) 480.13 548 T
+0 F
+(contains a \324/\325 character) 216 534 T
+(, then the) 325.08 534 T
+4 F
+(library) 372.38 534 T
+0 F
+( search path is searched to) 405.7 534 T
+(\336nd the library) 216 520 T
+(. If) 286.51 520 T
+4 F
+(library) 303.49 520 T
+0 F
+( contains no \324/\325 character) 336.81 520 T
+(, then the library) 455.56 520 T
+(search path is searched for a \336le called) 216 506 T
+4 F
+(library) 404.5 506 T
+3 F
+-0.6 (.tl) 437.82 506 S
+0 F
+(.) 457.61 506 T
+3 F
+-0.6 (-nc) 129.6 484 S
+0 F
+(Don\325) 216 484 T
+(t remove the output \336le if an error occurs. Normally the \336le) 240.43 484 T
+(would be removed upon error) 216 470 T
+(.) 357.89 470 T
+3 F
+-0.6 (-nerr) 129.6 448 S
+0 F
+(Stop attempts at hiding unde\336ned tokens and tags being errors. If) 216 448 T
+(an attempt is made to hide an unde\336ned token or tag, it will be left) 216 434 T
+(visible \050normally this is an error\051. If the -verbose switch has been) 216 420 T
+(speci\336ed, all such tokens and tags will be listed.) 216 406 T
+3 F
+-0.6 (-o) 129.6 384 S
+4 F
+(out\336le) 149.39 384 T
+0 F
+(Causes the output to be written to \336le) 216 384 T
+4 F
+(out\336le) 398.56 384 T
+0 F
+( rather than to the) 428.55 384 T
+(default output \336le) 216 370 T
+3 F
+-0.6 (tdf-output.t) 304.28 370 S
+0 F
+(.) 383.44 370 T
+3 F
+-0.6 (-verbose) 129.6 348 S
+0 F
+(Causes verbose output to be produced. This warns of tokens and) 216 348 T
+(tags which have no de\336nition, and of attempts to hide unde\336ned) 216 334 T
+(tokens and tags \050when used in conjunction with the) 216 320 T
+3 F
+-0.6 (-nerr) 464.84 320 S
+0 F
+( switch\051.) 497.82 320 T
+1 14 Q
+(LIBRAR) 108 286.67 T
+(Y CONSTRUCTION) 161.93 286.67 T
+0 12 Q
+(A TDF library is a sequence of named capsules, with an index. The index indicates) 108 260 T
+(which tokens and tags are de\336ned by the capsules in the library) 108 246 T
+(, and which capsules) 410.67 246 T
+(provide the de\336nitions. When invoked with the) 108 232 T
+3 F
+-0.6 ( -mc) 334.2 232 S
+0 F
+( switch,) 360.58 232 T
+3 F
+-0.6 (tld) 400.89 232 S
+0 F
+( produces a library) 420.68 232 T
+(consisting of the TDF capsules speci\336ed on the command line. The library is written to) 108 218 T
+(the \336le) 108 204 T
+3 F
+-0.6 (tdf-library.tl) 143.98 204 S
+0 F
+(, unless the) 236.33 204 T
+3 F
+-0.6 (-o) 292.96 204 S
+0 F
+( switch is used.) 306.15 204 T
+1 14 Q
+(Switches) 108 170.67 T
+0 12 Q
+(Tld accepts the following switches in library construction mode.) 108 144 T
+3 F
+-0.6 (-debug) 129.6 122 S
+0 F
+(Produce a diagnostic trace in the \336le) 216 122 T
+3 F
+-0.6 (tld.debug) 393.54 122 S
+0 F
+(.) 452.9 122 T
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(17 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+3 F
+0 X
+-0.6 (-Debug) 129.6 712 S
+0 F
+(Append a diagnostic trace to the \336le) 216 712 T
+3 F
+-0.6 (tld.debug) 392.21 712 S
+0 F
+(. This is useful) 451.57 712 T
+(for tracing several links in the build of a lar) 216 698 T
+(ge project.) 423.97 698 T
+3 F
+-0.6 (-nc) 129.6 676 S
+0 F
+(Don\325) 216 676 T
+(t remove the output \336le if an error occurs. Normally the \336le) 240.43 676 T
+(would be removed upon error) 216 662 T
+(.) 357.89 662 T
+3 F
+-0.6 (-o) 129.6 640 S
+4 F
+( out\336le) 142.79 640 T
+0 F
+(Causes the output to be written to \336le) 216 640 T
+4 F
+(out\336le) 398.56 640 T
+0 F
+( rather than to the) 428.55 640 T
+(default output \336le) 216 626 T
+3 F
+-0.6 (tdf-library.tl) 304.28 626 S
+0 F
+(.) 396.63 626 T
+3 F
+-0.6 (-verbose) 129.6 604 S
+0 F
+(Causes verbose output to be produced.) 216 604 T
+1 14 Q
+(LIBRAR) 108 570.67 T
+(Y CONTENTS) 161.93 570.67 T
+0 12 Q
+(When invoked with the) 108 544 T
+3 F
+-0.6 (-mt) 223.26 544 S
+0 F
+( switch,) 243.04 544 T
+3 F
+-0.6 (tld) 283.36 544 S
+0 F
+( produces a listing of the contents of the library) 303.14 544 T
+(speci\336ed on the command line.) 108 530 T
+1 14 Q
+(Switches) 108 496.67 T
+0 12 Q
+(Tld accepts the following switches in library contents mode.) 108 470 T
+3 F
+-0.6 (-verbose) 129.6 448 S
+0 F
+(Causes verbose output to be produced.) 216 448 T
+1 14 Q
+(LIBRAR) 108 414.67 T
+(Y EXTRACTION) 161.93 414.67 T
+0 12 Q
+(When invoked with the) 108 388 T
+3 F
+-0.6 (-mx) 223.26 388 S
+0 F
+( switch,) 243.04 388 T
+3 F
+-0.6 (tld) 283.36 388 S
+0 F
+( extracts capsules from the library speci\336ed on) 303.14 388 T
+(the command line. The names of the capsules to extract should follow the library name.) 108 374 T
+(If no names are speci\336ed, all capsules are extracted. If capsule names are speci\336ed, they) 108 360 T
+(must match exactly the names of the capsules in the library \050use the) 108 346 T
+3 F
+-0.6 (-mt) 435.43 346 S
+0 F
+( mode switch to) 455.22 346 T
+(\336nd out what the exact names are\051. The capsules are extracted into the current directory) 108 332 T
+(,) 527.21 332 T
+(using the basename of the capsule as the output \336le name. They will overwrite existing) 108 318 T
+(\336les of the same name.) 108 304 T
+1 14 Q
+(Switches) 108 270.67 T
+3 12 Q
+-0.6 (tld) 108 244 S
+0 F
+( accepts the following switches in library extraction mode.) 127.79 244 T
+3 F
+-0.6 (-nc) 129.6 222 S
+0 F
+(Don\325) 216 222 T
+(t remove the output \336le if an error occurs. Normally the \336le) 240.43 222 T
+(would be removed upon error) 216 208 T
+(.) 357.89 208 T
+3 F
+-0.6 (-verbose) 129.6 186 S
+0 F
+(Causes verbose output to be produced.) 216 186 T
+1 14 Q
+(SEE ALSO) 108 152.67 T
+3 12 Q
+-0.6 (tcc) 108 126 S
+0 F
+(\0501tdf\051.) 127.79 126 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Building applications using ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+1 8 Q
+0 X
+(File types) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+1 12 Q
+0 X
+(18 of 18) 500.03 53.12 T
+108 90 540 720 R
+7 X
+V
+108 90 540 720 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+0 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 154.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 142.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 142.33 P
+(KIND WITH REGARD T) 108 130.33 T
+(O THIS MA) 213.57 130.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 130.33 T
+(O, THE IMPLIED) 459.05 130.33 T
+-0.04 (W) 108 118.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 118.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 118.33 P
+-0.04 (AR) 390 118.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 118.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 106.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 94.33 T
+108 90 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "18" 19
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 18 1
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Times-BoldItalic
+%%+ Courier
+%%+ Times-Italic
+%%+ Courier-Oblique
+%%+ Helvetica-Narrow
+%%+ Symbol

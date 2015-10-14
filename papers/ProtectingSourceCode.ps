@@ -1,0 +1,2621 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 15 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(6/29/93 05:00 pm macrakis@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(1 of 17) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (Protecting Source Code with ANDF) 165.27 695 S
+0 12 Q
+(Stavr) 278.97 601 T
+(os Macrakis) 306.73 601 T
+(OSF Resear) 264.15 585 T
+(ch Institute) 325.55 585 T
+(January 25, 1993) 280.19 553 T
+0 14 Q
+(Binary pr) 180 463.67 T
+(otects sour) 238.45 463.67 T
+(ce code but is ar) 302.31 463.67 T
+(chitectur) 398.43 463.67 T
+(e-) 451.8 463.67 T
+(dependent. ANDF pr) 180 447.67 T
+(otects sour) 305.29 447.67 T
+(ce equally well,) 369.15 447.67 T
+(but is ar) 180 431.67 T
+(chitectur) 229.51 431.67 T
+(e-independent.) 282.87 431.67 T
+108 371.98 540 375 C
+90 373.49 558 373.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 380.33 T
+2 14 Q
+(Software source code is a highly valuable commodity) 108 348.64 T
+(, and software vendors) 407.49 348.64 T
+(go to great lengths to protect it. In particular) 108 332.64 T
+(, software is generally) 354.99 332.64 T
+(distributed in only object form, which is copyable and executable but does) 108 316.64 T
+(not give away engineering methods and techniques. Binary is, however) 108 300.64 T
+(,) 506.54 300.64 T
+(speci\336c to each tar) 108 284.64 T
+(get architecture. OSF\325) 212.27 284.64 T
+(s Architecture-) 335.46 284.64 T
+(Neutral Distribution) 418.99 284.64 T
+(Format \050ANDF\051 is independent of tar) 108 268.64 T
+(get architecture yet protects) 317.21 268.64 T
+(engineering methods and techniques.) 108 252.64 T
+2 11 Q
+(1) 315.52 258.24 T
+2 14 Q
+(Software is typically written in a high-level programming language, which) 108 224.64 T
+(makes it easy to design, create, understand, modify) 108 208.64 T
+(, and correct the) 393.11 208.64 T
+(program; translating \050compiling\051 it to object form makes it ef) 108 192.64 T
+(\336cient to) 450.14 192.64 T
+-0.05 (execute. Compilation removes most of the information needed to understand) 108 176.64 P
+(the program, and therefore to modify it, reuse its components, or take its) 108 160.64 T
+(best implementation ideas.) 108 144.64 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(1.  ANDF is based on the TDF technology from the U.K. Defense Research Agency) 108 97.67 T
+(.) 476.78 97.67 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(The value of sour) 108 736.84 T
+(ce code) 167.16 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(The ANDF technology introduces a third form of a program: the) 108 710.67 T
+(architecture-neutral ANDF form. ANDF contains just the information) 108 694.67 T
+(needed to compile a program on a variety of machines, and therefore) 108 678.67 T
+(excludes the information needed to modify it or reuse its components.) 108 662.67 T
+(This paper discusses the information carried by ANDF form, and possible) 108 634.67 T
+(reverse engineering attacks on programs starting from binary and from) 108 618.67 T
+(ANDF) 108 602.67 T
+(. ANDF provides somewhat more information about the source) 144.97 602.67 T
+(program than does binary) 108 586.67 T
+(, but in none of the attack scenarios does this make) 250.48 586.67 T
+(a substantive dif) 108 570.67 T
+(ference in the ease of attack.) 199.47 570.67 T
+108 510.98 540 514 C
+90 512.49 558 512.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. The value of source code) 108 519.33 T
+2 14 Q
+(Software source code is complex, expensive, and valuable.) 108 487.64 T
+(Software is a complex engineered product: source code embodies much of) 108 459.64 T
+(the detailed engineering design, and binary code is the \336nished product. As) 108 443.64 T
+(with other engineered products, the design documents are valuable) 108 427.64 T
+(intellectual property) 108 411.64 T
+(, and software vendors guard them closely as trade) 220.18 411.64 T
+(secrets.) 108 395.64 T
+(Continuing engineering on a product requires access to the design) 108 367.64 T
+(documentation. W) 108 351.64 T
+(ith the design documentation, functionality can be) 210.82 351.64 T
+(enhanced, design elements can be reused for other products, and new) 108 335.64 T
+(interfaces can be added.) 108 319.64 T
+(Source code is expensive: it re\337ects the extensive engineering work) 108 291.64 T
+(necessary to take an idea from a concept to a working product; it contains) 108 275.64 T
+(ameliorations invented to improve performance based on analysis and) 108 259.64 T
+(experience; it incorporates corrections to errors discovered through testing) 108 243.64 T
+(and actual usage.) 108 227.64 T
+(Source code is valuable: with it, variants can be created for particular) 108 199.64 T
+(market requirements; with it, new products can build incrementally on old) 108 183.64 T
+(ones; with it, engineering techniques used in one product can be applied to) 108 167.64 T
+(others; with it, interfaces can be created between products. W) 108 151.64 T
+(ithout it,) 452.1 151.64 T
+(programs cannot evolve to meet new needs.) 108 135.64 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Overview of softwar) 108 736.84 T
+(e artifacts) 177.13 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Losing control of source code can be costly) 108 710.67 T
+(. W) 350.74 710.67 T
+(ith knowledge of source) 370.38 710.67 T
+(code, a competitor can incorporate much of the know-how embedded in an) 108 694.67 T
+(application into his own; he can study competitors\325 weaknesses and exploit) 108 678.67 T
+(them in his own products; he can create interfaces which allow his products) 108 662.67 T
+(to piggy-back on the other) 108 646.67 T
+(.) 254.9 646.67 T
+(Thus, application developers protect their source code jealously) 108 618.67 T
+(.) 463.82 618.67 T
+0 F
+(Pr) 108 566.67 T
+(otection of sour) 122.51 566.67 T
+(ce code) 214.75 566.67 T
+2 F
+(Source code is protected by limiting its distribution to those with a \322need to) 108 537.67 T
+(know\323, by using legal protection mechanisms \050law of copyright and trade) 108 521.67 T
+(secret\051, and by minimizing the information about it in object code. \050In) 108 505.67 T
+(particular) 108 489.67 T
+(, object code is invariably stripped of its symbol table.\051) 161.06 489.67 T
+108 429.98 540 433 C
+90 431.49 558 431.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. Overview of software artifacts) 108 438.33 T
+2 14 Q
+(So far) 108 406.64 T
+(, we have been talking of program source and object. Actually) 141.25 406.64 T
+(,) 488.51 406.64 T
+(software that is designed to be maintained over time usually has many other) 108 390.64 T
+(pieces, starting with design documentation.) 108 374.64 T
+(Design documentation takes many forms. Some software producers have) 108 346.64 T
+(very formal procedures, where every function and every module has an) 108 330.64 T
+(associated design document de\336ning its interfaces and behavior) 108 314.64 T
+(. Other) 463.59 314.64 T
+(software producers rely on more informal design documentation. Comments) 108 298.64 T
+(in the code itself often replace separate design documentation.) 108 282.64 T
+(Software has build \336les \050Make\336les in Unix\051 which describe how the system) 108 254.64 T
+(is put together) 108 238.64 T
+(. Some source components are generated automatically from) 187.29 238.64 T
+(speci\336cations written in some other language; for instance, most compilers\325) 108 222.64 T
+(parsers are generated by parser generator programs directly from the) 108 206.64 T
+(speci\336cation of the grammar) 108 190.64 T
+(.) 267.72 190.64 T
+(Revision control \050SCCS, RCS, etc.\051 keeps track of program versions. As) 108 162.64 T
+(programs evolve, revision control information is important to keeping track) 108 146.64 T
+(of bugs, bug \336xes, and changes.) 108 130.64 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Reverse engineering and decompiling) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Libraries of tests ensure that old bugs have been \336xed, and catch some new) 108 710.67 T
+(bugs.) 108 694.67 T
+(Finally) 108 666.67 T
+(, we come to source code itself. Source code must compile into) 146.74 666.67 T
+(running object code. At the same time, it must be understandable by the) 108 650.67 T
+(programmer writing the code and those maintaining it. Thus it contains) 108 634.67 T
+(many hints about the programmer) 108 618.67 T
+(\325) 298.17 618.67 T
+(s intent, some explicit--variable and) 302.06 618.67 T
+(function names, comments, and type de\336nitions--and others implicit, like) 108 602.67 T
+(the choice of looping constructs, and the scope of variables.) 108 586.67 T
+(T) 108 558.67 T
+(o be executed, source code must be translated into object code, which is) 115.57 558.67 T
+(machine- and environment- dependent.) 108 542.67 T
+2 11 Q
+(2) 327.16 548.27 T
+2 14 Q
+( Object code contains only that) 332.65 542.67 T
+(information needed by the computer to execute the program, and not the) 108 526.67 T
+(information needed to understand it or modify it.) 108 510.67 T
+108 450.98 540 454 C
+90 452.49 558 452.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. Reverse engineering and decompiling) 108 459.33 T
+2 14 Q
+(In any branch of engineering,) 108 427.64 T
+3 F
+(r) 276.64 427.64 T
+(everse engineering) 281.56 427.64 T
+2 F
+( takes a \336nished product) 387.64 427.64 T
+(and recreates the engineering knowledge necessary to reproduce it. In the) 108 411.64 T
+(case of software, simply reproducing is trivial \050you just copy the bits\051) 108 395.64 T
+2 11 Q
+(3) 497.41 401.24 T
+2 14 Q
+(;) 502.9 395.64 T
+(what is dif) 108 379.64 T
+(\336cult is recreating the engineering knowledge necessary to) 166.82 379.64 T
+(modify) 108 363.64 T
+(, cannibalize, or interface to a program. So a good de\336nition is:) 147.51 363.64 T
+2 12 Q
+(Reverse engineering of software means reconstructing sufficient engineering) 144 342.98 T
+-0.53 (knowledge to modify a program, reuse parts of it in other contexts, and interface) 144 328.98 P
+(to it.) 144 314.98 T
+2 14 Q
+(Looking at the software process as a whole, reconstructing source is only) 108 287.64 T
+(part of reverse engineering, since source does not in general contain enough) 108 271.64 T
+(engineering knowledge. In the case of a spreadsheet, for instance, the) 108 255.64 T
+(formula interpreter may have been generated automatically \050by a tool like) 108 239.64 T
+(yacc\051 from a grammar description; it may be very dif) 108 223.64 T
+(\336cult to add a new) 405.02 223.64 T
+(operator by hand to the automatically generated state machine.) 108 207.64 T
+(Indeed, reconstructing engineering knowledge may even be necessary when) 108 179.64 T
+(source code) 108 163.64 T
+3 F
+(is) 177.93 163.64 T
+2 F
+( available. In software engineering, \322reverse engineering\323 in) 187.27 163.64 T
+108 132 540 152.09 C
+108 139.99 239.98 139.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(2.  I use \322object code\323 to refer to programs that are ready to load \050a.out, not .o\051.) 108 124.67 T
+(3.  This is a signi\336cant dif) 108 109.67 T
+(ference from manufactured products, where recreating manufacturing) 222.25 109.67 T
+(processes and tools is non-trivial.) 118.8 97.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Reverse engineering of ANDF) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(fact typically refers to the process of understanding) 108 710.67 T
+3 F
+(sour) 398.66 710.67 T
+(ce code) 423.02 710.67 T
+2 F
+( better) 465.36 710.67 T
+(, not) 500.16 710.67 T
+(reconstructing source code from object code!) 108 694.67 T
+(Still, reconstructing source from object is an important step in reverse) 108 666.67 T
+(engineering of object code, and is usually called) 108 650.67 T
+3 F
+(decompiling) 381.19 650.67 T
+2 F
+(. There has) 450.36 650.67 T
+(been some research on decompiling, and the technology is fairly mature:) 108 634.67 T
+(from an arbitrary object binary) 108 618.67 T
+(, a decompiler can reconstruct a program in a) 279.62 618.67 T
+(source language which has the same ef) 108 602.67 T
+(fect.) 325.34 602.67 T
+2 11 Q
+(4) 349.82 608.27 T
+2 14 Q
+( This typically is done by) 355.31 602.67 T
+(reconstructing straight-line code, and then analyzing control \337ow to abstract) 108 586.67 T
+(traditional control structures. Although the result is more or less readable as) 108 570.67 T
+(code, its intent is usually dif) 108 554.67 T
+(\336cult to understand in the absence of) 265.55 554.67 T
+(meaningful variable names, comments, and so on.) 108 538.67 T
+108 478.98 540 482 C
+90 480.49 558 480.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. Reverse engineering of ANDF) 108 487.33 T
+2 14 Q
+(Now) 108 455.64 T
+(, the issue is whether ANDF provides additional information which) 134.29 455.64 T
+(makes reverse engineering easier or more ef) 108 439.64 T
+(fective.) 354.85 439.64 T
+(The key observation is that no source or intermediate form of a program can) 108 411.64 T
+(be) 108 395.64 T
+3 F
+(less) 124.71 395.64 T
+2 F
+(easy to reverse engineer than its object binary: if it were, it would) 149.19 395.64 T
+(suf) 108 379.64 T
+(\336ce to complete the installation of binary) 124.85 379.64 T
+(, and then reverse engineer the) 354.01 379.64 T
+(binary) 108 363.64 T
+(.) 142.84 363.64 T
+(Thus the question becomes: what) 108 335.64 T
+3 F
+( additional) 294.55 335.64 T
+2 F
+(information does ANDF) 359.08 335.64 T
+(provide that object binary does not?) 108 319.64 T
+(The next section will show that decompiling ANDF into C is somewhat) 108 291.64 T
+(easier than translating from binary to C \050especially for data structures\051, and) 108 275.64 T
+(produces a bit more information on control and data structures. On the other) 108 259.64 T
+(hand, the resulting C program is close to incomprehensible for any realistic) 108 243.64 T
+(commercial program, just as is a C program decompiled from binary) 108 227.64 T
+(.) 491.43 227.64 T
+0 F
+(Structur) 108 175.64 T
+(e and pr) 159.04 175.64 T
+(esentation of ANDF) 208.55 175.64 T
+2 F
+(For an introduction to the internal structure of ANDF) 108 146.64 T
+(, please refer to the) 405.35 146.64 T
+(paper) 108 130.64 T
+3 F
+(The Structur) 142.57 130.64 T
+(e of ANDF: Principles and Examples) 212.41 130.64 T
+2 11 Q
+(5) 421.11 136.24 T
+2 14 Q
+(. That paper goes) 426.6 130.64 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(4.  Products include \322decomp\323 for the V) 108 97.67 T
+(AX, \322exe-to-C\323 for MS-DOS.) 283.55 97.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Decompiling ANDF to C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(into detail on the mechanisms used by ANDF to represent various language) 108 710.67 T
+(constructs.) 108 694.67 T
+(For this paper) 108 666.67 T
+(, the detailed structure of ANDF is not relevant, and we will) 185.17 666.67 T
+(use examples in pseudo-C syntax which re\337ect the information carried in) 108 650.67 T
+(the ANDF without the details. Additional information contained in ANDF) 108 634.67 T
+(itself guarantees C semantics \050or Fortran or Ada or Cobol semantics, as the) 108 618.67 T
+(case may be\051 for various constructs, but does not contain additional) 108 602.67 T
+(information about the source code.) 108 586.67 T
+108 526.98 540 530 C
+90 528.49 558 528.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(6. Decompiling ANDF to C) 108 535.33 T
+2 14 Q
+(ANDF can be decompiled to C just as object code can. In both cases, this) 108 503.64 T
+(requires intimate knowledge of the language to be decompiled. For machine) 108 487.64 T
+(language, the instruction set architecture must be well understood, and tools) 108 471.64 T
+(for interpreting instruction formats must be available \050disassemblers\051. For) 108 455.64 T
+(ANDF) 108 439.64 T
+(, the ANDF language must be well understood, and tools for) 144.97 439.64 T
+(decoding it must be available \050ANDF readers\051.) 108 423.64 T
+(Although ANDF readers are more dif) 108 395.64 T
+(\336cult to construct than disassemblers,) 317.97 395.64 T
+(and certainly not widely available, we will assume that a decompiler has) 108 379.64 T
+(access to this tool and to the complete speci\336cation. W) 108 363.64 T
+(ithout the tools and) 414.46 363.64 T
+(speci\336cation, reliable decompiling would be almost impossible, especially) 108 347.64 T
+(since the encoded form of ANDF is tightly packed in an unfamiliar way) 108 331.64 T
+(.) 509.69 331.64 T
+(Given such tools, we examine how much easier it is to decompile ANDF) 108 303.64 T
+(than object code.) 108 287.64 T
+0 F
+(Module and function structur) 108 235.64 T
+(e) 285.38 235.64 T
+2 F
+(C programs have a simple module structure: top-level function and object) 108 206.64 T
+(declarations can be either local to a source \336le or global. The separation into) 108 190.64 T
+(\336les gives some hint as to the global structure of the program. ANDF has) 108 174.64 T
+(essentially the same module structure. Object code has no module structure.) 108 158.64 T
+108 129 540 149.09 C
+108 136.99 239.98 136.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.68 (5.) 108 121.67 P
+3 F
+-0.68 (The Structur) 120.38 121.67 P
+-0.68 (e of ANDF: Principles and Examples) 174.53 121.67 P
+2 F
+-0.68 ( is an introduction to the structure of the ANDF) 335.01 121.67 P
+(interface through graduated examples and is written for language implementors and designers.) 118.8 109.67 T
+(It is available from OSF as report number RI-ANDF-TP1-1.) 118.8 97.67 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Decompiling ANDF to C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(As a general rule, functions which are contiguous in source modules are) 108 710.67 T
+(contiguous in ANDF and object modules. This gives a small amount of) 108 694.67 T
+(information about the source code's structure.) 108 678.67 T
+(ANDF does preserve information about the beginnings and ends of) 108 650.67 T
+(functions, unlike object code. However) 108 634.67 T
+(, on most architectures, procedure) 327.39 634.67 T
+(entry and exit code is rather stereotyped and can be identi\336ed automatically) 108 618.67 T
+(even in object code.) 108 602.67 T
+(ANDF also preserves explicit references to standard libraries. Decoding this) 108 574.67 T
+(does require understanding token de\336nition libraries, but once this is done,) 108 558.67 T
+(both macro and procedural references to libraries can be resolved easily) 108 542.67 T
+(.) 508.85 542.67 T
+(Procedural references to standard libraries in object code are relatively easy) 108 526.67 T
+(to decompile, since the same libraries are usually available separately with) 108 510.67 T
+(their named entry points; shared libraries make this even easier) 108 494.67 T
+(. On the) 460.47 494.67 T
+(other hand, macro entries are more opaque.) 108 478.67 T
+(Thus, ANDF does give additional information about the module structure of) 108 450.67 T
+(an application. In principle, tools could be written to hide this structure, but) 108 434.67 T
+(they do not exist today) 108 418.67 T
+(. ANDF also gives additional information about) 234.57 418.67 T
+(standard library references.) 108 402.67 T
+0 F
+(Straight-line executable code) 108 350.67 T
+2 F
+(Straight-line executable code is notably easy to reconstruct from object) 108 321.67 T
+(code, as from ANDF) 108 305.67 T
+(. Straight-line code reconstructed from ANDF is likely) 224.23 305.67 T
+(to be closer to source because fewer optimizations are performed in ANDF) 108 289.67 T
+(producers than in optimizing compilers.) 108 273.67 T
+0 F
+(Contr) 108 221.67 T
+(ol structur) 143.5 221.67 T
+(es) 206.59 221.67 T
+2 F
+(Programs written in higher) 108 192.67 T
+(-level languages use a variety of control) 258.12 192.67 T
+(constructs in order to express the programmer's intention clearly) 108 176.67 T
+(. Thus, in C,) 467.13 176.67 T
+(loops can be expressed as while loops, do/while loops, for loops, and of) 108 160.67 T
+(course combinations of goto's. C labels are local to a procedure. ANDF) 108 144.67 T
+(\337attens the space, and provides only goto's and unconditional repeat loops) 108 128.67 T
+(\050of the form) 108 112.67 T
+4 F
+-0.7 (while \0501\051 {...}) 179.11 112.67 S
+2 F
+(\051.) 294.54 112.67 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Decompiling ANDF to C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(In most architectures, object code uses only \050conditional\051 goto\325) 108 710.67 T
+(s, and their) 460.48 710.67 T
+(scope is global.) 108 694.67 T
+(Unlike binary) 108 666.67 T
+(, ANDF does identify loops, but not the choice of loop) 184.43 666.67 T
+(constructs. In binary) 108 650.67 T
+(, all backwards jumps must be analyzed to reconstruct) 221.73 650.67 T
+(loops.) 108 634.67 T
+0 F
+(Repr) 108 582.67 T
+(esentation of elementary types) 138.05 582.67 T
+2 F
+(Source, ANDF) 108 553.67 T
+(, and binary must somehow represent much of the same) 190.82 553.67 T
+(information about data types. For instance, every arithmetic operator must) 108 537.67 T
+(specify which operation to execute \050addition, multiplication,) 108 521.67 T
+3 F
+(etc.) 449.61 521.67 T
+2 F
+(\051, and on) 469.42 521.67 T
+(what data type. In C, the data type is speci\336ed in the data declaration, and) 108 505.67 T
+(the operation in the executable statement,) 108 489.67 T
+3 F
+(e.g) 343.88 489.67 T
+2 F
+(.:) 360.59 489.67 T
+4 F
+-0.7 (int net, gross, expenses;) 162 461.67 S
+-0.7 (...) 362.08 461.67 S
+-0.7 (net = gross - expenses;) 162 445.67 S
+2 F
+(In abstract ANDF \050as it comes out of the producer\051, the data type is) 108 417.67 T
+(speci\336ed in the data declaration, and the type of operation in the executable) 108 401.67 T
+(statement. The implementation of the data type is speci\336ed by the installer) 108 385.67 T
+(,) 524.06 385.67 T
+3 F
+(e.g.) 108 369.67 T
+2 F
+(:) 128.21 369.67 T
+4 F
+-0.7 (int v0, v1, v2;) 162 341.67 S
+-0.7 (...) 285.13 341.67 S
+-0.7 (v0 = integer_subtract\050v1, v2\051;) 162 325.67 S
+2 F
+(Abstract \050tokenized\051 ANDF does distinguish between data types which may) 108 297.67 T
+(be implemented dif) 108 281.67 T
+(ferently on dif) 216.57 281.67 T
+(ferent machines \050) 296.36 281.67 T
+3 F
+(e.g.) 393.5 281.67 T
+4 F
+-0.7 (long) 417.2 281.67 S
+2 F
+( and) 447.98 281.67 T
+4 F
+-0.7 (integer) 108 265.67 S
+2 F
+(\051, whereas object code only preserves dif) 161.87 265.67 T
+(ferences relevant to its) 390.48 265.67 T
+(architecture.) 108 249.67 T
+(In concrete ANDF -- after tar) 108 221.67 T
+(get-speci\336c tokens have been instantiated by) 272.09 221.67 T
+(the installer -- the data size is speci\336ed in the data declaration, and the type) 108 205.67 T
+(of operation in the executable statement,) 108 189.67 T
+3 F
+( e.g.) 334.94 189.67 T
+2 F
+(:) 358.64 189.67 T
+4 F
+-0.7 (int[-32768..32767] v0, v1, v2;) 162 161.67 S
+-0.7 (...) 400.56 161.67 S
+-0.7 (v0 = integer_subtract\050v1, v2\051;) 162 145.67 S
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Decompiling ANDF to C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 17) 511.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(In object code, the individual data items are typically not declared) 108 710.67 T
+(separately) 108 694.67 T
+(, and the type and size of the operation is speci\336ed in the) 163.82 694.67 T
+(executable statement:) 108 678.67 T
+4 F
+-0.7 (bytes v[6]) 162 650.67 S
+-0.7 (...) 246.65 650.67 S
+-0.7 (v[0..1] =) 162 634.67 S
+-0.7 (         integer_subtract_16\050v[2..3], vv[4..5]\051;) 144 618.67 S
+2 F
+(Thus, for scalar variables, essentially the same information is available) 108 590.67 T
+(\050except of course the names\051, although in the ANDF it is in principle easier) 108 574.67 T
+(to separate variables than in binary) 108 558.67 T
+(. In practice, it is rather easy to determine) 302.55 558.67 T
+(variable slots, and even their type, from binary) 108 542.67 T
+(. Any typedefs and macros) 368.62 542.67 T
+(used to give mnemonic names to data types are unavailable both in object) 108 526.67 T
+(and in ANDF) 108 510.67 T
+(.) 183.05 510.67 T
+0 F
+(Compound data types) 108 458.67 T
+2 F
+(Most interesting data structures are composed of compound data types such) 108 429.67 T
+(as records and unions. In source code, the names of \336elds and their types are) 108 413.67 T
+(important documentation. For instance, a cell in a sparse spreadsheet might) 108 397.67 T
+(be represented as:) 108 381.67 T
+4 F
+-0.7 (struct cell {) 144 353.67 S
+-0.7 (struct cell *up, *down, *right, *left;) 180 337.67 S
+-0.7 (formula contents;) 180 321.67 S
+-0.7 (display_style style;) 180 305.67 S
+-0.7 (   }) 180 289.67 S
+2 F
+(This expresses the intent of the program writer clearly and simply) 108 261.67 T
+(. In) 475.49 261.67 T
+(ANDF) 108 245.67 T
+(, most of the intent is gone. The ANDF equivalent is roughly) 144.97 245.67 T
+(\050depending on what) 108 229.67 T
+4 F
+-0.7 (formula) 222.64 229.67 S
+2 F
+( and) 276.51 229.67 T
+4 F
+-0.7 (display_style) 303.71 229.67 S
+2 F
+( are\051:) 403.75 229.67 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Decompiling ANDF to C) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+4 14 Q
+0 X
+-0.7 (struct s1 {) 162 710.67 S
+-0.7 (void *f1;) 180 694.67 S
+-0.7 (void *f2;) 180 678.67 S
+-0.7 (void *f3;) 180 662.67 S
+-0.7 (void *f4;) 180 646.67 S
+-0.7 (void *f5;) 180 630.67 S
+-0.7 (void *f6;) 180 614.67 S
+-0.7 ( }) 180 598.67 S
+2 F
+(Actually) 108 554.67 T
+(, the information is not quite this explicit in the ANDF) 155.28 554.67 T
+(, but it is) 459.28 554.67 T
+(relatively easy to reconstruct it in the case of simple records. V) 108 538.67 T
+(ariant records) 459.29 538.67 T
+(\050unions\051 are more dif) 108 522.67 T
+(\336cult.) 226.26 522.67 T
+(In object code, reconstructing the structure of records is less straightforward.) 108 494.67 T
+(Thus, ANDF gives considerably more information about the general shape) 108 466.67 T
+(of compound data structures than does object code: reconstructing the) 108 450.67 T
+(concrete representation of data types is relatively straightforward. On the) 108 434.67 T
+(other hand, it gives no information about the) 108 418.67 T
+3 F
+(intent) 361.01 418.67 T
+2 F
+(or) 396.38 418.67 T
+3 F
+( meaning) 408.04 418.67 T
+2 F
+( of that) 459.73 418.67 T
+(shape, as do declarations in the source, which use typedefs, struct names,) 108 402.67 T
+(and so on to document usage.) 108 386.67 T
+0 F
+(Summary: decompiling ANDF) 108 334.67 T
+2 F
+(ANDF gives a decompiler several additional pieces of information) 108 305.67 T
+-0.01 (compared to binary object code. The division into procedures and references) 108 289.67 P
+(to standard libraries are clear and unambiguous. Control structures and in-) 108 273.67 T
+-0.01 (line code are somewhat more transparent, but can generally be reconstructed) 108 257.67 P
+(even from optimized binary code by a good decompiler) 108 241.67 T
+(. Data types are) 418.11 241.67 T
+(probably the area where ANDF gives the most additional information, but) 108 225.67 T
+(here too the information is low-level.) 108 209.67 T
+(All this analysis presupposes a mastery of ANDF speci\336cation and know-) 108 181.67 T
+(how) 108 165.67 T
+(. Although this mastery does not exist today) 131.18 165.67 T
+(, we must assume that it will) 376.69 165.67 T
+(in the future.) 108 149.67 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Reverse engineering fr) 108 736.84 T
+(om decompiled code) 185.13 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+108 700.98 540 704 C
+90 702.49 558 702.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(7. Reverse engineering from decompiled code) 108 709.33 T
+2 14 Q
+(Decompiled object code or ANDF is functionally equivalent to the original) 108 677.64 T
+(code. That is, it contains all information that is useful to the compiler) 108 661.64 T
+(.) 494.33 661.64 T
+(However) 108 645.64 T
+(, it contains almost none of the information that is useful to a) 158.72 645.64 T
+(programmer who wishes to understand the program.) 108 629.64 T
+(Indeed, one proposed way of protecting source code is \322shrouding\323 it, that) 108 601.64 T
+(is, performing a source-to-source transformation that removes human-) 108 585.64 T
+(oriented content. This includes comments, formatting, and identi\336er names) 108 569.64 T
+(as well as higher) 108 553.64 T
+(-level control structures and macros.) 201.37 553.64 T
+(Although formatting and some higher) 108 525.64 T
+(-level control structures can be) 319.14 525.64 T
+(reconstructed by a decompiler) 108 509.64 T
+(, comments and identi\336er names cannot.) 276.47 509.64 T
+(There is a lar) 108 493.64 T
+(ge dif) 181.18 493.64 T
+(ference in readability between code with meaningful) 213.18 493.64 T
+(names and comments and that without. Consider) 108 477.64 T
+(, for instance, the following) 379.89 477.64 T
+(very simple code fragment from a \336ctional compiler:) 108 461.64 T
+4 F
+-0.7 (case 23:) 144 433.64 S
+-0.7 (   { v42 = f71\050v3.r5\051;) 144 417.64 S
+-0.7 (     f56\05012, v1, v42.r23\051;) 144 401.64 S
+-0.7 (     if \050v42.r3 != 0\051) 144 385.64 S
+-0.7 (        f56\05012, v1 + 1, v42.r23 + 1\051;) 144 369.64 S
+-0.7 (     return 0;) 144 353.64 S
+-0.7 (    }) 144 337.64 S
+2 F
+(and compare it to the form a programmer would have written:) 108 309.64 T
+4 F
+-0.7 (case float_to_float:) 144 281.64 S
+-0.7 (/* Copy floating point number */) 144 265.64 S
+-0.7 (   { dest_reg_num = get_float_reg_num\050dest.where\051;) 144 249.64 S
+-0.7 (     issue_inst\050float_copy, dest_reg_num,) 144 233.64 S
+-0.7 (                              reg_num\050src_reg\051\051;) 144 217.64 S
+-0.7 (     if \050dest.doublep\051) 144 201.64 S
+-0.7 (        issue_inst\050float_copy, dest_reg_num + 1,) 144 185.64 S
+-0.13 -0.7 (                              reg_num\050src_reg\051 + 1\051;) 144 169.64 B
+-0.7 (     return SUCCESS; }) 144 153.64 S
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(The goals of r) 108 736.84 T
+(everse engineers) 154.72 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(12 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(This case might be one of a hundred in a single routine. In the absence of) 108 710.67 T
+(any explanatory commentary or design documentation, the decompiled code) 108 694.67 T
+(is useless.) 108 678.67 T
+(There do exist tools to help maintenance programmers understand existing,) 108 650.67 T
+(poorly-documented programs. Patient application of these tools to) 108 634.67 T
+(decompiled code \050from object or from ANDF\051 could, with time, yield) 108 618.67 T
+(results. It is doubtful that these results would be very useful.) 108 602.67 T
+108 542.98 540 546 C
+90 544.49 558 544.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(8. The goals of reverse engineers) 108 551.33 T
+2 14 Q
+(Having seen what decompiled code might look like, let us consider some of) 108 519.64 T
+(the putative applications of decompiling and reverse engineering, and see if) 108 503.64 T
+(decompiled ANDF can in fact be useful for them.) 108 487.64 T
+(This is a purely technical discussion; from a legal point of view) 108 459.64 T
+(, most of) 462.69 459.64 T
+(these techniques would surely constitute infringements on the intellectual) 108 443.64 T
+(property rights of the original software vendor) 108 427.64 T
+(.) 366.82 427.64 T
+0 F
+(Extracting algorithms) 108 375.64 T
+2 F
+(Some companies are known for having particularly ef) 108 346.64 T
+(\336cient algorithms in) 408.9 346.64 T
+(certain critical areas. A competitor may want to use that same algorithm in a) 108 330.64 T
+(dif) 108 314.64 T
+(ferent product. In order to do this, he must understand the algorithm well) 123.29 314.64 T
+(enough to adapt it to his own data structures and interfaces.) 108 298.64 T
+(T) 108 270.64 T
+(o do this, the competitor would \336rst have to \336nd this algorithm in the) 115.57 270.64 T
+(middle of the code. This can be done by pro\336ling in some cases; in other) 108 254.64 T
+(cases, lar) 108 238.64 T
+(ge parts of the code would have to be studied.) 159.03 238.64 T
+(After the algorithm is located, it will have to be decompiled. This will give) 108 210.64 T
+(unreadable code \050see the section on decompilation\051. Now) 108 194.64 T
+(, reverse) 428.06 194.64 T
+(engineering proper is needed to understand what this code does.) 108 178.64 T
+(Although published algorithms are usually short and clear) 108 150.64 T
+(, practical) 431.95 150.64 T
+(implementations are often long and obscure. For instance, the inner loop of) 108 134.64 T
+(the original Boyer) 108 118.64 T
+(-Moore fast string search algorithm consists of two lines) 209.54 118.64 T
+(of pseudo-Algol. The implementation in GNU Emacs is about 125 lines of) 108 102.64 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(The goals of r) 108 736.84 T
+(everse engineers) 154.72 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(13 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(C code in which Emacs\325) 108 710.67 T
+(s data structures and the Boyer) 244.02 710.67 T
+(-Moore algorithm are) 415.89 710.67 T
+(woven together) 108 694.67 T
+(. Understanding the algorithm requires understanding the) 193.88 694.67 T
+(usage of the data structures. The C code itself is dif) 108 678.67 T
+(\336cult to understand, and) 394.93 678.67 T
+(thus is heavily commented. Comments would of course be unavailable to) 108 662.67 T
+(anyone reverse engineering the algorithm. Moreover) 108 646.67 T
+(, any particular) 401.98 646.67 T
+(implementation of an algorithm may depend on invariants of data structures) 108 630.67 T
+(or coding conventions which are not evident from examination of the) 108 614.67 T
+(decompiled code.) 108 598.67 T
+(It is clear that deciphering such code is a non-trivial exercise. On the other) 108 570.67 T
+(hand, if the algorithm\325) 108 554.67 T
+(s implementation is short and simple, it is likely that) 233.15 554.67 T
+(it can be just as well decompiled and reverse engineered from object code.) 108 538.67 T
+0 F
+(Extracting data formats and interfaces) 108 486.67 T
+2 F
+(Another reason to reverse-engineer a piece of software is to understand its) 108 457.67 T
+(external interfaces. A vendor may use a proprietary data format to exclude) 108 441.67 T
+(competitors from producing plug-compatible software.) 108 425.67 T
+(Some data formats are readily reverse engineered, although the process is) 108 397.67 T
+(laborious. For a word processing program, a paragraph will typically be) 108 381.67 T
+(represented with some sort of preamble containing style parameters such as) 108 365.67 T
+(typeface \050with values drawn from the font list\051, size \050with small integer) 108 349.67 T
+(values\051, lightness \050with values drawn from light/normal/bold\051, etc. T) 108 333.67 T
+(o) 490.61 333.67 T
+(reverse engineer this format, one creates paragraphs with a variety of) 108 317.67 T
+(formats, varying one parameter at a time, and sees how they are represented) 108 301.67 T
+(in binary) 108 285.67 T
+(.) 157.23 285.67 T
+(Other data formats \050especially those based on the internal representation of) 108 257.67 T
+(the object\051 are more dif) 108 241.67 T
+(\336cult. They may contain pointers to other parts of) 239.08 241.67 T
+(the structure, which only make sense if the memory or) 108 225.67 T
+(ganization of the) 412.42 225.67 T
+(application is understood. Or they may contain additional internal data) 108 209.67 T
+(which must be consistent with user) 108 193.67 T
+(-visible data, but is not directly visible to) 303.99 193.67 T
+-0.03 (the user) 108 177.67 P
+-0.03 (. For instance, there may be a special code for a given font in a given) 151.11 177.67 P
+(size and lightness.) 108 161.67 T
+(In these cases, understanding the underlying program is usually necessary) 108 133.67 T
+(.) 520.56 133.67 T
+(Most of the information is contained in the program\325) 108 117.67 T
+(s data declarations and) 402.59 117.67 T
+(the attached comments. In the absence of meaningful record \336eld names and) 108 101.67 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(The goals of r) 108 736.84 T
+(everse engineers) 154.72 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(14 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(comments, it is usually unenlightening to know that a particular data) 108 710.67 T
+(structure consists of some lar) 108 694.67 T
+(ge number of short integer \336elds, integer \336elds,) 270.97 694.67 T
+(and long integer \336elds.) 108 678.67 T
+(Still, given suf) 108 650.67 T
+(\336cient economic motivation, it is perfectly possible to reverse) 189.77 650.67 T
+(engineer such interfaces from binary or from ANDF) 108 634.67 T
+(.) 399.47 634.67 T
+2 11 Q
+(6) 402.97 640.27 T
+0 14 Q
+(Cannibalizing code) 108 582.67 T
+2 F
+(Reverse engineering might be useful as a way of avoiding developing code) 108 553.67 T
+(from scratch. In fact, it is often possible to lift object code directly and reuse) 108 537.67 T
+(it. But this will only work if the interface is well-understood. For instance,) 108 521.67 T
+(one could feel con\336dent that a) 108 505.67 T
+4 F
+-0.7 (sin) 280.54 505.67 S
+2 F
+( routine for a given architecture would) 303.63 505.67 T
+(work if lifted bodily into another application on the same architecture. The) 108 489.67 T
+(same is true in ANDF) 108 473.67 T
+(.) 229.69 473.67 T
+(On the other hand, it is highly unlikely that any major module of a lar) 108 445.67 T
+(ge) 497.56 445.67 T
+(program could be reused in this way) 108 429.67 T
+(, or through decompilation. The main) 310.72 429.67 T
+(problem is that the interface is not fully speci\336ed: the precise assumptions) 108 413.67 T
+(being made, the data structures being used, and the conventions being) 108 397.67 T
+(respected.) 108 381.67 T
+0 F
+(Competitive analysis) 108 329.67 T
+2 F
+(Reverse engineering could be used to \336nd weak points in a competitor) 108 300.67 T
+(\325) 502.19 300.67 T
+(s) 506.08 300.67 T
+(products, or latent but unpublicized functionality) 108 284.67 T
+(.) 380.7 284.67 T
+(Finding weak points by reading fully documented code is dif) 108 256.67 T
+(\336cult; trying to) 448.59 256.67 T
+(\336nd them by reading decompiled code is unrealistic. System testing is) 108 240.67 T
+(probably a far more ef) 108 224.67 T
+(fective way of \336nding weak points.) 232.85 224.67 T
+(Latent functionality) 108 196.67 T
+3 F
+(is) 222.26 196.67 T
+2 F
+( an area where reverse engineering may be useful.) 231.59 196.67 T
+(Once a critical routine is identi\336ed, it may well be possible to notice a path) 108 180.67 T
+(that is only taken under special circumstances. This can also be done using a) 108 164.67 T
+(debugger) 108 148.67 T
+(, but decompiled code is probably an easier way) 159.51 148.67 T
+(.) 427.89 148.67 T
+108 117 540 137.09 C
+108 124.99 239.98 124.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+-0.47 (6.  For example, Accolade Inc. reverse engineered Sega\325) 108 109.67 P
+-0.47 (s game interface using decompilation.  See) 352.27 109.67 P
+(Electronic News) 118.8 97.67 T
+0 F
+(38) 194.46 97.67 T
+2 F
+(:1928:18 \050Sept. 7, 1992\051.) 205.45 97.67 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(15 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(Of course, any latent functionality which is conditionally compiled will be) 108 710.67 T
+(completely invisible to both ANDF and binary versions.) 108 694.67 T
+0 F
+(W) 108 642.67 T
+(riting clones) 121.74 642.67 T
+2 F
+(Finally) 108 613.67 T
+(, a decompiled program might be used to write a clone of the original) 146.74 613.67 T
+(program. That is, the whole of the decompiled program would be used as a) 108 597.67 T
+(basis for a new version.) 108 581.67 T
+(This is highly unrealistic. Maintaining fully-documented source code is) 108 553.67 T
+(dif) 108 537.67 T
+(\336cult enough. Maintaining poorly-documented source code is a well-) 123.29 537.67 T
+(known problem. Maintaining decompiled source code is unthinkable.) 108 521.67 T
+108 433.98 540 437 C
+90 435.49 558 435.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(9. Conclusion) 108 442.33 T
+2 14 Q
+(Like binary object code, ANDF provides suf) 108 382.64 T
+(\336cient information to execute a) 357.62 382.64 T
+(program. Unlike binary) 108 366.64 T
+(, it provides it in an architecture-neutral form,) 238.83 366.64 T
+(allowing installation on a variety of machine types.) 108 350.64 T
+(Like binary) 108 322.64 T
+(, ANDF can be decompiled into an equivalent C program. In) 171.99 322.64 T
+(fact, in some areas it makes decompilation somewhat easier:) 108 306.64 T
+2 13 Q
+(\245) 122.4 283.31 T
+(ANDF executable code is more structured than object code. However) 136.8 283.31 T
+(, object) 497.61 283.31 T
+(code decompilation is well-enough understood that ANDF provides no) 121.54 268.31 T
+(additional useful information.) 121.54 253.31 T
+(\245) 122.4 230.31 T
+(In order to be installable on dif) 136.8 230.31 T
+(ferent machines, the ANDF form carries) 297.41 230.31 T
+(machine-independent data de\336nitions rather than committing to speci\336c) 121.54 215.31 T
+(layouts. These data de\336nitions mirror the overall structure of source code data) 121.54 200.31 T
+(de\336nitions more closely than does object code.) 121.54 185.31 T
+(\245) 122.4 162.31 T
+(ANDF library calls are more explicit than object code library calls. But) 136.8 162.31 T
+(anyone with access to standard object libraries can extract the same information) 121.54 147.31 T
+(from object code.) 121.54 132.31 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(16 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(But reverse engineering is much more than just decompilation.) 108 710.67 T
+(Decompilation produces a program with meaningless identi\336ers, no) 108 694.67 T
+(comments, and no higher) 108 678.67 T
+(-level data de\336nitions. Make\336les, test cases, and) 249.18 678.67 T
+(design documents are all missing.) 108 662.67 T
+(Useful reverse engineering requires understanding the functioning of the) 108 634.67 T
+(program in order to re-engineer it. ANDF provides no more help here than) 108 618.67 T
+(does binary) 108 602.67 T
+(.) 171.99 602.67 T
+(Thus, ANDF allows distributing architecture-neutral code with no) 108 574.67 T
+(compromise to source integrity) 108 558.67 T
+(.) 281.59 558.67 T
+0 F
+(For further information please contact:) 216 502.67 T
+(Stavr) 216 470.67 T
+(os Macrakis) 248.39 470.67 T
+(macrakis@osf.org) 216 454.67 T
+(\050617\051 621-7356) 216 438.67 T
+108 90 540 720 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+108 72 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Protecting Source Code with ANDF) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(17 of 17) 506.69 54.45 T
+108 90 540 720 R
+7 X
+V
+FMENDPAGE
+%%EndPage: "17" 18
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 17 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier

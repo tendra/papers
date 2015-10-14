@@ -1,0 +1,2090 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 13 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-BoldItalic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+108 81 540 81 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 747 540 747 2 L
+7 X
+V
+3 H
+0 Z
+0 X
+N
+108 46.88 342 63 R
+7 X
+V
+0 10 Q
+0 X
+(6/29/93 11:05 pm macrakis@osf.org) 108 56.33 T
+360 46.88 540 63 R
+7 X
+V
+0 X
+(\251 1993 OSF) 360 56.33 T
+(1 of 11) 511.69 56.33 T
+108 90 540 711 R
+7 X
+V
+1 24 Q
+0 X
+-1.2 (Distributing software for multiple platforms:) 130.41 695 S
+-1.2 (V) 180.11 665 S
+-1.2 (irtual binary vs. multiple binary) 193.59 665 S
+0 12 Q
+(Stavr) 278.97 578 T
+(os Macrakis) 306.73 578 T
+(Open Softwar) 254.47 546 T
+(e Foundation) 325.88 546 T
+(Resear) 277.31 530 T
+(ch Institute) 312.39 530 T
+(June 1993) 298.18 498 T
+0 14 Q
+(Distinct application distributions for many) 180 415.67 T
+(platforms inconvenience softwar) 180 399.67 T
+(e vendors and) 374.06 399.67 T
+(users. W) 180 383.67 T
+(e discuss two ways of distributing a) 231.31 383.67 T
+(single version: virtual binaries \050ANDF\051 and) 180 367.67 T
+(multiple binaries \050CD-ROM\051.) 180 351.67 T
+108 291.98 540 295 C
+90 293.49 558 293.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(1. Introduction) 108 300.33 T
+2 14 Q
+(Most software is currently distributed as binary executables on diskettes or) 108 268.64 T
+(cartridge tapes. A separate diskette or tape set must be produced and) 108 252.64 T
+(distributed for each hardware/software platform.) 108 236.64 T
+(Three innovations promise to change software distribution practices:) 108 208.64 T
+2 13 Q
+(\245) 122.4 185.31 T
+(The architecture-neutral distribution format \050ANDF\051, with its portability) 136.8 185.31 T
+(across platforms;) 136.8 170.31 T
+(\245) 122.4 147.31 T
+(The compact disk \050CD-ROM\051, with its high storage capacity; and) 136.8 147.31 T
+(\245) 122.4 124.31 T
+(The widespread use of networks.) 136.8 124.31 T
+2 14 Q
+(This paper discusses their impact on software distribution.) 108 96.64 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Innovations r) 108 736.84 T
+(elevant to softwar) 153.84 736.84 T
+(e distribution) 214.53 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(2 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(2. Innovations relevant to software distribution) 108 700.33 T
+0 14 Q
+(ANDF: virtual binary) 108 656.64 T
+2 F
+(The architecture-neutral distribution format \050ANDF\051 is a virtual binary) 108 627.64 T
+(format that allows software to be distributed in a single non-human-readable) 108 611.64 T
+(form and installed on any platform supporting the relevant interfaces.) 108 595.64 T
+2 11 Q
+(1) 496.61 601.24 T
+2 14 Q
+(ANDF supports install-time conditionalization and parameterization, and so) 108 567.64 T
+(allows applications to bene\336t from platform-speci\336c features and work) 108 551.64 T
+(around platform-speci\336c de\336ciencies.) 108 535.64 T
+(ANDF thus eliminates the need for distributing a dif) 108 507.64 T
+(ferent binary for each) 400.79 507.64 T
+(platform.) 108 491.64 T
+0 F
+(Compact disks and drives: cheap media) 108 451.64 T
+2 F
+(Compact disks \050CD\051 are a read-only digital medium, best known for audio) 108 422.64 T
+(recordings \050CD-DA format\051. They can record approximately 650Mbytes of) 108 406.64 T
+(data \050about an hour of music\051.) 108 390.64 T
+(Compact disks are reproduced by stamping, so the unit cost of duplication is) 108 362.64 T
+-0.17 (very low \050around $2\051. The initial cost of a master is moderate \050$1000\051. There) 108 346.64 P
+(are also write-once CD disks and recorders at somewhat higher prices) 108 330.64 T
+(\050projected as $10/$3,000\051.) 108 314.64 T
+(Their low unit cost and high storage capacity makes CDs a natural medium) 108 286.64 T
+(for distributing databases \050CD-ROM\051. Many commercial bibliographic and) 108 270.64 T
+(full-text databases are now distributed on CD\325) 108 254.64 T
+(s. Other CD formats are) 366.05 254.64 T
+-0.49 (designed speci\336cally for consumer multimedia products \050CD-I for interactive) 108 238.64 P
+(multimedia, Photo CD for still photographs,) 108 222.64 T
+3 F
+(etc.) 358.32 222.64 T
+2 F
+(\051.) 378.14 222.64 T
+-0.04 (CD drives are cheap because the drive itself is essentially identical across all) 108 194.64 P
+-0.42 (these application areas. W) 108 178.64 P
+-0.42 (ith these economies of scale, drives now cost under) 253.07 178.64 P
+($300 discounted, and may soon go under $150.) 108 162.64 T
+108 105 540 125.09 C
+108 112.99 239.98 112.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 11 Q
+0 X
+0 K
+(1.  More information is available in the OSF Research Institute\325) 108 97.67 T
+(s) 387.82 97.67 T
+3 12 Q
+(Collected Papers on ANDF) 394.84 97.67 T
+2 11 Q
+(.) 526.21 97.67 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Characteristics of softwar) 108 736.84 T
+(e distribution) 196.22 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(3 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+0 14 Q
+0 X
+(Networks: ubiquitous and \337exible) 108 701.67 T
+2 F
+(Software can also be distributed through networks. Many end users have) 108 672.67 T
+(internal networks, and increasing numbers are connected to external) 108 656.67 T
+(networks.) 108 640.67 T
+(On internal networks, it suf) 108 612.67 T
+(\336ces to have a single archive of all necessary) 261.26 612.67 T
+-0.52 (pieces of software, which can then be distributed on demand to internal users.) 108 596.67 P
+(For that matter) 108 580.67 T
+(, software need not even be \322distributed\323 and \322installed\323 on) 190.61 580.67 T
+(multiple users\325 computers; instead, it can simply be run on demand on their) 108 564.67 T
+(machines.) 108 548.67 T
+(W) 108 520.67 T
+(ith external networks, this archive can reside at the software vendor) 120.65 520.67 T
+(\325) 499.25 520.67 T
+(s site.) 503.14 520.67 T
+(Not only does this allow distributing completely updated versions at all) 108 504.67 T
+(times, it also makes it easy to provide added-value packages such as) 108 488.67 T
+(spreadsheet templates.) 108 472.67 T
+108 412.98 540 416 C
+90 414.49 558 414.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(3. Characteristics of software distribution) 108 421.33 T
+0 14 Q
+(Distributions ar) 108 377.64 T
+(e bulky) 202.98 377.64 T
+2 F
+-0.58 (Software distributions are becoming increasingly bulky) 108 348.64 P
+-0.58 (. Not only are binaries) 414.68 348.64 P
+(getting lar) 108 332.64 T
+(ger) 164.88 332.64 T
+(, but lar) 182.19 332.64 T
+(ger amounts of ancillary data are delivered with) 225.07 332.64 T
+(applications.) 108 316.64 T
+-0.61 (A complete software package includes, in addition to the executables, various) 108 288.64 P
+-0.29 (data \336les and examples, and often on-line documentation, databases, and clip) 108 272.64 P
+(art, which are often much lar) 108 256.64 T
+(ger than the executables.) 269.39 256.64 T
+(Thus, diskettes have become a clumsy distribution medium for both system) 108 228.64 T
+(and application software.) 108 212.64 T
+0 F
+(Binary executables vary by platform) 108 172.64 T
+2 F
+(Binary executables vary by software and hardware platform. A binary built) 108 143.64 T
+(for OS/2 on a 386 will not run under SCO Unix on a 386. For that matter) 108 127.64 T
+(,) 515.92 127.64 T
+(even source code written to a standard source interface \050API\051 may compile) 108 111.64 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Characteristics of softwar) 108 736.84 T
+(e distribution) 196.22 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(4 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(into dif) 108 701.67 T
+(ferent binaries for the same processor) 148.56 701.67 T
+(, if the implementations do not) 358.21 701.67 T
+(conform to a standard binary interface \050ABI\051.) 108 685.67 T
+0 F
+(Multiplatform development is expensive) 108 645.67 T
+2 F
+(Developing software for each API and ABI is expensive and unreliable.) 108 616.67 T
+0 F
+(Users want platform independence) 108 576.67 T
+2 F
+-0.04 (Users would like to buy software independently from hardware. They do not) 108 547.67 P
+(want their choices restricted to the platforms the software vendor considered) 108 531.67 T
+-0.09 (important when the software was written, and they want to be able to change) 108 515.67 P
+(their hardware base independently of their software base.) 108 499.67 T
+0 F
+(Platforms evolve) 108 459.67 T
+2 F
+(Both software and hardware platforms are enhanced over time: new) 108 430.67 T
+(interfaces are added to APIs; new instructions and new optimizations are) 108 414.67 T
+(added to processors. Software that does not take advantage of these) 108 398.67 T
+(enhancements is at a competitive disadvantage compared to software that) 108 382.67 T
+(does.) 108 366.67 T
+0 F
+(Softwar) 108 326.67 T
+(e evolves) 155.15 326.67 T
+2 F
+(Over time, software packages are updated, corrected, and enhanced.) 108 297.67 T
+0 F
+(Softwar) 108 257.67 T
+(e is easy to copy) 155.15 257.67 T
+2 F
+(Since software is just binary data, it is easy to copy) 108 228.67 T
+(. Thus, trying to restrict) 393.51 228.67 T
+(physical copying is no substitute for license management.) 108 212.67 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Uses of CD-ROM in softwar) 108 736.84 T
+(e distribution) 204.23 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(5 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(4. Uses of CD-ROM in software distribution) 108 700.33 T
+0 14 Q
+(Solving existing pr) 108 656.64 T
+(oblems with CD-ROM) 218.93 656.64 T
+2 F
+(The capacity of CD-ROM allows software vendors to distribute lar) 108 627.64 T
+(ge) 482.76 627.64 T
+(programs and lar) 108 611.64 T
+(ge amounts of ancillary data, such as documentation and) 202.56 611.64 T
+(databases. Some software is now distributed only on CD-ROM \050W) 108 595.64 T
+(indows) 482.08 595.64 T
+-0.13 (NT\051. CD-ROM also allows bundling of vast amounts of data at no additional) 108 579.64 P
+(cost \050) 108 563.64 T
+3 F
+(cf.) 138.7 563.64 T
+2 F
+( Corel Draw) 152.3 563.64 T
+(, whose full libraries are only available on the CD-ROM) 220.55 563.64 T
+(distribution\051.) 108 547.64 T
+-0.08 (Its lar) 108 519.64 P
+-0.08 (ge capacity also allows CD-ROM to carry multiple binaries on a single) 139.92 519.64 P
+(disk, one binary executable per platform. This gives platform independence,) 108 503.64 T
+(but it is limited to those platforms considered important by the software) 108 487.64 T
+(vendor) 108 471.64 T
+(.) 146.09 471.64 T
+(Copying a lar) 108 443.64 T
+(ge program distributed on CD-ROM onto hard disk may be) 183.92 443.64 T
+-0.33 (uneconomical, because the disk space may cost more than the software itself.) 108 427.64 P
+(So there is an economic disincentive to piracy) 108 411.64 T
+(, as there was a disincentive to) 364.74 411.64 T
+(copying books in the days before the photocopier) 108 395.64 T
+(.) 383.54 395.64 T
+0 F
+(Pr) 108 355.64 T
+(oblems not solved by CD-ROM) 122.51 355.64 T
+2 F
+(Although the physical medium of CD-ROM is cheap, it is not ideal in itself) 108 326.64 T
+(for updates, corrections, and enhancements because of the associated) 108 310.64 T
+(transaction costs.) 108 294.64 T
+(Software distributed by CD-ROM cannot take advantage of processor) 108 266.64 T
+(enhancements, and will not run on new architectures.) 108 250.64 T
+(End users who have bought multiple binaries on CD-ROM have no way of) 108 222.64 T
+(moving applications to other platforms which were not covered by the) 108 206.64 T
+(distribution.) 108 190.64 T
+(CD-ROM does not solve license management. However) 108 162.64 T
+(, for applications) 422.6 162.64 T
+(which are either very lar) 108 146.64 T
+(ge themselves or which have lar) 244.51 146.64 T
+(ge bundled) 424.17 146.64 T
+(databases, it mitigates the problem since it is a cheaper way to store lar) 108 130.64 T
+(ge) 504.91 130.64 T
+(amounts of random-access data than any competitive solution.) 108 114.64 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Uses of ANDF in softwar) 108 736.84 T
+(e distribution) 192.68 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(6 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(Given the size of some software distributions, CD-ROMs are not lar) 108 701.67 T
+(ge) 489.77 701.67 T
+(enough to hold multiple copies for multiple platforms. The full Oracle) 108 685.67 T
+-0.44 (distribution, for instance, takes roughly a full CD-ROM for a single platform.) 108 669.67 P
+(But few applications are that big.) 108 653.67 T
+(Even so, CD-ROM capacity is not in\336nite.) 108 625.67 T
+0 F
+(New applications of CD-ROM) 108 585.67 T
+2 F
+(The capacity and cheapness of CD-ROM also allow vendors to distribute) 108 556.67 T
+(multiple programs on a single disk at no extra cost. Some of the ancillary) 108 540.67 T
+(\324data\325 may in fact be other programs, such as demonstrations.) 108 524.67 T
+(Another possibility for software distribution with CD-ROM is the) 108 496.67 T
+(\322magazine\323 model, where each issue contains articles, demonstrations, and) 108 480.67 T
+-0.34 (programs. The programs would be distributed in encrypted form, and only be) 108 464.67 P
+(runnable with the use of a decryption key) 108 448.67 T
+(.) 339.08 448.67 T
+(The magazine model has some intriguing characteristics. If magazines are) 108 420.67 T
+(or) 108 404.67 T
+(ganized by platform, not by software category) 119.4 404.67 T
+(, they do not need to solve) 376.9 404.67 T
+-0.6 (the multiple binary problem. Software updates are easy) 108 388.67 P
+-0.6 (, especially if software) 412.23 388.67 P
+(is distributed in modules \050.o or .j\051 rather than executables \050.out\051.) 108 372.67 T
+-0.19 (On the other hand, magazines do not solve the platform evolution problem at) 108 344.67 P
+(all.) 108 328.67 T
+108 268.98 540 272 C
+90 270.49 558 270.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(5. Uses of ANDF in software distribution) 108 277.33 T
+0 14 Q
+(Solving existing pr) 108 233.64 T
+(oblems with ANDF) 218.93 233.64 T
+2 F
+(ANDF solves the multiple binary problem by providing a single virtual) 108 204.64 T
+(binary which can be installed on any conforming platform.) 108 188.64 T
+(It thus also solves the problem of platform evolution. Not only can it be) 108 160.64 T
+(installed on completely new platforms, it can also be reinstalled to take) 108 144.64 T
+(advantage of upgrades.) 108 128.64 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Uses of networks in softwar) 108 736.84 T
+(e distribution) 202.01 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(7 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(ANDF\325) 108 701.67 T
+(s strongest contribution is to insuring application portability) 149.98 701.67 T
+(. It can) 484.51 701.67 T
+(statically check interfaces and interface uses, so that programs can be truly) 108 685.67 T
+(portable. This makes multiplatform development cheaper and more reliable.) 108 669.67 T
+(ANDF solves the problem of platform independence, allowing end users to) 108 641.67 T
+(procure software and hardware completely independently) 108 625.67 T
+(, and to update one) 429.21 625.67 T
+(or the other at their convenience.) 108 609.67 T
+0 F
+(Pr) 108 569.67 T
+(oblems not solved by ANDF) 122.51 569.67 T
+2 F
+(ANDF does not contribute to database distribution, software evolution) 108 540.67 T
+(\050except that only a single virtual binary need be distributed\051, or license) 108 524.67 T
+(management.) 108 508.67 T
+0 F
+(New applications of ANDF) 108 468.67 T
+2 F
+(ANDF provides a way to send programs to other computers, which may) 108 439.67 T
+(function \050for instance\051 as proxies.) 108 423.67 T
+(ANDF makes it far easier for vendors to supply modules or packages which) 108 395.67 T
+(are linked with other vendors\325 packages before execution.) 108 379.67 T
+0 F
+(Open issues for ANDF) 108 339.67 T
+2 F
+-0.19 (ANDF has not yet solved the data portability problem \050but then, neither have) 108 310.67 P
+(any of its rivals\051.) 108 294.67 T
+(ANDF is not a widely-known or widely-used technology) 108 266.67 T
+(.) 426.16 266.67 T
+108 206.98 540 210 C
+90 208.49 558 208.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(6. Uses of networks in software distribution) 108 215.33 T
+0 14 Q
+(Solving existing pr) 108 171.64 T
+(oblems with networks) 218.93 171.64 T
+2 F
+(Networks solve distribution bulkiness by distributing on demand. Much of a) 108 142.64 T
+(distribution is never actually used by any particular user) 108 126.64 T
+(.) 421.23 126.64 T
+(Networks can easily provide multiple binary versions on demand.) 108 98.64 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Uses of networks in softwar) 108 736.84 T
+(e distribution) 202.01 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(8 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(Networks can contribute to software and platform evolution by providing a) 108 701.67 T
+(low-cost, fast turnaround way of distributing updates.) 108 685.67 T
+-0.19 (Networks can contribute to license management by providing license servers.) 108 657.67 P
+0 F
+(Pr) 108 617.67 T
+(oblems not solved by networks) 122.51 617.67 T
+2 F
+(Networks do not check portability) 108 588.67 T
+(, so multiplatform development must) 298.3 588.67 T
+(continue as it is done today) 108 572.67 T
+(. The software vendor or distributor must still) 259.83 572.67 T
+(keep track of multiple binaries.) 108 556.67 T
+(Users remain at the mercy of the software provider for platform) 108 528.67 T
+(independence. Some vendors may have a policy of keeping all platforms\325) 108 512.67 T
+(versions up to date, others may declare some platforms obsolete or) 108 496.67 T
+-0.28 (unsupported. Some vendors may have liberal \322trade-in\323 policies which allow) 108 480.67 P
+(exchanging software for one platform for software for another) 108 464.67 T
+(. Although) 455.37 464.67 T
+(networking technology makes it possible to implement such policies, it does) 108 448.67 T
+(not support them directly) 108 432.67 T
+(.) 248.18 432.67 T
+0 F
+(New applications of networks) 108 392.67 T
+2 F
+(Networks should allow more \337exible pricing for software products, by) 108 363.67 T
+(allowing machine-mediated char) 108 347.67 T
+(ging. For instance, users might be char) 291.16 347.67 T
+(ged) 507.76 347.67 T
+(by the \322level\323 of feature they use, or by their actual time of usage. The) 108 331.67 T
+-0.35 (architect who uses a CAD package 20 hours a week might be willing to pay a) 108 315.67 P
+(\337at fee of $1000, whereas the amateur woodworker might want to use the) 108 299.67 T
+(same package at a low per) 108 283.67 T
+(-hour rate of $2.) 254.98 283.67 T
+(Networks also allow access to vendors\325 resources, such as lar) 108 255.67 T
+(ge databases,) 451.24 255.67 T
+(which need not be distributed) 108 239.67 T
+3 F
+(in toto) 277.05 239.67 T
+2 F
+( with the software.) 313.21 239.67 T
+0 F
+(Open issues for networks) 108 199.67 T
+2 F
+(Although many institutions are currently connected to outside networks,) 108 170.67 T
+(existing networks are not universal enough to support full network) 108 154.67 T
+(distribution. Also, security issues are not completely resolved, so many) 108 138.67 T
+(companies maintain strict barriers between internal and external networks.) 108 122.67 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Complementarity of innovations) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(9 of 11) 511.69 54.45 T
+108 90 540 711 R
+7 X
+V
+108 691.98 540 695 C
+90 693.49 558 693.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(7. Complementarity of innovations) 108 700.33 T
+2 14 Q
+(Each of these technologies can contribute to software distribution.) 108 668.64 T
+(The following table summarizes the discussion.) 108 640.64 T
+108 310.95 540 313.98 C
+90 312.46 558 312.46 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(8. Orthogonal areas) 108 319.31 T
+2 14 Q
+(In certain areas, all three of these technologies need to be combined with) 108 287.62 T
+(other technologies to be fully useful. In particular) 108 271.62 T
+(, none of them solve) 384.91 271.62 T
+(licensing in themselves. Partial delivery is possible using all three) 108 255.62 T
+(technologies, but only networks support it directly; the others can support it) 108 239.62 T
+(through encryption.) 108 223.62 T
+0 F
+(Licensing models ar) 108 183.62 T
+(e important) 227.47 183.62 T
+2 F
+(In the PC market, traditionally) 108 154.62 T
+(, a single physical package corresponds to a) 277.71 154.62 T
+(single license. CD-ROMs can also be licensed this way) 108 138.62 T
+(. Network) 416.82 138.62 T
+(distributions cannot; they need some separate license administration) 108 122.62 T
+(mechanism, such as a license server) 108 106.62 T
+(.) 308.51 106.62 T
+0 12 Q
+(T) 191.89 615.98 T
+(able 1: Contributions to Distribution Pr) 198.78 615.98 T
+(oblems) 402.13 615.98 T
+2 F
+(Problem) 150.68 570.98 T
+(Contribution of:) 339.18 583.98 T
+(ANDF) 265.68 557.98 T
+(CD-ROM) 354.01 557.98 T
+(Networks) 450.68 557.98 T
+(Bulky distributions) 114 533.98 T
+(V) 248.55 533.98 T
+(irtual binary) 256.49 533.98 T
+(Lots of space) 346.02 533.98 T
+(On demand) 446.19 533.98 T
+(Non-standard binaries) 114 511.98 T
+(V) 248.55 511.98 T
+(irtual binary) 256.49 511.98 T
+(Multiple binaries) 336.86 511.98 T
+(On demand) 446.19 511.98 T
+(Multiplatform dev\325) 114 489.98 T
+(t) 206.06 489.98 T
+(Multiplatform) 248.02 489.98 T
+(compiler) 260.68 475.98 T
+(Platform independence) 114 453.98 T
+(V) 248.55 453.98 T
+(irtual binary) 256.49 453.98 T
+(partial solution) 341.85 453.98 T
+(potential solution) 432.18 453.98 T
+(Platform evolution) 114 431.98 T
+(V) 248.55 431.98 T
+(irtual binary) 256.49 431.98 T
+(On demand) 446.19 431.98 T
+(Software evolution) 114 409.98 T
+(partial solution) 245.85 409.98 T
+(\050modules\051) 257.68 395.98 T
+(Magazine) 354.36 409.98 T
+(distribution) 350.34 395.98 T
+(On demand/) 444.52 409.98 T
+(Broadcast) 450.02 395.98 T
+(Licensing) 114 373.98 T
+(Interaction) 448.02 373.98 T
+108 599.73 108 366.23 2 L
+V
+0.5 H
+0 Z
+N
+232.75 599.73 232.75 366.23 2 L
+V
+N
+235.25 599.73 235.25 366.23 2 L
+V
+N
+330 574.23 330 365.73 2 L
+V
+N
+426 574.23 426 365.73 2 L
+V
+N
+522 599.73 522 366.23 2 L
+V
+N
+107.75 599.98 522.25 599.98 2 L
+V
+N
+235.5 573.98 522.25 573.98 2 L
+V
+N
+108.25 549.23 521.75 549.23 2 L
+V
+N
+108.25 546.73 521.75 546.73 2 L
+V
+N
+107.75 525.98 522.25 525.98 2 L
+V
+N
+107.75 503.98 522.25 503.98 2 L
+V
+N
+107.75 467.98 522.25 467.98 2 L
+V
+N
+107.75 445.98 522.25 445.98 2 L
+V
+N
+107.75 423.98 522.25 423.98 2 L
+V
+N
+107.75 387.98 522.25 387.98 2 L
+V
+N
+107.75 365.98 522.25 365.98 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(10 of 11) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+0 14 Q
+0 X
+(Encryption allows partial deliveries) 108 701.67 T
+2 F
+(For CD-ROMs, another possibility is encrypted software. Although the user) 108 672.67 T
+(would take physical possession of the software, it would not be operable) 108 656.67 T
+(without a decryption key) 108 640.67 T
+(, provided only upon payment. Multiple packages,) 246.61 640.67 T
+(or optional enhancements, could be provided on a disk. Thus a vendor of) 108 624.67 T
+(spreadsheet software could include a demo version of his presentation) 108 608.67 T
+(software, which would become fully operative only with the use of a key) 108 592.67 T
+(, at) 515.51 592.67 T
+(added cost.) 108 576.67 T
+-0.33 (Encryption also makes it possible to deliver multiple software packages from) 108 548.67 P
+(dif) 108 532.67 T
+(ferent vendors on a single disk. Since CD\325) 123.29 532.67 T
+(s are cheap to reproduce,) 359.58 532.67 T
+(software could be assembled into monthly magazines. Editorial content) 108 516.67 T
+(would be delivered in plaintext, advertisers could include demo versions of) 108 500.67 T
+(software, and the full version of the software might be available using just a) 108 484.67 T
+(decryption key) 108 468.67 T
+(.) 190.64 468.67 T
+(Under this model, dif) 108 440.67 T
+(ferent editions of a magazine could be addressed to) 227.45 440.67 T
+-0.53 (dif) 108 424.67 P
+-0.53 (ferent platforms, as paper magazines are today) 123.29 424.67 P
+-0.53 (. Not only new software, but) 379.94 424.67 P
+-0.54 (also enhancements and added-value \336les could be included on such magazine) 108 408.67 P
+(distributions. Since each edition would be addressed to a distinct platform,) 108 392.67 T
+(portability would not be an issue.) 108 376.67 T
+108 316.98 540 320 C
+90 318.49 558 318.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 16 Q
+0 X
+0 K
+(9. Conclusion) 108 325.33 T
+2 14 Q
+-0.47 (Software distribution practices will be certainly be changed by CD-ROM and) 108 293.64 P
+(networks; and potentially by ANDF if it is adopted by the industry) 108 277.64 T
+(.) 479.82 277.64 T
+2 13 Q
+(\245) 122.4 254.31 T
+(ANDF of) 136.8 254.31 T
+(fers easy multiplatform development and distribution to software) 185.98 254.31 T
+(vendors, platform \337exibility to end users, and architectural freedom to) 136.8 239.31 T
+(hardware vendors.) 136.8 224.31 T
+(\245) 122.4 201.31 T
+(CD-ROM of) 136.8 201.31 T
+(fers a convenient physical medium for lar) 202.57 201.31 T
+(ge distributions, and) 418.71 201.31 T
+(will perhaps be the medium for magazine-type distribution.) 136.8 186.31 T
+(\245) 122.4 163.31 T
+(Networks of) 136.8 163.31 T
+(fer an interactive model of software distribution with) 201.12 163.31 T
+(tremendous potential.) 136.8 148.31 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+108 74.02 540 74.02 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+108 750.02 540 750.02 2 L
+7 X
+V
+0 Z
+0 X
+N
+108 46.88 324 63 R
+7 X
+V
+0 10 Q
+0 X
+(Virtual binary vs. multiple binary) 108 56.33 T
+108 726.98 540 742.18 R
+7 X
+V
+0 8 Q
+0 X
+(Conclusion) 108 736.84 T
+351 45 540 61.12 R
+7 X
+V
+0 10 Q
+0 X
+(11 of 11) 506.69 54.45 T
+108 90 540 711 R
+7 X
+V
+2 14 Q
+0 X
+(In a world of a small, \336xed number of hardware platforms, ANDF and CD-) 108 701.67 T
+(ROM are competitive technologies. In a world of a lar) 108 685.67 T
+(ge and dynamic) 411.63 685.67 T
+(universe of hardware platforms, ANDF and CD-ROM are complementary) 108 669.67 T
+(.) 521.71 669.67 T
+(CD-ROM and networks are competitive technologies to the extent that user) 108 641.67 T
+(populations have access to either one. Although CD-ROMs are becoming) 108 625.67 T
+(very common, full network access remains limited. Network distribution) 108 609.67 T
+(within corporations is very promising, especially with license management) 108 593.67 T
+(software such as that found in OSF\325) 108 577.67 T
+(s DME. For that matter) 308.54 577.67 T
+(, central servers) 438.18 577.67 T
+-0.3 (may well use CD-ROMs as the repository of software distributed by network.) 108 561.67 P
+(Similarly) 108 533.67 T
+(, repositories of software may choose to hold ANDF rather than) 159.18 533.67 T
+(binary) 108 517.67 T
+(. This simpli\336es their data management problem, and guarantees the) 142.84 517.67 T
+(future value of their investment in software.) 108 501.67 T
+(Software developers may choose to use ANDF technology for its portability) 108 473.67 T
+(characteristics regardless of whether actual distributions use the ANDF) 108 457.67 T
+(format.) 108 441.67 T
+-0.31 (ANDF) 108 413.67 P
+-0.31 (, CD-ROM, and networks are thus complementary technologies today) 144.97 413.67 P
+-0.31 (.) 533.31 413.67 P
+(CD-ROM is likely to fade if network access becomes universal and cheap.) 108 397.67 T
+(The need for ANDF will fade if a small number of hardware designs) 108 381.67 T
+(dominate the marketplace for a long period of time.) 108 365.67 T
+-0.19 (Users would be served best if the pace of hardware innovation continues, but) 108 337.67 P
+(ANDF is needed if diverse hardware is to remain practical. Whether ANDF) 108 321.67 T
+(is broadly adopted in the industry remains to be seen.) 108 305.67 T
+108 90 540 711 C
+108 90 540 216 C
+108 90 540 207 R
+7 X
+0 K
+V
+2 10 Q
+0 X
+(Copyright 1993 by Open Software Foundation, Inc.) 108 200.33 T
+(All Rights Reserved) 108 178.33 T
+-0.19 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 108 156.33 P
+-0.08 (this permission notice appear in all copies or derivative works. OSF MAKES NO W) 108 144.33 P
+-0.08 (ARRRANTY OF ANY) 443.36 144.33 P
+(KIND WITH REGARD T) 108 132.33 T
+(O THIS MA) 213.57 132.33 T
+(TERIAL, INCLUDING, BUT NOT LIMITED T) 262.98 132.33 T
+(O, THE IMPLIED) 459.05 132.33 T
+-0.04 (W) 108 120.33 P
+-0.04 (ARRANTIES OF MERCHANT) 116.32 120.33 P
+-0.04 (ABILITY AND FITNESS FOR A P) 245.37 120.33 P
+-0.04 (AR) 390 120.33 P
+-0.04 (TICULAR PURPOSE. OSF shall) 403.28 120.33 P
+(not be liable for errors contained herein or for any direct or indirect, incidental, special or consequential) 108 108.33 T
+(damages in connection with the furnishing, performance, or use of this material.) 108 96.33 T
+108 90 540 711 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "11" 12
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 11 1
+%%DocumentFonts: Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Roman
+%%+ Times-Italic
